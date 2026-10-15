@@ -86,6 +86,8 @@ DAPT cannot help other models, domains, data budgets, or training schedules.
 | Main equal-update conditions | **4** |
 | Training seeds per main condition | **5** |
 
+**Dataset:** [IndicIPRExtractiveQA on Hugging Face](https://huggingface.co/datasets/niloycste68/IndicIPRExtractiveQA) (`niloycste68/IndicIPRExtractiveQA`).
+
 IndicIPR-QA contains generated and curated English extractive questions. The
 experiments study gold-context reading, rather than open retrieval. The separate
 retrieval and source-selection diagnosis is released in its own repository.
