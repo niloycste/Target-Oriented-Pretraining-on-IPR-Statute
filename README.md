@@ -8,7 +8,7 @@
 [![Task: Extractive QA](https://img.shields.io/badge/Task-Extractive%20QA-2563EB)](#research-at-a-glance)
 [![Method: DAPT](https://img.shields.io/badge/Method-Domain--Adaptive%20Pretraining-7C3AED)](#research-question)
 [![Domain: Indian IPR law](https://img.shields.io/badge/Domain-Indian%20IPR%20law-059669)](#dataset-and-scope)
-[![Status: Reproducible artifacts](https://img.shields.io/badge/Status-Reproducible%20artifacts-EA580C)](#artifact-policy)
+[![Status: Reproducible artifacts](https://img.shields.io/badge/Status-Reproducible%20artifacts-EA580C)](#repository-guide)
 
 **M. Mohaiminul Islam** · **Muhammad Abulaish**<br>
 Department of Computer Science and Engineering, South Asian University, New Delhi, India
@@ -150,17 +150,6 @@ python scripts/09_dapt_final/run_full_study.py --help
 
 Review `docs/DAPT_EXPERIMENT_PROTOCOL.md` before launching the full pipeline.
 
-### 4. Compile the paper
-
-```powershell
-Push-Location papers/target_pretraining
-lualatex -interaction=nonstopmode target-pretraining.tex
-bibtex target-pretraining
-lualatex -interaction=nonstopmode target-pretraining.tex
-lualatex -interaction=nonstopmode target-pretraining.tex
-Pop-Location
-```
-
 ## Repository guide
 
 ```text
@@ -187,17 +176,6 @@ Pop-Location
 
 `docs/RESULT_PROVENANCE.md` maps manuscript claims to retained artifacts.
 `ARTIFACT_MANIFEST.md` describes this release and its exclusions.
-
-## Artifact policy
-
-Included: source code, fixed splits, adaptation corpora, corpus manifests,
-training ledgers, saved validation and test predictions, statistical summaries,
-figures, manuscript source/PDF, tokenizer metadata, and training telemetry.
-
-Excluded: trained model weights, optimizer states, tokenization and Arrow
-caches, temporary logs, local model downloads, and credentials. The included
-manifests record seeds, model identifiers, corpus construction, and available
-fingerprints so that the missing weights are explicit rather than hidden.
 
 ## Citation
 
