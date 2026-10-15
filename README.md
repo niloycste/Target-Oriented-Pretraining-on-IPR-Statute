@@ -9,6 +9,8 @@
 [![Method: DAPT](https://img.shields.io/badge/Method-Domain--Adaptive%20Pretraining-7C3AED)](#research-question)
 [![Domain: Indian IPR law](https://img.shields.io/badge/Domain-Indian%20IPR%20law-059669)](#dataset-and-scope)
 [![Status: Reproducible artifacts](https://img.shields.io/badge/Status-Reproducible%20artifacts-EA580C)](#repository-guide)
+[![Paper](https://img.shields.io/badge/Read-the%20paper-DC2626?logo=readthedocs&logoColor=white)](papers/target_pretraining/target-pretraining.pdf)
+[![Dataset](https://img.shields.io/badge/Dataset-Hugging%20Face-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/datasets/niloycste68/IndicIPRExtractiveQA)
 
 **M. Mohaiminul Islam** · **Muhammad Abulaish**<br>
 Department of Computer Science and Engineering, South Asian University, New Delhi, India
@@ -19,11 +21,15 @@ Department of Computer Science and Engineering, South Asian University, New Delh
 
 ---
 
-## Why this repository exists
+## ✨ Why this repository matters
 
 Domain-adaptive pretraining (DAPT) exposes an encoder to additional in-domain
 text before task fine-tuning. For statutory extractive question answering, this
 may improve language-model fit without improving the final answer span.
+
+> [!IMPORTANT]
+> **Core idea:** better masked-language-model fit is not, by itself, evidence
+> of better downstream statutory question answering.
 
 This repository accompanies a controlled study of that question on IndicIPR-QA.
 It compares an InLegalBERT reader with no additional DAPT against readers
@@ -42,7 +48,7 @@ The goal is not to claim that DAPT never helps. It is to test, under a fixed
 benchmark, encoder, corpus construction, and short adaptation budget, whether
 these additional text sources reliably improve statutory answer extraction.
 
-## Research at a glance
+## 📊 Research at a glance
 
 | Equal-update condition | Mean test F1 across five seeds | Difference from no DAPT |
 |---|---:|---:|
@@ -50,6 +56,11 @@ these additional text sources reliably improve statutory answer extraction.
 | Authentic statutory text | **85.85 ± 0.46** | −0.01 [−1.34, 1.32] |
 | Task-informed synthetic text | **85.91 ± 0.84** | +0.05 [−0.80, 0.90] |
 | Mixed authentic + synthetic text | **85.58 ± 0.75** | −0.28 [−1.16, 0.60] |
+
+> [!TIP]
+> **Headline result:** under equal update counts and five training seeds, none
+> of the tested DAPT corpora shows a reliable F1 improvement over the
+> no-additional-DAPT condition on this benchmark.
 
 The seed-blocked condition test gives **p = 0.706**. Every paired 95% interval
 against no DAPT includes zero. Therefore, this comparison does not detect a
@@ -63,7 +74,7 @@ pattern. MLM fit can improve without a matching extractive-QA gain.
 
 <p align="center"><em>Equal-update comparison across five training seeds. See the paper for the statistical design and limitations.</em></p>
 
-## Research question
+## 🎯 Research question
 
 The project addresses three related questions:
 
@@ -75,7 +86,7 @@ The reported answer is limited to the tested setting. The study does not claim
 equivalence between conditions, generalize to all legal tasks, or establish that
 DAPT cannot help other models, domains, data budgets, or training schedules.
 
-## Dataset and scope
+## 🗂️ Dataset and scope
 
 | Item | Value |
 |---|---:|
@@ -86,13 +97,14 @@ DAPT cannot help other models, domains, data budgets, or training schedules.
 | Main equal-update conditions | **4** |
 | Training seeds per main condition | **5** |
 
-**Dataset:** [IndicIPRExtractiveQA on Hugging Face](https://huggingface.co/datasets/niloycste68/IndicIPRExtractiveQA) (`niloycste68/IndicIPRExtractiveQA`).
+> [!NOTE]
+> **Dataset:** [IndicIPRExtractiveQA on Hugging Face](https://huggingface.co/datasets/niloycste68/IndicIPRExtractiveQA) · [`niloycste68/IndicIPRExtractiveQA`](https://huggingface.co/datasets/niloycste68/IndicIPRExtractiveQA)
 
 IndicIPR-QA contains generated and curated English extractive questions. The
 experiments study gold-context reading, rather than open retrieval. The separate
 retrieval and source-selection diagnosis is released in its own repository.
 
-## Quick start
+## 🚀 Quick start
 
 Run the commands from the repository root.
 
@@ -107,7 +119,7 @@ pip install -r requirements.txt
 
 On Linux or macOS, activate with `source .venv/bin/activate`.
 
-## Reproduce the reported results
+## 🔬 Reproduce the reported results
 
 Choose the smallest path that answers your question.
 
@@ -152,7 +164,7 @@ python scripts/09_dapt_final/run_full_study.py --help
 
 Review `docs/DAPT_EXPERIMENT_PROTOCOL.md` before launching the full pipeline.
 
-## Repository guide
+## 🧭 Repository guide
 
 ```text
 .
@@ -179,7 +191,7 @@ Review `docs/DAPT_EXPERIMENT_PROTOCOL.md` before launching the full pipeline.
 `docs/RESULT_PROVENANCE.md` maps manuscript claims to retained artifacts.
 `ARTIFACT_MANIFEST.md` describes this release and its exclusions.
 
-## Citation
+## ✍️ Citation
 
 If you use this repository, its experiments, or the target-oriented DAPT
 evaluation framework, please cite the accompanying paper:
