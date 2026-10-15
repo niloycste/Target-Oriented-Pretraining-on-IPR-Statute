@@ -1,0 +1,993 @@
+{
+  "schema_version": 2,
+  "split": "val",
+  "updated_at": "2026-10-01T19:49:11+05:30",
+  "inference_protocol": {
+    "input_format": "[CLS] question [SEP] context [SEP]",
+    "max_seq_length": 384,
+    "doc_stride": 128,
+    "batch_size": 16,
+    "max_answer_tokens": null,
+    "truncation": "only_second",
+    "span_decoding": "exhaustive constrained start<=end",
+    "window_selection": "maximum summed start/end logit",
+    "prediction_text": "literal source-context character slice"
+  },
+  "runs": {
+    "D_A_s7_100": {
+      "schema_version": 2,
+      "run_key": "D_A_s7_100",
+      "evaluated_at": "2026-09-25T03:27:19+05:30",
+      "split": "val",
+      "checkpoint": "artifacts/models/equal_update/D_A_s7_ipr/final",
+      "checkpoint_sha256": "634a4d32c461919e6de80b645d26b52e73df47f63d2478138fca846f75756876",
+      "experiment": "D",
+      "condition": "A",
+      "seed": 7,
+      "fraction": 100,
+      "n": 408,
+      "em": 71.813725,
+      "f1": 87.957629,
+      "char_f1_diagnostic": 90.404132,
+      "per_act": {
+        "copyright_act": {
+          "n": 20,
+          "em": 80.0,
+          "f1": 89.85741
+        },
+        "design_act": {
+          "n": 13,
+          "em": 92.307692,
+          "f1": 97.15324
+        },
+        "gi_act": {
+          "n": 50,
+          "em": 62.0,
+          "f1": 77.616953
+        },
+        "patent_act": {
+          "n": 151,
+          "em": 86.754967,
+          "f1": 96.324404
+        },
+        "plant_varieties_farmers_rights_act": {
+          "n": 82,
+          "em": 50.0,
+          "f1": 72.051391
+        },
+        "semiconductor_layout_design_act": {
+          "n": 46,
+          "em": 76.086957,
+          "f1": 95.724921
+        },
+        "trademark_act": {
+          "n": 46,
+          "em": 58.695652,
+          "f1": 88.895199
+        }
+      },
+      "inference_protocol": {
+        "input_format": "[CLS] question [SEP] context [SEP]",
+        "max_seq_length": 384,
+        "doc_stride": 128,
+        "batch_size": 16,
+        "max_answer_tokens": null,
+        "truncation": "only_second",
+        "span_decoding": "exhaustive constrained start<=end",
+        "window_selection": "maximum summed start/end logit",
+        "prediction_text": "literal source-context character slice"
+      },
+      "predictions_file": "experiments/dapt/equal_update/evaluations/val/D_A_s7_100.json"
+    },
+    "D_A_s42_100": {
+      "schema_version": 2,
+      "run_key": "D_A_s42_100",
+      "evaluated_at": "2026-09-25T15:25:02+05:30",
+      "split": "val",
+      "checkpoint": "artifacts/models/equal_update/D_A_s42_ipr/final",
+      "checkpoint_sha256": "44ce308f21ea237b5d34236f31a1590cd87ea231754f77002ba8893f85c17d9f",
+      "experiment": "D",
+      "condition": "A",
+      "seed": 42,
+      "fraction": 100,
+      "n": 408,
+      "em": 75.0,
+      "f1": 89.020482,
+      "char_f1_diagnostic": 90.825016,
+      "per_act": {
+        "copyright_act": {
+          "n": 20,
+          "em": 95.0,
+          "f1": 99.915254
+        },
+        "design_act": {
+          "n": 13,
+          "em": 84.615385,
+          "f1": 97.090701
+        },
+        "gi_act": {
+          "n": 50,
+          "em": 62.0,
+          "f1": 77.35113
+        },
+        "patent_act": {
+          "n": 151,
+          "em": 89.403974,
+          "f1": 97.39674
+        },
+        "plant_varieties_farmers_rights_act": {
+          "n": 82,
+          "em": 54.878049,
+          "f1": 70.22673
+        },
+        "semiconductor_layout_design_act": {
+          "n": 46,
+          "em": 82.608696,
+          "f1": 99.469691
+        },
+        "trademark_act": {
+          "n": 46,
+          "em": 58.695652,
+          "f1": 90.243707
+        }
+      },
+      "inference_protocol": {
+        "input_format": "[CLS] question [SEP] context [SEP]",
+        "max_seq_length": 384,
+        "doc_stride": 128,
+        "batch_size": 16,
+        "max_answer_tokens": null,
+        "truncation": "only_second",
+        "span_decoding": "exhaustive constrained start<=end",
+        "window_selection": "maximum summed start/end logit",
+        "prediction_text": "literal source-context character slice"
+      },
+      "predictions_file": "experiments/dapt/equal_update/evaluations/val/D_A_s42_100.json"
+    },
+    "D_A_s99_100": {
+      "schema_version": 2,
+      "run_key": "D_A_s99_100",
+      "evaluated_at": "2026-09-26T02:05:35+05:30",
+      "split": "val",
+      "checkpoint": "artifacts/models/equal_update/D_A_s99_ipr/final",
+      "checkpoint_sha256": "2fb0d65076a54e5986f70776a18f701387bebe0774bfc04d71af4e0a30f3626f",
+      "experiment": "D",
+      "condition": "A",
+      "seed": 99,
+      "fraction": 100,
+      "n": 408,
+      "em": 72.54902,
+      "f1": 88.457595,
+      "char_f1_diagnostic": 90.589493,
+      "per_act": {
+        "copyright_act": {
+          "n": 20,
+          "em": 85.0,
+          "f1": 89.942155
+        },
+        "design_act": {
+          "n": 13,
+          "em": 84.615385,
+          "f1": 97.090701
+        },
+        "gi_act": {
+          "n": 50,
+          "em": 60.0,
+          "f1": 78.282856
+        },
+        "patent_act": {
+          "n": 151,
+          "em": 88.07947,
+          "f1": 96.120904
+        },
+        "plant_varieties_farmers_rights_act": {
+          "n": 82,
+          "em": 53.658537,
+          "f1": 74.666991
+        },
+        "semiconductor_layout_design_act": {
+          "n": 46,
+          "em": 78.26087,
+          "f1": 96.701174
+        },
+        "trademark_act": {
+          "n": 46,
+          "em": 54.347826,
+          "f1": 87.615867
+        }
+      },
+      "inference_protocol": {
+        "input_format": "[CLS] question [SEP] context [SEP]",
+        "max_seq_length": 384,
+        "doc_stride": 128,
+        "batch_size": 16,
+        "max_answer_tokens": null,
+        "truncation": "only_second",
+        "span_decoding": "exhaustive constrained start<=end",
+        "window_selection": "maximum summed start/end logit",
+        "prediction_text": "literal source-context character slice"
+      },
+      "predictions_file": "experiments/dapt/equal_update/evaluations/val/D_A_s99_100.json"
+    },
+    "D_A_s123_100": {
+      "schema_version": 2,
+      "run_key": "D_A_s123_100",
+      "evaluated_at": "2026-09-26T22:25:14+05:30",
+      "split": "val",
+      "checkpoint": "artifacts/models/equal_update/D_A_s123_ipr/final",
+      "checkpoint_sha256": "138bdbae536394264260ffc5d70438dbca23bf9cea40ab450b3919f1e50aead8",
+      "experiment": "D",
+      "condition": "A",
+      "seed": 123,
+      "fraction": 100,
+      "n": 408,
+      "em": 69.607843,
+      "f1": 87.415735,
+      "char_f1_diagnostic": 89.732856,
+      "per_act": {
+        "copyright_act": {
+          "n": 20,
+          "em": 75.0,
+          "f1": 89.594252
+        },
+        "design_act": {
+          "n": 13,
+          "em": 92.307692,
+          "f1": 97.15324
+        },
+        "gi_act": {
+          "n": 50,
+          "em": 56.0,
+          "f1": 77.584594
+        },
+        "patent_act": {
+          "n": 151,
+          "em": 84.768212,
+          "f1": 95.994437
+        },
+        "plant_varieties_farmers_rights_act": {
+          "n": 82,
+          "em": 45.121951,
+          "f1": 68.960058
+        },
+        "semiconductor_layout_design_act": {
+          "n": 46,
+          "em": 82.608696,
+          "f1": 97.542343
+        },
+        "trademark_act": {
+          "n": 46,
+          "em": 56.521739,
+          "f1": 89.014797
+        }
+      },
+      "inference_protocol": {
+        "input_format": "[CLS] question [SEP] context [SEP]",
+        "max_seq_length": 384,
+        "doc_stride": 128,
+        "batch_size": 16,
+        "max_answer_tokens": null,
+        "truncation": "only_second",
+        "span_decoding": "exhaustive constrained start<=end",
+        "window_selection": "maximum summed start/end logit",
+        "prediction_text": "literal source-context character slice"
+      },
+      "predictions_file": "experiments/dapt/equal_update/evaluations/val/D_A_s123_100.json"
+    },
+    "D_A_s2026_100": {
+      "schema_version": 2,
+      "run_key": "D_A_s2026_100",
+      "evaluated_at": "2026-09-27T10:50:21+05:30",
+      "split": "val",
+      "checkpoint": "artifacts/models/equal_update/D_A_s2026_ipr/final",
+      "checkpoint_sha256": "6e33c989f8a43388dd071bce8452084297c637d59653ab6cac4ce58eb2f3311c",
+      "experiment": "D",
+      "condition": "A",
+      "seed": 2026,
+      "fraction": 100,
+      "n": 408,
+      "em": 73.77451,
+      "f1": 89.646138,
+      "char_f1_diagnostic": 92.31007,
+      "per_act": {
+        "copyright_act": {
+          "n": 20,
+          "em": 80.0,
+          "f1": 94.514252
+        },
+        "design_act": {
+          "n": 13,
+          "em": 84.615385,
+          "f1": 97.090701
+        },
+        "gi_act": {
+          "n": 50,
+          "em": 60.0,
+          "f1": 83.69805
+        },
+        "patent_act": {
+          "n": 151,
+          "em": 84.768212,
+          "f1": 96.555704
+        },
+        "plant_varieties_farmers_rights_act": {
+          "n": 82,
+          "em": 59.756098,
+          "f1": 73.932186
+        },
+        "semiconductor_layout_design_act": {
+          "n": 46,
+          "em": 84.782609,
+          "f1": 96.931928
+        },
+        "trademark_act": {
+          "n": 46,
+          "em": 60.869565,
+          "f1": 89.935612
+        }
+      },
+      "inference_protocol": {
+        "input_format": "[CLS] question [SEP] context [SEP]",
+        "max_seq_length": 384,
+        "doc_stride": 128,
+        "batch_size": 16,
+        "max_answer_tokens": null,
+        "truncation": "only_second",
+        "span_decoding": "exhaustive constrained start<=end",
+        "window_selection": "maximum summed start/end logit",
+        "prediction_text": "literal source-context character slice"
+      },
+      "predictions_file": "experiments/dapt/equal_update/evaluations/val/D_A_s2026_100.json"
+    },
+    "D_S_s7_100": {
+      "schema_version": 2,
+      "run_key": "D_S_s7_100",
+      "evaluated_at": "2026-09-27T20:47:35+05:30",
+      "split": "val",
+      "checkpoint": "artifacts/models/equal_update/D_S_s7_ipr/final",
+      "checkpoint_sha256": "fc8022458ac0cf5d889fc5d135f8f393876156a51d011ae0795ccc880001fbb9",
+      "experiment": "D",
+      "condition": "S",
+      "seed": 7,
+      "fraction": 100,
+      "n": 408,
+      "em": 72.794118,
+      "f1": 88.260353,
+      "char_f1_diagnostic": 90.734121,
+      "per_act": {
+        "copyright_act": {
+          "n": 20,
+          "em": 85.0,
+          "f1": 89.942155
+        },
+        "design_act": {
+          "n": 13,
+          "em": 92.307692,
+          "f1": 97.15324
+        },
+        "gi_act": {
+          "n": 50,
+          "em": 62.0,
+          "f1": 78.494611
+        },
+        "patent_act": {
+          "n": 151,
+          "em": 88.07947,
+          "f1": 95.840691
+        },
+        "plant_varieties_farmers_rights_act": {
+          "n": 82,
+          "em": 51.219512,
+          "f1": 73.741163
+        },
+        "semiconductor_layout_design_act": {
+          "n": 46,
+          "em": 78.26087,
+          "f1": 96.358907
+        },
+        "trademark_act": {
+          "n": 46,
+          "em": 56.521739,
+          "f1": 88.531059
+        }
+      },
+      "inference_protocol": {
+        "input_format": "[CLS] question [SEP] context [SEP]",
+        "max_seq_length": 384,
+        "doc_stride": 128,
+        "batch_size": 16,
+        "max_answer_tokens": null,
+        "truncation": "only_second",
+        "span_decoding": "exhaustive constrained start<=end",
+        "window_selection": "maximum summed start/end logit",
+        "prediction_text": "literal source-context character slice"
+      },
+      "predictions_file": "experiments/dapt/equal_update/evaluations/val/D_S_s7_100.json"
+    },
+    "D_S_s42_100": {
+      "schema_version": 2,
+      "run_key": "D_S_s42_100",
+      "evaluated_at": "2026-09-28T06:54:53+05:30",
+      "split": "val",
+      "checkpoint": "artifacts/models/equal_update/D_S_s42_ipr/final",
+      "checkpoint_sha256": "c05f1147d3e45aeb2686d5cec7cc475e99c3122d3b2e11d07a6450aea1cb8243",
+      "experiment": "D",
+      "condition": "S",
+      "seed": 42,
+      "fraction": 100,
+      "n": 408,
+      "em": 74.509804,
+      "f1": 88.926146,
+      "char_f1_diagnostic": 91.351209,
+      "per_act": {
+        "copyright_act": {
+          "n": 20,
+          "em": 95.0,
+          "f1": 97.406015
+        },
+        "design_act": {
+          "n": 13,
+          "em": 84.615385,
+          "f1": 97.090701
+        },
+        "gi_act": {
+          "n": 50,
+          "em": 64.0,
+          "f1": 79.543017
+        },
+        "patent_act": {
+          "n": 151,
+          "em": 89.403974,
+          "f1": 97.607913
+        },
+        "plant_varieties_farmers_rights_act": {
+          "n": 82,
+          "em": 53.658537,
+          "f1": 70.966191
+        },
+        "semiconductor_layout_design_act": {
+          "n": 46,
+          "em": 80.434783,
+          "f1": 95.814871
+        },
+        "trademark_act": {
+          "n": 46,
+          "em": 56.521739,
+          "f1": 89.758925
+        }
+      },
+      "inference_protocol": {
+        "input_format": "[CLS] question [SEP] context [SEP]",
+        "max_seq_length": 384,
+        "doc_stride": 128,
+        "batch_size": 16,
+        "max_answer_tokens": null,
+        "truncation": "only_second",
+        "span_decoding": "exhaustive constrained start<=end",
+        "window_selection": "maximum summed start/end logit",
+        "prediction_text": "literal source-context character slice"
+      },
+      "predictions_file": "experiments/dapt/equal_update/evaluations/val/D_S_s42_100.json"
+    },
+    "D_S_s99_100": {
+      "schema_version": 2,
+      "run_key": "D_S_s99_100",
+      "evaluated_at": "2026-09-28T16:56:05+05:30",
+      "split": "val",
+      "checkpoint": "artifacts/models/equal_update/D_S_s99_ipr/final",
+      "checkpoint_sha256": "d5547ffeda4d15715263095f5b7f74c70a1227f8681fbb33e7799acbd0df7196",
+      "experiment": "D",
+      "condition": "S",
+      "seed": 99,
+      "fraction": 100,
+      "n": 408,
+      "em": 72.794118,
+      "f1": 88.870838,
+      "char_f1_diagnostic": 91.00746,
+      "per_act": {
+        "copyright_act": {
+          "n": 20,
+          "em": 85.0,
+          "f1": 89.942155
+        },
+        "design_act": {
+          "n": 13,
+          "em": 92.307692,
+          "f1": 97.15324
+        },
+        "gi_act": {
+          "n": 50,
+          "em": 56.0,
+          "f1": 77.891664
+        },
+        "patent_act": {
+          "n": 151,
+          "em": 88.07947,
+          "f1": 96.030401
+        },
+        "plant_varieties_farmers_rights_act": {
+          "n": 82,
+          "em": 53.658537,
+          "f1": 75.643019
+        },
+        "semiconductor_layout_design_act": {
+          "n": 46,
+          "em": 78.26087,
+          "f1": 96.720231
+        },
+        "trademark_act": {
+          "n": 46,
+          "em": 58.695652,
+          "f1": 90.226842
+        }
+      },
+      "inference_protocol": {
+        "input_format": "[CLS] question [SEP] context [SEP]",
+        "max_seq_length": 384,
+        "doc_stride": 128,
+        "batch_size": 16,
+        "max_answer_tokens": null,
+        "truncation": "only_second",
+        "span_decoding": "exhaustive constrained start<=end",
+        "window_selection": "maximum summed start/end logit",
+        "prediction_text": "literal source-context character slice"
+      },
+      "predictions_file": "experiments/dapt/equal_update/evaluations/val/D_S_s99_100.json"
+    },
+    "D_S_s123_100": {
+      "schema_version": 2,
+      "run_key": "D_S_s123_100",
+      "evaluated_at": "2026-09-29T03:01:51+05:30",
+      "split": "val",
+      "checkpoint": "artifacts/models/equal_update/D_S_s123_ipr/final",
+      "checkpoint_sha256": "3affbafc2967ec9157614ffe428604ccaa653412c0ce4f384c4501deb437c87d",
+      "experiment": "D",
+      "condition": "S",
+      "seed": 123,
+      "fraction": 100,
+      "n": 408,
+      "em": 71.078431,
+      "f1": 88.087525,
+      "char_f1_diagnostic": 90.635931,
+      "per_act": {
+        "copyright_act": {
+          "n": 20,
+          "em": 75.0,
+          "f1": 89.594252
+        },
+        "design_act": {
+          "n": 13,
+          "em": 84.615385,
+          "f1": 97.090701
+        },
+        "gi_act": {
+          "n": 50,
+          "em": 60.0,
+          "f1": 79.727451
+        },
+        "patent_act": {
+          "n": 151,
+          "em": 87.417219,
+          "f1": 96.918328
+        },
+        "plant_varieties_farmers_rights_act": {
+          "n": 82,
+          "em": 46.341463,
+          "f1": 68.613982
+        },
+        "semiconductor_layout_design_act": {
+          "n": 46,
+          "em": 86.956522,
+          "f1": 99.615836
+        },
+        "trademark_act": {
+          "n": 46,
+          "em": 52.173913,
+          "f1": 88.172413
+        }
+      },
+      "inference_protocol": {
+        "input_format": "[CLS] question [SEP] context [SEP]",
+        "max_seq_length": 384,
+        "doc_stride": 128,
+        "batch_size": 16,
+        "max_answer_tokens": null,
+        "truncation": "only_second",
+        "span_decoding": "exhaustive constrained start<=end",
+        "window_selection": "maximum summed start/end logit",
+        "prediction_text": "literal source-context character slice"
+      },
+      "predictions_file": "experiments/dapt/equal_update/evaluations/val/D_S_s123_100.json"
+    },
+    "D_S_s2026_100": {
+      "schema_version": 2,
+      "run_key": "D_S_s2026_100",
+      "evaluated_at": "2026-09-29T12:59:26+05:30",
+      "split": "val",
+      "checkpoint": "artifacts/models/equal_update/D_S_s2026_ipr/final",
+      "checkpoint_sha256": "ea7793f666f2bb3caf8b8be0d9aba0bab487bd58d2f3d823807c61c2743c05c9",
+      "experiment": "D",
+      "condition": "S",
+      "seed": 2026,
+      "fraction": 100,
+      "n": 408,
+      "em": 73.284314,
+      "f1": 89.336961,
+      "char_f1_diagnostic": 91.819969,
+      "per_act": {
+        "copyright_act": {
+          "n": 20,
+          "em": 90.0,
+          "f1": 97.371395
+        },
+        "design_act": {
+          "n": 13,
+          "em": 76.923077,
+          "f1": 96.998023
+        },
+        "gi_act": {
+          "n": 50,
+          "em": 58.0,
+          "f1": 81.805755
+        },
+        "patent_act": {
+          "n": 151,
+          "em": 85.430464,
+          "f1": 96.588907
+        },
+        "plant_varieties_farmers_rights_act": {
+          "n": 82,
+          "em": 54.878049,
+          "f1": 71.808071
+        },
+        "semiconductor_layout_design_act": {
+          "n": 46,
+          "em": 82.608696,
+          "f1": 96.908213
+        },
+        "trademark_act": {
+          "n": 46,
+          "em": 65.217391,
+          "f1": 91.735337
+        }
+      },
+      "inference_protocol": {
+        "input_format": "[CLS] question [SEP] context [SEP]",
+        "max_seq_length": 384,
+        "doc_stride": 128,
+        "batch_size": 16,
+        "max_answer_tokens": null,
+        "truncation": "only_second",
+        "span_decoding": "exhaustive constrained start<=end",
+        "window_selection": "maximum summed start/end logit",
+        "prediction_text": "literal source-context character slice"
+      },
+      "predictions_file": "experiments/dapt/equal_update/evaluations/val/D_S_s2026_100.json"
+    },
+    "D_M_s7_100": {
+      "schema_version": 2,
+      "run_key": "D_M_s7_100",
+      "evaluated_at": "2026-09-29T23:04:05+05:30",
+      "split": "val",
+      "checkpoint": "artifacts/models/equal_update/D_M_s7_ipr/final",
+      "checkpoint_sha256": "0160e1cfc14d6106965c2bd446cf9e229ba9ddebe2278d268e95029baa6e8a29",
+      "experiment": "D",
+      "condition": "M",
+      "seed": 7,
+      "fraction": 100,
+      "n": 408,
+      "em": 71.568627,
+      "f1": 87.969686,
+      "char_f1_diagnostic": 90.44046,
+      "per_act": {
+        "copyright_act": {
+          "n": 20,
+          "em": 80.0,
+          "f1": 89.85741
+        },
+        "design_act": {
+          "n": 13,
+          "em": 92.307692,
+          "f1": 97.15324
+        },
+        "gi_act": {
+          "n": 50,
+          "em": 62.0,
+          "f1": 79.215453
+        },
+        "patent_act": {
+          "n": 151,
+          "em": 87.417219,
+          "f1": 96.457611
+        },
+        "plant_varieties_farmers_rights_act": {
+          "n": 82,
+          "em": 47.560976,
+          "f1": 70.800094
+        },
+        "semiconductor_layout_design_act": {
+          "n": 46,
+          "em": 78.26087,
+          "f1": 96.792115
+        },
+        "trademark_act": {
+          "n": 46,
+          "em": 56.521739,
+          "f1": 87.990752
+        }
+      },
+      "inference_protocol": {
+        "input_format": "[CLS] question [SEP] context [SEP]",
+        "max_seq_length": 384,
+        "doc_stride": 128,
+        "batch_size": 16,
+        "max_answer_tokens": null,
+        "truncation": "only_second",
+        "span_decoding": "exhaustive constrained start<=end",
+        "window_selection": "maximum summed start/end logit",
+        "prediction_text": "literal source-context character slice"
+      },
+      "predictions_file": "experiments/dapt/equal_update/evaluations/val/D_M_s7_100.json"
+    },
+    "D_M_s42_100": {
+      "schema_version": 2,
+      "run_key": "D_M_s42_100",
+      "evaluated_at": "2026-09-30T09:07:57+05:30",
+      "split": "val",
+      "checkpoint": "artifacts/models/equal_update/D_M_s42_ipr/final",
+      "checkpoint_sha256": "7db564ba415bd9d02406e017e7f4fc31c08ea2a456cac15a0a4ecf358916e05d",
+      "experiment": "D",
+      "condition": "M",
+      "seed": 42,
+      "fraction": 100,
+      "n": 408,
+      "em": 74.509804,
+      "f1": 88.711871,
+      "char_f1_diagnostic": 91.029161,
+      "per_act": {
+        "copyright_act": {
+          "n": 20,
+          "em": 95.0,
+          "f1": 99.915254
+        },
+        "design_act": {
+          "n": 13,
+          "em": 84.615385,
+          "f1": 97.090701
+        },
+        "gi_act": {
+          "n": 50,
+          "em": 62.0,
+          "f1": 77.35113
+        },
+        "patent_act": {
+          "n": 151,
+          "em": 89.403974,
+          "f1": 97.795703
+        },
+        "plant_varieties_farmers_rights_act": {
+          "n": 82,
+          "em": 51.219512,
+          "f1": 69.776003
+        },
+        "semiconductor_layout_design_act": {
+          "n": 46,
+          "em": 82.608696,
+          "f1": 96.352941
+        },
+        "trademark_act": {
+          "n": 46,
+          "em": 60.869565,
+          "f1": 90.117045
+        }
+      },
+      "inference_protocol": {
+        "input_format": "[CLS] question [SEP] context [SEP]",
+        "max_seq_length": 384,
+        "doc_stride": 128,
+        "batch_size": 16,
+        "max_answer_tokens": null,
+        "truncation": "only_second",
+        "span_decoding": "exhaustive constrained start<=end",
+        "window_selection": "maximum summed start/end logit",
+        "prediction_text": "literal source-context character slice"
+      },
+      "predictions_file": "experiments/dapt/equal_update/evaluations/val/D_M_s42_100.json"
+    },
+    "D_M_s99_100": {
+      "schema_version": 2,
+      "run_key": "D_M_s99_100",
+      "evaluated_at": "2026-09-30T19:16:22+05:30",
+      "split": "val",
+      "checkpoint": "artifacts/models/equal_update/D_M_s99_ipr/final",
+      "checkpoint_sha256": "56d7726d4292c195bb4d54e3f8ae48f923fe5bdda645d4b1d47fe3d700c199c8",
+      "experiment": "D",
+      "condition": "M",
+      "seed": 99,
+      "fraction": 100,
+      "n": 408,
+      "em": 72.54902,
+      "f1": 88.762335,
+      "char_f1_diagnostic": 90.93368,
+      "per_act": {
+        "copyright_act": {
+          "n": 20,
+          "em": 85.0,
+          "f1": 89.942155
+        },
+        "design_act": {
+          "n": 13,
+          "em": 84.615385,
+          "f1": 97.090701
+        },
+        "gi_act": {
+          "n": 50,
+          "em": 56.0,
+          "f1": 76.38902
+        },
+        "patent_act": {
+          "n": 151,
+          "em": 87.417219,
+          "f1": 96.774371
+        },
+        "plant_varieties_farmers_rights_act": {
+          "n": 82,
+          "em": 54.878049,
+          "f1": 75.087462
+        },
+        "semiconductor_layout_design_act": {
+          "n": 46,
+          "em": 80.434783,
+          "f1": 97.768367
+        },
+        "trademark_act": {
+          "n": 46,
+          "em": 56.521739,
+          "f1": 88.415494
+        }
+      },
+      "inference_protocol": {
+        "input_format": "[CLS] question [SEP] context [SEP]",
+        "max_seq_length": 384,
+        "doc_stride": 128,
+        "batch_size": 16,
+        "max_answer_tokens": null,
+        "truncation": "only_second",
+        "span_decoding": "exhaustive constrained start<=end",
+        "window_selection": "maximum summed start/end logit",
+        "prediction_text": "literal source-context character slice"
+      },
+      "predictions_file": "experiments/dapt/equal_update/evaluations/val/D_M_s99_100.json"
+    },
+    "D_M_s123_100": {
+      "schema_version": 2,
+      "run_key": "D_M_s123_100",
+      "evaluated_at": "2026-10-01T07:17:13+05:30",
+      "split": "val",
+      "checkpoint": "artifacts/models/equal_update/D_M_s123_ipr/final",
+      "checkpoint_sha256": "4890ab214cdf5346961555c98c0439b78ff330845a7f79a13bc0b1d282d7cfd4",
+      "experiment": "D",
+      "condition": "M",
+      "seed": 123,
+      "fraction": 100,
+      "n": 408,
+      "em": 70.588235,
+      "f1": 87.492336,
+      "char_f1_diagnostic": 89.816426,
+      "per_act": {
+        "copyright_act": {
+          "n": 20,
+          "em": 75.0,
+          "f1": 89.594252
+        },
+        "design_act": {
+          "n": 13,
+          "em": 92.307692,
+          "f1": 97.15324
+        },
+        "gi_act": {
+          "n": 50,
+          "em": 58.0,
+          "f1": 78.277928
+        },
+        "patent_act": {
+          "n": 151,
+          "em": 85.430464,
+          "f1": 94.737254
+        },
+        "plant_varieties_farmers_rights_act": {
+          "n": 82,
+          "em": 47.560976,
+          "f1": 70.508704
+        },
+        "semiconductor_layout_design_act": {
+          "n": 46,
+          "em": 86.956522,
+          "f1": 99.67673
+        },
+        "trademark_act": {
+          "n": 46,
+          "em": 52.173913,
+          "f1": 88.172413
+        }
+      },
+      "inference_protocol": {
+        "input_format": "[CLS] question [SEP] context [SEP]",
+        "max_seq_length": 384,
+        "doc_stride": 128,
+        "batch_size": 16,
+        "max_answer_tokens": null,
+        "truncation": "only_second",
+        "span_decoding": "exhaustive constrained start<=end",
+        "window_selection": "maximum summed start/end logit",
+        "prediction_text": "literal source-context character slice"
+      },
+      "predictions_file": "experiments/dapt/equal_update/evaluations/val/D_M_s123_100.json"
+    },
+    "D_M_s2026_100": {
+      "schema_version": 2,
+      "run_key": "D_M_s2026_100",
+      "evaluated_at": "2026-10-01T19:49:11+05:30",
+      "split": "val",
+      "checkpoint": "artifacts/models/equal_update/D_M_s2026_ipr/final",
+      "checkpoint_sha256": "f3d173f6672625c31ffd1bdcaa2e55b09779df5106d4d8188db68dfa2f525eb8",
+      "experiment": "D",
+      "condition": "M",
+      "seed": 2026,
+      "fraction": 100,
+      "n": 408,
+      "em": 74.264706,
+      "f1": 89.58458,
+      "char_f1_diagnostic": 92.196044,
+      "per_act": {
+        "copyright_act": {
+          "n": 20,
+          "em": 80.0,
+          "f1": 94.514252
+        },
+        "design_act": {
+          "n": 13,
+          "em": 76.923077,
+          "f1": 96.998023
+        },
+        "gi_act": {
+          "n": 50,
+          "em": 62.0,
+          "f1": 83.101782
+        },
+        "patent_act": {
+          "n": 151,
+          "em": 85.430464,
+          "f1": 96.683654
+        },
+        "plant_varieties_farmers_rights_act": {
+          "n": 82,
+          "em": 57.317073,
+          "f1": 73.414191
+        },
+        "semiconductor_layout_design_act": {
+          "n": 46,
+          "em": 91.304348,
+          "f1": 98.142256
+        },
+        "trademark_act": {
+          "n": 46,
+          "em": 60.869565,
+          "f1": 89.35698
+        }
+      },
+      "inference_protocol": {
+        "input_format": "[CLS] question [SEP] context [SEP]",
+        "max_seq_length": 384,
+        "doc_stride": 128,
+        "batch_size": 16,
+        "max_answer_tokens": null,
+        "truncation": "only_second",
+        "span_decoding": "exhaustive constrained start<=end",
+        "window_selection": "maximum summed start/end logit",
+        "prediction_text": "literal source-context character slice"
+      },
+      "predictions_file": "experiments/dapt/equal_update/evaluations/val/D_M_s2026_100.json"
+    }
+  }
+}

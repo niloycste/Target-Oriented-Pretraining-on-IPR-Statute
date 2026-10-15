@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "locked": true,
+  "status": "post-hoc sensitivity; frozen before Experiment D canonical test evaluation",
+  "created_at": "2026-10-02T13:41:14+05:30",
+  "sha256": {
+    "experiments/dapt/equal_update/EXPERIMENT_D_PROTOCOL.json": "eb6554e7a8da3a2045fcda9e4c46cb6b2f311cf38ea1d551947155cf7f4f8afc",
+    "experiments/dapt/equal_update/DRY_RUN_REPORT.json": "5eab33b01c050e0f66cbdd3f15981c5cb7f0456dca272c07f20d0eb05e8fbd65",
+    "experiments/dapt/equal_update/validation_results.json": "663dc74c6d8e263d06331d17eb7e311cecc616ade63c7e9ec28aa6fc5e512a6a",
+    "data/splits/train_squad.jsonl": "ba0d79c66e6bd3378136d816c3a1eba8e83ded73fca3c7b1787e51b569e5bce4",
+    "data/splits/val_squad.jsonl": "6fe6c3bcfa70360f62fd66b34eab9bf2bae4b9965b60f4d68e0117b9f8018028",
+    "data/splits/val.jsonl": "30e1e05c383864a928822092b1091e27424642c339819465bc891c2e6e4036d5",
+    "data/splits/test.jsonl": "851b3c0130fd21bd3da2c961a4d06e1f84f69ced3fa5487e780884b811734082",
+    "experiments/dapt/final_cpu/corpus_A.jsonl": "d1104445014bdafc4f9d64dc69934574a760db9937ad0832a87f26749170e945",
+    "experiments/dapt/final_cpu/corpus_S.jsonl": "8ed2308222d47954f7e2a73068319a7b2e384c89cd626f06725486f16f59217a",
+    "experiments/dapt/final_cpu/corpus_M.jsonl": "1c74adcf8574ffd40e70447e11dd30d079d5dcb083e695be47ca7d415e85c6e6",
+    "experiments/dapt/equal_update/generated_scripts/D_A_s123_ipr.py": "1508384a26034122a7786fc0e76ff721ae8db52e2e85798ab7deb8f400f7be42",
+    "experiments/dapt/equal_update/generated_scripts/D_A_s123_mlm.py": "429873f59e9976f43b7132547867d130a853b61a6ad33e2cc6346230d80c2255",
+    "experiments/dapt/equal_update/generated_scripts/D_A_s123_squad.py": "815236adfd97ebb2833a28df27b6b44f8c0ee3212195f87d6112ba4231d0105b",
+    "experiments/dapt/equal_update/generated_scripts/D_A_s2026_ipr.py": "b6a26966193e221d36700a5c12ee17c27fedc4397a94b25add1d5cf3e5723400",
+    "experiments/dapt/equal_update/generated_scripts/D_A_s2026_mlm.py": "785d39317f627bcc0d72d2db71236f84c8ff39aa646ac2eb6d8083725e4b2fde",
+    "experiments/dapt/equal_update/generated_scripts/D_A_s2026_squad.py": "83dd1f4e704e902609725d3b5f9014369d38c7689086688247853396550b59d0",
+    "experiments/dapt/equal_update/generated_scripts/D_A_s42_ipr.py": "5253dbcf89d0a8b271298f76a8f6128a22936c31112d84a3bbcdd6461ae691f1",
+    "experiments/dapt/equal_update/generated_scripts/D_A_s42_mlm.py": "e286f23cfab9b1f1f4634cc0e32125472467dba2f1cd7f91ba9e591b38c8eb6c",
+    "experiments/dapt/equal_update/generated_scripts/D_A_s42_squad.py": "bc89798d07307cbd66558f0359bc8f05cbc90eb15983bd2b8180821a4bfc6329",
+    "experiments/dapt/equal_update/generated_scripts/D_A_s7_ipr.py": "41a2ec1e36a0edc20d883d6c1ef7a5507d819b7461beb1def6ecda160eb288b5",
+    "experiments/dapt/equal_update/generated_scripts/D_A_s7_mlm.py": "fa6e4b15b0c3309e53c8d8b99f58019dedb2c2f95a6ce275c8d625a5334144d6",
+    "experiments/dapt/equal_update/generated_scripts/D_A_s7_squad.py": "971d2d14cdefe8d562106e166dac30098b6ee12471ee87ee213ba00e84343c88",
+    "experiments/dapt/equal_update/generated_scripts/D_A_s99_ipr.py": "7312b12dab6ba725bf71bf8b7149e2e2c5bd9060d7154b45d0d0ee10a89cbf90",
+    "experiments/dapt/equal_update/generated_scripts/D_A_s99_mlm.py": "5a0434e4e7ab0dc8a756bb1dd85da0e4a64874a346125eaaf85ce661962f8672",
+    "experiments/dapt/equal_update/generated_scripts/D_A_s99_squad.py": "8d28ca3bbf79e6e4c1adb3c697aee1ff19e8d994286f2157f43c92695615c8a6",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s123_ipr.py": "69317471572538970da747d83f5a55b8ffc6d9d4670aad21190f2202ce4846c1",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s123_mlm.py": "da5eee0d7f5b3314d148f486add5bb829669e20c6a795e6333d61962ff3b667d",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s123_squad.py": "65321dc3ddc9b4668c501214cda051b13a6d12c1b7696b374cf572d93b665ae7",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s2026_ipr.py": "f06d695aefc61ffe10bd71d5d4eea5fda318338edc2679b643d84266b71e52e4",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s2026_mlm.py": "e2eaf5dab0028b765b9f11457e6283034c81e55555c24970251e2a8969b8e5e5",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s2026_squad.py": "d1f223a5ebfc77a39b29fbf4990768f17e5c3c4fa8f8bbe5fad5be19a42de28e",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s42_ipr.py": "17f0f4dc340d18bed4ee8168e76656ccfd8b385df7510161806fe48070e6adc2",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s42_mlm.py": "4c055a477cab799e3f6d7a0cb993175bc1955239047df4db5d22c5b7bb6d6956",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s42_squad.py": "79f35a7b2b0b1a6cec07bfb8ced6a03e3987d736c28e5de24ba7fea3e42acb20",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s7_ipr.py": "5e79389d258e883f612c6ac494e40b50a743f3cf4f64506000fe2f0959067ba2",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s7_mlm.py": "31e6a65f89ccb23d313b0548297e04a99a407c9f3fda7e9af357eb93d39fb612",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s7_squad.py": "8bd701559ea98419057a711de246e59b2cb4983f60b1bb178bda560d9e38a73f",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s99_ipr.py": "925f8955badf6b9df2b60e7036724210723cbae8abe9a19ed478da57b61c50dc",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s99_mlm.py": "707acf0975b1a2ccea058229e0efa00ca4c56ecd345022673e8f35973d631991",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s99_squad.py": "1673cb24aa6db19b48db4aa52ebf1f9fb20a12d22c786712fcdb5ad62e34e2b0",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s123_ipr.py": "838f3dadb004ad16c602870d94fff29ffa8bef2f46f8618763d4c5392a97c157",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s123_mlm.py": "156f875b708e3bb43e40358fd844f1d3a4fa14388d1d0221f509dd5416f3e585",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s123_squad.py": "7977db2fcaff9de61ca0a70aae8ddf7d513b6c6265d62d8c16f1bf390274f99c",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s2026_ipr.py": "0bb8f38ffa61ed3be92b675701b52025cdc1f7158a5dec82fc799f21ffc90b1c",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s2026_mlm.py": "bb9667e4020d538fc606146e0e28b4d9d67a8c09b3b294b61954d2bb9324529f",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s2026_squad.py": "c8f5adcb737b910164e9995e2d3cd47736c3b9bc6977eaf916e27a467e973c3b",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s42_ipr.py": "22c8935d4b6eb6ef6739bedf9ac01072fbcb75777a4b20ab58f5e03dd40ad3e5",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s42_mlm.py": "1ec49e66cbaf6e868a4dd34957938c3ee8286902c707ad7868aa82d6f4752c7f",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s42_squad.py": "17c57423173e97455fa8857d44685ef255d7065091e637671361225ab094fb37",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s7_ipr.py": "9da1b18ec73bf782e6385cf30aa3a1ff703cc6c8c678018ef34e0ae892306b47",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s7_mlm.py": "f2b6cef99d29a33387914db54a7d9222562c9737817b3bf2c5e5c93f62c7e2d9",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s7_squad.py": "c7193cec82c78a49f7b90047c1284e65aa2d8a7197603e23d318416a3cf07c0c",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s99_ipr.py": "03b1076f2913bba2e6984a17d682c5bea53d9d8c1bf25c33d455e1ee79b8a88f",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s99_mlm.py": "e9ad547fabdb67501fb1bb4ab1127928e014453c3adcc07d50baa125158dc950",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s99_squad.py": "e683ebe587370fb3e87e259fae0200e6a21fcd361304381f631ef67c85642aa0",
+    "scripts/dapt_equal_update/__init__.py": "05215b6e90fac710c9047db6ac5e04841979b35ba1029ea1d22cde14804969b4",
+    "scripts/dapt_equal_update/analyse_experiment_d.py": "5a608c58b3024afe9101aedbd3dc52c96faf763e08313eda806256ca7193f722",
+    "scripts/dapt_equal_update/evaluate_experiment_d.py": "894b9e44f922d39123f0bc90d1c915af18eea756eecbba0892f1d5e0edbe5078",
+    "scripts/dapt_equal_update/freeze_test_analysis.py": "528ccb6275406a4b7b36d6b7ff80920d80a4ba2a00e0b924887550e2ee8f1a4c",
+    "scripts/dapt_equal_update/run_experiment_d.py": "642c0974563e2ac7c2500b32b1d2a23097c96d8207afc84698a0a1ff815a1aca",
+    "scripts/dapt_equal_update/smoke_test.py": "98cb38aaf8feb62d6525c8a417aeeeaceed6db7c96f9f5b62939cd9a964e26ce",
+    "scripts/dapt_equal_update/telemetry.py": "0c48c69c7719b046dbfbec1e79a1bfae58c0f4141358198dc452d0056f99f240",
+    "C:\\Users\\USER\\.cache\\huggingface\\datasets\\rajpurkar___squad\\plain_text\\0.0.0\\7b6d24c440a36b6815f21b70d25016731768db1f\\squad-train.arrow": "c1a065b0dcedb5578bb69b6f2febb0b47a87d4c95d5139beaf5fe2eb867c944b",
+    "C:\\Users\\USER\\.cache\\huggingface\\datasets\\rajpurkar___squad\\plain_text\\0.0.0\\7b6d24c440a36b6815f21b70d25016731768db1f\\squad-validation.arrow": "f9533e6e987e1d3adab4de0feb4ee2b2bdce8e2fd408c3899c8f106e7285daef"
+  },
+  "reviewed_checkpoints": {
+    "D_N_s7_100": {
+      "path": "artifacts/models/final_cpu/A_N_s7_ipr/final",
+      "sha256": "24e2a722bae7dd8d3cfa07928744465159d23701a23a855d87c7dc81d17e7866"
+    },
+    "D_N_s42_100": {
+      "path": "artifacts/models/final_cpu/A_N_s42_ipr/final",
+      "sha256": "983785cc5c168743540eec02488849e2da00652d1331c25259252e26391e6ffe"
+    },
+    "D_N_s99_100": {
+      "path": "artifacts/models/final_cpu/A_N_s99_ipr/final",
+      "sha256": "f91a40205b378547426f95364dd101c977bb6bb31a44efdbf23cddfb7fcaf3e3"
+    },
+    "D_N_s123_100": {
+      "path": "artifacts/models/final_cpu/A_N_s123_ipr/final",
+      "sha256": "8f149ca8a55a8a7445c008702cf3c6709bcdc00ea2835d0899c56979c294c4ad"
+    },
+    "D_N_s2026_100": {
+      "path": "artifacts/models/final_cpu/A_N_s2026_ipr/final",
+      "sha256": "ca5d9f26abb5fe329d6c100887fa13c148e3fb42187ea6ec59fdba94ba972735"
+    },
+    "D_A_s7_100": {
+      "path": "artifacts/models/equal_update/D_A_s7_ipr/final",
+      "sha256": "634a4d32c461919e6de80b645d26b52e73df47f63d2478138fca846f75756876"
+    },
+    "D_A_s42_100": {
+      "path": "artifacts/models/equal_update/D_A_s42_ipr/final",
+      "sha256": "44ce308f21ea237b5d34236f31a1590cd87ea231754f77002ba8893f85c17d9f"
+    },
+    "D_A_s99_100": {
+      "path": "artifacts/models/equal_update/D_A_s99_ipr/final",
+      "sha256": "2fb0d65076a54e5986f70776a18f701387bebe0774bfc04d71af4e0a30f3626f"
+    },
+    "D_A_s123_100": {
+      "path": "artifacts/models/equal_update/D_A_s123_ipr/final",
+      "sha256": "138bdbae536394264260ffc5d70438dbca23bf9cea40ab450b3919f1e50aead8"
+    },
+    "D_A_s2026_100": {
+      "path": "artifacts/models/equal_update/D_A_s2026_ipr/final",
+      "sha256": "6e33c989f8a43388dd071bce8452084297c637d59653ab6cac4ce58eb2f3311c"
+    },
+    "D_S_s7_100": {
+      "path": "artifacts/models/equal_update/D_S_s7_ipr/final",
+      "sha256": "fc8022458ac0cf5d889fc5d135f8f393876156a51d011ae0795ccc880001fbb9"
+    },
+    "D_S_s42_100": {
+      "path": "artifacts/models/equal_update/D_S_s42_ipr/final",
+      "sha256": "c05f1147d3e45aeb2686d5cec7cc475e99c3122d3b2e11d07a6450aea1cb8243"
+    },
+    "D_S_s99_100": {
+      "path": "artifacts/models/equal_update/D_S_s99_ipr/final",
+      "sha256": "d5547ffeda4d15715263095f5b7f74c70a1227f8681fbb33e7799acbd0df7196"
+    },
+    "D_S_s123_100": {
+      "path": "artifacts/models/equal_update/D_S_s123_ipr/final",
+      "sha256": "3affbafc2967ec9157614ffe428604ccaa653412c0ce4f384c4501deb437c87d"
+    },
+    "D_S_s2026_100": {
+      "path": "artifacts/models/equal_update/D_S_s2026_ipr/final",
+      "sha256": "ea7793f666f2bb3caf8b8be0d9aba0bab487bd58d2f3d823807c61c2743c05c9"
+    },
+    "D_M_s7_100": {
+      "path": "artifacts/models/equal_update/D_M_s7_ipr/final",
+      "sha256": "0160e1cfc14d6106965c2bd446cf9e229ba9ddebe2278d268e95029baa6e8a29"
+    },
+    "D_M_s42_100": {
+      "path": "artifacts/models/equal_update/D_M_s42_ipr/final",
+      "sha256": "7db564ba415bd9d02406e017e7f4fc31c08ea2a456cac15a0a4ecf358916e05d"
+    },
+    "D_M_s99_100": {
+      "path": "artifacts/models/equal_update/D_M_s99_ipr/final",
+      "sha256": "56d7726d4292c195bb4d54e3f8ae48f923fe5bdda645d4b1d47fe3d700c199c8"
+    },
+    "D_M_s123_100": {
+      "path": "artifacts/models/equal_update/D_M_s123_ipr/final",
+      "sha256": "4890ab214cdf5346961555c98c0439b78ff330845a7f79a13bc0b1d282d7cfd4"
+    },
+    "D_M_s2026_100": {
+      "path": "artifacts/models/equal_update/D_M_s2026_ipr/final",
+      "sha256": "f3d173f6672625c31ffd1bdcaa2e55b09779df5106d4d8188db68dfa2f525eb8"
+    }
+  },
+  "analysis": {
+    "primary": "seed-blocked ANOVA for F1 across N/A/S/M",
+    "secondary": "paired DAPT-minus-N intervals and Holm-adjusted tests",
+    "replication_unit": "complete training seed"
+  }
+}

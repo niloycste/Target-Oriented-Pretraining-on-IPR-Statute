@@ -1,0 +1,135 @@
+{
+  "checked_at": "2026-09-13T10:52:34.336360+05:30",
+  "expected_readers": 47,
+  "saved_validation_runs": 47,
+  "validation_errors": [],
+  "analysis_lock_mismatches": [
+    "scripts/09_dapt_final/run_final_experiments.py"
+  ],
+  "validation_summaries": [
+    {
+      "experiment": "A",
+      "condition": "A",
+      "fraction": 100,
+      "seeds": 5,
+      "em_mean": 72.990196,
+      "f1_mean": 88.6227044,
+      "f1_sd": 0.6573757934931868
+    },
+    {
+      "experiment": "A",
+      "condition": "M",
+      "fraction": 100,
+      "seeds": 5,
+      "em_mean": 72.9411766,
+      "f1_mean": 88.732516,
+      "f1_sd": 0.6627054950703944
+    },
+    {
+      "experiment": "A",
+      "condition": "N",
+      "fraction": 100,
+      "seeds": 5,
+      "em_mean": 72.5980392,
+      "f1_mean": 88.9726158,
+      "f1_sd": 1.003831141656652
+    },
+    {
+      "experiment": "A",
+      "condition": "S",
+      "fraction": 100,
+      "seeds": 5,
+      "em_mean": 73.0392158,
+      "f1_mean": 88.871945,
+      "f1_sd": 0.520348545794065
+    },
+    {
+      "experiment": "B",
+      "condition": "S_STYLE",
+      "fraction": 100,
+      "seeds": 3,
+      "em_mean": 72.79411766666666,
+      "f1_mean": 88.629479,
+      "f1_sd": 0.6054833891883363
+    },
+    {
+      "experiment": "C",
+      "condition": "A",
+      "fraction": 25,
+      "seeds": 3,
+      "em_mean": 66.09477133333333,
+      "f1_mean": 84.82928933333334,
+      "f1_sd": 1.249869508851757
+    },
+    {
+      "experiment": "C",
+      "condition": "A",
+      "fraction": 50,
+      "seeds": 3,
+      "em_mean": 69.117647,
+      "f1_mean": 85.48871166666667,
+      "f1_sd": 1.4561085672058733
+    },
+    {
+      "experiment": "C",
+      "condition": "M",
+      "fraction": 25,
+      "seeds": 3,
+      "em_mean": 66.17647066666666,
+      "f1_mean": 84.73419866666667,
+      "f1_sd": 1.3426783610084507
+    },
+    {
+      "experiment": "C",
+      "condition": "M",
+      "fraction": 50,
+      "seeds": 3,
+      "em_mean": 69.19934633333334,
+      "f1_mean": 86.03306933333333,
+      "f1_sd": 0.5307155247515742
+    },
+    {
+      "experiment": "C",
+      "condition": "N",
+      "fraction": 25,
+      "seeds": 3,
+      "em_mean": 65.76797366666666,
+      "f1_mean": 84.62908833333334,
+      "f1_sd": 1.2230226179766006
+    },
+    {
+      "experiment": "C",
+      "condition": "N",
+      "fraction": 50,
+      "seeds": 3,
+      "em_mean": 68.62745100000001,
+      "f1_mean": 85.90302166666667,
+      "f1_sd": 1.824116211040659
+    },
+    {
+      "experiment": "C",
+      "condition": "S",
+      "fraction": 25,
+      "seeds": 3,
+      "em_mean": 66.33986933333334,
+      "f1_mean": 85.004706,
+      "f1_sd": 1.1396847911150656
+    },
+    {
+      "experiment": "C",
+      "condition": "S",
+      "fraction": 50,
+      "seeds": 3,
+      "em_mean": 69.03594766666667,
+      "f1_mean": 85.36428233333334,
+      "f1_sd": 1.249135812443678
+    }
+  ],
+  "missing_final_outputs": [
+    "results.json",
+    "FINAL_STATISTICS.json",
+    "MLM_DIAGNOSTIC_RESULTS.json",
+    "QA_DIFFICULTY_DIAGNOSTICS.json"
+  ],
+  "scope": "Saved checkpoint hashes and saved validation-score aggregation; no retraining or inference"
+}

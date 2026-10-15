@@ -1,0 +1,245 @@
+\begin{thebibliography}{31}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{\url{https://doi.org/#1}}
+\providecommand{\eprint}[2][]{\url{#2}}
+ \bibcommenthead
+
+\bibitem[{Anonymous(2026)}]{anonymous2026indiciprbenchmark}
+Anonymous (2026) Companion benchmark paper on extractive question answering
+  over indian intellectual property statutes. Accepted resource paper;
+  proceedings publication forthcoming
+
+\bibitem[{Beltagy et~al.(2019)Beltagy, Lo, and
+  Cohan}]{beltagySciBERTPretrainedLanguage2019}
+Beltagy I, Lo K, Cohan A (2019) {SciBERT}: A pretrained language model for
+  scientific text. In: Proceedings of the 2019 Conference on Empirical Methods
+  in Natural Language Processing and the 9th International Joint Conference on
+  Natural Language Processing. Association for Computational Linguistics, pp
+  3615--3620, \doi{10.18653/v1/D19-1371},
+  \urlprefix\url{https://aclanthology.org/D19-1371/}
+
+\bibitem[{Chalkidis et~al.(2020)Chalkidis, Fergadiotis, Malakasiotis, Aletras,
+  and Androutsopoulos}]{chalkidisLEGALBERTMuppetsStraight2020}
+Chalkidis I, Fergadiotis M, Malakasiotis P, et~al (2020) {LEGAL}-{BERT}: The
+  muppets straight out of law school. In: Findings of the Association for
+  Computational Linguistics: EMNLP 2020. Association for Computational
+  Linguistics, pp 2898--2904, \doi{10.18653/v1/2020.findings-emnlp.261},
+  \urlprefix\url{https://aclanthology.org/2020.findings-emnlp.261/}
+
+\bibitem[{Chalkidis et~al.(2022)Chalkidis, Jana, Hartung, Bommarito,
+  Androutsopoulos, Katz, and Aletras}]{chalkidisLexGLUEBenchmarkDataset2022}
+Chalkidis I, Jana A, Hartung D, et~al (2022) {LexGLUE}: A benchmark dataset for
+  legal language understanding in english. In: Proceedings of the 60th Annual
+  Meeting of the Association for Computational Linguistics (Volume 1: Long
+  Papers). Association for Computational Linguistics, pp 4310--4330,
+  \doi{10.18653/v1/2022.acl-long.297},
+  \urlprefix\url{https://aclanthology.org/2022.acl-long.297/}
+
+\bibitem[{Chalkidis et~al.(2023)Chalkidis, Garneau, Goanta, Katz, and
+  S{\o}gaard}]{chalkidisLeXFilesLegalLAMA2023}
+Chalkidis I, Garneau N, Goanta C, et~al (2023) {LeXFiles} and {LegalLAMA}:
+  Facilitating english multinational legal language model development. In:
+  Proceedings of the 61st Annual Meeting of the Association for Computational
+  Linguistics (Volume 1: Long Papers). Association for Computational
+  Linguistics, pp 15513--15535, \doi{10.18653/v1/2023.acl-long.865},
+  \urlprefix\url{https://aclanthology.org/2023.acl-long.865/}
+
+\bibitem[{Chen et~al.(2023)Chen, Yao, Zhao, Zhang, Sun, Liu, and
+  Shen}]{chen2023equals}
+Chen A, Yao F, Zhao X, et~al (2023) {EQUALS}: A real-world dataset for legal
+  question answering via reading chinese laws. In: Proceedings of the
+  Nineteenth International Conference on Artificial Intelligence and Law.
+  Association for Computing Machinery, pp 71--80,
+  \doi{10.1145/3594536.3595159},
+  \urlprefix\url{https://doi.org/10.1145/3594536.3595159}
+
+\bibitem[{Chen et~al.(2025)Chen, Lian, Hsieh, Huang, Shao, Chiu, Lin, Chen,
+  Lee, Huang, and See}]{chenContinualPretraining2025}
+Chen PE, Lian DC, Hsieh SK, et~al (2025) Continual pre-training is (not) what
+  you need in domain adaptation. In: Proceedings of the 17th Asian Conference
+  on Machine Learning, Proceedings of Machine Learning Research, vol 304. PMLR,
+  pp 543--557, \urlprefix\url{https://proceedings.mlr.press/v304/chen26a.html}
+
+\bibitem[{Devlin et~al.(2019)Devlin, Chang, Lee, and
+  Toutanova}]{devlinBERTPretrainingDeep2019}
+Devlin J, Chang MW, Lee K, et~al (2019) {BERT}: Pre-training of deep
+  bidirectional transformers for language understanding. In: Proceedings of the
+  2019 Conference of the North American Chapter of the Association for
+  Computational Linguistics: Human Language Technologies, Volume 1 (Long and
+  Short Papers). Association for Computational Linguistics, pp 4171--4186,
+  \doi{10.18653/v1/N19-1423},
+  \urlprefix\url{https://aclanthology.org/N19-1423/}
+
+\bibitem[{{Gemma Team}(2025)}]{team2025gemma3}
+{Gemma Team} (2025) Gemma 3 technical report. Tech. Rep. arXiv:2503.19786,
+  Google DeepMind, \doi{10.48550/arXiv.2503.19786},
+  \urlprefix\url{https://deepmind.google/models/gemma/gemma-3/}
+
+\bibitem[{Greco and Tagarelli(2024)}]{grecoBringingOrderTransformer2024}
+Greco CM, Tagarelli A (2024) Bringing order into the realm of transformer-based
+  language models for artificial intelligence and law. Artificial Intelligence
+  and Law 32:863--1010. \doi{10.1007/s10506-023-09374-7},
+  \urlprefix\url{https://doi.org/10.1007/s10506-023-09374-7}
+
+\bibitem[{Grootendorst(2020)}]{grootendorst2020keybert}
+Grootendorst M (2020) {KeyBERT}: Minimal keyword extraction with {BERT}.
+  \doi{10.5281/zenodo.4461265}
+
+\bibitem[{Gururangan et~al.(2020)Gururangan, Marasovi{\'c}, Swayamdipta, Lo,
+  Beltagy, Downey, and Smith}]{gururanganDontStopPretraining2020}
+Gururangan S, Marasovi{\'c} A, Swayamdipta S, et~al (2020) Don't stop
+  pretraining: Adapt language models to domains and tasks. In: Proceedings of
+  the 58th Annual Meeting of the Association for Computational Linguistics.
+  Association for Computational Linguistics, pp 8342--8360,
+  \doi{10.18653/v1/2020.acl-main.740},
+  \urlprefix\url{https://aclanthology.org/2020.acl-main.740/}
+
+\bibitem[{Han et~al.(2026)Han, Burgess, and Shareghi}]{han2026legal}
+Han J, Burgess P, Shareghi E (2026) Legal citation prediction with {LLM}s: A
+  comparative evaluation of instruction tuning, retrieval, and
+  jurisdiction-specific pre-training on the {AusLaw} citation benchmark.
+  Artificial Intelligence and Law \doi{10.1007/s10506-026-09506-9},
+  \urlprefix\url{https://doi.org/10.1007/s10506-026-09506-9}
+
+\bibitem[{Henderson et~al.(2022)Henderson, Krass, Zheng, Guha, Manning,
+  Jurafsky, and Ho}]{hendersonPileLaw2022}
+Henderson P, Krass MS, Zheng L, et~al (2022) Pile of law: Learning responsible
+  data filtering from the law and a 256{GB} open-source legal dataset. In:
+  Advances in Neural Information Processing Systems 35. Curran Associates,
+  Inc., \doi{10.52202/068431-2119},
+  \urlprefix\url{https://proceedings.neurips.cc/paper_files/paper/2022/hash/bc218a0c656e49d4b086975a9c785f47-Abstract-Datasets_and_Benchmarks.html}
+
+\bibitem[{Hendrycks et~al.(2021)Hendrycks, Burns, Chen, and
+  Ball}]{hendrycksCUADExpertAnnotatedNLP2021}
+Hendrycks D, Burns C, Chen A, et~al (2021) {CUAD}: An expert-annotated nlp
+  dataset for legal contract review. In: Proceedings of the Neural Information
+  Processing Systems Track on Datasets and Benchmarks,
+  \urlprefix\url{https://datasets-benchmarks-proceedings.neurips.cc/paper_files/paper/2021/hash/6ea9ab1baa0efb9e19094440c317e21b-Abstract-round1.html}
+
+\bibitem[{Italiani et~al.(2025)Italiani, Moro, and
+  Ragazzi}]{italiani2025enhancing}
+Italiani P, Moro G, Ragazzi L (2025) Enhancing legal question answering with
+  data generation and knowledge distillation from large language models.
+  Artificial Intelligence and Law \doi{10.1007/s10506-025-09463-9},
+  \urlprefix\url{https://doi.org/10.1007/s10506-025-09463-9}
+
+\bibitem[{Jeong et~al.(2024)Jeong, Garg, Lipton, and
+  Oberst}]{jeongMedicalAdaptation2024}
+Jeong DP, Garg S, Lipton ZC, et~al (2024) Medical adaptation of large language
+  and vision-language models: Are we making progress? In: Proceedings of the
+  2024 Conference on Empirical Methods in Natural Language Processing.
+  Association for Computational Linguistics, pp 12143--12170,
+  \doi{10.18653/v1/2024.emnlp-main.677},
+  \urlprefix\url{https://aclanthology.org/2024.emnlp-main.677/}
+
+\bibitem[{Kang et~al.(2025)Kang, Ardalani, Kuchnik, Emad, Elhoushi, Sengupta,
+  Li, Raghavendra, Jia, and Wu}]{kangSyntheticDataPretraining2025}
+Kang F, Ardalani N, Kuchnik M, et~al (2025) Demystifying synthetic data in
+  {LLM} pre-training: A systematic study of scaling laws, benefits, and
+  pitfalls. In: Proceedings of the 2025 Conference on Empirical Methods in
+  Natural Language Processing. Association for Computational Linguistics, pp
+  10739--10758, \doi{10.18653/v1/2025.emnlp-main.544},
+  \urlprefix\url{https://aclanthology.org/2025.emnlp-main.544/}
+
+\bibitem[{Lee et~al.(2020)Lee, Yoon, Kim, Kim, Kim, So, and
+  Kang}]{leeBioBERTPretrainedBiomedical2020}
+Lee J, Yoon W, Kim S, et~al (2020) {BioBERT}: A pre-trained biomedical language
+  representation model for biomedical text mining. Bioinformatics
+  36(4):1234--1240. \doi{10.1093/bioinformatics/btz682},
+  \urlprefix\url{https://academic.oup.com/bioinformatics/article/36/4/1234/5566506}
+
+\bibitem[{Liang et~al.(2024)Liang, Hu, Zuo, Gong, Lou, Liu, Huang, and
+  Jiao}]{liangTaskOrientedInDomain2024}
+Liang X, Hu X, Zuo S, et~al (2024) Task oriented in-domain data augmentation.
+  In: Proceedings of the 2024 Conference on Empirical Methods in Natural
+  Language Processing. Association for Computational Linguistics, pp
+  20889--20907, \doi{10.18653/v1/2024.emnlp-main.1162},
+  \urlprefix\url{https://aclanthology.org/2024.emnlp-main.1162/}
+
+\bibitem[{Mosbach et~al.(2021)Mosbach, Andriushchenko, and
+  Klakow}]{mosbachStabilityBERT2021}
+Mosbach M, Andriushchenko M, Klakow D (2021) On the stability of fine-tuning
+  {BERT}: Misconceptions, explanations, and strong baselines. In: International
+  Conference on Learning Representations,
+  \urlprefix\url{https://openreview.net/forum?id=nzpLWnVAyah}
+
+\bibitem[{Nair and Modani(2023)}]{nairLegalCharacteristics2023}
+Nair I, Modani N (2023) Exploiting language characteristics for legal
+  domain-specific language model pretraining. In: Findings of the Association
+  for Computational Linguistics: EACL 2023. Association for Computational
+  Linguistics, pp 2516--2526, \doi{10.18653/v1/2023.findings-eacl.190},
+  \urlprefix\url{https://aclanthology.org/2023.findings-eacl.190/}
+
+\bibitem[{Nigam et~al.(2026)Nigam, Mishra, Shallum, Ghosh, and
+  Bhattacharya}]{nigam2026ailqa}
+Nigam SK, Mishra SK, Shallum N, et~al (2026) {AILQA}: Evaluating {AI}-driven
+  legal question answering systems for the indian legal system. Artificial
+  Intelligence and Law \doi{10.1007/s10506-026-09537-2},
+  \urlprefix\url{https://doi.org/10.1007/s10506-026-09537-2}, published online
+  24 August 2026
+
+\bibitem[{Niklaus et~al.(2024)Niklaus, Matoshi, St{\"u}rmer, Chalkidis, and
+  Ho}]{niklausMultiLegalPile2024}
+Niklaus J, Matoshi V, St{\"u}rmer M, et~al (2024) {MultiLegalPile}: A 689{GB}
+  multilingual legal corpus. In: Proceedings of the 62nd Annual Meeting of the
+  Association for Computational Linguistics (Volume 1: Long Papers).
+  Association for Computational Linguistics, pp 15077--15094,
+  \doi{10.18653/v1/2024.acl-long.805},
+  \urlprefix\url{https://aclanthology.org/2024.acl-long.805/}
+
+\bibitem[{Paul et~al.(2023)Paul, Mandal, Goyal, and Ghosh}]{paul2023pre}
+Paul S, Mandal A, Goyal P, et~al (2023) Pre-trained language models for the
+  legal domain: A case study on indian law. In: Proceedings of the Nineteenth
+  International Conference on Artificial Intelligence and Law. Association for
+  Computing Machinery, pp 187--196, \doi{10.1145/3594536.3595165},
+  \urlprefix\url{https://doi.org/10.1145/3594536.3595165}
+
+\bibitem[{Rajpurkar et~al.(2016)Rajpurkar, Zhang, Lopyrev, and
+  Liang}]{rajpurkarSQuAD100000Questions2016}
+Rajpurkar P, Zhang J, Lopyrev K, et~al (2016) {SQuAD}: 100,000+ questions for
+  machine comprehension of text. In: Proceedings of the 2016 Conference on
+  Empirical Methods in Natural Language Processing. Association for
+  Computational Linguistics, pp 2383--2392, \doi{10.18653/v1/D16-1264},
+  \urlprefix\url{https://aclanthology.org/D16-1264/}
+
+\bibitem[{Sengupta et~al.(2025)Sengupta, Heaton, Ghosh, Yin, Nakov, and
+  Wang}]{senguptaTOPTrainingTargetOrientedPretraining2025}
+Sengupta S, Heaton C, Ghosh S, et~al (2025) {TOP}-training: Target-oriented
+  pretraining for medical extractive question answering. In: Proceedings of the
+  31st International Conference on Computational Linguistics. Association for
+  Computational Linguistics, pp 7035--7054,
+  \urlprefix\url{https://aclanthology.org/2025.coling-main.469/}
+
+\bibitem[{Sovrano et~al.(2025)Sovrano, Palmirani, Sapienza, and
+  Pistone}]{sovrano2025discolqa}
+Sovrano F, Palmirani M, Sapienza S, et~al (2025) {DiscoLQA}: Zero-shot
+  discourse-based legal question answering on european legislation. Artificial
+  Intelligence and Law 33(2):323--359. \doi{10.1007/s10506-023-09387-2},
+  \urlprefix\url{https://doi.org/10.1007/s10506-023-09387-2}
+
+\bibitem[{Yang et~al.(2025)Yang, Band, Li, Cand{\`e}s, and
+  Hashimoto}]{yangSyntheticContinuedPretraining2025}
+Yang Z, Band N, Li S, et~al (2025) Synthetic continued pretraining. In: The
+  Thirteenth International Conference on Learning Representations,
+  \urlprefix\url{https://proceedings.iclr.cc/paper_files/paper/2025/hash/6dcf277ea32ce3288914faf369fe6de0-Abstract-Conference.html}
+
+\bibitem[{Yuan et~al.(2024)Yuan, Kao, Wu, Cheung, Chan, Cheung, Chan, and
+  Chen}]{yuan2024bringing}
+Yuan M, Kao B, Wu TH, et~al (2024) Bringing legal knowledge to the public by
+  constructing a legal question bank using large-scale pre-trained language
+  model. Artificial Intelligence and Law 32(3):769--805.
+  \doi{10.1007/s10506-023-09367-6},
+  \urlprefix\url{https://doi.org/10.1007/s10506-023-09367-6}
+
+\bibitem[{Zheng et~al.(2021)Zheng, Guha, Anderson, Henderson, and
+  Ho}]{zhengWhenDoesPretraining2021}
+Zheng L, Guha N, Anderson BR, et~al (2021) When does pretraining help?
+  assessing self-supervised learning for law and the {CaseHOLD} dataset of
+  53,000+ legal holdings. In: Proceedings of the Eighteenth International
+  Conference on Artificial Intelligence and Law. Association for Computing
+  Machinery, pp 159--168, \doi{10.1145/3462757.3466088},
+  \urlprefix\url{https://doi.org/10.1145/3462757.3466088}
+
+\end{thebibliography}

@@ -1,0 +1,485 @@
+{
+  "schema_version": 1,
+  "split": "test",
+  "design": "post-hoc equal-update sensitivity; seed is the replication unit",
+  "cells_present": 20,
+  "training_telemetry": {
+    "all_complete": true,
+    "runs": {
+      "D_A_s7": {
+        "status": "complete",
+        "optimizer_updates": 100,
+        "warmup_steps": 10,
+        "configured_peak_learning_rate": 2e-05,
+        "observed_peak_learning_rate": 2e-05,
+        "observed_final_learning_rate": 0.0,
+        "total_non_padding_tokens_processed": 447947,
+        "telemetry_file": "artifacts/models/equal_update/D_A_s7_mlm/training_telemetry.json"
+      },
+      "D_A_s42": {
+        "status": "complete",
+        "optimizer_updates": 100,
+        "warmup_steps": 10,
+        "configured_peak_learning_rate": 2e-05,
+        "observed_peak_learning_rate": 2e-05,
+        "observed_final_learning_rate": 0.0,
+        "total_non_padding_tokens_processed": 445956,
+        "telemetry_file": "artifacts/models/equal_update/D_A_s42_mlm/training_telemetry.json"
+      },
+      "D_A_s99": {
+        "status": "complete",
+        "optimizer_updates": 100,
+        "warmup_steps": 10,
+        "configured_peak_learning_rate": 2e-05,
+        "observed_peak_learning_rate": 2e-05,
+        "observed_final_learning_rate": 0.0,
+        "total_non_padding_tokens_processed": 444219,
+        "telemetry_file": "artifacts/models/equal_update/D_A_s99_mlm/training_telemetry.json"
+      },
+      "D_A_s123": {
+        "status": "complete",
+        "optimizer_updates": 100,
+        "warmup_steps": 10,
+        "configured_peak_learning_rate": 2e-05,
+        "observed_peak_learning_rate": 2e-05,
+        "observed_final_learning_rate": 0.0,
+        "total_non_padding_tokens_processed": 444528,
+        "telemetry_file": "artifacts/models/equal_update/D_A_s123_mlm/training_telemetry.json"
+      },
+      "D_A_s2026": {
+        "status": "complete",
+        "optimizer_updates": 100,
+        "warmup_steps": 10,
+        "configured_peak_learning_rate": 2e-05,
+        "observed_peak_learning_rate": 2e-05,
+        "observed_final_learning_rate": 0.0,
+        "total_non_padding_tokens_processed": 446134,
+        "telemetry_file": "artifacts/models/equal_update/D_A_s2026_mlm/training_telemetry.json"
+      },
+      "D_S_s7": {
+        "status": "complete",
+        "optimizer_updates": 100,
+        "warmup_steps": 10,
+        "configured_peak_learning_rate": 2e-05,
+        "observed_peak_learning_rate": 2e-05,
+        "observed_final_learning_rate": 0.0,
+        "total_non_padding_tokens_processed": 477080,
+        "telemetry_file": "artifacts/models/equal_update/D_S_s7_mlm/training_telemetry.json"
+      },
+      "D_S_s42": {
+        "status": "complete",
+        "optimizer_updates": 100,
+        "warmup_steps": 10,
+        "configured_peak_learning_rate": 2e-05,
+        "observed_peak_learning_rate": 2e-05,
+        "observed_final_learning_rate": 0.0,
+        "total_non_padding_tokens_processed": 477001,
+        "telemetry_file": "artifacts/models/equal_update/D_S_s42_mlm/training_telemetry.json"
+      },
+      "D_S_s99": {
+        "status": "complete",
+        "optimizer_updates": 100,
+        "warmup_steps": 10,
+        "configured_peak_learning_rate": 2e-05,
+        "observed_peak_learning_rate": 2e-05,
+        "observed_final_learning_rate": 0.0,
+        "total_non_padding_tokens_processed": 477394,
+        "telemetry_file": "artifacts/models/equal_update/D_S_s99_mlm/training_telemetry.json"
+      },
+      "D_S_s123": {
+        "status": "complete",
+        "optimizer_updates": 100,
+        "warmup_steps": 10,
+        "configured_peak_learning_rate": 2e-05,
+        "observed_peak_learning_rate": 2e-05,
+        "observed_final_learning_rate": 0.0,
+        "total_non_padding_tokens_processed": 476715,
+        "telemetry_file": "artifacts/models/equal_update/D_S_s123_mlm/training_telemetry.json"
+      },
+      "D_S_s2026": {
+        "status": "complete",
+        "optimizer_updates": 100,
+        "warmup_steps": 10,
+        "configured_peak_learning_rate": 2e-05,
+        "observed_peak_learning_rate": 2e-05,
+        "observed_final_learning_rate": 0.0,
+        "total_non_padding_tokens_processed": 477172,
+        "telemetry_file": "artifacts/models/equal_update/D_S_s2026_mlm/training_telemetry.json"
+      },
+      "D_M_s7": {
+        "status": "complete",
+        "optimizer_updates": 100,
+        "warmup_steps": 10,
+        "configured_peak_learning_rate": 2e-05,
+        "observed_peak_learning_rate": 2e-05,
+        "observed_final_learning_rate": 0.0,
+        "total_non_padding_tokens_processed": 460887,
+        "telemetry_file": "artifacts/models/equal_update/D_M_s7_mlm/training_telemetry.json"
+      },
+      "D_M_s42": {
+        "status": "complete",
+        "optimizer_updates": 100,
+        "warmup_steps": 10,
+        "configured_peak_learning_rate": 2e-05,
+        "observed_peak_learning_rate": 2e-05,
+        "observed_final_learning_rate": 0.0,
+        "total_non_padding_tokens_processed": 460181,
+        "telemetry_file": "artifacts/models/equal_update/D_M_s42_mlm/training_telemetry.json"
+      },
+      "D_M_s99": {
+        "status": "complete",
+        "optimizer_updates": 100,
+        "warmup_steps": 10,
+        "configured_peak_learning_rate": 2e-05,
+        "observed_peak_learning_rate": 2e-05,
+        "observed_final_learning_rate": 0.0,
+        "total_non_padding_tokens_processed": 460723,
+        "telemetry_file": "artifacts/models/equal_update/D_M_s99_mlm/training_telemetry.json"
+      },
+      "D_M_s123": {
+        "status": "complete",
+        "optimizer_updates": 100,
+        "warmup_steps": 10,
+        "configured_peak_learning_rate": 2e-05,
+        "observed_peak_learning_rate": 2e-05,
+        "observed_final_learning_rate": 0.0,
+        "total_non_padding_tokens_processed": 460859,
+        "telemetry_file": "artifacts/models/equal_update/D_M_s123_mlm/training_telemetry.json"
+      },
+      "D_M_s2026": {
+        "status": "complete",
+        "optimizer_updates": 100,
+        "warmup_steps": 10,
+        "configured_peak_learning_rate": 2e-05,
+        "observed_peak_learning_rate": 2e-05,
+        "observed_final_learning_rate": 0.0,
+        "total_non_padding_tokens_processed": 461490,
+        "telemetry_file": "artifacts/models/equal_update/D_M_s2026_mlm/training_telemetry.json"
+      }
+    }
+  },
+  "f1": {
+    "descriptives": {
+      "N": {
+        "n": 5,
+        "mean": 85.862624,
+        "sd": 1.082675,
+        "ci95": [
+          84.518305,
+          87.206943
+        ]
+      },
+      "A": {
+        "n": 5,
+        "mean": 85.851511,
+        "sd": 0.463279,
+        "ci95": [
+          85.276274,
+          86.426748
+        ]
+      },
+      "S": {
+        "n": 5,
+        "mean": 85.912546,
+        "sd": 0.836811,
+        "ci95": [
+          84.873508,
+          86.951584
+        ]
+      },
+      "M": {
+        "n": 5,
+        "mean": 85.581982,
+        "sd": 0.754776,
+        "ci95": [
+          84.644803,
+          86.519161
+        ]
+      }
+    },
+    "blocked_anova": {
+      "F_condition": 0.474458,
+      "df": [
+        3,
+        12
+      ],
+      "p_condition": 0.70582827,
+      "partial_eta_sq": 0.106037,
+      "ss_condition": 0.333774,
+      "ss_seed": 7.813077,
+      "ss_error": 2.813935
+    },
+    "dapt_minus_n": {
+      "A-N": {
+        "contrast": "A-N",
+        "seeds": [
+          7,
+          42,
+          99,
+          123,
+          2026
+        ],
+        "per_seed_differences": [
+          0.847456,
+          1.044863,
+          -0.33891,
+          0.015936,
+          -1.624909
+        ],
+        "mean_difference": -0.011113,
+        "sd": 1.068263,
+        "ci95": [
+          -1.337537,
+          1.315311
+        ],
+        "t": -0.023261,
+        "p_uncorrected": 0.98255614,
+        "p_holm": 1.0
+      },
+      "S-N": {
+        "contrast": "S-N",
+        "seeds": [
+          7,
+          42,
+          99,
+          123,
+          2026
+        ],
+        "per_seed_differences": [
+          0.125196,
+          1.100923,
+          -0.379859,
+          0.100216,
+          -0.696865
+        ],
+        "mean_difference": 0.049922,
+        "sd": 0.681029,
+        "ci95": [
+          -0.795687,
+          0.895531
+        ],
+        "t": 0.163913,
+        "p_uncorrected": 0.8777486,
+        "p_holm": 1.0
+      },
+      "M-N": {
+        "contrast": "M-N",
+        "seeds": [
+          7,
+          42,
+          99,
+          123,
+          2026
+        ],
+        "per_seed_differences": [
+          0.13938,
+          0.711561,
+          -0.483906,
+          -0.689004,
+          -1.081239
+        ],
+        "mean_difference": -0.280642,
+        "sd": 0.708858,
+        "ci95": [
+          -1.160805,
+          0.599521
+        ],
+        "t": -0.885275,
+        "p_uncorrected": 0.42601843,
+        "p_holm": 1.0
+      }
+    },
+    "per_seed": {
+      "N": {
+        "7": 85.027167,
+        "42": 85.357889,
+        "99": 85.525348,
+        "123": 85.648909,
+        "2026": 87.753806
+      },
+      "A": {
+        "7": 85.874623,
+        "42": 86.402752,
+        "99": 85.186438,
+        "123": 85.664845,
+        "2026": 86.128897
+      },
+      "S": {
+        "7": 85.152363,
+        "42": 86.458812,
+        "99": 85.145489,
+        "123": 85.749125,
+        "2026": 87.056941
+      },
+      "M": {
+        "7": 85.166547,
+        "42": 86.06945,
+        "99": 85.041442,
+        "123": 84.959905,
+        "2026": 86.672567
+      }
+    }
+  },
+  "em": {
+    "descriptives": {
+      "N": {
+        "n": 5,
+        "mean": 65.755814,
+        "sd": 2.714562,
+        "ci95": [
+          62.38524,
+          69.126388
+        ]
+      },
+      "A": {
+        "n": 5,
+        "mean": 65.755814,
+        "sd": 1.151838,
+        "ci95": [
+          64.325618,
+          67.18601
+        ]
+      },
+      "S": {
+        "n": 5,
+        "mean": 65.465116,
+        "sd": 2.110313,
+        "ci95": [
+          62.844816,
+          68.085416
+        ]
+      },
+      "M": {
+        "n": 5,
+        "mean": 65.290698,
+        "sd": 1.901794,
+        "ci95": [
+          62.929309,
+          67.652087
+        ]
+      }
+    },
+    "blocked_anova": {
+      "F_condition": 0.245407,
+      "df": [
+        3,
+        12
+      ],
+      "p_condition": 0.86301018,
+      "partial_eta_sq": 0.057805,
+      "ss_condition": 0.790123,
+      "ss_seed": 54.184698,
+      "ss_error": 12.878581
+    },
+    "dapt_minus_n": {
+      "A-N": {
+        "contrast": "A-N",
+        "seeds": [
+          7,
+          42,
+          99,
+          123,
+          2026
+        ],
+        "per_seed_differences": [
+          1.453488,
+          1.162791,
+          -0.290698,
+          0.872093,
+          -3.197674
+        ],
+        "mean_difference": -0.0,
+        "sd": 1.906232,
+        "ci95": [
+          -2.3669,
+          2.3669
+        ],
+        "t": -0.0,
+        "p_uncorrected": 1.0,
+        "p_holm": 1.0
+      },
+      "S-N": {
+        "contrast": "S-N",
+        "seeds": [
+          7,
+          42,
+          99,
+          123,
+          2026
+        ],
+        "per_seed_differences": [
+          0.581395,
+          2.616279,
+          -1.162791,
+          -0.290698,
+          -3.197674
+        ],
+        "mean_difference": -0.290698,
+        "sd": 2.14605,
+        "ci95": [
+          -2.95537,
+          2.373975
+        ],
+        "t": -0.302891,
+        "p_uncorrected": 0.77707129,
+        "p_holm": 1.0
+      },
+      "M-N": {
+        "contrast": "M-N",
+        "seeds": [
+          7,
+          42,
+          99,
+          123,
+          2026
+        ],
+        "per_seed_differences": [
+          0.0,
+          1.162791,
+          -1.162791,
+          0.290698,
+          -2.616279
+        ],
+        "mean_difference": -0.465116,
+        "sd": 1.462183,
+        "ci95": [
+          -2.280657,
+          1.350424
+        ],
+        "t": -0.711287,
+        "p_uncorrected": 0.5161871,
+        "p_holm": 1.0
+      }
+    },
+    "per_seed": {
+      "N": {
+        "7": 63.372093,
+        "42": 65.697674,
+        "99": 65.116279,
+        "123": 64.244186,
+        "2026": 70.348837
+      },
+      "A": {
+        "7": 64.825581,
+        "42": 66.860465,
+        "99": 64.825581,
+        "123": 65.116279,
+        "2026": 67.151163
+      },
+      "S": {
+        "7": 63.953488,
+        "42": 68.313953,
+        "99": 63.953488,
+        "123": 63.953488,
+        "2026": 67.151163
+      },
+      "M": {
+        "7": 63.372093,
+        "42": 66.860465,
+        "99": 63.953488,
+        "123": 64.534884,
+        "2026": 67.732558
+      }
+    }
+  }
+}

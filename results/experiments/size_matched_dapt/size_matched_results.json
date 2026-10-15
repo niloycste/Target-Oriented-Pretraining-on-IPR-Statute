@@ -1,0 +1,66 @@
+{
+  "H' (loss rule)": {
+    "n": 344,
+    "em": 64.8256,
+    "f1": 85.538,
+    "inference_protocol": {
+      "input_format": "[CLS] question [SEP] context [SEP]",
+      "max_seq_length": 384,
+      "doc_stride": 128,
+      "batch_size": 64,
+      "max_answer_tokens": null,
+      "truncation": "only_second",
+      "span_decoding": "exhaustive constrained start<=end",
+      "window_selection": "maximum summed start/end logit",
+      "prediction_text": "literal source-context character slice"
+    }
+  },
+  "auth901": {
+    "n": 344,
+    "em": 65.6977,
+    "f1": 85.8175,
+    "inference_protocol": {
+      "input_format": "[CLS] question [SEP] context [SEP]",
+      "max_seq_length": 384,
+      "doc_stride": 128,
+      "batch_size": 64,
+      "max_answer_tokens": null,
+      "truncation": "only_second",
+      "span_decoding": "exhaustive constrained start<=end",
+      "window_selection": "maximum summed start/end logit",
+      "prediction_text": "literal source-context character slice"
+    }
+  },
+  "synth901": {
+    "n": 344,
+    "em": 66.2791,
+    "f1": 85.9376,
+    "inference_protocol": {
+      "input_format": "[CLS] question [SEP] context [SEP]",
+      "max_seq_length": 384,
+      "doc_stride": 128,
+      "batch_size": 64,
+      "max_answer_tokens": null,
+      "truncation": "only_second",
+      "span_decoding": "exhaustive constrained start<=end",
+      "window_selection": "maximum summed start/end logit",
+      "prediction_text": "literal source-context character slice"
+    }
+  },
+  "mixed901": {
+    "n": 344,
+    "em": 66.2791,
+    "f1": 85.37,
+    "inference_protocol": {
+      "input_format": "[CLS] question [SEP] context [SEP]",
+      "max_seq_length": 384,
+      "doc_stride": 128,
+      "batch_size": 64,
+      "max_answer_tokens": null,
+      "truncation": "only_second",
+      "span_decoding": "exhaustive constrained start<=end",
+      "window_selection": "maximum summed start/end logit",
+      "prediction_text": "literal source-context character slice"
+    }
+  }
+}

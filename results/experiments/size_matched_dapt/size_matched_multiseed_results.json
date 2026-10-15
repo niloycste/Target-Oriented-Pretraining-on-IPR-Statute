@@ -1,0 +1,170 @@
+{
+  "auth901_s42": {
+    "n": 344,
+    "em": 65.6977,
+    "f1": 85.8175,
+    "inference_protocol": {
+      "input_format": "[CLS] question [SEP] context [SEP]",
+      "max_seq_length": 384,
+      "doc_stride": 128,
+      "batch_size": 64,
+      "max_answer_tokens": null,
+      "truncation": "only_second",
+      "span_decoding": "exhaustive constrained start<=end",
+      "window_selection": "maximum summed start/end logit",
+      "prediction_text": "literal source-context character slice"
+    }
+  },
+  "auth901_s7": {
+    "n": 344,
+    "em": 65.6977,
+    "f1": 85.663,
+    "inference_protocol": {
+      "input_format": "[CLS] question [SEP] context [SEP]",
+      "max_seq_length": 384,
+      "doc_stride": 128,
+      "batch_size": 64,
+      "max_answer_tokens": null,
+      "truncation": "only_second",
+      "span_decoding": "exhaustive constrained start<=end",
+      "window_selection": "maximum summed start/end logit",
+      "prediction_text": "literal source-context character slice"
+    }
+  },
+  "auth901_s99": {
+    "n": 344,
+    "em": 67.4419,
+    "f1": 86.6062,
+    "inference_protocol": {
+      "input_format": "[CLS] question [SEP] context [SEP]",
+      "max_seq_length": 384,
+      "doc_stride": 128,
+      "batch_size": 64,
+      "max_answer_tokens": null,
+      "truncation": "only_second",
+      "span_decoding": "exhaustive constrained start<=end",
+      "window_selection": "maximum summed start/end logit",
+      "prediction_text": "literal source-context character slice"
+    }
+  },
+  "synth901_s42": {
+    "n": 344,
+    "em": 66.2791,
+    "f1": 85.9376,
+    "inference_protocol": {
+      "input_format": "[CLS] question [SEP] context [SEP]",
+      "max_seq_length": 384,
+      "doc_stride": 128,
+      "batch_size": 64,
+      "max_answer_tokens": null,
+      "truncation": "only_second",
+      "span_decoding": "exhaustive constrained start<=end",
+      "window_selection": "maximum summed start/end logit",
+      "prediction_text": "literal source-context character slice"
+    }
+  },
+  "synth901_s7": {
+    "n": 344,
+    "em": 67.7326,
+    "f1": 86.4922,
+    "inference_protocol": {
+      "input_format": "[CLS] question [SEP] context [SEP]",
+      "max_seq_length": 384,
+      "doc_stride": 128,
+      "batch_size": 64,
+      "max_answer_tokens": null,
+      "truncation": "only_second",
+      "span_decoding": "exhaustive constrained start<=end",
+      "window_selection": "maximum summed start/end logit",
+      "prediction_text": "literal source-context character slice"
+    }
+  },
+  "synth901_s99": {
+    "n": 344,
+    "em": 66.2791,
+    "f1": 84.7636,
+    "inference_protocol": {
+      "input_format": "[CLS] question [SEP] context [SEP]",
+      "max_seq_length": 384,
+      "doc_stride": 128,
+      "batch_size": 64,
+      "max_answer_tokens": null,
+      "truncation": "only_second",
+      "span_decoding": "exhaustive constrained start<=end",
+      "window_selection": "maximum summed start/end logit",
+      "prediction_text": "literal source-context character slice"
+    }
+  },
+  "mixed901_s42": {
+    "n": 344,
+    "em": 66.2791,
+    "f1": 85.37,
+    "inference_protocol": {
+      "input_format": "[CLS] question [SEP] context [SEP]",
+      "max_seq_length": 384,
+      "doc_stride": 128,
+      "batch_size": 64,
+      "max_answer_tokens": null,
+      "truncation": "only_second",
+      "span_decoding": "exhaustive constrained start<=end",
+      "window_selection": "maximum summed start/end logit",
+      "prediction_text": "literal source-context character slice"
+    }
+  },
+  "mixed901_s7": {
+    "n": 344,
+    "em": 65.1163,
+    "f1": 84.6073,
+    "inference_protocol": {
+      "input_format": "[CLS] question [SEP] context [SEP]",
+      "max_seq_length": 384,
+      "doc_stride": 128,
+      "batch_size": 64,
+      "max_answer_tokens": null,
+      "truncation": "only_second",
+      "span_decoding": "exhaustive constrained start<=end",
+      "window_selection": "maximum summed start/end logit",
+      "prediction_text": "literal source-context character slice"
+    }
+  },
+  "mixed901_s99": {
+    "n": 344,
+    "em": 67.1512,
+    "f1": 85.9619,
+    "inference_protocol": {
+      "input_format": "[CLS] question [SEP] context [SEP]",
+      "max_seq_length": 384,
+      "doc_stride": 128,
+      "batch_size": 64,
+      "max_answer_tokens": null,
+      "truncation": "only_second",
+      "span_decoding": "exhaustive constrained start<=end",
+      "window_selection": "maximum summed start/end logit",
+      "prediction_text": "literal source-context character slice"
+    }
+  },
+  "_summary": {
+    "auth901": {
+      "f1_mean": 86.03,
+      "f1_sd": 0.51,
+      "em_mean": 66.28,
+      "n": 3
+    },
+    "synth901": {
+      "f1_mean": 85.73,
+      "f1_sd": 0.88,
+      "em_mean": 66.76,
+      "n": 3
+    },
+    "mixed901": {
+      "f1_mean": 85.31,
+      "f1_sd": 0.68,
+      "em_mean": 66.18,
+      "n": 3
+    },
+    "_spread_vs_sd": {
+      "spread": 0.72,
+      "pooled_sd": 0.71
+    }
+  }
+}

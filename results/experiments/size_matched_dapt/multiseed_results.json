@@ -1,0 +1,124 @@
+{
+  "A": {
+    "description": "InLegalBERT -> IPR direct",
+    "seeds": {
+      "42": {
+        "n": 344,
+        "em": 63.6628,
+        "f1": 85.0249,
+        "inference_protocol": {
+          "input_format": "[CLS] question [SEP] context [SEP]",
+          "max_seq_length": 384,
+          "doc_stride": 128,
+          "batch_size": 64,
+          "max_answer_tokens": null,
+          "truncation": "only_second",
+          "span_decoding": "exhaustive constrained start<=end",
+          "window_selection": "maximum summed start/end logit",
+          "prediction_text": "literal source-context character slice"
+        }
+      },
+      "7": {
+        "n": 344,
+        "em": 64.2442,
+        "f1": 84.2895,
+        "inference_protocol": {
+          "input_format": "[CLS] question [SEP] context [SEP]",
+          "max_seq_length": 384,
+          "doc_stride": 128,
+          "batch_size": 64,
+          "max_answer_tokens": null,
+          "truncation": "only_second",
+          "span_decoding": "exhaustive constrained start<=end",
+          "window_selection": "maximum summed start/end logit",
+          "prediction_text": "literal source-context character slice"
+        }
+      },
+      "99": {
+        "n": 344,
+        "em": 64.2442,
+        "f1": 84.7251,
+        "inference_protocol": {
+          "input_format": "[CLS] question [SEP] context [SEP]",
+          "max_seq_length": 384,
+          "doc_stride": 128,
+          "batch_size": 64,
+          "max_answer_tokens": null,
+          "truncation": "only_second",
+          "span_decoding": "exhaustive constrained start<=end",
+          "window_selection": "maximum summed start/end logit",
+          "prediction_text": "literal source-context character slice"
+        }
+      }
+    },
+    "em_mean": 64.05,
+    "em_sd": 0.34,
+    "em_min": 63.6628,
+    "em_max": 64.2442,
+    "f1_mean": 84.68,
+    "f1_sd": 0.37,
+    "f1_min": 84.2895,
+    "f1_max": 85.0249
+  },
+  "C'": {
+    "description": "InLegalBERT + DAPT(Orig+Synth) -> SQuAD v1 -> IPR",
+    "seeds": {
+      "42": {
+        "n": 344,
+        "em": 67.4419,
+        "f1": 87.0367,
+        "inference_protocol": {
+          "input_format": "[CLS] question [SEP] context [SEP]",
+          "max_seq_length": 384,
+          "doc_stride": 128,
+          "batch_size": 64,
+          "max_answer_tokens": null,
+          "truncation": "only_second",
+          "span_decoding": "exhaustive constrained start<=end",
+          "window_selection": "maximum summed start/end logit",
+          "prediction_text": "literal source-context character slice"
+        }
+      },
+      "7": {
+        "n": 344,
+        "em": 64.8256,
+        "f1": 84.9228,
+        "inference_protocol": {
+          "input_format": "[CLS] question [SEP] context [SEP]",
+          "max_seq_length": 384,
+          "doc_stride": 128,
+          "batch_size": 64,
+          "max_answer_tokens": null,
+          "truncation": "only_second",
+          "span_decoding": "exhaustive constrained start<=end",
+          "window_selection": "maximum summed start/end logit",
+          "prediction_text": "literal source-context character slice"
+        }
+      },
+      "99": {
+        "n": 344,
+        "em": 63.9535,
+        "f1": 85.2105,
+        "inference_protocol": {
+          "input_format": "[CLS] question [SEP] context [SEP]",
+          "max_seq_length": 384,
+          "doc_stride": 128,
+          "batch_size": 64,
+          "max_answer_tokens": null,
+          "truncation": "only_second",
+          "span_decoding": "exhaustive constrained start<=end",
+          "window_selection": "maximum summed start/end logit",
+          "prediction_text": "literal source-context character slice"
+        }
+      }
+    },
+    "em_mean": 65.41,
+    "em_sd": 1.82,
+    "em_min": 63.9535,
+    "em_max": 67.4419,
+    "f1_mean": 85.72,
+    "f1_sd": 1.15,
+    "f1_min": 84.9228,
+    "f1_max": 87.0367
+  }
+}

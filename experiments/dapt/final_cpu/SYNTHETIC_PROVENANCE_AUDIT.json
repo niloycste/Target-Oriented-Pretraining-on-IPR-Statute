@@ -1,0 +1,121 @@
+{
+  "description": "Provenance audit of the archived synthetic pool (dapt.md sec. 4)",
+  "splits": {
+    "train": {
+      "records": 3710,
+      "unique_contexts": 898
+    },
+    "val": {
+      "records": 408,
+      "unique_contexts": 104
+    },
+    "test": {
+      "records": 344,
+      "unique_contexts": 113
+    }
+  },
+  "checks": {
+    "seed_example_contexts": {
+      "total_seeds": 5859,
+      "unique_example_contexts": 881,
+      "exemplars_not_traceable_to_train": 3,
+      "by_origin": {
+        "val": 0,
+        "test": 3,
+        "unresolved": 0
+      },
+      "contaminated_seed_entities": 19,
+      "pass": false
+    },
+    "generation_seeds": {
+      "generation_records": 13211,
+      "by_model": {
+        "gemma3:12b": 9294,
+        "gemma3:27b": 3917
+      },
+      "distinct_entities_used": 1282,
+      "entities_not_in_train_seed_pool": 0,
+      "examples_unknown": [],
+      "heldout_question_ids_present": [],
+      "pass": true
+    },
+    "pool_identity": {
+      "pool_records": 13211,
+      "pool_unique": 13211,
+      "merged_log_records": 13211,
+      "pool_records_absent_from_merged_log": 0,
+      "pass": true
+    },
+    "heldout_text_reproduction": {
+      "ngram_n": 25,
+      "exact_matches": 0,
+      "passages_overlapping_heldout_at_n": 0,
+      "decay_curve": {
+        "12": {
+          "vs_heldout": 204,
+          "vs_train_reference": 517
+        },
+        "15": {
+          "vs_heldout": 61,
+          "vs_train_reference": 99
+        },
+        "20": {
+          "vs_heldout": 16,
+          "vs_train_reference": 6
+        },
+        "25": {
+          "vs_heldout": 0,
+          "vs_train_reference": 0
+        },
+        "30": {
+          "vs_heldout": 0,
+          "vs_train_reference": 0
+        },
+        "40": {
+          "vs_heldout": 0,
+          "vs_train_reference": 0
+        }
+      },
+      "interpretation": "Short-span overlap is formulaic statutory language: it is present against the training split at a comparable rate and vanishes for both at n=25.",
+      "pass": true
+    }
+  },
+  "contaminated_seed_entities": [
+    "act omission permitted",
+    "act signed patent",
+    "agent authorised writing",
+    "amendment provisions",
+    "amendment provisions act",
+    "communications controller act",
+    "contrary section 81",
+    "controller act signed",
+    "jan vishwas amendment",
+    "mark act omission",
+    "offence relates registered",
+    "patent agent authorised",
+    "proprietor mark subject",
+    "provisions act 2023",
+    "section 81 omitted",
+    "signed patent",
+    "signed patent agent",
+    "vishwas amendment",
+    "vishwas amendment provisions"
+  ],
+  "quarantine": {
+    "rule": "drop any passage whose primary or support seed carries a held-out exemplar",
+    "pool_before": 13211,
+    "dropped": 0,
+    "dropped_pct": 0.0,
+    "clean_pool": 13211,
+    "clean_pool_12b_only": 9294,
+    "note": "dapt.md sec. 6 prefers a single generator family for the causal experiment."
+  },
+  "propagation": {
+    "contaminated_seed_entities": 19,
+    "distinct_entities_sampled_for_generation": 1282,
+    "contaminated_entities_actually_sampled": 0,
+    "finding": "The three held-out exemplars sit on seed entities that were never sampled for generation, so the defect is confined to the seed-pool artifact and did not reach any generated passage."
+  },
+  "overall_pass": true,
+  "verdict": "REUSE the archived synthetic pool -- the seed-pool defect did not propagate to any generated passage"
+}

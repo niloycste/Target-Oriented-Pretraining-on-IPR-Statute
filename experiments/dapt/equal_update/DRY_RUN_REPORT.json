@@ -1,0 +1,2808 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-09-24T15:58:47+05:30",
+  "passed": true,
+  "summary": {
+    "passed": 550,
+    "total": 550
+  },
+  "checks": [
+    {
+      "name": "D_A_s7: MLM syntax",
+      "passed": true,
+      "detail": "AST parse passed"
+    },
+    {
+      "name": "D_A_s7: BASE_MODEL",
+      "passed": true,
+      "detail": "observed='law-ai/InLegalBERT'; expected='law-ai/InLegalBERT'"
+    },
+    {
+      "name": "D_A_s7: MAX_SEQ_LENGTH",
+      "passed": true,
+      "detail": "observed=256; expected=256"
+    },
+    {
+      "name": "D_A_s7: MLM_PROBABILITY",
+      "passed": true,
+      "detail": "observed=0.15; expected=0.15"
+    },
+    {
+      "name": "D_A_s7: LEARNING_RATE",
+      "passed": true,
+      "detail": "observed=2e-05; expected=2e-05"
+    },
+    {
+      "name": "D_A_s7: WEIGHT_DECAY",
+      "passed": true,
+      "detail": "observed=0.01; expected=0.01"
+    },
+    {
+      "name": "D_A_s7: MAX_STEPS",
+      "passed": true,
+      "detail": "observed=100; expected=100"
+    },
+    {
+      "name": "D_A_s7: WARMUP_STEPS",
+      "passed": true,
+      "detail": "observed=10; expected=10"
+    },
+    {
+      "name": "D_A_s7: seed",
+      "passed": true,
+      "detail": "observed=7"
+    },
+    {
+      "name": "D_A_s7: max_steps wired",
+      "passed": true,
+      "detail": "TrainingArguments uses MAX_STEPS"
+    },
+    {
+      "name": "D_A_s7: telemetry wired",
+      "passed": true,
+      "detail": "loss/LR and exact non-padding-token telemetry enabled"
+    },
+    {
+      "name": "D_A_s7: squad exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_A_s7: squad MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_A_s7: squad DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_A_s7: squad TRAIN_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=20000; frozen=20000"
+    },
+    {
+      "name": "D_A_s7: squad VAL_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=2000; frozen=2000"
+    },
+    {
+      "name": "D_A_s7: squad BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_A_s7: squad GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_A_s7: squad LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=3e-05; frozen=3e-05"
+    },
+    {
+      "name": "D_A_s7: squad WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_A_s7: squad NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_A_s7: squad WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=200; frozen=200"
+    },
+    {
+      "name": "D_A_s7: squad SUBSET_SEED unchanged",
+      "passed": true,
+      "detail": "D=42; frozen=42"
+    },
+    {
+      "name": "D_A_s7: squad DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_A_s7: squad seed",
+      "passed": true,
+      "detail": "observed=7"
+    },
+    {
+      "name": "D_A_s7: ipr exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_A_s7: ipr MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_A_s7: ipr DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_A_s7: ipr BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_A_s7: ipr GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_A_s7: ipr LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=2e-05; frozen=2e-05"
+    },
+    {
+      "name": "D_A_s7: ipr WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_A_s7: ipr NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=3; frozen=3"
+    },
+    {
+      "name": "D_A_s7: ipr WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=50; frozen=50"
+    },
+    {
+      "name": "D_A_s7: ipr DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_A_s7: ipr seed",
+      "passed": true,
+      "detail": "observed=7"
+    },
+    {
+      "name": "D_A_s42: MLM syntax",
+      "passed": true,
+      "detail": "AST parse passed"
+    },
+    {
+      "name": "D_A_s42: BASE_MODEL",
+      "passed": true,
+      "detail": "observed='law-ai/InLegalBERT'; expected='law-ai/InLegalBERT'"
+    },
+    {
+      "name": "D_A_s42: MAX_SEQ_LENGTH",
+      "passed": true,
+      "detail": "observed=256; expected=256"
+    },
+    {
+      "name": "D_A_s42: MLM_PROBABILITY",
+      "passed": true,
+      "detail": "observed=0.15; expected=0.15"
+    },
+    {
+      "name": "D_A_s42: LEARNING_RATE",
+      "passed": true,
+      "detail": "observed=2e-05; expected=2e-05"
+    },
+    {
+      "name": "D_A_s42: WEIGHT_DECAY",
+      "passed": true,
+      "detail": "observed=0.01; expected=0.01"
+    },
+    {
+      "name": "D_A_s42: MAX_STEPS",
+      "passed": true,
+      "detail": "observed=100; expected=100"
+    },
+    {
+      "name": "D_A_s42: WARMUP_STEPS",
+      "passed": true,
+      "detail": "observed=10; expected=10"
+    },
+    {
+      "name": "D_A_s42: seed",
+      "passed": true,
+      "detail": "observed=42"
+    },
+    {
+      "name": "D_A_s42: max_steps wired",
+      "passed": true,
+      "detail": "TrainingArguments uses MAX_STEPS"
+    },
+    {
+      "name": "D_A_s42: telemetry wired",
+      "passed": true,
+      "detail": "loss/LR and exact non-padding-token telemetry enabled"
+    },
+    {
+      "name": "D_A_s42: squad exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_A_s42: squad MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_A_s42: squad DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_A_s42: squad TRAIN_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=20000; frozen=20000"
+    },
+    {
+      "name": "D_A_s42: squad VAL_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=2000; frozen=2000"
+    },
+    {
+      "name": "D_A_s42: squad BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_A_s42: squad GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_A_s42: squad LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=3e-05; frozen=3e-05"
+    },
+    {
+      "name": "D_A_s42: squad WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_A_s42: squad NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_A_s42: squad WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=200; frozen=200"
+    },
+    {
+      "name": "D_A_s42: squad SUBSET_SEED unchanged",
+      "passed": true,
+      "detail": "D=42; frozen=42"
+    },
+    {
+      "name": "D_A_s42: squad DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_A_s42: squad seed",
+      "passed": true,
+      "detail": "observed=42"
+    },
+    {
+      "name": "D_A_s42: ipr exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_A_s42: ipr MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_A_s42: ipr DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_A_s42: ipr BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_A_s42: ipr GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_A_s42: ipr LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=2e-05; frozen=2e-05"
+    },
+    {
+      "name": "D_A_s42: ipr WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_A_s42: ipr NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=3; frozen=3"
+    },
+    {
+      "name": "D_A_s42: ipr WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=50; frozen=50"
+    },
+    {
+      "name": "D_A_s42: ipr DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_A_s42: ipr seed",
+      "passed": true,
+      "detail": "observed=42"
+    },
+    {
+      "name": "D_A_s99: MLM syntax",
+      "passed": true,
+      "detail": "AST parse passed"
+    },
+    {
+      "name": "D_A_s99: BASE_MODEL",
+      "passed": true,
+      "detail": "observed='law-ai/InLegalBERT'; expected='law-ai/InLegalBERT'"
+    },
+    {
+      "name": "D_A_s99: MAX_SEQ_LENGTH",
+      "passed": true,
+      "detail": "observed=256; expected=256"
+    },
+    {
+      "name": "D_A_s99: MLM_PROBABILITY",
+      "passed": true,
+      "detail": "observed=0.15; expected=0.15"
+    },
+    {
+      "name": "D_A_s99: LEARNING_RATE",
+      "passed": true,
+      "detail": "observed=2e-05; expected=2e-05"
+    },
+    {
+      "name": "D_A_s99: WEIGHT_DECAY",
+      "passed": true,
+      "detail": "observed=0.01; expected=0.01"
+    },
+    {
+      "name": "D_A_s99: MAX_STEPS",
+      "passed": true,
+      "detail": "observed=100; expected=100"
+    },
+    {
+      "name": "D_A_s99: WARMUP_STEPS",
+      "passed": true,
+      "detail": "observed=10; expected=10"
+    },
+    {
+      "name": "D_A_s99: seed",
+      "passed": true,
+      "detail": "observed=99"
+    },
+    {
+      "name": "D_A_s99: max_steps wired",
+      "passed": true,
+      "detail": "TrainingArguments uses MAX_STEPS"
+    },
+    {
+      "name": "D_A_s99: telemetry wired",
+      "passed": true,
+      "detail": "loss/LR and exact non-padding-token telemetry enabled"
+    },
+    {
+      "name": "D_A_s99: squad exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_A_s99: squad MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_A_s99: squad DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_A_s99: squad TRAIN_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=20000; frozen=20000"
+    },
+    {
+      "name": "D_A_s99: squad VAL_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=2000; frozen=2000"
+    },
+    {
+      "name": "D_A_s99: squad BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_A_s99: squad GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_A_s99: squad LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=3e-05; frozen=3e-05"
+    },
+    {
+      "name": "D_A_s99: squad WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_A_s99: squad NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_A_s99: squad WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=200; frozen=200"
+    },
+    {
+      "name": "D_A_s99: squad SUBSET_SEED unchanged",
+      "passed": true,
+      "detail": "D=42; frozen=42"
+    },
+    {
+      "name": "D_A_s99: squad DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_A_s99: squad seed",
+      "passed": true,
+      "detail": "observed=99"
+    },
+    {
+      "name": "D_A_s99: ipr exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_A_s99: ipr MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_A_s99: ipr DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_A_s99: ipr BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_A_s99: ipr GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_A_s99: ipr LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=2e-05; frozen=2e-05"
+    },
+    {
+      "name": "D_A_s99: ipr WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_A_s99: ipr NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=3; frozen=3"
+    },
+    {
+      "name": "D_A_s99: ipr WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=50; frozen=50"
+    },
+    {
+      "name": "D_A_s99: ipr DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_A_s99: ipr seed",
+      "passed": true,
+      "detail": "observed=99"
+    },
+    {
+      "name": "D_A_s123: MLM syntax",
+      "passed": true,
+      "detail": "AST parse passed"
+    },
+    {
+      "name": "D_A_s123: BASE_MODEL",
+      "passed": true,
+      "detail": "observed='law-ai/InLegalBERT'; expected='law-ai/InLegalBERT'"
+    },
+    {
+      "name": "D_A_s123: MAX_SEQ_LENGTH",
+      "passed": true,
+      "detail": "observed=256; expected=256"
+    },
+    {
+      "name": "D_A_s123: MLM_PROBABILITY",
+      "passed": true,
+      "detail": "observed=0.15; expected=0.15"
+    },
+    {
+      "name": "D_A_s123: LEARNING_RATE",
+      "passed": true,
+      "detail": "observed=2e-05; expected=2e-05"
+    },
+    {
+      "name": "D_A_s123: WEIGHT_DECAY",
+      "passed": true,
+      "detail": "observed=0.01; expected=0.01"
+    },
+    {
+      "name": "D_A_s123: MAX_STEPS",
+      "passed": true,
+      "detail": "observed=100; expected=100"
+    },
+    {
+      "name": "D_A_s123: WARMUP_STEPS",
+      "passed": true,
+      "detail": "observed=10; expected=10"
+    },
+    {
+      "name": "D_A_s123: seed",
+      "passed": true,
+      "detail": "observed=123"
+    },
+    {
+      "name": "D_A_s123: max_steps wired",
+      "passed": true,
+      "detail": "TrainingArguments uses MAX_STEPS"
+    },
+    {
+      "name": "D_A_s123: telemetry wired",
+      "passed": true,
+      "detail": "loss/LR and exact non-padding-token telemetry enabled"
+    },
+    {
+      "name": "D_A_s123: squad exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_A_s123: squad MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_A_s123: squad DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_A_s123: squad TRAIN_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=20000; frozen=20000"
+    },
+    {
+      "name": "D_A_s123: squad VAL_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=2000; frozen=2000"
+    },
+    {
+      "name": "D_A_s123: squad BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_A_s123: squad GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_A_s123: squad LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=3e-05; frozen=3e-05"
+    },
+    {
+      "name": "D_A_s123: squad WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_A_s123: squad NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_A_s123: squad WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=200; frozen=200"
+    },
+    {
+      "name": "D_A_s123: squad SUBSET_SEED unchanged",
+      "passed": true,
+      "detail": "D=42; frozen=42"
+    },
+    {
+      "name": "D_A_s123: squad DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_A_s123: squad seed",
+      "passed": true,
+      "detail": "observed=123"
+    },
+    {
+      "name": "D_A_s123: ipr exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_A_s123: ipr MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_A_s123: ipr DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_A_s123: ipr BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_A_s123: ipr GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_A_s123: ipr LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=2e-05; frozen=2e-05"
+    },
+    {
+      "name": "D_A_s123: ipr WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_A_s123: ipr NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=3; frozen=3"
+    },
+    {
+      "name": "D_A_s123: ipr WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=50; frozen=50"
+    },
+    {
+      "name": "D_A_s123: ipr DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_A_s123: ipr seed",
+      "passed": true,
+      "detail": "observed=123"
+    },
+    {
+      "name": "D_A_s2026: MLM syntax",
+      "passed": true,
+      "detail": "AST parse passed"
+    },
+    {
+      "name": "D_A_s2026: BASE_MODEL",
+      "passed": true,
+      "detail": "observed='law-ai/InLegalBERT'; expected='law-ai/InLegalBERT'"
+    },
+    {
+      "name": "D_A_s2026: MAX_SEQ_LENGTH",
+      "passed": true,
+      "detail": "observed=256; expected=256"
+    },
+    {
+      "name": "D_A_s2026: MLM_PROBABILITY",
+      "passed": true,
+      "detail": "observed=0.15; expected=0.15"
+    },
+    {
+      "name": "D_A_s2026: LEARNING_RATE",
+      "passed": true,
+      "detail": "observed=2e-05; expected=2e-05"
+    },
+    {
+      "name": "D_A_s2026: WEIGHT_DECAY",
+      "passed": true,
+      "detail": "observed=0.01; expected=0.01"
+    },
+    {
+      "name": "D_A_s2026: MAX_STEPS",
+      "passed": true,
+      "detail": "observed=100; expected=100"
+    },
+    {
+      "name": "D_A_s2026: WARMUP_STEPS",
+      "passed": true,
+      "detail": "observed=10; expected=10"
+    },
+    {
+      "name": "D_A_s2026: seed",
+      "passed": true,
+      "detail": "observed=2026"
+    },
+    {
+      "name": "D_A_s2026: max_steps wired",
+      "passed": true,
+      "detail": "TrainingArguments uses MAX_STEPS"
+    },
+    {
+      "name": "D_A_s2026: telemetry wired",
+      "passed": true,
+      "detail": "loss/LR and exact non-padding-token telemetry enabled"
+    },
+    {
+      "name": "D_A_s2026: squad exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_A_s2026: squad MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_A_s2026: squad DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_A_s2026: squad TRAIN_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=20000; frozen=20000"
+    },
+    {
+      "name": "D_A_s2026: squad VAL_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=2000; frozen=2000"
+    },
+    {
+      "name": "D_A_s2026: squad BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_A_s2026: squad GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_A_s2026: squad LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=3e-05; frozen=3e-05"
+    },
+    {
+      "name": "D_A_s2026: squad WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_A_s2026: squad NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_A_s2026: squad WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=200; frozen=200"
+    },
+    {
+      "name": "D_A_s2026: squad SUBSET_SEED unchanged",
+      "passed": true,
+      "detail": "D=42; frozen=42"
+    },
+    {
+      "name": "D_A_s2026: squad DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_A_s2026: squad seed",
+      "passed": true,
+      "detail": "observed=2026"
+    },
+    {
+      "name": "D_A_s2026: ipr exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_A_s2026: ipr MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_A_s2026: ipr DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_A_s2026: ipr BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_A_s2026: ipr GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_A_s2026: ipr LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=2e-05; frozen=2e-05"
+    },
+    {
+      "name": "D_A_s2026: ipr WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_A_s2026: ipr NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=3; frozen=3"
+    },
+    {
+      "name": "D_A_s2026: ipr WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=50; frozen=50"
+    },
+    {
+      "name": "D_A_s2026: ipr DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_A_s2026: ipr seed",
+      "passed": true,
+      "detail": "observed=2026"
+    },
+    {
+      "name": "D_S_s7: MLM syntax",
+      "passed": true,
+      "detail": "AST parse passed"
+    },
+    {
+      "name": "D_S_s7: BASE_MODEL",
+      "passed": true,
+      "detail": "observed='law-ai/InLegalBERT'; expected='law-ai/InLegalBERT'"
+    },
+    {
+      "name": "D_S_s7: MAX_SEQ_LENGTH",
+      "passed": true,
+      "detail": "observed=256; expected=256"
+    },
+    {
+      "name": "D_S_s7: MLM_PROBABILITY",
+      "passed": true,
+      "detail": "observed=0.15; expected=0.15"
+    },
+    {
+      "name": "D_S_s7: LEARNING_RATE",
+      "passed": true,
+      "detail": "observed=2e-05; expected=2e-05"
+    },
+    {
+      "name": "D_S_s7: WEIGHT_DECAY",
+      "passed": true,
+      "detail": "observed=0.01; expected=0.01"
+    },
+    {
+      "name": "D_S_s7: MAX_STEPS",
+      "passed": true,
+      "detail": "observed=100; expected=100"
+    },
+    {
+      "name": "D_S_s7: WARMUP_STEPS",
+      "passed": true,
+      "detail": "observed=10; expected=10"
+    },
+    {
+      "name": "D_S_s7: seed",
+      "passed": true,
+      "detail": "observed=7"
+    },
+    {
+      "name": "D_S_s7: max_steps wired",
+      "passed": true,
+      "detail": "TrainingArguments uses MAX_STEPS"
+    },
+    {
+      "name": "D_S_s7: telemetry wired",
+      "passed": true,
+      "detail": "loss/LR and exact non-padding-token telemetry enabled"
+    },
+    {
+      "name": "D_S_s7: squad exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_S_s7: squad MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_S_s7: squad DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_S_s7: squad TRAIN_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=20000; frozen=20000"
+    },
+    {
+      "name": "D_S_s7: squad VAL_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=2000; frozen=2000"
+    },
+    {
+      "name": "D_S_s7: squad BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_S_s7: squad GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_S_s7: squad LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=3e-05; frozen=3e-05"
+    },
+    {
+      "name": "D_S_s7: squad WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_S_s7: squad NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_S_s7: squad WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=200; frozen=200"
+    },
+    {
+      "name": "D_S_s7: squad SUBSET_SEED unchanged",
+      "passed": true,
+      "detail": "D=42; frozen=42"
+    },
+    {
+      "name": "D_S_s7: squad DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_S_s7: squad seed",
+      "passed": true,
+      "detail": "observed=7"
+    },
+    {
+      "name": "D_S_s7: ipr exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_S_s7: ipr MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_S_s7: ipr DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_S_s7: ipr BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_S_s7: ipr GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_S_s7: ipr LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=2e-05; frozen=2e-05"
+    },
+    {
+      "name": "D_S_s7: ipr WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_S_s7: ipr NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=3; frozen=3"
+    },
+    {
+      "name": "D_S_s7: ipr WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=50; frozen=50"
+    },
+    {
+      "name": "D_S_s7: ipr DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_S_s7: ipr seed",
+      "passed": true,
+      "detail": "observed=7"
+    },
+    {
+      "name": "D_S_s42: MLM syntax",
+      "passed": true,
+      "detail": "AST parse passed"
+    },
+    {
+      "name": "D_S_s42: BASE_MODEL",
+      "passed": true,
+      "detail": "observed='law-ai/InLegalBERT'; expected='law-ai/InLegalBERT'"
+    },
+    {
+      "name": "D_S_s42: MAX_SEQ_LENGTH",
+      "passed": true,
+      "detail": "observed=256; expected=256"
+    },
+    {
+      "name": "D_S_s42: MLM_PROBABILITY",
+      "passed": true,
+      "detail": "observed=0.15; expected=0.15"
+    },
+    {
+      "name": "D_S_s42: LEARNING_RATE",
+      "passed": true,
+      "detail": "observed=2e-05; expected=2e-05"
+    },
+    {
+      "name": "D_S_s42: WEIGHT_DECAY",
+      "passed": true,
+      "detail": "observed=0.01; expected=0.01"
+    },
+    {
+      "name": "D_S_s42: MAX_STEPS",
+      "passed": true,
+      "detail": "observed=100; expected=100"
+    },
+    {
+      "name": "D_S_s42: WARMUP_STEPS",
+      "passed": true,
+      "detail": "observed=10; expected=10"
+    },
+    {
+      "name": "D_S_s42: seed",
+      "passed": true,
+      "detail": "observed=42"
+    },
+    {
+      "name": "D_S_s42: max_steps wired",
+      "passed": true,
+      "detail": "TrainingArguments uses MAX_STEPS"
+    },
+    {
+      "name": "D_S_s42: telemetry wired",
+      "passed": true,
+      "detail": "loss/LR and exact non-padding-token telemetry enabled"
+    },
+    {
+      "name": "D_S_s42: squad exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_S_s42: squad MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_S_s42: squad DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_S_s42: squad TRAIN_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=20000; frozen=20000"
+    },
+    {
+      "name": "D_S_s42: squad VAL_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=2000; frozen=2000"
+    },
+    {
+      "name": "D_S_s42: squad BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_S_s42: squad GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_S_s42: squad LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=3e-05; frozen=3e-05"
+    },
+    {
+      "name": "D_S_s42: squad WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_S_s42: squad NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_S_s42: squad WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=200; frozen=200"
+    },
+    {
+      "name": "D_S_s42: squad SUBSET_SEED unchanged",
+      "passed": true,
+      "detail": "D=42; frozen=42"
+    },
+    {
+      "name": "D_S_s42: squad DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_S_s42: squad seed",
+      "passed": true,
+      "detail": "observed=42"
+    },
+    {
+      "name": "D_S_s42: ipr exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_S_s42: ipr MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_S_s42: ipr DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_S_s42: ipr BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_S_s42: ipr GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_S_s42: ipr LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=2e-05; frozen=2e-05"
+    },
+    {
+      "name": "D_S_s42: ipr WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_S_s42: ipr NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=3; frozen=3"
+    },
+    {
+      "name": "D_S_s42: ipr WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=50; frozen=50"
+    },
+    {
+      "name": "D_S_s42: ipr DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_S_s42: ipr seed",
+      "passed": true,
+      "detail": "observed=42"
+    },
+    {
+      "name": "D_S_s99: MLM syntax",
+      "passed": true,
+      "detail": "AST parse passed"
+    },
+    {
+      "name": "D_S_s99: BASE_MODEL",
+      "passed": true,
+      "detail": "observed='law-ai/InLegalBERT'; expected='law-ai/InLegalBERT'"
+    },
+    {
+      "name": "D_S_s99: MAX_SEQ_LENGTH",
+      "passed": true,
+      "detail": "observed=256; expected=256"
+    },
+    {
+      "name": "D_S_s99: MLM_PROBABILITY",
+      "passed": true,
+      "detail": "observed=0.15; expected=0.15"
+    },
+    {
+      "name": "D_S_s99: LEARNING_RATE",
+      "passed": true,
+      "detail": "observed=2e-05; expected=2e-05"
+    },
+    {
+      "name": "D_S_s99: WEIGHT_DECAY",
+      "passed": true,
+      "detail": "observed=0.01; expected=0.01"
+    },
+    {
+      "name": "D_S_s99: MAX_STEPS",
+      "passed": true,
+      "detail": "observed=100; expected=100"
+    },
+    {
+      "name": "D_S_s99: WARMUP_STEPS",
+      "passed": true,
+      "detail": "observed=10; expected=10"
+    },
+    {
+      "name": "D_S_s99: seed",
+      "passed": true,
+      "detail": "observed=99"
+    },
+    {
+      "name": "D_S_s99: max_steps wired",
+      "passed": true,
+      "detail": "TrainingArguments uses MAX_STEPS"
+    },
+    {
+      "name": "D_S_s99: telemetry wired",
+      "passed": true,
+      "detail": "loss/LR and exact non-padding-token telemetry enabled"
+    },
+    {
+      "name": "D_S_s99: squad exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_S_s99: squad MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_S_s99: squad DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_S_s99: squad TRAIN_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=20000; frozen=20000"
+    },
+    {
+      "name": "D_S_s99: squad VAL_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=2000; frozen=2000"
+    },
+    {
+      "name": "D_S_s99: squad BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_S_s99: squad GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_S_s99: squad LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=3e-05; frozen=3e-05"
+    },
+    {
+      "name": "D_S_s99: squad WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_S_s99: squad NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_S_s99: squad WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=200; frozen=200"
+    },
+    {
+      "name": "D_S_s99: squad SUBSET_SEED unchanged",
+      "passed": true,
+      "detail": "D=42; frozen=42"
+    },
+    {
+      "name": "D_S_s99: squad DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_S_s99: squad seed",
+      "passed": true,
+      "detail": "observed=99"
+    },
+    {
+      "name": "D_S_s99: ipr exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_S_s99: ipr MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_S_s99: ipr DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_S_s99: ipr BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_S_s99: ipr GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_S_s99: ipr LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=2e-05; frozen=2e-05"
+    },
+    {
+      "name": "D_S_s99: ipr WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_S_s99: ipr NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=3; frozen=3"
+    },
+    {
+      "name": "D_S_s99: ipr WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=50; frozen=50"
+    },
+    {
+      "name": "D_S_s99: ipr DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_S_s99: ipr seed",
+      "passed": true,
+      "detail": "observed=99"
+    },
+    {
+      "name": "D_S_s123: MLM syntax",
+      "passed": true,
+      "detail": "AST parse passed"
+    },
+    {
+      "name": "D_S_s123: BASE_MODEL",
+      "passed": true,
+      "detail": "observed='law-ai/InLegalBERT'; expected='law-ai/InLegalBERT'"
+    },
+    {
+      "name": "D_S_s123: MAX_SEQ_LENGTH",
+      "passed": true,
+      "detail": "observed=256; expected=256"
+    },
+    {
+      "name": "D_S_s123: MLM_PROBABILITY",
+      "passed": true,
+      "detail": "observed=0.15; expected=0.15"
+    },
+    {
+      "name": "D_S_s123: LEARNING_RATE",
+      "passed": true,
+      "detail": "observed=2e-05; expected=2e-05"
+    },
+    {
+      "name": "D_S_s123: WEIGHT_DECAY",
+      "passed": true,
+      "detail": "observed=0.01; expected=0.01"
+    },
+    {
+      "name": "D_S_s123: MAX_STEPS",
+      "passed": true,
+      "detail": "observed=100; expected=100"
+    },
+    {
+      "name": "D_S_s123: WARMUP_STEPS",
+      "passed": true,
+      "detail": "observed=10; expected=10"
+    },
+    {
+      "name": "D_S_s123: seed",
+      "passed": true,
+      "detail": "observed=123"
+    },
+    {
+      "name": "D_S_s123: max_steps wired",
+      "passed": true,
+      "detail": "TrainingArguments uses MAX_STEPS"
+    },
+    {
+      "name": "D_S_s123: telemetry wired",
+      "passed": true,
+      "detail": "loss/LR and exact non-padding-token telemetry enabled"
+    },
+    {
+      "name": "D_S_s123: squad exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_S_s123: squad MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_S_s123: squad DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_S_s123: squad TRAIN_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=20000; frozen=20000"
+    },
+    {
+      "name": "D_S_s123: squad VAL_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=2000; frozen=2000"
+    },
+    {
+      "name": "D_S_s123: squad BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_S_s123: squad GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_S_s123: squad LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=3e-05; frozen=3e-05"
+    },
+    {
+      "name": "D_S_s123: squad WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_S_s123: squad NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_S_s123: squad WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=200; frozen=200"
+    },
+    {
+      "name": "D_S_s123: squad SUBSET_SEED unchanged",
+      "passed": true,
+      "detail": "D=42; frozen=42"
+    },
+    {
+      "name": "D_S_s123: squad DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_S_s123: squad seed",
+      "passed": true,
+      "detail": "observed=123"
+    },
+    {
+      "name": "D_S_s123: ipr exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_S_s123: ipr MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_S_s123: ipr DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_S_s123: ipr BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_S_s123: ipr GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_S_s123: ipr LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=2e-05; frozen=2e-05"
+    },
+    {
+      "name": "D_S_s123: ipr WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_S_s123: ipr NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=3; frozen=3"
+    },
+    {
+      "name": "D_S_s123: ipr WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=50; frozen=50"
+    },
+    {
+      "name": "D_S_s123: ipr DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_S_s123: ipr seed",
+      "passed": true,
+      "detail": "observed=123"
+    },
+    {
+      "name": "D_S_s2026: MLM syntax",
+      "passed": true,
+      "detail": "AST parse passed"
+    },
+    {
+      "name": "D_S_s2026: BASE_MODEL",
+      "passed": true,
+      "detail": "observed='law-ai/InLegalBERT'; expected='law-ai/InLegalBERT'"
+    },
+    {
+      "name": "D_S_s2026: MAX_SEQ_LENGTH",
+      "passed": true,
+      "detail": "observed=256; expected=256"
+    },
+    {
+      "name": "D_S_s2026: MLM_PROBABILITY",
+      "passed": true,
+      "detail": "observed=0.15; expected=0.15"
+    },
+    {
+      "name": "D_S_s2026: LEARNING_RATE",
+      "passed": true,
+      "detail": "observed=2e-05; expected=2e-05"
+    },
+    {
+      "name": "D_S_s2026: WEIGHT_DECAY",
+      "passed": true,
+      "detail": "observed=0.01; expected=0.01"
+    },
+    {
+      "name": "D_S_s2026: MAX_STEPS",
+      "passed": true,
+      "detail": "observed=100; expected=100"
+    },
+    {
+      "name": "D_S_s2026: WARMUP_STEPS",
+      "passed": true,
+      "detail": "observed=10; expected=10"
+    },
+    {
+      "name": "D_S_s2026: seed",
+      "passed": true,
+      "detail": "observed=2026"
+    },
+    {
+      "name": "D_S_s2026: max_steps wired",
+      "passed": true,
+      "detail": "TrainingArguments uses MAX_STEPS"
+    },
+    {
+      "name": "D_S_s2026: telemetry wired",
+      "passed": true,
+      "detail": "loss/LR and exact non-padding-token telemetry enabled"
+    },
+    {
+      "name": "D_S_s2026: squad exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_S_s2026: squad MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_S_s2026: squad DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_S_s2026: squad TRAIN_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=20000; frozen=20000"
+    },
+    {
+      "name": "D_S_s2026: squad VAL_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=2000; frozen=2000"
+    },
+    {
+      "name": "D_S_s2026: squad BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_S_s2026: squad GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_S_s2026: squad LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=3e-05; frozen=3e-05"
+    },
+    {
+      "name": "D_S_s2026: squad WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_S_s2026: squad NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_S_s2026: squad WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=200; frozen=200"
+    },
+    {
+      "name": "D_S_s2026: squad SUBSET_SEED unchanged",
+      "passed": true,
+      "detail": "D=42; frozen=42"
+    },
+    {
+      "name": "D_S_s2026: squad DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_S_s2026: squad seed",
+      "passed": true,
+      "detail": "observed=2026"
+    },
+    {
+      "name": "D_S_s2026: ipr exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_S_s2026: ipr MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_S_s2026: ipr DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_S_s2026: ipr BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_S_s2026: ipr GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_S_s2026: ipr LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=2e-05; frozen=2e-05"
+    },
+    {
+      "name": "D_S_s2026: ipr WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_S_s2026: ipr NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=3; frozen=3"
+    },
+    {
+      "name": "D_S_s2026: ipr WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=50; frozen=50"
+    },
+    {
+      "name": "D_S_s2026: ipr DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_S_s2026: ipr seed",
+      "passed": true,
+      "detail": "observed=2026"
+    },
+    {
+      "name": "D_M_s7: MLM syntax",
+      "passed": true,
+      "detail": "AST parse passed"
+    },
+    {
+      "name": "D_M_s7: BASE_MODEL",
+      "passed": true,
+      "detail": "observed='law-ai/InLegalBERT'; expected='law-ai/InLegalBERT'"
+    },
+    {
+      "name": "D_M_s7: MAX_SEQ_LENGTH",
+      "passed": true,
+      "detail": "observed=256; expected=256"
+    },
+    {
+      "name": "D_M_s7: MLM_PROBABILITY",
+      "passed": true,
+      "detail": "observed=0.15; expected=0.15"
+    },
+    {
+      "name": "D_M_s7: LEARNING_RATE",
+      "passed": true,
+      "detail": "observed=2e-05; expected=2e-05"
+    },
+    {
+      "name": "D_M_s7: WEIGHT_DECAY",
+      "passed": true,
+      "detail": "observed=0.01; expected=0.01"
+    },
+    {
+      "name": "D_M_s7: MAX_STEPS",
+      "passed": true,
+      "detail": "observed=100; expected=100"
+    },
+    {
+      "name": "D_M_s7: WARMUP_STEPS",
+      "passed": true,
+      "detail": "observed=10; expected=10"
+    },
+    {
+      "name": "D_M_s7: seed",
+      "passed": true,
+      "detail": "observed=7"
+    },
+    {
+      "name": "D_M_s7: max_steps wired",
+      "passed": true,
+      "detail": "TrainingArguments uses MAX_STEPS"
+    },
+    {
+      "name": "D_M_s7: telemetry wired",
+      "passed": true,
+      "detail": "loss/LR and exact non-padding-token telemetry enabled"
+    },
+    {
+      "name": "D_M_s7: squad exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_M_s7: squad MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_M_s7: squad DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_M_s7: squad TRAIN_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=20000; frozen=20000"
+    },
+    {
+      "name": "D_M_s7: squad VAL_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=2000; frozen=2000"
+    },
+    {
+      "name": "D_M_s7: squad BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_M_s7: squad GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_M_s7: squad LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=3e-05; frozen=3e-05"
+    },
+    {
+      "name": "D_M_s7: squad WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_M_s7: squad NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_M_s7: squad WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=200; frozen=200"
+    },
+    {
+      "name": "D_M_s7: squad SUBSET_SEED unchanged",
+      "passed": true,
+      "detail": "D=42; frozen=42"
+    },
+    {
+      "name": "D_M_s7: squad DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_M_s7: squad seed",
+      "passed": true,
+      "detail": "observed=7"
+    },
+    {
+      "name": "D_M_s7: ipr exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_M_s7: ipr MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_M_s7: ipr DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_M_s7: ipr BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_M_s7: ipr GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_M_s7: ipr LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=2e-05; frozen=2e-05"
+    },
+    {
+      "name": "D_M_s7: ipr WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_M_s7: ipr NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=3; frozen=3"
+    },
+    {
+      "name": "D_M_s7: ipr WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=50; frozen=50"
+    },
+    {
+      "name": "D_M_s7: ipr DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_M_s7: ipr seed",
+      "passed": true,
+      "detail": "observed=7"
+    },
+    {
+      "name": "D_M_s42: MLM syntax",
+      "passed": true,
+      "detail": "AST parse passed"
+    },
+    {
+      "name": "D_M_s42: BASE_MODEL",
+      "passed": true,
+      "detail": "observed='law-ai/InLegalBERT'; expected='law-ai/InLegalBERT'"
+    },
+    {
+      "name": "D_M_s42: MAX_SEQ_LENGTH",
+      "passed": true,
+      "detail": "observed=256; expected=256"
+    },
+    {
+      "name": "D_M_s42: MLM_PROBABILITY",
+      "passed": true,
+      "detail": "observed=0.15; expected=0.15"
+    },
+    {
+      "name": "D_M_s42: LEARNING_RATE",
+      "passed": true,
+      "detail": "observed=2e-05; expected=2e-05"
+    },
+    {
+      "name": "D_M_s42: WEIGHT_DECAY",
+      "passed": true,
+      "detail": "observed=0.01; expected=0.01"
+    },
+    {
+      "name": "D_M_s42: MAX_STEPS",
+      "passed": true,
+      "detail": "observed=100; expected=100"
+    },
+    {
+      "name": "D_M_s42: WARMUP_STEPS",
+      "passed": true,
+      "detail": "observed=10; expected=10"
+    },
+    {
+      "name": "D_M_s42: seed",
+      "passed": true,
+      "detail": "observed=42"
+    },
+    {
+      "name": "D_M_s42: max_steps wired",
+      "passed": true,
+      "detail": "TrainingArguments uses MAX_STEPS"
+    },
+    {
+      "name": "D_M_s42: telemetry wired",
+      "passed": true,
+      "detail": "loss/LR and exact non-padding-token telemetry enabled"
+    },
+    {
+      "name": "D_M_s42: squad exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_M_s42: squad MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_M_s42: squad DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_M_s42: squad TRAIN_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=20000; frozen=20000"
+    },
+    {
+      "name": "D_M_s42: squad VAL_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=2000; frozen=2000"
+    },
+    {
+      "name": "D_M_s42: squad BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_M_s42: squad GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_M_s42: squad LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=3e-05; frozen=3e-05"
+    },
+    {
+      "name": "D_M_s42: squad WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_M_s42: squad NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_M_s42: squad WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=200; frozen=200"
+    },
+    {
+      "name": "D_M_s42: squad SUBSET_SEED unchanged",
+      "passed": true,
+      "detail": "D=42; frozen=42"
+    },
+    {
+      "name": "D_M_s42: squad DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_M_s42: squad seed",
+      "passed": true,
+      "detail": "observed=42"
+    },
+    {
+      "name": "D_M_s42: ipr exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_M_s42: ipr MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_M_s42: ipr DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_M_s42: ipr BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_M_s42: ipr GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_M_s42: ipr LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=2e-05; frozen=2e-05"
+    },
+    {
+      "name": "D_M_s42: ipr WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_M_s42: ipr NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=3; frozen=3"
+    },
+    {
+      "name": "D_M_s42: ipr WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=50; frozen=50"
+    },
+    {
+      "name": "D_M_s42: ipr DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_M_s42: ipr seed",
+      "passed": true,
+      "detail": "observed=42"
+    },
+    {
+      "name": "D_M_s99: MLM syntax",
+      "passed": true,
+      "detail": "AST parse passed"
+    },
+    {
+      "name": "D_M_s99: BASE_MODEL",
+      "passed": true,
+      "detail": "observed='law-ai/InLegalBERT'; expected='law-ai/InLegalBERT'"
+    },
+    {
+      "name": "D_M_s99: MAX_SEQ_LENGTH",
+      "passed": true,
+      "detail": "observed=256; expected=256"
+    },
+    {
+      "name": "D_M_s99: MLM_PROBABILITY",
+      "passed": true,
+      "detail": "observed=0.15; expected=0.15"
+    },
+    {
+      "name": "D_M_s99: LEARNING_RATE",
+      "passed": true,
+      "detail": "observed=2e-05; expected=2e-05"
+    },
+    {
+      "name": "D_M_s99: WEIGHT_DECAY",
+      "passed": true,
+      "detail": "observed=0.01; expected=0.01"
+    },
+    {
+      "name": "D_M_s99: MAX_STEPS",
+      "passed": true,
+      "detail": "observed=100; expected=100"
+    },
+    {
+      "name": "D_M_s99: WARMUP_STEPS",
+      "passed": true,
+      "detail": "observed=10; expected=10"
+    },
+    {
+      "name": "D_M_s99: seed",
+      "passed": true,
+      "detail": "observed=99"
+    },
+    {
+      "name": "D_M_s99: max_steps wired",
+      "passed": true,
+      "detail": "TrainingArguments uses MAX_STEPS"
+    },
+    {
+      "name": "D_M_s99: telemetry wired",
+      "passed": true,
+      "detail": "loss/LR and exact non-padding-token telemetry enabled"
+    },
+    {
+      "name": "D_M_s99: squad exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_M_s99: squad MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_M_s99: squad DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_M_s99: squad TRAIN_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=20000; frozen=20000"
+    },
+    {
+      "name": "D_M_s99: squad VAL_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=2000; frozen=2000"
+    },
+    {
+      "name": "D_M_s99: squad BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_M_s99: squad GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_M_s99: squad LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=3e-05; frozen=3e-05"
+    },
+    {
+      "name": "D_M_s99: squad WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_M_s99: squad NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_M_s99: squad WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=200; frozen=200"
+    },
+    {
+      "name": "D_M_s99: squad SUBSET_SEED unchanged",
+      "passed": true,
+      "detail": "D=42; frozen=42"
+    },
+    {
+      "name": "D_M_s99: squad DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_M_s99: squad seed",
+      "passed": true,
+      "detail": "observed=99"
+    },
+    {
+      "name": "D_M_s99: ipr exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_M_s99: ipr MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_M_s99: ipr DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_M_s99: ipr BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_M_s99: ipr GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_M_s99: ipr LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=2e-05; frozen=2e-05"
+    },
+    {
+      "name": "D_M_s99: ipr WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_M_s99: ipr NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=3; frozen=3"
+    },
+    {
+      "name": "D_M_s99: ipr WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=50; frozen=50"
+    },
+    {
+      "name": "D_M_s99: ipr DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_M_s99: ipr seed",
+      "passed": true,
+      "detail": "observed=99"
+    },
+    {
+      "name": "D_M_s123: MLM syntax",
+      "passed": true,
+      "detail": "AST parse passed"
+    },
+    {
+      "name": "D_M_s123: BASE_MODEL",
+      "passed": true,
+      "detail": "observed='law-ai/InLegalBERT'; expected='law-ai/InLegalBERT'"
+    },
+    {
+      "name": "D_M_s123: MAX_SEQ_LENGTH",
+      "passed": true,
+      "detail": "observed=256; expected=256"
+    },
+    {
+      "name": "D_M_s123: MLM_PROBABILITY",
+      "passed": true,
+      "detail": "observed=0.15; expected=0.15"
+    },
+    {
+      "name": "D_M_s123: LEARNING_RATE",
+      "passed": true,
+      "detail": "observed=2e-05; expected=2e-05"
+    },
+    {
+      "name": "D_M_s123: WEIGHT_DECAY",
+      "passed": true,
+      "detail": "observed=0.01; expected=0.01"
+    },
+    {
+      "name": "D_M_s123: MAX_STEPS",
+      "passed": true,
+      "detail": "observed=100; expected=100"
+    },
+    {
+      "name": "D_M_s123: WARMUP_STEPS",
+      "passed": true,
+      "detail": "observed=10; expected=10"
+    },
+    {
+      "name": "D_M_s123: seed",
+      "passed": true,
+      "detail": "observed=123"
+    },
+    {
+      "name": "D_M_s123: max_steps wired",
+      "passed": true,
+      "detail": "TrainingArguments uses MAX_STEPS"
+    },
+    {
+      "name": "D_M_s123: telemetry wired",
+      "passed": true,
+      "detail": "loss/LR and exact non-padding-token telemetry enabled"
+    },
+    {
+      "name": "D_M_s123: squad exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_M_s123: squad MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_M_s123: squad DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_M_s123: squad TRAIN_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=20000; frozen=20000"
+    },
+    {
+      "name": "D_M_s123: squad VAL_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=2000; frozen=2000"
+    },
+    {
+      "name": "D_M_s123: squad BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_M_s123: squad GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_M_s123: squad LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=3e-05; frozen=3e-05"
+    },
+    {
+      "name": "D_M_s123: squad WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_M_s123: squad NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_M_s123: squad WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=200; frozen=200"
+    },
+    {
+      "name": "D_M_s123: squad SUBSET_SEED unchanged",
+      "passed": true,
+      "detail": "D=42; frozen=42"
+    },
+    {
+      "name": "D_M_s123: squad DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_M_s123: squad seed",
+      "passed": true,
+      "detail": "observed=123"
+    },
+    {
+      "name": "D_M_s123: ipr exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_M_s123: ipr MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_M_s123: ipr DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_M_s123: ipr BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_M_s123: ipr GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_M_s123: ipr LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=2e-05; frozen=2e-05"
+    },
+    {
+      "name": "D_M_s123: ipr WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_M_s123: ipr NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=3; frozen=3"
+    },
+    {
+      "name": "D_M_s123: ipr WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=50; frozen=50"
+    },
+    {
+      "name": "D_M_s123: ipr DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_M_s123: ipr seed",
+      "passed": true,
+      "detail": "observed=123"
+    },
+    {
+      "name": "D_M_s2026: MLM syntax",
+      "passed": true,
+      "detail": "AST parse passed"
+    },
+    {
+      "name": "D_M_s2026: BASE_MODEL",
+      "passed": true,
+      "detail": "observed='law-ai/InLegalBERT'; expected='law-ai/InLegalBERT'"
+    },
+    {
+      "name": "D_M_s2026: MAX_SEQ_LENGTH",
+      "passed": true,
+      "detail": "observed=256; expected=256"
+    },
+    {
+      "name": "D_M_s2026: MLM_PROBABILITY",
+      "passed": true,
+      "detail": "observed=0.15; expected=0.15"
+    },
+    {
+      "name": "D_M_s2026: LEARNING_RATE",
+      "passed": true,
+      "detail": "observed=2e-05; expected=2e-05"
+    },
+    {
+      "name": "D_M_s2026: WEIGHT_DECAY",
+      "passed": true,
+      "detail": "observed=0.01; expected=0.01"
+    },
+    {
+      "name": "D_M_s2026: MAX_STEPS",
+      "passed": true,
+      "detail": "observed=100; expected=100"
+    },
+    {
+      "name": "D_M_s2026: WARMUP_STEPS",
+      "passed": true,
+      "detail": "observed=10; expected=10"
+    },
+    {
+      "name": "D_M_s2026: seed",
+      "passed": true,
+      "detail": "observed=2026"
+    },
+    {
+      "name": "D_M_s2026: max_steps wired",
+      "passed": true,
+      "detail": "TrainingArguments uses MAX_STEPS"
+    },
+    {
+      "name": "D_M_s2026: telemetry wired",
+      "passed": true,
+      "detail": "loss/LR and exact non-padding-token telemetry enabled"
+    },
+    {
+      "name": "D_M_s2026: squad exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_M_s2026: squad MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_M_s2026: squad DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_M_s2026: squad TRAIN_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=20000; frozen=20000"
+    },
+    {
+      "name": "D_M_s2026: squad VAL_SUBSET unchanged",
+      "passed": true,
+      "detail": "D=2000; frozen=2000"
+    },
+    {
+      "name": "D_M_s2026: squad BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_M_s2026: squad GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_M_s2026: squad LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=3e-05; frozen=3e-05"
+    },
+    {
+      "name": "D_M_s2026: squad WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_M_s2026: squad NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_M_s2026: squad WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=200; frozen=200"
+    },
+    {
+      "name": "D_M_s2026: squad SUBSET_SEED unchanged",
+      "passed": true,
+      "detail": "D=42; frozen=42"
+    },
+    {
+      "name": "D_M_s2026: squad DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_M_s2026: squad seed",
+      "passed": true,
+      "detail": "observed=2026"
+    },
+    {
+      "name": "D_M_s2026: ipr exact frozen logic",
+      "passed": true,
+      "detail": "only MODEL_DIR and OUTPUT_DIR may differ"
+    },
+    {
+      "name": "D_M_s2026: ipr MAX_SEQ_LENGTH unchanged",
+      "passed": true,
+      "detail": "D=384; frozen=384"
+    },
+    {
+      "name": "D_M_s2026: ipr DOC_STRIDE unchanged",
+      "passed": true,
+      "detail": "D=128; frozen=128"
+    },
+    {
+      "name": "D_M_s2026: ipr BATCH_SIZE unchanged",
+      "passed": true,
+      "detail": "D=16; frozen=16"
+    },
+    {
+      "name": "D_M_s2026: ipr GRAD_ACCUM unchanged",
+      "passed": true,
+      "detail": "D=2; frozen=2"
+    },
+    {
+      "name": "D_M_s2026: ipr LEARNING_RATE unchanged",
+      "passed": true,
+      "detail": "D=2e-05; frozen=2e-05"
+    },
+    {
+      "name": "D_M_s2026: ipr WEIGHT_DECAY unchanged",
+      "passed": true,
+      "detail": "D=0.01; frozen=0.01"
+    },
+    {
+      "name": "D_M_s2026: ipr NUM_EPOCHS unchanged",
+      "passed": true,
+      "detail": "D=3; frozen=3"
+    },
+    {
+      "name": "D_M_s2026: ipr WARMUP_STEPS unchanged",
+      "passed": true,
+      "detail": "D=50; frozen=50"
+    },
+    {
+      "name": "D_M_s2026: ipr DATALOADER_WORKERS unchanged",
+      "passed": true,
+      "detail": "D=0; frozen=0"
+    },
+    {
+      "name": "D_M_s2026: ipr seed",
+      "passed": true,
+      "detail": "observed=2026"
+    },
+    {
+      "name": "corpus A hash frozen",
+      "passed": true,
+      "detail": "d1104445014bdafc4f9d64dc69934574a760db9937ad0832a87f26749170e945"
+    },
+    {
+      "name": "corpus S hash frozen",
+      "passed": true,
+      "detail": "8ed2308222d47954f7e2a73068319a7b2e384c89cd626f06725486f16f59217a"
+    },
+    {
+      "name": "corpus M hash frozen",
+      "passed": true,
+      "detail": "1c74adcf8574ffd40e70447e11dd30d079d5dcb083e695be47ca7d415e85c6e6"
+    },
+    {
+      "name": "external input frozen: squad-train.arrow",
+      "passed": true,
+      "detail": "c1a065b0dcedb5578bb69b6f2febb0b47a87d4c95d5139beaf5fe2eb867c944b"
+    },
+    {
+      "name": "external input frozen: squad-validation.arrow",
+      "passed": true,
+      "detail": "f9533e6e987e1d3adab4de0feb4ee2b2bdce8e2fd408c3899c8f106e7285daef"
+    },
+    {
+      "name": "reuse A_N_s7_100",
+      "passed": true,
+      "detail": "existing no-DAPT test result present"
+    },
+    {
+      "name": "reuse A_N_s42_100",
+      "passed": true,
+      "detail": "existing no-DAPT test result present"
+    },
+    {
+      "name": "reuse A_N_s99_100",
+      "passed": true,
+      "detail": "existing no-DAPT test result present"
+    },
+    {
+      "name": "reuse A_N_s123_100",
+      "passed": true,
+      "detail": "existing no-DAPT test result present"
+    },
+    {
+      "name": "reuse A_N_s2026_100",
+      "passed": true,
+      "detail": "existing no-DAPT test result present"
+    }
+  ],
+  "generated_script_sha256": {
+    "experiments/dapt/equal_update/generated_scripts/D_A_s7_mlm.py": "fa6e4b15b0c3309e53c8d8b99f58019dedb2c2f95a6ce275c8d625a5334144d6",
+    "experiments/dapt/equal_update/generated_scripts/D_A_s7_squad.py": "971d2d14cdefe8d562106e166dac30098b6ee12471ee87ee213ba00e84343c88",
+    "experiments/dapt/equal_update/generated_scripts/D_A_s7_ipr.py": "41a2ec1e36a0edc20d883d6c1ef7a5507d819b7461beb1def6ecda160eb288b5",
+    "experiments/dapt/equal_update/generated_scripts/D_A_s42_mlm.py": "e286f23cfab9b1f1f4634cc0e32125472467dba2f1cd7f91ba9e591b38c8eb6c",
+    "experiments/dapt/equal_update/generated_scripts/D_A_s42_squad.py": "bc89798d07307cbd66558f0359bc8f05cbc90eb15983bd2b8180821a4bfc6329",
+    "experiments/dapt/equal_update/generated_scripts/D_A_s42_ipr.py": "5253dbcf89d0a8b271298f76a8f6128a22936c31112d84a3bbcdd6461ae691f1",
+    "experiments/dapt/equal_update/generated_scripts/D_A_s99_mlm.py": "5a0434e4e7ab0dc8a756bb1dd85da0e4a64874a346125eaaf85ce661962f8672",
+    "experiments/dapt/equal_update/generated_scripts/D_A_s99_squad.py": "8d28ca3bbf79e6e4c1adb3c697aee1ff19e8d994286f2157f43c92695615c8a6",
+    "experiments/dapt/equal_update/generated_scripts/D_A_s99_ipr.py": "7312b12dab6ba725bf71bf8b7149e2e2c5bd9060d7154b45d0d0ee10a89cbf90",
+    "experiments/dapt/equal_update/generated_scripts/D_A_s123_mlm.py": "429873f59e9976f43b7132547867d130a853b61a6ad33e2cc6346230d80c2255",
+    "experiments/dapt/equal_update/generated_scripts/D_A_s123_squad.py": "815236adfd97ebb2833a28df27b6b44f8c0ee3212195f87d6112ba4231d0105b",
+    "experiments/dapt/equal_update/generated_scripts/D_A_s123_ipr.py": "1508384a26034122a7786fc0e76ff721ae8db52e2e85798ab7deb8f400f7be42",
+    "experiments/dapt/equal_update/generated_scripts/D_A_s2026_mlm.py": "785d39317f627bcc0d72d2db71236f84c8ff39aa646ac2eb6d8083725e4b2fde",
+    "experiments/dapt/equal_update/generated_scripts/D_A_s2026_squad.py": "83dd1f4e704e902609725d3b5f9014369d38c7689086688247853396550b59d0",
+    "experiments/dapt/equal_update/generated_scripts/D_A_s2026_ipr.py": "b6a26966193e221d36700a5c12ee17c27fedc4397a94b25add1d5cf3e5723400",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s7_mlm.py": "f2b6cef99d29a33387914db54a7d9222562c9737817b3bf2c5e5c93f62c7e2d9",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s7_squad.py": "c7193cec82c78a49f7b90047c1284e65aa2d8a7197603e23d318416a3cf07c0c",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s7_ipr.py": "9da1b18ec73bf782e6385cf30aa3a1ff703cc6c8c678018ef34e0ae892306b47",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s42_mlm.py": "1ec49e66cbaf6e868a4dd34957938c3ee8286902c707ad7868aa82d6f4752c7f",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s42_squad.py": "17c57423173e97455fa8857d44685ef255d7065091e637671361225ab094fb37",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s42_ipr.py": "22c8935d4b6eb6ef6739bedf9ac01072fbcb75777a4b20ab58f5e03dd40ad3e5",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s99_mlm.py": "e9ad547fabdb67501fb1bb4ab1127928e014453c3adcc07d50baa125158dc950",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s99_squad.py": "e683ebe587370fb3e87e259fae0200e6a21fcd361304381f631ef67c85642aa0",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s99_ipr.py": "03b1076f2913bba2e6984a17d682c5bea53d9d8c1bf25c33d455e1ee79b8a88f",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s123_mlm.py": "156f875b708e3bb43e40358fd844f1d3a4fa14388d1d0221f509dd5416f3e585",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s123_squad.py": "7977db2fcaff9de61ca0a70aae8ddf7d513b6c6265d62d8c16f1bf390274f99c",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s123_ipr.py": "838f3dadb004ad16c602870d94fff29ffa8bef2f46f8618763d4c5392a97c157",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s2026_mlm.py": "bb9667e4020d538fc606146e0e28b4d9d67a8c09b3b294b61954d2bb9324529f",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s2026_squad.py": "c8f5adcb737b910164e9995e2d3cd47736c3b9bc6977eaf916e27a467e973c3b",
+    "experiments/dapt/equal_update/generated_scripts/D_S_s2026_ipr.py": "0bb8f38ffa61ed3be92b675701b52025cdc1f7158a5dec82fc799f21ffc90b1c",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s7_mlm.py": "31e6a65f89ccb23d313b0548297e04a99a407c9f3fda7e9af357eb93d39fb612",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s7_squad.py": "8bd701559ea98419057a711de246e59b2cb4983f60b1bb178bda560d9e38a73f",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s7_ipr.py": "5e79389d258e883f612c6ac494e40b50a743f3cf4f64506000fe2f0959067ba2",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s42_mlm.py": "4c055a477cab799e3f6d7a0cb993175bc1955239047df4db5d22c5b7bb6d6956",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s42_squad.py": "79f35a7b2b0b1a6cec07bfb8ced6a03e3987d736c28e5de24ba7fea3e42acb20",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s42_ipr.py": "17f0f4dc340d18bed4ee8168e76656ccfd8b385df7510161806fe48070e6adc2",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s99_mlm.py": "707acf0975b1a2ccea058229e0efa00ca4c56ecd345022673e8f35973d631991",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s99_squad.py": "1673cb24aa6db19b48db4aa52ebf1f9fb20a12d22c786712fcdb5ad62e34e2b0",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s99_ipr.py": "925f8955badf6b9df2b60e7036724210723cbae8abe9a19ed478da57b61c50dc",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s123_mlm.py": "da5eee0d7f5b3314d148f486add5bb829669e20c6a795e6333d61962ff3b667d",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s123_squad.py": "65321dc3ddc9b4668c501214cda051b13a6d12c1b7696b374cf572d93b665ae7",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s123_ipr.py": "69317471572538970da747d83f5a55b8ffc6d9d4670aad21190f2202ce4846c1",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s2026_mlm.py": "e2eaf5dab0028b765b9f11457e6283034c81e55555c24970251e2a8969b8e5e5",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s2026_squad.py": "d1f223a5ebfc77a39b29fbf4990768f17e5c3c4fa8f8bbe5fad5be19a42de28e",
+    "experiments/dapt/equal_update/generated_scripts/D_M_s2026_ipr.py": "f06d695aefc61ffe10bd71d5d4eea5fda318338edc2679b643d84266b71e52e4"
+  }
+}

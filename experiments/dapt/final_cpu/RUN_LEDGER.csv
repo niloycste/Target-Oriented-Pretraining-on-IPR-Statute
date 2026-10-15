@@ -1,0 +1,141 @@
+experiment,condition,seed,stage,status,start_time,end_time,checkpoint,runtime_hours,notes
+A,A,123,ipr,IPR_DONE,2026-09-05T17:57:16+05:30,2026-09-09T10:28:18+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_A_s123_ipr\final,3.218,pre-existing validated final directory
+A,A,123,mlm,MLM_DONE,2026-09-05T09:38:36+05:30,2026-09-09T10:28:18+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_A_s123_mlm\final,0.344,pre-existing validated final directory
+A,A,123,squad,SQUAD_DONE,2026-09-05T09:59:14+05:30,2026-09-09T10:28:18+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_A_s123_squad\final,7.967,pre-existing validated final directory
+A,A,123,val_eval,EVALUATED,2026-09-09T10:28:18+05:30,2026-09-09T10:28:22+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\A_A_s123_100.json,0.001,canonical sliding-window validation; attempts=1
+A,A,2026,ipr,IPR_DONE,2026-09-06T10:34:20+05:30,2026-09-09T10:28:22+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_A_s2026_ipr\final,2.361,pre-existing validated final directory
+A,A,2026,mlm,MLM_DONE,2026-09-06T02:15:12+05:30,2026-09-09T10:28:22+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_A_s2026_mlm\final,0.389,pre-existing validated final directory
+A,A,2026,squad,SQUAD_DONE,2026-09-06T02:38:33+05:30,2026-09-09T10:28:22+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_A_s2026_squad\final,7.93,pre-existing validated final directory
+A,A,2026,val_eval,EVALUATED,2026-09-09T10:28:22+05:30,2026-09-09T10:28:27+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\A_A_s2026_100.json,0.001,canonical sliding-window validation; attempts=1
+A,A,42,ipr,IPR_DONE,2026-09-04T20:56:46+05:30,2026-09-09T10:28:10+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_A_s42_ipr\final,2.346,pre-existing validated final directory
+A,A,42,mlm,MLM_DONE,2026-09-04T12:58:49+05:30,2026-09-09T10:28:10+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_A_s42_mlm\final,0.346,pre-existing validated final directory
+A,A,42,squad,SQUAD_DONE,2026-09-04T13:19:36+05:30,2026-09-09T10:28:10+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_A_s42_squad\final,7.62,pre-existing validated final directory
+A,A,42,val_eval,EVALUATED,2026-09-09T10:28:10+05:30,2026-09-09T10:28:14+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\A_A_s42_100.json,0.001,canonical sliding-window validation; attempts=1
+A,A,7,ipr,IPR_DONE,2026-09-04T10:37:09+05:30,2026-09-09T10:28:04+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_A_s7_ipr\final,2.337,pre-existing validated final directory
+A,A,7,mlm,MLM_DONE,2026-09-04T02:35:29+05:30,2026-09-09T10:28:04+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_A_s7_mlm\final,0.39,pre-existing validated final directory
+A,A,7,squad,SQUAD_DONE,2026-09-04T02:58:52+05:30,2026-09-09T10:28:04+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_A_s7_squad\final,7.638,pre-existing validated final directory
+A,A,7,val_eval,EVALUATED,2026-09-09T10:28:04+05:30,2026-09-09T10:28:10+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\A_A_s7_100.json,0.002,canonical sliding-window validation; attempts=1
+A,A,99,ipr,IPR_DONE,2026-09-05T07:16:45+05:30,2026-09-09T10:28:14+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_A_s99_ipr\final,2.341,pre-existing validated final directory
+A,A,99,mlm,MLM_DONE,2026-09-04T23:18:55+05:30,2026-09-09T10:28:14+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_A_s99_mlm\final,0.347,pre-existing validated final directory
+A,A,99,squad,SQUAD_DONE,2026-09-04T23:39:44+05:30,2026-09-09T10:28:14+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_A_s99_squad\final,7.617,pre-existing validated final directory
+A,A,99,val_eval,EVALUATED,2026-09-09T10:28:14+05:30,2026-09-09T10:28:18+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\A_A_s99_100.json,0.001,canonical sliding-window validation; attempts=1
+A,M,123,ipr,IPR_DONE,2026-09-10T13:01:58+05:30,2026-09-10T15:17:23+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_M_s123_ipr\final,2.257,attempts=1
+A,M,123,mlm,MLM_DONE,2026-09-10T05:24:27+05:30,2026-09-10T05:42:21+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_M_s123_mlm\final,0.299,attempts=1
+A,M,123,squad,SQUAD_DONE,2026-09-10T05:42:22+05:30,2026-09-10T13:01:58+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_M_s123_squad\final,7.327,attempts=1
+A,M,123,val_eval,EVALUATED,2026-09-10T15:17:23+05:30,2026-09-10T15:18:46+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\A_M_s123_100.json,0.023,canonical sliding-window validation; attempts=1
+A,M,2026,ipr,IPR_DONE,2026-09-10T22:55:23+05:30,2026-09-11T01:10:10+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_M_s2026_ipr\final,2.246,attempts=1
+A,M,2026,mlm,MLM_DONE,2026-09-10T15:18:46+05:30,2026-09-10T15:36:46+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_M_s2026_mlm\final,0.3,attempts=1
+A,M,2026,squad,SQUAD_DONE,2026-09-10T15:36:46+05:30,2026-09-10T22:55:23+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_M_s2026_squad\final,7.31,attempts=1
+A,M,2026,val_eval,EVALUATED,2026-09-11T01:10:10+05:30,2026-09-11T01:11:34+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\A_M_s2026_100.json,0.023,canonical sliding-window validation; attempts=1
+A,M,42,ipr,IPR_DONE,2026-09-09T17:16:16+05:30,2026-09-09T19:31:52+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_M_s42_ipr\final,2.26,attempts=1
+A,M,42,mlm,MLM_DONE,2026-09-09T05:08:16+05:30,2026-09-09T10:28:51+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_M_s42_mlm\final,0.312,pre-existing validated final directory
+A,M,42,squad,SQUAD_DONE,2026-09-09T10:28:51+05:30,2026-09-09T17:16:16+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_M_s42_squad\final,6.79,attempts=1
+A,M,42,val_eval,EVALUATED,2026-09-09T19:31:52+05:30,2026-09-09T19:33:29+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\A_M_s42_100.json,0.027,canonical sliding-window validation; attempts=1
+A,M,7,ipr,IPR_DONE,2026-09-09T02:45:44+05:30,2026-09-09T10:28:47+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_M_s7_ipr\final,2.351,pre-existing validated final directory
+A,M,7,mlm,MLM_DONE,2026-09-08T17:46:49+05:30,2026-09-09T10:28:47+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_M_s7_mlm\final,0.304,pre-existing validated final directory
+A,M,7,squad,SQUAD_DONE,2026-09-08T18:05:02+05:30,2026-09-09T10:28:47+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_M_s7_squad\final,8.678,pre-existing validated final directory
+A,M,7,val_eval,EVALUATED,2026-09-09T10:28:47+05:30,2026-09-09T10:28:51+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\A_M_s7_100.json,0.001,canonical sliding-window validation; attempts=1
+A,M,99,ipr,IPR_DONE,2026-09-10T03:08:17+05:30,2026-09-10T05:23:04+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_M_s99_ipr\final,2.246,attempts=1
+A,M,99,mlm,MLM_DONE,2026-09-09T19:33:29+05:30,2026-09-09T19:51:09+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_M_s99_mlm\final,0.295,attempts=1
+A,M,99,squad,SQUAD_DONE,2026-09-09T19:51:10+05:30,2026-09-10T03:08:17+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_M_s99_squad\final,7.285,attempts=1
+A,M,99,val_eval,EVALUATED,2026-09-10T05:23:04+05:30,2026-09-10T05:24:27+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\A_M_s99_100.json,0.023,canonical sliding-window validation; attempts=1
+A,N,123,ipr,IPR_DONE,2026-09-03T10:21:37+05:30,2026-09-09T10:27:41+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_N_s123_ipr\final,2.626,pre-existing validated final directory
+A,N,123,mlm,SKIPPED,,2026-09-09T10:27:41+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\base_encoder,,no DAPT stage by definition
+A,N,123,squad,SQUAD_DONE,2026-09-03T02:39:08+05:30,2026-09-09T10:27:41+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_N_s123_squad\final,7.708,pre-existing validated final directory
+A,N,123,val_eval,EVALUATED,2026-09-09T10:27:41+05:30,2026-09-09T10:27:45+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\A_N_s123_100.json,0.001,canonical sliding-window validation; attempts=1
+A,N,2026,ipr,IPR_DONE,2026-09-04T00:12:51+05:30,2026-09-09T10:27:45+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_N_s2026_ipr\final,2.346,pre-existing validated final directory
+A,N,2026,mlm,SKIPPED,,2026-09-09T10:27:45+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\base_encoder,,no DAPT stage by definition
+A,N,2026,squad,SQUAD_DONE,2026-09-03T13:01:34+05:30,2026-09-09T10:27:45+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_N_s2026_squad\final,11.188,pre-existing validated final directory
+A,N,2026,val_eval,EVALUATED,2026-09-09T10:27:45+05:30,2026-09-09T10:28:04+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\A_N_s2026_100.json,0.005,canonical sliding-window validation; attempts=1
+A,N,42,ipr,IPR_DONE,2026-09-02T14:28:53+05:30,2026-09-09T10:27:32+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_N_s42_ipr\final,2.312,pre-existing validated final directory
+A,N,42,mlm,SKIPPED,,2026-09-09T10:27:32+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\base_encoder,,no DAPT stage by definition
+A,N,42,squad,SQUAD_DONE,2026-09-02T06:41:01+05:30,2026-09-09T10:27:32+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_N_s42_squad\final,7.798,pre-existing validated final directory
+A,N,42,val_eval,EVALUATED,2026-09-09T10:27:32+05:30,2026-09-09T10:27:36+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\A_N_s42_100.json,0.001,canonical sliding-window validation; attempts=1
+A,N,7,ipr,IPR_DONE,2026-09-02T04:16:54+05:30,2026-09-09T10:27:11+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_N_s7_ipr\final,2.373,pre-existing validated final directory
+A,N,7,mlm,SKIPPED,,2026-09-09T10:27:11+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\base_encoder,,no DAPT stage by definition
+A,N,7,squad,SQUAD_DONE,2026-09-01T20:03:14+05:30,2026-09-09T10:27:11+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_N_s7_squad\final,8.228,pre-existing validated final directory
+A,N,7,val_eval,EVALUATED,2026-09-09T10:27:11+05:30,2026-09-09T10:27:32+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\A_N_s7_100.json,0.006,canonical sliding-window validation; attempts=1
+A,N,99,ipr,IPR_DONE,2026-09-03T00:18:37+05:30,2026-09-09T10:27:36+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_N_s99_ipr\final,2.318,pre-existing validated final directory
+A,N,99,mlm,SKIPPED,,2026-09-09T10:27:36+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\base_encoder,,no DAPT stage by definition
+A,N,99,squad,SQUAD_DONE,2026-09-02T16:49:04+05:30,2026-09-09T10:27:36+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_N_s99_squad\final,7.493,pre-existing validated final directory
+A,N,99,val_eval,EVALUATED,2026-09-09T10:27:36+05:30,2026-09-09T10:27:41+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\A_N_s99_100.json,0.001,canonical sliding-window validation; attempts=1
+A,S,123,ipr,IPR_DONE,2026-09-08T04:04:16+05:30,2026-09-09T10:28:39+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_S_s123_ipr\final,2.349,pre-existing validated final directory
+A,S,123,mlm,MLM_DONE,2026-09-07T19:58:31+05:30,2026-09-09T10:28:39+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_S_s123_mlm\final,0.222,pre-existing validated final directory
+A,S,123,squad,SQUAD_DONE,2026-09-07T20:11:49+05:30,2026-09-09T10:28:39+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_S_s123_squad\final,7.874,pre-existing validated final directory
+A,S,123,val_eval,EVALUATED,2026-09-09T10:28:39+05:30,2026-09-09T10:28:43+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\A_S_s123_100.json,0.001,canonical sliding-window validation; attempts=1
+A,S,2026,ipr,IPR_DONE,2026-09-08T16:02:23+05:30,2026-09-09T10:28:43+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_S_s2026_ipr\final,1.538,pre-existing validated final directory
+A,S,2026,mlm,MLM_DONE,2026-09-08T06:26:37+05:30,2026-09-09T10:28:43+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_S_s2026_mlm\final,0.222,pre-existing validated final directory
+A,S,2026,squad,SQUAD_DONE,2026-09-08T06:39:58+05:30,2026-09-09T10:28:43+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_S_s2026_squad\final,7.602,pre-existing validated final directory
+A,S,2026,val_eval,EVALUATED,2026-09-09T10:28:43+05:30,2026-09-09T10:28:47+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\A_S_s2026_100.json,0.001,canonical sliding-window validation; attempts=1
+A,S,42,ipr,IPR_DONE,2026-09-07T07:24:34+05:30,2026-09-09T10:28:31+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_S_s42_ipr\final,2.339,pre-existing validated final directory
+A,S,42,mlm,MLM_DONE,2026-09-06T23:20:07+05:30,2026-09-09T10:28:31+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_S_s42_mlm\final,0.222,pre-existing validated final directory
+A,S,42,squad,SQUAD_DONE,2026-09-06T23:33:25+05:30,2026-09-09T10:28:31+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_S_s42_squad\final,7.853,pre-existing validated final directory
+A,S,42,val_eval,EVALUATED,2026-09-09T10:28:31+05:30,2026-09-09T10:28:35+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\A_S_s42_100.json,0.001,canonical sliding-window validation; attempts=1
+A,S,7,ipr,IPR_DONE,2026-09-06T20:50:32+05:30,2026-09-09T10:28:27+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_S_s7_ipr\final,2.469,pre-existing validated final directory
+A,S,7,mlm,MLM_DONE,2026-09-06T12:57:27+05:30,2026-09-09T10:28:27+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_S_s7_mlm\final,0.222,pre-existing validated final directory
+A,S,7,squad,SQUAD_DONE,2026-09-06T13:10:45+05:30,2026-09-09T10:28:27+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_S_s7_squad\final,7.663,pre-existing validated final directory
+A,S,7,val_eval,EVALUATED,2026-09-09T10:28:27+05:30,2026-09-09T10:28:31+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\A_S_s7_100.json,0.001,canonical sliding-window validation; attempts=1
+A,S,99,ipr,IPR_DONE,2026-09-07T17:36:21+05:30,2026-09-09T10:28:35+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_S_s99_ipr\final,2.346,pre-existing validated final directory
+A,S,99,mlm,MLM_DONE,2026-09-07T09:46:20+05:30,2026-09-09T10:28:35+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_S_s99_mlm\final,0.223,pre-existing validated final directory
+A,S,99,squad,SQUAD_DONE,2026-09-07T09:59:41+05:30,2026-09-09T10:28:35+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\A_S_s99_squad\final,7.611,pre-existing validated final directory
+A,S,99,val_eval,EVALUATED,2026-09-09T10:28:35+05:30,2026-09-09T10:28:39+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\A_S_s99_100.json,0.001,canonical sliding-window validation; attempts=1
+B,S_STYLE,42,ipr,IPR_DONE,2026-09-11T18:37:27+05:30,2026-09-11T20:52:45+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\B_S_STYLE_s42_ipr\final,2.255,attempts=1
+B,S_STYLE,42,mlm,MLM_DONE,2026-09-11T11:01:40+05:30,2026-09-11T11:14:38+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\B_S_STYLE_s42_mlm\final,0.216,attempts=1
+B,S_STYLE,42,squad,SQUAD_DONE,2026-09-11T11:14:38+05:30,2026-09-11T18:37:27+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\B_S_STYLE_s42_squad\final,7.38,attempts=1
+B,S_STYLE,42,val_eval,EVALUATED,2026-09-11T20:52:45+05:30,2026-09-11T20:54:23+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\B_S_STYLE_s42_100.json,0.027,canonical sliding-window validation; attempts=1
+B,S_STYLE,7,ipr,IPR_DONE,2026-09-11T08:44:47+05:30,2026-09-11T11:00:03+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\B_S_STYLE_s7_ipr\final,2.254,attempts=1
+B,S_STYLE,7,mlm,MLM_DONE,2026-09-11T01:11:34+05:30,2026-09-11T01:24:25+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\B_S_STYLE_s7_mlm\final,0.214,attempts=1
+B,S_STYLE,7,squad,SQUAD_DONE,2026-09-11T01:24:25+05:30,2026-09-11T08:44:46+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\B_S_STYLE_s7_squad\final,7.339,attempts=1
+B,S_STYLE,7,val_eval,EVALUATED,2026-09-11T11:00:03+05:30,2026-09-11T11:01:40+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\B_S_STYLE_s7_100.json,0.027,canonical sliding-window validation; attempts=1
+B,S_STYLE,99,ipr,IPR_DONE,2026-09-12T04:28:33+05:30,2026-09-12T06:43:59+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\B_S_STYLE_s99_ipr\final,2.257,attempts=1
+B,S_STYLE,99,mlm,MLM_DONE,2026-09-11T20:54:23+05:30,2026-09-11T21:07:26+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\B_S_STYLE_s99_mlm\final,0.217,attempts=1
+B,S_STYLE,99,squad,SQUAD_DONE,2026-09-11T21:07:27+05:30,2026-09-12T04:28:33+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\B_S_STYLE_s99_squad\final,7.352,attempts=1
+B,S_STYLE,99,val_eval,EVALUATED,2026-09-12T06:43:59+05:30,2026-09-12T06:45:22+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\B_S_STYLE_s99_100.json,0.023,canonical sliding-window validation; attempts=1
+C,A@25,42,ipr,IPR_DONE,2026-09-12T14:33:49+05:30,2026-09-12T15:16:46+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\C_A25_s42_ipr\final,0.716,attempts=1
+C,A@25,42,val_eval,EVALUATED,2026-09-12T15:16:46+05:30,2026-09-12T15:18:10+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\C_A_s42_25.json,0.023,canonical sliding-window validation; attempts=1
+C,A@25,7,ipr,IPR_DONE,2026-09-12T12:36:51+05:30,2026-09-12T13:19:09+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\C_A25_s7_ipr\final,0.705,attempts=1
+C,A@25,7,val_eval,EVALUATED,2026-09-12T13:19:09+05:30,2026-09-12T13:20:32+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\C_A_s7_25.json,0.023,canonical sliding-window validation; attempts=1
+C,A@25,99,ipr,IPR_DONE,2026-09-12T16:31:28+05:30,2026-09-12T17:13:48+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\C_A25_s99_ipr\final,0.706,attempts=1
+C,A@25,99,val_eval,EVALUATED,2026-09-12T17:13:48+05:30,2026-09-12T17:15:12+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\C_A_s99_25.json,0.023,canonical sliding-window validation; attempts=1
+C,A@50,42,ipr,IPR_DONE,2026-09-12T15:18:10+05:30,2026-09-12T16:30:04+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\C_A50_s42_ipr\final,1.198,attempts=1
+C,A@50,42,val_eval,EVALUATED,2026-09-12T16:30:04+05:30,2026-09-12T16:31:28+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\C_A_s42_50.json,0.023,canonical sliding-window validation; attempts=1
+C,A@50,7,ipr,IPR_DONE,2026-09-12T13:20:32+05:30,2026-09-12T14:32:24+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\C_A50_s7_ipr\final,1.198,attempts=1
+C,A@50,7,val_eval,EVALUATED,2026-09-12T14:32:24+05:30,2026-09-12T14:33:49+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\C_A_s7_50.json,0.024,canonical sliding-window validation; attempts=1
+C,A@50,99,ipr,IPR_DONE,2026-09-12T17:15:12+05:30,2026-09-12T18:27:01+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\C_A50_s99_ipr\final,1.197,attempts=1
+C,A@50,99,val_eval,EVALUATED,2026-09-12T18:27:01+05:30,2026-09-12T18:28:25+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\C_A_s99_50.json,0.023,canonical sliding-window validation; attempts=1
+C,M@25,42,ipr,IPR_DONE,2026-09-13T02:35:08+05:30,2026-09-13T03:17:26+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\C_M25_s42_ipr\final,0.705,attempts=1
+C,M@25,42,val_eval,EVALUATED,2026-09-13T03:17:27+05:30,2026-09-13T03:18:51+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\C_M_s42_25.json,0.023,canonical sliding-window validation; attempts=1
+C,M@25,7,ipr,IPR_DONE,2026-09-13T00:33:38+05:30,2026-09-13T01:18:22+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\C_M25_s7_ipr\final,0.746,attempts=1
+C,M@25,7,val_eval,EVALUATED,2026-09-13T01:18:23+05:30,2026-09-13T01:19:51+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\C_M_s7_25.json,0.025,canonical sliding-window validation; attempts=1
+C,M@25,99,ipr,IPR_DONE,2026-09-13T04:32:04+05:30,2026-09-13T05:14:20+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\C_M25_s99_ipr\final,0.704,attempts=1
+C,M@25,99,val_eval,EVALUATED,2026-09-13T05:14:20+05:30,2026-09-13T05:15:44+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\C_M_s99_25.json,0.023,canonical sliding-window validation; attempts=1
+C,M@50,42,ipr,IPR_DONE,2026-09-13T03:18:51+05:30,2026-09-13T04:30:40+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\C_M50_s42_ipr\final,1.197,attempts=1
+C,M@50,42,val_eval,EVALUATED,2026-09-13T04:30:40+05:30,2026-09-13T04:32:04+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\C_M_s42_50.json,0.023,canonical sliding-window validation; attempts=1
+C,M@50,7,ipr,IPR_DONE,2026-09-13T01:19:51+05:30,2026-09-13T02:33:44+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\C_M50_s7_ipr\final,1.231,attempts=1
+C,M@50,7,val_eval,EVALUATED,2026-09-13T02:33:44+05:30,2026-09-13T02:35:08+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\C_M_s7_50.json,0.023,canonical sliding-window validation; attempts=1
+C,M@50,99,ipr,IPR_DONE,2026-09-13T05:15:44+05:30,2026-09-13T06:27:34+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\C_M50_s99_ipr\final,1.197,attempts=1
+C,M@50,99,val_eval,EVALUATED,2026-09-13T06:27:34+05:30,2026-09-13T06:28:58+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\C_M_s99_50.json,0.023,canonical sliding-window validation; attempts=1
+C,N@25,42,ipr,IPR_DONE,2026-09-12T08:42:34+05:30,2026-09-12T09:24:54+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\C_N25_s42_ipr\final,0.706,attempts=1
+C,N@25,42,val_eval,EVALUATED,2026-09-12T09:24:55+05:30,2026-09-12T09:26:17+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\C_N_s42_25.json,0.023,canonical sliding-window validation; attempts=1
+C,N@25,7,ipr,IPR_DONE,2026-09-12T06:45:22+05:30,2026-09-12T07:27:41+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\C_N25_s7_ipr\final,0.705,attempts=1
+C,N@25,7,val_eval,EVALUATED,2026-09-12T07:27:41+05:30,2026-09-12T07:29:04+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\C_N_s7_25.json,0.023,canonical sliding-window validation; attempts=1
+C,N@25,99,ipr,IPR_DONE,2026-09-12T10:39:46+05:30,2026-09-12T11:22:04+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\C_N25_s99_ipr\final,0.705,attempts=1
+C,N@25,99,val_eval,EVALUATED,2026-09-12T11:22:04+05:30,2026-09-12T11:23:27+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\C_N_s99_25.json,0.023,canonical sliding-window validation; attempts=1
+C,N@50,42,ipr,IPR_DONE,2026-09-12T09:26:18+05:30,2026-09-12T10:38:08+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\C_N50_s42_ipr\final,1.197,attempts=1
+C,N@50,42,val_eval,EVALUATED,2026-09-12T10:38:08+05:30,2026-09-12T10:39:46+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\C_N_s42_50.json,0.027,canonical sliding-window validation; attempts=1
+C,N@50,7,ipr,IPR_DONE,2026-09-12T07:29:04+05:30,2026-09-12T08:40:56+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\C_N50_s7_ipr\final,1.198,attempts=1
+C,N@50,7,val_eval,EVALUATED,2026-09-12T08:40:56+05:30,2026-09-12T08:42:34+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\C_N_s7_50.json,0.027,canonical sliding-window validation; attempts=1
+C,N@50,99,ipr,IPR_DONE,2026-09-12T11:23:27+05:30,2026-09-12T12:35:27+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\C_N50_s99_ipr\final,1.2,attempts=1
+C,N@50,99,val_eval,EVALUATED,2026-09-12T12:35:27+05:30,2026-09-12T12:36:51+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\C_N_s99_50.json,0.023,canonical sliding-window validation; attempts=1
+C,S@25,42,ipr,IPR_DONE,2026-09-12T20:29:30+05:30,2026-09-12T21:14:15+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\C_S25_s42_ipr\final,0.746,attempts=1
+C,S@25,42,val_eval,EVALUATED,2026-09-12T21:14:15+05:30,2026-09-12T21:15:44+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\C_S_s42_25.json,0.025,canonical sliding-window validation; attempts=1
+C,S@25,7,ipr,IPR_DONE,2026-09-12T18:28:25+05:30,2026-09-12T19:10:50+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\C_S25_s7_ipr\final,0.707,attempts=1
+C,S@25,7,val_eval,EVALUATED,2026-09-12T19:10:50+05:30,2026-09-12T19:12:14+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\C_S_s7_25.json,0.023,canonical sliding-window validation; attempts=1
+C,S@25,99,ipr,IPR_DONE,2026-09-12T22:30:02+05:30,2026-09-12T23:14:47+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\C_S25_s99_ipr\final,0.746,attempts=1
+C,S@25,99,val_eval,EVALUATED,2026-09-12T23:14:47+05:30,2026-09-12T23:16:16+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\C_S_s99_25.json,0.025,canonical sliding-window validation; attempts=1
+C,S@50,42,ipr,IPR_DONE,2026-09-12T21:15:44+05:30,2026-09-12T22:28:26+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\C_S50_s42_ipr\final,1.212,attempts=1
+C,S@50,42,val_eval,EVALUATED,2026-09-12T22:28:26+05:30,2026-09-12T22:30:02+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\C_S_s42_50.json,0.027,canonical sliding-window validation; attempts=1
+C,S@50,7,ipr,IPR_DONE,2026-09-12T19:12:14+05:30,2026-09-12T20:27:45+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\C_S50_s7_ipr\final,1.259,attempts=1
+C,S@50,7,val_eval,EVALUATED,2026-09-12T20:27:45+05:30,2026-09-12T20:29:30+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\C_S_s7_50.json,0.029,canonical sliding-window validation; attempts=1
+C,S@50,99,ipr,IPR_DONE,2026-09-12T23:16:16+05:30,2026-09-13T00:32:09+05:30,E:\Dataset on IPR\artifacts\models\final_cpu\C_S50_s99_ipr\final,1.265,attempts=1
+C,S@50,99,val_eval,EVALUATED,2026-09-13T00:32:10+05:30,2026-09-13T00:33:38+05:30,E:\Dataset on IPR\experiments\dapt\final_cpu\evaluations\val\C_S_s99_50.json,0.025,canonical sliding-window validation; attempts=1

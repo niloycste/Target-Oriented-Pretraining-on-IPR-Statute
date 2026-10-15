@@ -1,0 +1,233 @@
+{
+  "description": "Stage-safe CPU pilots with scientific settings held fixed",
+  "environment": {
+    "platform": "Windows-11-10.0.26200-SP0",
+    "python": "3.13.7",
+    "torch": "2.10.0+cpu",
+    "logical_cores": 32,
+    "mkl_available": true,
+    "mkldnn_available": true
+  },
+  "invariant": "effective batch=32, examples, model, optimizer, learning rate, loss, epochs and selection criterion are unchanged",
+  "dataloader_policy": "workers=0 on Windows; avoids recursive module execution",
+  "baseline": {
+    "stage": "qa",
+    "micro_batch": 8,
+    "grad_accum": 4,
+    "effective_batch": 32,
+    "threads": 24,
+    "dataloader_workers": 0,
+    "optimizer_steps": 6,
+    "seconds": 149.943,
+    "sec_per_step": 24.99048,
+    "examples_per_sec": 1.280488,
+    "status": "ok"
+  },
+  "recommended": {
+    "stage": "qa",
+    "micro_batch": 16,
+    "grad_accum": 2,
+    "effective_batch": 32,
+    "threads": 24,
+    "dataloader_workers": 0,
+    "optimizer_steps": 6,
+    "seconds": 137.781,
+    "sec_per_step": 22.963578,
+    "examples_per_sec": 1.393511,
+    "status": "ok"
+  },
+  "recommended_by_stage": {
+    "squad": {
+      "stage": "qa",
+      "micro_batch": 16,
+      "grad_accum": 2,
+      "effective_batch": 32,
+      "threads": 24,
+      "dataloader_workers": 0,
+      "optimizer_steps": 6,
+      "seconds": 137.781,
+      "sec_per_step": 22.963578,
+      "examples_per_sec": 1.393511,
+      "status": "ok"
+    },
+    "ipr": {
+      "stage": "qa",
+      "micro_batch": 16,
+      "grad_accum": 2,
+      "effective_batch": 32,
+      "threads": 24,
+      "dataloader_workers": 0,
+      "optimizer_steps": 6,
+      "seconds": 137.781,
+      "sec_per_step": 22.963578,
+      "examples_per_sec": 1.393511,
+      "status": "ok"
+    },
+    "mlm": {
+      "stage": "mlm",
+      "micro_batch": 8,
+      "grad_accum": 4,
+      "effective_batch": 32,
+      "threads": 24,
+      "dataloader_workers": 0,
+      "optimizer_steps": 4,
+      "seconds": 65.973,
+      "sec_per_step": 16.493342,
+      "examples_per_sec": 1.940177,
+      "status": "ok"
+    }
+  },
+  "speedup_vs_baseline": 1.088266,
+  "estimated_squad_stage_hours": 8.127,
+  "runtime_projection": {
+    "status": "estimated",
+    "basis": "measured optimizer-step pilots; observed 1,274-step SQuAD stage",
+    "qa_feature_counts": {
+      "ipr_100": 3998,
+      "ipr_25": 1075,
+      "ipr_50": 2003
+    },
+    "optimizer_steps_per_model": {
+      "ipr_100": 375,
+      "ipr_25": 102,
+      "ipr_50": 189,
+      "squad": 1274,
+      "mlm_approx": 87
+    },
+    "components_hours": {
+      "squad_23_models": 186.91,
+      "full_ipr_23_models": 55.02,
+      "low_resource_ipr_24_models": 22.27,
+      "mlm_18_models": 7.17
+    },
+    "training_compute_hours": 271.38,
+    "estimated_wall_hours_range": [
+      298.51,
+      352.79
+    ],
+    "estimated_wall_days_continuous": [
+      12.4,
+      14.7
+    ],
+    "overhead_allowance": "10-30% for evaluation, I/O, tokenisation and model loading"
+  },
+  "runs": [
+    {
+      "stage": "qa",
+      "micro_batch": 8,
+      "grad_accum": 4,
+      "effective_batch": 32,
+      "threads": 24,
+      "dataloader_workers": 0,
+      "optimizer_steps": 6,
+      "seconds": 149.943,
+      "sec_per_step": 24.99048,
+      "examples_per_sec": 1.280488,
+      "status": "ok"
+    },
+    {
+      "stage": "qa",
+      "micro_batch": 16,
+      "grad_accum": 2,
+      "effective_batch": 32,
+      "threads": 24,
+      "dataloader_workers": 0,
+      "optimizer_steps": 6,
+      "seconds": 137.781,
+      "sec_per_step": 22.963578,
+      "examples_per_sec": 1.393511,
+      "status": "ok"
+    },
+    {
+      "stage": "qa",
+      "micro_batch": 32,
+      "grad_accum": 1,
+      "effective_batch": 32,
+      "threads": 24,
+      "dataloader_workers": 0,
+      "optimizer_steps": 6,
+      "seconds": 138.07,
+      "sec_per_step": 23.011627,
+      "examples_per_sec": 1.390601,
+      "status": "ok"
+    },
+    {
+      "stage": "qa",
+      "micro_batch": 16,
+      "grad_accum": 2,
+      "effective_batch": 32,
+      "threads": 8,
+      "dataloader_workers": 0,
+      "optimizer_steps": 6,
+      "seconds": 192.2,
+      "sec_per_step": 32.03331,
+      "examples_per_sec": 0.99896,
+      "status": "ok"
+    },
+    {
+      "stage": "qa",
+      "micro_batch": 16,
+      "grad_accum": 2,
+      "effective_batch": 32,
+      "threads": 16,
+      "dataloader_workers": 0,
+      "optimizer_steps": 6,
+      "seconds": 152.126,
+      "sec_per_step": 25.354277,
+      "examples_per_sec": 1.262114,
+      "status": "ok"
+    },
+    {
+      "stage": "qa",
+      "micro_batch": 16,
+      "grad_accum": 2,
+      "effective_batch": 32,
+      "threads": 32,
+      "dataloader_workers": 0,
+      "optimizer_steps": 6,
+      "seconds": 168.623,
+      "sec_per_step": 28.103907,
+      "examples_per_sec": 1.138632,
+      "status": "ok"
+    },
+    {
+      "stage": "mlm",
+      "micro_batch": 4,
+      "grad_accum": 8,
+      "effective_batch": 32,
+      "threads": 24,
+      "dataloader_workers": 0,
+      "optimizer_steps": 4,
+      "seconds": 118.608,
+      "sec_per_step": 29.652072,
+      "examples_per_sec": 1.079183,
+      "status": "ok"
+    },
+    {
+      "stage": "mlm",
+      "micro_batch": 8,
+      "grad_accum": 4,
+      "effective_batch": 32,
+      "threads": 24,
+      "dataloader_workers": 0,
+      "optimizer_steps": 4,
+      "seconds": 65.973,
+      "sec_per_step": 16.493342,
+      "examples_per_sec": 1.940177,
+      "status": "ok"
+    },
+    {
+      "stage": "mlm",
+      "micro_batch": 16,
+      "grad_accum": 2,
+      "effective_batch": 32,
+      "threads": 24,
+      "dataloader_workers": 0,
+      "optimizer_steps": 4,
+      "seconds": 70.49,
+      "sec_per_step": 17.622474,
+      "examples_per_sec": 1.815863,
+      "status": "ok"
+    }
+  ]
+}

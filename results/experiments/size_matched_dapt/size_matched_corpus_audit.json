@@ -1,0 +1,33 @@
+{
+  "description": "Legacy record-matched DAPT corpus audit",
+  "tokenizer": "law-ai/InLegalBERT",
+  "max_sequence_length": 256,
+  "token_definition": "non-padding token ids after special tokens and truncation",
+  "corpora": {
+    "auth901": {
+      "records": 901,
+      "normalized_unique_contexts": 901,
+      "non_padding_tokens": 128929,
+      "test_context_overlap": 3,
+      "affected_test_questions": 6
+    },
+    "synth901": {
+      "records": 901,
+      "normalized_unique_contexts": 901,
+      "non_padding_tokens": 146001,
+      "test_context_overlap": 0,
+      "affected_test_questions": 0
+    },
+    "mixed901": {
+      "records": 901,
+      "normalized_unique_contexts": 901,
+      "non_padding_tokens": 138141,
+      "test_context_overlap": 1,
+      "affected_test_questions": 2
+    }
+  },
+  "relative_to_authentic_percent": {
+    "synth901": 13.2414,
+    "mixed901": 7.145
+  }
+}

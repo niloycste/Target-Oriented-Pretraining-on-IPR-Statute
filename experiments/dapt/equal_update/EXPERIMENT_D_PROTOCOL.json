@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "status": "post-hoc sensitivity protocol; not preregistered",
+  "created_at": "2026-09-24T15:58:46+05:30",
+  "objective": "Test corpus-composition conclusions under an equal 100-update MLM schedule.",
+  "conditions": [
+    "N (reused from Experiment A)",
+    "A",
+    "S",
+    "M"
+  ],
+  "trained_conditions": [
+    "A",
+    "S",
+    "M"
+  ],
+  "seeds": [
+    7,
+    42,
+    99,
+    123,
+    2026
+  ],
+  "mlm": {
+    "optimizer_updates": 100,
+    "warmup_steps": 10,
+    "scheduler": "linear",
+    "peak_learning_rate": 2e-05
+  },
+  "primary_analysis": "seed-blocked ANOVA over N/A/S/M full-data F1",
+  "secondary_analyses": [
+    "seed-paired A-N, S-N, and M-N differences with two-sided t intervals",
+    "the same analyses for exact match",
+    "Holm correction across the three DAPT-vs-N tests within each metric"
+  ],
+  "reporting_rule": "A non-significant result is non-detection, not evidence of equivalence.",
+  "input_sha256": {
+    "experiments/dapt/final_cpu/corpus_A.jsonl": "d1104445014bdafc4f9d64dc69934574a760db9937ad0832a87f26749170e945",
+    "experiments/dapt/final_cpu/corpus_S.jsonl": "8ed2308222d47954f7e2a73068319a7b2e384c89cd626f06725486f16f59217a",
+    "experiments/dapt/final_cpu/corpus_M.jsonl": "1c74adcf8574ffd40e70447e11dd30d079d5dcb083e695be47ca7d415e85c6e6",
+    "data/splits/train_squad.jsonl": "ba0d79c66e6bd3378136d816c3a1eba8e83ded73fca3c7b1787e51b569e5bce4",
+    "data/splits/val_squad.jsonl": "6fe6c3bcfa70360f62fd66b34eab9bf2bae4b9965b60f4d68e0117b9f8018028",
+    "data/splits/val.jsonl": "30e1e05c383864a928822092b1091e27424642c339819465bc891c2e6e4036d5",
+    "data/splits/test.jsonl": "851b3c0130fd21bd3da2c961a4d06e1f84f69ced3fa5487e780884b811734082"
+  },
+  "external_input_sha256": {
+    "C:\\Users\\USER\\.cache\\huggingface\\datasets\\rajpurkar___squad\\plain_text\\0.0.0\\7b6d24c440a36b6815f21b70d25016731768db1f\\squad-train.arrow": "c1a065b0dcedb5578bb69b6f2febb0b47a87d4c95d5139beaf5fe2eb867c944b",
+    "C:\\Users\\USER\\.cache\\huggingface\\datasets\\rajpurkar___squad\\plain_text\\0.0.0\\7b6d24c440a36b6815f21b70d25016731768db1f\\squad-validation.arrow": "f9533e6e987e1d3adab4de0feb4ee2b2bdce8e2fd408c3899c8f106e7285daef"
+  },
+  "reused_no_dapt_runs": [
+    "A_N_s7_100",
+    "A_N_s42_100",
+    "A_N_s99_100",
+    "A_N_s123_100",
+    "A_N_s2026_100"
+  ]
+}

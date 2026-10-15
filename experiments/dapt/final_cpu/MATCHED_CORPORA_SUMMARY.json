@@ -1,0 +1,51 @@
+{
+  "description": "Token-matched train-only DAPT corpora (dapt.md sec. 5, 8-10)",
+  "corpus_selection_seed": 20260829,
+  "tokenizer": "law-ai/InLegalBERT",
+  "max_sequence_length": 256,
+  "token_definition": "non-padding token ids after special tokens and truncation",
+  "primary_matching_criterion": "total non-padding MLM tokens",
+  "synthetic_source": "gemma3:12b only (dapt.md sec. 6 single-generator control)",
+  "token_budget": 128727,
+  "corpora": {
+    "A": {
+      "unique_records": 898,
+      "records": 898,
+      "repeated_records": 0,
+      "raw_words": 112740,
+      "non_padding_tokens": 128727,
+      "mean_tokens_per_record": 143.35,
+      "delta_from_budget": 0,
+      "delta_pct": 0.0,
+      "authentic_records": 898,
+      "synthetic_records": 0,
+      "authentic_token_share": 1.0
+    },
+    "S": {
+      "unique_records": 861,
+      "records": 861,
+      "repeated_records": 0,
+      "raw_words": 112330,
+      "non_padding_tokens": 128713,
+      "mean_tokens_per_record": 149.49,
+      "delta_from_budget": -14,
+      "delta_pct": -0.011,
+      "authentic_records": 0,
+      "synthetic_records": 861,
+      "authentic_token_share": 0.0
+    },
+    "M": {
+      "unique_records": 879,
+      "records": 879,
+      "repeated_records": 0,
+      "raw_words": 112665,
+      "non_padding_tokens": 128663,
+      "mean_tokens_per_record": 146.37,
+      "delta_from_budget": -64,
+      "delta_pct": -0.05,
+      "authentic_records": 450,
+      "synthetic_records": 429,
+      "authentic_token_share": 0.4997
+    }
+  }
+}

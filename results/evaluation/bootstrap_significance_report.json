@@ -1,0 +1,545 @@
+{
+  "date": "2026-08-27 22:31:00",
+  "qa_report": "results/evaluation/qa_eval_report.json",
+  "reference_code": "C'",
+  "reference_name": "Orig+Synth DAPT",
+  "compare_codes": [
+    "A",
+    "B'",
+    "E2'",
+    "H'",
+    "I'"
+  ],
+  "aligned_test_pairs": 344,
+  "bootstrap_iterations": 10000,
+  "seed": 42,
+  "per_model_ci": {
+    "A": {
+      "model_code": "A",
+      "paper_name": "InLegalBERT direct",
+      "raw_label": "A : InLegalBERT \u2192 IPR direct",
+      "metrics": {
+        "em": {
+          "n": 344,
+          "mean": 63.6628,
+          "ci_95_lo": 58.7209,
+          "ci_95_hi": 68.6047
+        },
+        "f1": {
+          "n": 344,
+          "mean": 85.0249,
+          "ci_95_lo": 82.2257,
+          "ci_95_hi": 87.7656
+        },
+        "char_f1": {
+          "n": 344,
+          "mean": 87.2588,
+          "ci_95_lo": 84.7832,
+          "ci_95_hi": 89.6327
+        }
+      }
+    },
+    "D": {
+      "model_code": "D",
+      "paper_name": "BERT-base direct",
+      "raw_label": "D : BERT-base \u2192 IPR direct",
+      "metrics": {
+        "em": {
+          "n": 344,
+          "mean": 63.6628,
+          "ci_95_lo": 58.7137,
+          "ci_95_hi": 68.6047
+        },
+        "f1": {
+          "n": 344,
+          "mean": 83.3284,
+          "ci_95_lo": 80.2917,
+          "ci_95_hi": 86.2879
+        },
+        "char_f1": {
+          "n": 344,
+          "mean": 86.3761,
+          "ci_95_lo": 83.7502,
+          "ci_95_hi": 88.8005
+        }
+      }
+    },
+    "E": {
+      "model_code": "E",
+      "paper_name": "LegalBERT-US direct",
+      "raw_label": "E : LegalBERT(US) \u2192 IPR direct",
+      "metrics": {
+        "em": {
+          "n": 344,
+          "mean": 65.1163,
+          "ci_95_lo": 59.8837,
+          "ci_95_hi": 70.0581
+        },
+        "f1": {
+          "n": 344,
+          "mean": 84.6613,
+          "ci_95_lo": 81.6844,
+          "ci_95_hi": 87.5471
+        },
+        "char_f1": {
+          "n": 344,
+          "mean": 86.6743,
+          "ci_95_lo": 83.9829,
+          "ci_95_hi": 89.2847
+        }
+      }
+    },
+    "G": {
+      "model_code": "G",
+      "paper_name": "InCaseLawBERT direct",
+      "raw_label": "G : InCaseLawBERT \u2192 IPR direct",
+      "metrics": {
+        "em": {
+          "n": 344,
+          "mean": 63.0814,
+          "ci_95_lo": 57.8488,
+          "ci_95_hi": 68.0233
+        },
+        "f1": {
+          "n": 344,
+          "mean": 84.3683,
+          "ci_95_lo": 81.4051,
+          "ci_95_hi": 87.156
+        },
+        "char_f1": {
+          "n": 344,
+          "mean": 86.4001,
+          "ci_95_lo": 83.7565,
+          "ci_95_hi": 88.9853
+        }
+      }
+    },
+    "B'": {
+      "model_code": "B'",
+      "paper_name": "SQuAD+IPR InLegalBERT",
+      "raw_label": "B' : InLegalBERT \u2192 SQuAD v1 \u2192 IPR",
+      "metrics": {
+        "em": {
+          "n": 344,
+          "mean": 67.7326,
+          "ci_95_lo": 62.7907,
+          "ci_95_hi": 72.6744
+        },
+        "f1": {
+          "n": 344,
+          "mean": 86.0216,
+          "ci_95_lo": 82.9937,
+          "ci_95_hi": 88.8609
+        },
+        "char_f1": {
+          "n": 344,
+          "mean": 87.8238,
+          "ci_95_lo": 85.1258,
+          "ci_95_hi": 90.349
+        }
+      }
+    },
+    "D2'": {
+      "model_code": "D2'",
+      "paper_name": "SQuAD+IPR BERT-base",
+      "raw_label": "D2': BERT-base \u2192 SQuAD v1 \u2192 IPR",
+      "metrics": {
+        "em": {
+          "n": 344,
+          "mean": 64.5349,
+          "ci_95_lo": 59.3023,
+          "ci_95_hi": 69.4767
+        },
+        "f1": {
+          "n": 344,
+          "mean": 83.5558,
+          "ci_95_lo": 80.4901,
+          "ci_95_hi": 86.5718
+        },
+        "char_f1": {
+          "n": 344,
+          "mean": 85.6554,
+          "ci_95_lo": 82.8706,
+          "ci_95_hi": 88.2432
+        }
+      }
+    },
+    "E2'": {
+      "model_code": "E2'",
+      "paper_name": "SQuAD+IPR LegalBERT-US",
+      "raw_label": "E2': LegalBERT(US) \u2192 SQuAD v1 \u2192 IPR",
+      "metrics": {
+        "em": {
+          "n": 344,
+          "mean": 66.8605,
+          "ci_95_lo": 61.9186,
+          "ci_95_hi": 71.8023
+        },
+        "f1": {
+          "n": 344,
+          "mean": 87.3721,
+          "ci_95_lo": 84.7498,
+          "ci_95_hi": 89.82
+        },
+        "char_f1": {
+          "n": 344,
+          "mean": 89.4719,
+          "ci_95_lo": 87.186,
+          "ci_95_hi": 91.546
+        }
+      }
+    },
+    "F'": {
+      "model_code": "F'",
+      "paper_name": "SQuAD+IPR InCaseLawBERT",
+      "raw_label": "F' : InCaseLawBERT \u2192 SQuAD v1 \u2192 IPR",
+      "metrics": {
+        "em": {
+          "n": 344,
+          "mean": 65.6977,
+          "ci_95_lo": 60.4651,
+          "ci_95_hi": 70.6395
+        },
+        "f1": {
+          "n": 344,
+          "mean": 85.1795,
+          "ci_95_lo": 82.2272,
+          "ci_95_hi": 87.9144
+        },
+        "char_f1": {
+          "n": 344,
+          "mean": 86.5268,
+          "ci_95_lo": 83.7033,
+          "ci_95_hi": 89.1648
+        }
+      }
+    },
+    "C'": {
+      "model_code": "C'",
+      "paper_name": "Orig+Synth DAPT",
+      "raw_label": "C' : Proposed Model: pretrained \u2192 SQuAD v1 \u2192 IPR  \u2605",
+      "metrics": {
+        "em": {
+          "n": 344,
+          "mean": 67.4419,
+          "ci_95_lo": 62.5,
+          "ci_95_hi": 72.3837
+        },
+        "f1": {
+          "n": 344,
+          "mean": 87.0367,
+          "ci_95_lo": 84.2762,
+          "ci_95_hi": 89.7098
+        },
+        "char_f1": {
+          "n": 344,
+          "mean": 89.3874,
+          "ci_95_lo": 87.0471,
+          "ci_95_hi": 91.5933
+        }
+      }
+    },
+    "H'": {
+      "model_code": "H'",
+      "paper_name": "Orig-only DAPT",
+      "raw_label": "H' : InLegalBERT \u2192 Original-only MLM \u2192 SQuAD v1 \u2192 IPR",
+      "metrics": {
+        "em": {
+          "n": 344,
+          "mean": 65.9884,
+          "ci_95_lo": 61.0465,
+          "ci_95_hi": 70.9302
+        },
+        "f1": {
+          "n": 344,
+          "mean": 85.7314,
+          "ci_95_lo": 82.8488,
+          "ci_95_hi": 88.4798
+        },
+        "char_f1": {
+          "n": 344,
+          "mean": 87.182,
+          "ci_95_lo": 84.5017,
+          "ci_95_hi": 89.7656
+        }
+      }
+    },
+    "I'": {
+      "model_code": "I'",
+      "paper_name": "Synth-only DAPT",
+      "raw_label": "I' : InLegalBERT \u2192 Synth-only MLM \u2192 SQuAD v1 \u2192 IPR",
+      "metrics": {
+        "em": {
+          "n": 344,
+          "mean": 65.407,
+          "ci_95_lo": 60.4651,
+          "ci_95_hi": 70.3488
+        },
+        "f1": {
+          "n": 344,
+          "mean": 85.9577,
+          "ci_95_lo": 83.054,
+          "ci_95_hi": 88.6536
+        },
+        "char_f1": {
+          "n": 344,
+          "mean": 88.3966,
+          "ci_95_lo": 85.9407,
+          "ci_95_hi": 90.804
+        }
+      }
+    }
+  },
+  "comparisons": [
+    {
+      "reference_code": "C'",
+      "reference_name": "Orig+Synth DAPT",
+      "reference_raw_label": "C' : Proposed Model: pretrained \u2192 SQuAD v1 \u2192 IPR  \u2605",
+      "comparator_code": "A",
+      "comparator_name": "InLegalBERT direct",
+      "comparator_raw_label": "A : InLegalBERT \u2192 IPR direct",
+      "metrics": {
+        "em": {
+          "n": 344,
+          "reference_mean": 67.4419,
+          "comparator_mean": 63.6628,
+          "delta": 3.7791,
+          "ci_95_lo": 0.2907,
+          "ci_95_hi": 7.2674,
+          "p_value_raw": 0.042196,
+          "p_value_holm": 0.21098,
+          "significant_holm_0.05": false
+        },
+        "f1": {
+          "n": 344,
+          "reference_mean": 87.0367,
+          "comparator_mean": 85.0249,
+          "delta": 2.0119,
+          "ci_95_lo": 0.1657,
+          "ci_95_hi": 3.92,
+          "p_value_raw": 0.033197,
+          "p_value_holm": 0.165985,
+          "significant_holm_0.05": false
+        },
+        "char_f1": {
+          "n": 344,
+          "reference_mean": 89.3874,
+          "comparator_mean": 87.2588,
+          "delta": 2.1286,
+          "ci_95_lo": 0.3803,
+          "ci_95_hi": 3.953,
+          "p_value_raw": 0.015598,
+          "p_value_holm": 0.062392,
+          "significant_holm_0.05": false
+        }
+      },
+      "mcnemar_em": {
+        "b_ref_correct_other_wrong": 25,
+        "c_ref_wrong_other_correct": 12,
+        "chi2_yates": 3.8919,
+        "p_value": 0.04852,
+        "significant_0.05": true
+      }
+    },
+    {
+      "reference_code": "C'",
+      "reference_name": "Orig+Synth DAPT",
+      "reference_raw_label": "C' : Proposed Model: pretrained \u2192 SQuAD v1 \u2192 IPR  \u2605",
+      "comparator_code": "B'",
+      "comparator_name": "SQuAD+IPR InLegalBERT",
+      "comparator_raw_label": "B' : InLegalBERT \u2192 SQuAD v1 \u2192 IPR",
+      "metrics": {
+        "em": {
+          "n": 344,
+          "reference_mean": 67.4419,
+          "comparator_mean": 67.7326,
+          "delta": -0.2907,
+          "ci_95_lo": -3.4884,
+          "ci_95_hi": 2.6163,
+          "p_value_raw": 0.913709,
+          "p_value_holm": 1.0,
+          "significant_holm_0.05": false
+        },
+        "f1": {
+          "n": 344,
+          "reference_mean": 87.0367,
+          "comparator_mean": 86.0216,
+          "delta": 1.0151,
+          "ci_95_lo": -0.6809,
+          "ci_95_hi": 2.8409,
+          "p_value_raw": 0.251175,
+          "p_value_holm": 0.50235,
+          "significant_holm_0.05": false
+        },
+        "char_f1": {
+          "n": 344,
+          "reference_mean": 89.3874,
+          "comparator_mean": 87.8238,
+          "delta": 1.5636,
+          "ci_95_lo": -0.3087,
+          "ci_95_hi": 3.5359,
+          "p_value_raw": 0.10379,
+          "p_value_holm": 0.31137,
+          "significant_holm_0.05": false
+        }
+      },
+      "mcnemar_em": {
+        "b_ref_correct_other_wrong": 14,
+        "c_ref_wrong_other_correct": 15,
+        "chi2_yates": 0.0,
+        "p_value": 1.0,
+        "significant_0.05": false
+      }
+    },
+    {
+      "reference_code": "C'",
+      "reference_name": "Orig+Synth DAPT",
+      "reference_raw_label": "C' : Proposed Model: pretrained \u2192 SQuAD v1 \u2192 IPR  \u2605",
+      "comparator_code": "E2'",
+      "comparator_name": "SQuAD+IPR LegalBERT-US",
+      "comparator_raw_label": "E2': LegalBERT(US) \u2192 SQuAD v1 \u2192 IPR",
+      "metrics": {
+        "em": {
+          "n": 344,
+          "reference_mean": 67.4419,
+          "comparator_mean": 66.8605,
+          "delta": 0.5814,
+          "ci_95_lo": -3.4884,
+          "ci_95_hi": 4.3605,
+          "p_value_raw": 0.825517,
+          "p_value_holm": 1.0,
+          "significant_holm_0.05": false
+        },
+        "f1": {
+          "n": 344,
+          "reference_mean": 87.0367,
+          "comparator_mean": 87.3721,
+          "delta": -0.3354,
+          "ci_95_lo": -2.1655,
+          "ci_95_hi": 1.4659,
+          "p_value_raw": 0.726127,
+          "p_value_holm": 0.726127,
+          "significant_holm_0.05": false
+        },
+        "char_f1": {
+          "n": 344,
+          "reference_mean": 89.3874,
+          "comparator_mean": 89.4719,
+          "delta": -0.0844,
+          "ci_95_lo": -1.8638,
+          "ci_95_hi": 1.6565,
+          "p_value_raw": 0.922108,
+          "p_value_holm": 0.922108,
+          "significant_holm_0.05": false
+        }
+      },
+      "mcnemar_em": {
+        "b_ref_correct_other_wrong": 26,
+        "c_ref_wrong_other_correct": 24,
+        "chi2_yates": 0.02,
+        "p_value": 0.887537,
+        "significant_0.05": false
+      }
+    },
+    {
+      "reference_code": "C'",
+      "reference_name": "Orig+Synth DAPT",
+      "reference_raw_label": "C' : Proposed Model: pretrained \u2192 SQuAD v1 \u2192 IPR  \u2605",
+      "comparator_code": "H'",
+      "comparator_name": "Orig-only DAPT",
+      "comparator_raw_label": "H' : InLegalBERT \u2192 Original-only MLM \u2192 SQuAD v1 \u2192 IPR",
+      "metrics": {
+        "em": {
+          "n": 344,
+          "reference_mean": 67.4419,
+          "comparator_mean": 65.9884,
+          "delta": 1.4535,
+          "ci_95_lo": -1.1628,
+          "ci_95_hi": 4.0698,
+          "p_value_raw": 0.326767,
+          "p_value_holm": 0.980301,
+          "significant_holm_0.05": false
+        },
+        "f1": {
+          "n": 344,
+          "reference_mean": 87.0367,
+          "comparator_mean": 85.7314,
+          "delta": 1.3054,
+          "ci_95_lo": -0.2531,
+          "ci_95_hi": 3.0148,
+          "p_value_raw": 0.10399,
+          "p_value_holm": 0.41596,
+          "significant_holm_0.05": false
+        },
+        "char_f1": {
+          "n": 344,
+          "reference_mean": 89.3874,
+          "comparator_mean": 87.182,
+          "delta": 2.2054,
+          "ci_95_lo": 0.5221,
+          "ci_95_hi": 3.977,
+          "p_value_raw": 0.007599,
+          "p_value_holm": 0.037995,
+          "significant_holm_0.05": true
+        }
+      },
+      "mcnemar_em": {
+        "b_ref_correct_other_wrong": 13,
+        "c_ref_wrong_other_correct": 8,
+        "chi2_yates": 0.7619,
+        "p_value": 0.382733,
+        "significant_0.05": false
+      }
+    },
+    {
+      "reference_code": "C'",
+      "reference_name": "Orig+Synth DAPT",
+      "reference_raw_label": "C' : Proposed Model: pretrained \u2192 SQuAD v1 \u2192 IPR  \u2605",
+      "comparator_code": "I'",
+      "comparator_name": "Synth-only DAPT",
+      "comparator_raw_label": "I' : InLegalBERT \u2192 Synth-only MLM \u2192 SQuAD v1 \u2192 IPR",
+      "metrics": {
+        "em": {
+          "n": 344,
+          "reference_mean": 67.4419,
+          "comparator_mean": 65.407,
+          "delta": 2.0349,
+          "ci_95_lo": -0.8721,
+          "ci_95_hi": 4.9419,
+          "p_value_raw": 0.191181,
+          "p_value_holm": 0.764724,
+          "significant_holm_0.05": false
+        },
+        "f1": {
+          "n": 344,
+          "reference_mean": 87.0367,
+          "comparator_mean": 85.9577,
+          "delta": 1.0791,
+          "ci_95_lo": -0.342,
+          "ci_95_hi": 2.6088,
+          "p_value_raw": 0.145785,
+          "p_value_holm": 0.437355,
+          "significant_holm_0.05": false
+        },
+        "char_f1": {
+          "n": 344,
+          "reference_mean": 89.3874,
+          "comparator_mean": 88.3966,
+          "delta": 0.9908,
+          "ci_95_lo": -0.4217,
+          "ci_95_hi": 2.5792,
+          "p_value_raw": 0.187981,
+          "p_value_holm": 0.375962,
+          "significant_holm_0.05": false
+        }
+      },
+      "mcnemar_em": {
+        "b_ref_correct_other_wrong": 16,
+        "c_ref_wrong_other_correct": 9,
+        "chi2_yates": 1.44,
+        "p_value": 0.230139,
+        "significant_0.05": false
+      }
+    }
+  ]
+}

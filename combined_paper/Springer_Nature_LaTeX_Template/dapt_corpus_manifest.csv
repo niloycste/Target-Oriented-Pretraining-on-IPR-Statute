@@ -1,0 +1,8 @@
+artifact,role,records,normalized_unique,sha256
+merge data/pretraining_contexts.jsonl,source pool containing 3710 authentic records and 312 pilot synthetic records,4022,1213,80f451ea5399cd45ad8180f0a37af276cfd3d9cf45c12b346406536f9cc7a386
+merge data/pretraining_contexts_v2.jsonl,C-prime mixed DAPT corpus,14214,14213,2ba39aadecbdcced149cf97a6a8acb6508e4f468b825898fdf536399bf9e2a2a
+merge data/pretraining_contexts_synth_only.jsonl,I-prime synthetic-only DAPT corpus,13211,13211,4b810bacfbb1d66cb9a025065cff47c05f0cb93ac4dc79458d7a5c46905854f4
+synthetic_context__update/synthetic_contexts_large_merged.jsonl,accepted main generation pool,13211,13211,954c2c836a9645077a20cac60ca041eff331c086bbdc29fe9443fb15b1bb406f
+train-test-val/train.jsonl,supervised QA training split,3710,,3311841f104a0607363420fa5c010e75e45e358861350f5042bdfbab61f77491
+train-test-val/val.jsonl,supervised QA validation split,408,,30e1e05c383864a928822092b1091e27424642c339819465bc891c2e6e4036d5
+train-test-val/test.jsonl,supervised QA test split,344,,851b3c0130fd21bd3da2c961a4d06e1f84f69ced3fa5487e780884b811734082

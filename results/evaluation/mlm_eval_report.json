@@ -1,0 +1,47 @@
+{
+  "date": "2026-08-07 21:01:17",
+  "eval_source": "test.jsonl contexts (three contexts overlap H'/C' DAPT corpora; see leakage audit)",
+  "eval_contexts": 113,
+  "max_seq_length": 256,
+  "mlm_probability": 0.15,
+  "note": "Test-split diagnostic. Three contexts occur in the H'/C' DAPT corpora; the paper reports the overlap audit and exclusion sensitivity.",
+  "results": [
+    {
+      "label": "InLegalBERT baseline (no MLM)",
+      "loss": 2.415700912475586,
+      "perplexity": 11.197616156483226
+    },
+    {
+      "label": "auth901  (901 authentic)",
+      "loss": 1.1008775234222412,
+      "perplexity": 3.006803407010211
+    },
+    {
+      "label": "synth901 (901 synthetic)",
+      "loss": 1.1558260917663574,
+      "perplexity": 3.1766465354579334
+    },
+    {
+      "label": "mixed901 (450a + 451s)",
+      "loss": 1.1099051237106323,
+      "perplexity": 3.0340705194270723
+    },
+    {
+      "label": "H' base \u2014 MLM Orig-only",
+      "loss": 0.913132905960083,
+      "perplexity": 2.4921178869352127
+    },
+    {
+      "label": "C' base \u2014 MLM Orig+Synth (13,211 synth)",
+      "loss": 0.9438049793243408,
+      "perplexity": 2.569740649759215
+    },
+    {
+      "label": "I' base \u2014 MLM Synth-only (13,211 synth)",
+      "loss": 1.0273464918136597,
+      "perplexity": 2.7936430361599633
+    }
+  ],
+  "best_model": "H' base \u2014 MLM Orig-only",
+  "improvement_over_baseline_ppl": 8.7055
+}

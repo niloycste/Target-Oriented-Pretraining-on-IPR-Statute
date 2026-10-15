@@ -1,0 +1,128 @@
+{
+  "locked": true,
+  "locked_at": "2026-09-01T20:03:07+05:30",
+  "git_revision": "85d0a12",
+  "purpose": "Freeze code, corpora, splits and diagnostics before final DAPT training/test evaluation",
+  "design": {
+    "experiment_A": {
+      "conditions": [
+        "N",
+        "A",
+        "S",
+        "M"
+      ],
+      "seeds": [
+        7,
+        42,
+        99,
+        123,
+        2026
+      ]
+    },
+    "experiment_B": {
+      "conditions": [
+        "S",
+        "S_STYLE"
+      ],
+      "seeds": [
+        7,
+        42,
+        99
+      ]
+    },
+    "experiment_C": {
+      "conditions": [
+        "N",
+        "A",
+        "S",
+        "M"
+      ],
+      "seeds": [
+        7,
+        42,
+        99
+      ],
+      "fractions": [
+        25,
+        50,
+        100
+      ]
+    },
+    "test_records": 344,
+    "test_use": "canonical evaluation only after this lock"
+  },
+  "checks": {
+    "token_budget": 128727,
+    "corpora": {
+      "A": {
+        "records": 898,
+        "tokens": 128727,
+        "delta_pct": 0.0
+      },
+      "S": {
+        "records": 861,
+        "tokens": 128713,
+        "delta_pct": -0.011
+      },
+      "M": {
+        "records": 879,
+        "tokens": 128663,
+        "delta_pct": -0.05
+      },
+      "S_STYLE": {
+        "records": 858,
+        "tokens": 128723,
+        "delta_pct": -0.003
+      }
+    },
+    "mlm_diagnostic_contexts": 104,
+    "mlm_diagnostic_source": "val"
+  },
+  "sha256": {
+    "requirements.txt": "41e712b1eb3dff4858e438990e94f82ac12f7e5bfd6083d719bafb1f3fe10296",
+    "papers/target_pretraining/dapt.md": "035c691453e467dc34b965f25c012c737046c1f42c39e680c9e8f6dcd6207e5f",
+    "experiments/dapt/EXPERIMENT_PROTOCOL.md": "926045082e27531c2c8a36e4e956b80f59e6177e26965766fa37532dd1fca3f8",
+    "data/splits/train.jsonl": "3311841f104a0607363420fa5c010e75e45e358861350f5042bdfbab61f77491",
+    "data/splits/val.jsonl": "30e1e05c383864a928822092b1091e27424642c339819465bc891c2e6e4036d5",
+    "data/splits/test.jsonl": "851b3c0130fd21bd3da2c961a4d06e1f84f69ced3fa5487e780884b811734082",
+    "data/splits/train_squad.jsonl": "ba0d79c66e6bd3378136d816c3a1eba8e83ded73fca3c7b1787e51b569e5bce4",
+    "data/splits/val_squad.jsonl": "6fe6c3bcfa70360f62fd66b34eab9bf2bae4b9965b60f4d68e0117b9f8018028",
+    "experiments/dapt/final_cpu/corpus_A.jsonl": "d1104445014bdafc4f9d64dc69934574a760db9937ad0832a87f26749170e945",
+    "experiments/dapt/final_cpu/corpus_S.jsonl": "8ed2308222d47954f7e2a73068319a7b2e384c89cd626f06725486f16f59217a",
+    "experiments/dapt/final_cpu/corpus_M.jsonl": "1c74adcf8574ffd40e70447e11dd30d079d5dcb083e695be47ca7d415e85c6e6",
+    "experiments/dapt/final_cpu/corpus_S_STYLE.jsonl": "19a2aff333fea99b6118bf8dde1e075609205a307383f7029ec1e4288af6c111",
+    "experiments/dapt/final_cpu/A_manifest.json": "bcf42dc1c91e181ee33a05e5b761e1da1401a54d5bc0584dbf6b4e631f5d6296",
+    "experiments/dapt/final_cpu/S_manifest.json": "079b99b4b460e464a23d5b280bd5be1da847413f2277d9cb55a8c9de91b68cb5",
+    "experiments/dapt/final_cpu/M_manifest.json": "5fac42a5f994cf2013b38de14cb64ebb66b596006bd2542a871131f96164e149",
+    "experiments/dapt/final_cpu/MATCHED_CORPORA_SUMMARY.json": "e8c0e7142819716cbe69603f9110b7ec565b6a4c29739adae50a87d717330efa",
+    "experiments/dapt/final_cpu/S_STYLE_manifest.json": "5d0c88f5d724488de39f1a67aa6eea0a2614e0eb367868ce710518e89623604c",
+    "experiments/dapt/final_cpu/SYNTHETIC_PROVENANCE_AUDIT.json": "c1b5f4034dd2f748b5cbe2bb1aa940fe2b3f9802fcf026fbbe3704f59820ba58",
+    "experiments/dapt/final_cpu/CORPUS_CHARACTERISATION.json": "a918371138b2418f201b3946d111ffab59deab73b6e487dc31249de7c9cc1824",
+    "experiments/dapt/final_cpu/DRY_RUN_REPORT.md": "c41924b509f151c6450b2853e81748d286df1789a8b5a1f82248fbe9424cf080",
+    "experiments/dapt/final_cpu/MLM_DIAGNOSTIC_MANIFEST.json": "933a01d3553cfa81763ebafdfb4109afb5d1ea4b606854c5879188af8447b666",
+    "experiments/dapt/final_cpu/mlm_diagnostic.jsonl": "a88d8946bd07bb12725527b852622096a203af43e0845f4f5123e0200954dffc",
+    "experiments/dapt/final_cpu/LOW_RESOURCE_25_MANIFEST.json": "bfeb1ca829e57008010d474fc21015b0ada3db95f01daf889a0a57632514ab5b",
+    "experiments/dapt/final_cpu/LOW_RESOURCE_50_MANIFEST.json": "3825b0a615c1414de02f3d13b23669ae21b7f9313f0041485e25a03face7fd4a",
+    "experiments/dapt/final_cpu/train_squad_25.jsonl": "d4b5e80e6bae07cc983372d075993fdb311c3092132cacc1fc9cc053003f6391",
+    "experiments/dapt/final_cpu/train_squad_50.jsonl": "3f97a47d4074fa66198a30f76fb5061dff599145310780ec2e2d627943a370c6",
+    "experiments/dapt/final_cpu/cpu_benchmark.json": "02bf12738968bc2b1631cfb4235b781449885d6e85bdace25dd000083a5fb083",
+    "scripts/02_synthetic_dapt/generate_synthetic_large.py": "5d83f6fcb5c5a6985a516f2286b8c7a159e9af53f5bab6e729db7d629f85b111",
+    "scripts/02_synthetic_dapt/pretrain_mlm_original_only.py": "3d45762ef240e461f0d029ea681b19dcae0f48d4675285f9f9ac55089cc8234c",
+    "scripts/03_finetuning/finetune_squad_v1_original_only.py": "8f1074abb061e620ad7a41d0eee103d45198b7cc4789f4de126c8269a699155e",
+    "scripts/03_finetuning/finetune_ipr_original_only.py": "645f165ef391656a4ad4e1f3d1b74579932680cced886ce69c392b34a52402d1",
+    "scripts/09_dapt_final/audit_synthetic_provenance.py": "d774310c8191ab51a6fafb13ac36ac3f00e5eb9a395457f07a417ab6becb4c76",
+    "scripts/09_dapt_final/benchmark_cpu_config.py": "333e84cb6b9152393a26a61d0a7d4c12df9c2f4c06df54ef006d46ce3a27e1b6",
+    "scripts/09_dapt_final/build_final_matched_corpora.py": "e5c3b69d7b80e82179d2501524da7eac94ef0d1441acbddde5eb97bc8fa0755d",
+    "scripts/09_dapt_final/generate_style_only_corpus.py": "882cebdb151daf0098bde159b12a2f1cf3fbc9859d632a9745ce2ce2e2038ed6",
+    "scripts/09_dapt_final/characterise_corpora.py": "1021b9fab3c3b59bf8aa6b7f602936686d5f716fddf35bddf3e3cd2d11558a62",
+    "scripts/09_dapt_final/build_diagnostic_and_lowresource.py": "5e0fa227446f01acaf71c45452a0e27c46d719870b47165ffcc88d845d46a06f",
+    "scripts/09_dapt_final/write_dry_run_report.py": "a31d5192a4d82df0116b8b8ca21eb611fbe2eee139792e98d8321b3e77c63a31",
+    "scripts/09_dapt_final/run_full_study.py": "6050ddc703350a9582620e46027b01c28da0c283167cdbc75b0962aed7d7f89e",
+    "scripts/09_dapt_final/prepare_final_analysis_lock.py": "f579717c59fe66e825e13036486f8c5b59d574d0d4a34b2f0327729da812d8f0",
+    "scripts/09_dapt_final/run_final_experiments.py": "8de7220b1b6afa47296831afdcd6f6cebd605af6fd8a8b66dc726bb74cd06b7a",
+    "scripts/09_dapt_final/evaluate_final_experiments.py": "8769d70891494050dbcb7f749dd35f283bdb0608c04557215554e708508bc84f",
+    "scripts/09_dapt_final/evaluate_final_mlm.py": "844f3e96a74fe4434eb1be490e67ff60e032edd23e67774cab954f661776a976",
+    "scripts/09_dapt_final/analyse_final_experiments.py": "19466bf4cb7338839d2018d33fb9bb369944e84985f653c4b3785a67499b1f35",
+    "scripts/qa_evaluation.py": "1bf07286ea9c8d57fe575c68cd758128f84a99e0285911fa8975b474b3856dcc"
+  }
+}

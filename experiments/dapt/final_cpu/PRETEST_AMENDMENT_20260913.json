@@ -1,0 +1,305 @@
+{
+  "created_at": "2026-09-13T11:06:32.401129+05:30",
+  "approved_by": "author: explicit conversation approval, 2026-09-13",
+  "original_lock_sha256": "b05afa430cd0846b714157de1da6b66bc508eae2b40bf8e1e6659fd1f8d2cfc3",
+  "limitations": "Original runner source unavailable; equivalence to the original runner cannot be proved. Validation results were already observed before this amendment. No final test results exist at amendment creation.",
+  "overrides": {
+    "scripts/09_dapt_final/evaluate_final_experiments.py": {
+      "original_sha256": "8769d70891494050dbcb7f749dd35f283bdb0608c04557215554e708508bc84f",
+      "reviewed_sha256": "1a4dc319c2f42f45bf55b26ffaf364ca285cb22095ea7a18f706f2de2d6ca617",
+      "reason": "Add strict dated-amendment verification and frozen-checkpoint enforcement; scoring and decoding unchanged"
+    },
+    "scripts/09_dapt_final/run_final_experiments.py": {
+      "original_sha256": "8de7220b1b6afa47296831afdcd6f6cebd605af6fd8a8b66dc726bb74cd06b7a",
+      "reviewed_sha256": "99178adeaecfb83fa35637e3c990d1fb6a28cc2fbca0b829168ca7d2b77a7bd3",
+      "reason": "Reviewed current runner and saved stage scripts"
+    }
+  },
+  "additional_sha256": {
+    "scripts/09_dapt_final/analysis_amendment.py": "c847dd5abfa37f835b02eecd24294825babb20ec5b7b43ccc8ed6185d2923f87",
+    "scripts/09_dapt_final/freeze_pretest_amendment.py": "ac31cfc0461220dfb7d4bb4b480918036e8bfbe8304191d0d18d3a44e230bf1f",
+    "scripts/05_size_matched_dapt/size_matched_dapt_experiment.py": "302b2cfe1a9886724ab15e628f7d803fdf4cc3cc264f557239af1915b3f98dd9",
+    "experiments/dapt/final_cpu/RUNNER_LOCK_REVIEW.json": "9b609d96ebfc95516a95bcc982664fd109117cd73595180a0533769895a32656",
+    "experiments/dapt/final_cpu/RUNNER_LOCK_REVIEW.md": "a5344ac254d34a30a3ed7521bc63534136407ed685924017daf81907fbe6f543",
+    "experiments/dapt/final_cpu/TRAINING_COMPLETION_AUDIT.json": "6058c22497dfd8b5e187ede99ab0d19f5e3acf9583e0489599bdd8ac2e3bbc72",
+    "experiments/dapt/final_cpu/validation_results.json": "49f054f754877a4041065ff27190c715023f36762ef5c6e33aede2a67361c8af",
+    "artifacts/models/final_cpu/A_N_s7_squad.py": "51a46a27a0ad00984749adc4cafd5e6e71f722803267ba05b5b8d117350dbc6f",
+    "artifacts/models/final_cpu/A_N_s7_ipr.py": "fbdfb1b2ac9332801c4db517304f656604090a74ca8bbb2e7c88c7aa160806fb",
+    "artifacts/models/final_cpu/A_N_s42_squad.py": "c7d5fe3472ae3d19808084ca89b49e2ba8fd8554ed5a0f31e886beb6d6fe3fc2",
+    "artifacts/models/final_cpu/A_N_s42_ipr.py": "dd0a198087fda820f13884c5210f959ba6469cb8cfadd12721da8a286464a445",
+    "artifacts/models/final_cpu/A_N_s99_squad.py": "b4e1c2ab074f8c4a84b190116eb2dd9013c17d17d23eab7d8cb64e156fb020fc",
+    "artifacts/models/final_cpu/A_N_s99_ipr.py": "c5874977f61bb692ac5e4fe7cc3e598bb87360b61c7ad261b057671166c583cb",
+    "artifacts/models/final_cpu/A_N_s123_squad.py": "0827d7691132874f35612bf3c591922b2c07e48cf67666a08ca0433f684e9cfe",
+    "artifacts/models/final_cpu/A_N_s123_ipr.py": "068f79d9a1429490666577066e7d9adb560ae49c26603b27ca477ed78869b170",
+    "artifacts/models/final_cpu/A_N_s2026_squad.py": "4975f3dd1526ca72db307e5bd542381cd351bc325b38376d47124a1cc5509dd6",
+    "artifacts/models/final_cpu/A_N_s2026_ipr.py": "eaae39c2e4ad8a41f29ad3eceae96cf58d6b789d0bfab340a8b5ea1e3a8cace9",
+    "artifacts/models/final_cpu/A_A_s7_mlm.py": "0844597e484a88d0e4de027fd6a322715de4073ed2ce63b028b92405cf5525e0",
+    "artifacts/models/final_cpu/A_A_s7_squad.py": "68819e61685a2c8dde44009a938dc67f569d536d06e17905e8ec012dc1e8b1c3",
+    "artifacts/models/final_cpu/A_A_s7_ipr.py": "d274cde3938540eb6a591df77124a45ff4d169da5460432a27a0399883a7b474",
+    "artifacts/models/final_cpu/A_A_s42_mlm.py": "0bfd621b9ab32626fa8067e600c290d3915552579ffe443f4174c40bebacdeff",
+    "artifacts/models/final_cpu/A_A_s42_squad.py": "f1ba8a583d643df519df2c46fcff1c9453f4e68139124ad37b3ae76590641dd7",
+    "artifacts/models/final_cpu/A_A_s42_ipr.py": "1d2b6c6b985a0c0af7337d4c48b6c6dd9a8b935b83b49319c296bc38e7b7db0a",
+    "artifacts/models/final_cpu/A_A_s99_mlm.py": "f2d2ee83c7753965eef9a39dc08fae349fc49223a9e0c9451cfb3426fff3c0c2",
+    "artifacts/models/final_cpu/A_A_s99_squad.py": "d0fc34b7e28c779dcfa271873ef477d0d2a6ff722251d5f1a47a9ad9ad0020a2",
+    "artifacts/models/final_cpu/A_A_s99_ipr.py": "cd346601e82c9e3cc9c1fb7d9691e4b9b8ebefaef9c69305f6d2dba8bfa16128",
+    "artifacts/models/final_cpu/A_A_s123_mlm.py": "c9bef194f3f4d43ada406655844d1de7deba2e29922d1a35fa7f8ef84a39d94f",
+    "artifacts/models/final_cpu/A_A_s123_squad.py": "3686d91768af39e5a313ab7c50ff2c30cffe695f77d2d54b6641efaf1b696922",
+    "artifacts/models/final_cpu/A_A_s123_ipr.py": "2a1f73929f0d1aa574980f3cf6e8b6fb6359769c96deb4ee1a459b42dd67d7ea",
+    "artifacts/models/final_cpu/A_A_s2026_mlm.py": "7c9962b217e26fd4bf1a6ca536c268dedada00539fdb0dbd888cc2e625ae7845",
+    "artifacts/models/final_cpu/A_A_s2026_squad.py": "c2794a86a2b5c4c69a7f13c4787f36168466f45a6b5c97797150bd065b8316df",
+    "artifacts/models/final_cpu/A_A_s2026_ipr.py": "8f3ac2f12d6e2e66dfe1e3f1934468563b316ad24491c875842a82563db982bf",
+    "artifacts/models/final_cpu/A_S_s7_mlm.py": "eaf6a63ebcf02ae95853cee1dced875556ee5e25b13df801b43d98651fa04ccc",
+    "artifacts/models/final_cpu/A_S_s7_squad.py": "5e223548202ac1bc3e0091b1216abb28e73c5f75300a28e8aa14046c77359625",
+    "artifacts/models/final_cpu/A_S_s7_ipr.py": "9a03b8582ac43fa59832a4f366ec72ea9fda076bfbb5b22b00dc7672a17ec943",
+    "artifacts/models/final_cpu/A_S_s42_mlm.py": "9a47f4f67ee452b9fe01626fc4ccf7cdae4c8ddb5f8d649c9e7df5b2f9823114",
+    "artifacts/models/final_cpu/A_S_s42_squad.py": "1c6cca810a5950aeca59a7789312f1852a377bc08ec489d2b5eed2f3334777ea",
+    "artifacts/models/final_cpu/A_S_s42_ipr.py": "17430f779dc576337245118cc8198b4335c6887639922d434e2a1a340a1b762c",
+    "artifacts/models/final_cpu/A_S_s99_mlm.py": "30d7a3e3f65e86f30075cd36f84c30ebd44806c24944b426a355fbc2a026efd9",
+    "artifacts/models/final_cpu/A_S_s99_squad.py": "60c4d8f0f53053b5228364468ad47688e1b18d459a68a139b02ecc5959c5d0af",
+    "artifacts/models/final_cpu/A_S_s99_ipr.py": "1b76f3d9335968a178576f2e53a0426460ff730457b766a008cd1b373e5fdc8c",
+    "artifacts/models/final_cpu/A_S_s123_mlm.py": "de3c812920a9dca34f40f02390702fdce87dccc877afecfa127148ef0e4d6aff",
+    "artifacts/models/final_cpu/A_S_s123_squad.py": "90bbddef37c1ae889c028fe6a32bbf63f254c3f1ff4bad2cfdb0119e916cc265",
+    "artifacts/models/final_cpu/A_S_s123_ipr.py": "73178d80e32bae8fb571e0f023eb8e305005f923f5337e95196b1579d6ab8d0e",
+    "artifacts/models/final_cpu/A_S_s2026_mlm.py": "951845c0fc342e2e91ec46ef466f240ba39b9895be16e1cd83d5633b8314da3a",
+    "artifacts/models/final_cpu/A_S_s2026_squad.py": "2f89f3d0d045ed236cb6ef68dd36325aebf14dc10f2f52158511936387b8c32c",
+    "artifacts/models/final_cpu/A_S_s2026_ipr.py": "a793f33a8487a090514a90ad97635d312a030d92038c2ffca42730a474b0c496",
+    "artifacts/models/final_cpu/A_M_s7_mlm.py": "85637fa980777b43205c34e32dcd4a92f258ad612163061931c2f7827c774c24",
+    "artifacts/models/final_cpu/A_M_s7_squad.py": "0f474c9a0c96b83632f1a3f0548a30cc8b3ad0d951937667e0fb598093404d96",
+    "artifacts/models/final_cpu/A_M_s7_ipr.py": "c618163063e4578e55d53199fd71e3f470f17ff5e73db47254e87ee691219dfb",
+    "artifacts/models/final_cpu/A_M_s42_mlm.py": "d85e75e8473d85675aa80d6bf6b17a85732466176d252e5d4d0e9c971a282a67",
+    "artifacts/models/final_cpu/A_M_s42_squad.py": "77c6f3ec8bc6341408fba5d9fdee1a940cec6216b9b989afe154467dbc8897e0",
+    "artifacts/models/final_cpu/A_M_s42_ipr.py": "9fd3d4765f7f7a4291f5679d6edcb5bdf85a5ab5c638b95baca2d246ff30eda4",
+    "artifacts/models/final_cpu/A_M_s99_mlm.py": "701bdc6da8f0b3a73a91a179c8d287615bdb9d9c7ada3874848075cfed429dbd",
+    "artifacts/models/final_cpu/A_M_s99_squad.py": "448d1c3c25d048b56f0e85a2528ce841f66f4a69c372f6c2ca44fea6f443d24d",
+    "artifacts/models/final_cpu/A_M_s99_ipr.py": "adf54706b51bad3f44e94d12b4b12219ee34798598ef37f41891324e318060fb",
+    "artifacts/models/final_cpu/A_M_s123_mlm.py": "6678ef208f78ce7d7afffba1407afb06f812a04cdd4267d53585840d1cc35d2d",
+    "artifacts/models/final_cpu/A_M_s123_squad.py": "befa97b2827a3d8992554045999b3e8495dfdd79ef024113a20bff6b15f28f08",
+    "artifacts/models/final_cpu/A_M_s123_ipr.py": "86db8dfbce598f9c99aa32733628f69467c21b880640e692885a93a787a1c895",
+    "artifacts/models/final_cpu/A_M_s2026_mlm.py": "0d49ad7d2475381d497a6984b63c4ba6358e8a7c5385fba17eabb847df2b7e9d",
+    "artifacts/models/final_cpu/A_M_s2026_squad.py": "ad3fafa8c287807944f440416ff535d3775bb10a3868d101652ba4862c8c79de",
+    "artifacts/models/final_cpu/A_M_s2026_ipr.py": "2e06b2b9d8570dc22eddd33b8cbd6569bf00cbc25c63de5fe4ea6bacf99caaa2",
+    "artifacts/models/final_cpu/B_S_STYLE_s7_mlm.py": "1842718e46ead4a62bf1de416b466b1c7f9214a68bcd0ddfedc2a7ac2df47027",
+    "artifacts/models/final_cpu/B_S_STYLE_s7_squad.py": "f1c4b93e777a1b8150ded2358f0b794b7e246f0d4ab5b1f3ed65d714ab7c8009",
+    "artifacts/models/final_cpu/B_S_STYLE_s7_ipr.py": "e029269ce29ecc13637bf00dda7ba0b9089b3cf286c947a8958757b0c57a21b9",
+    "artifacts/models/final_cpu/B_S_STYLE_s42_mlm.py": "de604bff04d3fcc5eade90e4b21dfeca0eb23a0bb002ff3ad9c0a5fc358e8785",
+    "artifacts/models/final_cpu/B_S_STYLE_s42_squad.py": "cb3584d21267faa766d3c18881c0d62f49c0f9107540e32986c6bf968ae674f9",
+    "artifacts/models/final_cpu/B_S_STYLE_s42_ipr.py": "8ded306960cab67aa62aea0e93eaf0744089a49b0f2f1e92776c7092a1a9f16d",
+    "artifacts/models/final_cpu/B_S_STYLE_s99_mlm.py": "0a3dccbc3764a248e056b226c7af8314bab085589ffbfc3aa27836aa894e4091",
+    "artifacts/models/final_cpu/B_S_STYLE_s99_squad.py": "4db979fecfd175999cab27be028f2b9536e5455111c31c87128e5936777f3f29",
+    "artifacts/models/final_cpu/B_S_STYLE_s99_ipr.py": "b5fee69f3d5c12980fae4adf886950ac82c62f312068de5f46dd7181e6dbb363",
+    "artifacts/models/final_cpu/C_N25_s7_ipr.py": "fd50c53f1bd225c87d78d6667f96bba05870f69724b52a0729224e9972250c72",
+    "artifacts/models/final_cpu/C_N50_s7_ipr.py": "686b8fa4e85df11ecc19d4065be78a360e1b21dc0224d06655c7294782f2c735",
+    "artifacts/models/final_cpu/C_N25_s42_ipr.py": "a6024720bc5fac23926cb650facfb778b247527f91dcc81df351e0fb4ec63057",
+    "artifacts/models/final_cpu/C_N50_s42_ipr.py": "e99eb2127dfe65cef8f35ed3a6b4359fddc81eaaf1c525da513965dbdf173fca",
+    "artifacts/models/final_cpu/C_N25_s99_ipr.py": "7c32fc9603d06a5d5953f7c05392a21e1ec46fd60790c649b50dd1f0c3303d0f",
+    "artifacts/models/final_cpu/C_N50_s99_ipr.py": "5ee12b895278ec9c7da84896e8a3b597b49d0783347e450034187e0d39c78c13",
+    "artifacts/models/final_cpu/C_A25_s7_ipr.py": "15ba16327ddf21eaf11efb05c70789a7ed615f52e4e11843a3268b63b33f4130",
+    "artifacts/models/final_cpu/C_A50_s7_ipr.py": "a51ca766b72ea72af257c16dceb72008462136fab07fb3afc12b02b3f3b6a076",
+    "artifacts/models/final_cpu/C_A25_s42_ipr.py": "3c53a744d73217c00d5346f114a9b147252416b4a85c3307fb5f011063bfd5dd",
+    "artifacts/models/final_cpu/C_A50_s42_ipr.py": "081dab27383a28b33ab5270ae3863755bcf3509921d248c40e82d0b410c7492b",
+    "artifacts/models/final_cpu/C_A25_s99_ipr.py": "9d9dd5433dbc351d3581b13b0dba9d386be6b447f52c9b11d5ac086859978c39",
+    "artifacts/models/final_cpu/C_A50_s99_ipr.py": "6631c32044b069cc275944c1a41c969d71efe2df478cec06809f89042f26a957",
+    "artifacts/models/final_cpu/C_S25_s7_ipr.py": "4d5ec394b858822bea0c79fc0234b79743d90bf3584f790ad45b3e320a406c46",
+    "artifacts/models/final_cpu/C_S50_s7_ipr.py": "cebfbc994cfdb83611e3be2faee899b4e4d180a283c2df0f85ffc578a64f02e3",
+    "artifacts/models/final_cpu/C_S25_s42_ipr.py": "060d75e6afea14a59ec4e2c97ab3bf7798b02b8f8220e662e390df1bab5549cb",
+    "artifacts/models/final_cpu/C_S50_s42_ipr.py": "1b84bca80ea8259fe3d6d5a0b6c0fbeaf198c4f79e6fd1e9596f31992b3a1241",
+    "artifacts/models/final_cpu/C_S25_s99_ipr.py": "1b26db41f66291a06d7ddba3aca16925ca5a9e73889d93cf0f1d2ba2d52b3512",
+    "artifacts/models/final_cpu/C_S50_s99_ipr.py": "16f91a9860bfdc98d21d5018d13293e0bdda6d693b5b80109ab0fc7ede759898",
+    "artifacts/models/final_cpu/C_M25_s7_ipr.py": "7daba6678196d796bc1c3417647bd8df5db1eb1cfa80b9882ca7271ee4cf7e32",
+    "artifacts/models/final_cpu/C_M50_s7_ipr.py": "3d0ae17a6af5729b68f2bf88e41f5159b31a13ca031e1aff9c15c494a6e977c4",
+    "artifacts/models/final_cpu/C_M25_s42_ipr.py": "9651e4272b48af6676ac39a83e4d76756153c50b7c16e98829f572ffdf87458e",
+    "artifacts/models/final_cpu/C_M50_s42_ipr.py": "ebd9b6ed048f71a74fd46ead555842c7732af389aea2750bc58585ba0818d237",
+    "artifacts/models/final_cpu/C_M25_s99_ipr.py": "8b7fe0ea92fb0d0583d19a72fbee4fa5038c82fe05b56ab34363a68321ecb1af",
+    "artifacts/models/final_cpu/C_M50_s99_ipr.py": "3094f672a7eb7d598914fcaaa365221e0c13a531baf822b54de26b45dbc8e5de"
+  },
+  "checkpoints": {
+    "A_N_s7_100": {
+      "path": "artifacts/models/final_cpu/A_N_s7_ipr/final",
+      "sha256": "24e2a722bae7dd8d3cfa07928744465159d23701a23a855d87c7dc81d17e7866"
+    },
+    "A_N_s42_100": {
+      "path": "artifacts/models/final_cpu/A_N_s42_ipr/final",
+      "sha256": "983785cc5c168743540eec02488849e2da00652d1331c25259252e26391e6ffe"
+    },
+    "A_N_s99_100": {
+      "path": "artifacts/models/final_cpu/A_N_s99_ipr/final",
+      "sha256": "f91a40205b378547426f95364dd101c977bb6bb31a44efdbf23cddfb7fcaf3e3"
+    },
+    "A_N_s123_100": {
+      "path": "artifacts/models/final_cpu/A_N_s123_ipr/final",
+      "sha256": "8f149ca8a55a8a7445c008702cf3c6709bcdc00ea2835d0899c56979c294c4ad"
+    },
+    "A_N_s2026_100": {
+      "path": "artifacts/models/final_cpu/A_N_s2026_ipr/final",
+      "sha256": "ca5d9f26abb5fe329d6c100887fa13c148e3fb42187ea6ec59fdba94ba972735"
+    },
+    "A_A_s7_100": {
+      "path": "artifacts/models/final_cpu/A_A_s7_ipr/final",
+      "sha256": "baf440981a2d6a2781827c933843630cbc17e3868c2afc788d7e5d43eaa528d1"
+    },
+    "A_A_s42_100": {
+      "path": "artifacts/models/final_cpu/A_A_s42_ipr/final",
+      "sha256": "1f710bca74c69c1036ed9b347749d43ceedb7aea612a66c65f0d7b4b50d5d589"
+    },
+    "A_A_s99_100": {
+      "path": "artifacts/models/final_cpu/A_A_s99_ipr/final",
+      "sha256": "86d4ad1e6397855d0420e3f877a39a827bae11f6490ade90de1ff93dd3f9f815"
+    },
+    "A_A_s123_100": {
+      "path": "artifacts/models/final_cpu/A_A_s123_ipr/final",
+      "sha256": "bf8a0fff47dad89f40af70ca63a5b29fb48d592f551453296184db7c3686165b"
+    },
+    "A_A_s2026_100": {
+      "path": "artifacts/models/final_cpu/A_A_s2026_ipr/final",
+      "sha256": "229a42819228d7ec0192b019618a819a1546ed7e79860f12f04f24a3720b50a8"
+    },
+    "A_S_s7_100": {
+      "path": "artifacts/models/final_cpu/A_S_s7_ipr/final",
+      "sha256": "0017b009b0fe69b872d6149afbac98aa1e969f0646281129c853de09a46aa9b6"
+    },
+    "A_S_s42_100": {
+      "path": "artifacts/models/final_cpu/A_S_s42_ipr/final",
+      "sha256": "a59bd849f4450281ab1ae5a4d4c74e28f313e51886d67ac8ee8f31410dba4e26"
+    },
+    "A_S_s99_100": {
+      "path": "artifacts/models/final_cpu/A_S_s99_ipr/final",
+      "sha256": "a67d1fb63b3ecb9fcc283be508f653a4d2a4e9a0e0ca7ff84ecfcb56d62b38a2"
+    },
+    "A_S_s123_100": {
+      "path": "artifacts/models/final_cpu/A_S_s123_ipr/final",
+      "sha256": "fb924d57cef67e06fc1504aa84aa1679ede57152ddbc2f82118a3a5b4dcfaa0b"
+    },
+    "A_S_s2026_100": {
+      "path": "artifacts/models/final_cpu/A_S_s2026_ipr/final",
+      "sha256": "ed23faf97c4c8600947a332b8f49f380f0520f5fe6f8175de3f0c76663f87ea2"
+    },
+    "A_M_s7_100": {
+      "path": "artifacts/models/final_cpu/A_M_s7_ipr/final",
+      "sha256": "6e7591df7024c7ec21e3717bedac1677d795912cd5a089660d6ac2a19618b584"
+    },
+    "A_M_s42_100": {
+      "path": "artifacts/models/final_cpu/A_M_s42_ipr/final",
+      "sha256": "253be5e0ef2d0e035a027211b62df6f2732da6756a1544f9d1464e59425ab077"
+    },
+    "A_M_s99_100": {
+      "path": "artifacts/models/final_cpu/A_M_s99_ipr/final",
+      "sha256": "1564cf168aafa0d4f66fa2f315cb8d2b13448054f3643402169551812fb2cb6b"
+    },
+    "A_M_s123_100": {
+      "path": "artifacts/models/final_cpu/A_M_s123_ipr/final",
+      "sha256": "c4438dd8d9871ce125c90fa48a9e58e13f07739470230e615723712ff8dc92c4"
+    },
+    "A_M_s2026_100": {
+      "path": "artifacts/models/final_cpu/A_M_s2026_ipr/final",
+      "sha256": "d439f5a1ee9c5432e7716ac9b4229139dcfd2987c6f3aa9cc08c46efe00a7fac"
+    },
+    "B_S_STYLE_s7_100": {
+      "path": "artifacts/models/final_cpu/B_S_STYLE_s7_ipr/final",
+      "sha256": "192d33745ff760c8150135fd0fa44d68012c15f5c25b7e9cbd424bcb2aa1a108"
+    },
+    "B_S_STYLE_s42_100": {
+      "path": "artifacts/models/final_cpu/B_S_STYLE_s42_ipr/final",
+      "sha256": "8381d984bf1437f467e6cc83063b5e43470a8ca72bfafb6cbec9127b8d8579bf"
+    },
+    "B_S_STYLE_s99_100": {
+      "path": "artifacts/models/final_cpu/B_S_STYLE_s99_ipr/final",
+      "sha256": "bd6fb30382d3872fe2e49e232f82800ddd8309d529f1cdd7bd15bf029d4cfe86"
+    },
+    "C_N_s7_25": {
+      "path": "artifacts/models/final_cpu/C_N25_s7_ipr/final",
+      "sha256": "284a49ea18ba645d257eb4bc4c505bf17f531c917f4ab4f08d661a3a9ed23830"
+    },
+    "C_N_s7_50": {
+      "path": "artifacts/models/final_cpu/C_N50_s7_ipr/final",
+      "sha256": "d1d30f029a622b38dee764ac285f04232534c9c00cb70baae83d2328453eb194"
+    },
+    "C_N_s42_25": {
+      "path": "artifacts/models/final_cpu/C_N25_s42_ipr/final",
+      "sha256": "6fbe034fd0f08e9a3b3418e85f0a34423aad50cf615a23bfd837b9ac65df835e"
+    },
+    "C_N_s42_50": {
+      "path": "artifacts/models/final_cpu/C_N50_s42_ipr/final",
+      "sha256": "ddb78917e7bb079813bcb67a41ae90880d572f58b7ace82a6050526f50686177"
+    },
+    "C_N_s99_25": {
+      "path": "artifacts/models/final_cpu/C_N25_s99_ipr/final",
+      "sha256": "0502207b810e13a35f506f58f464d55399c5c49ad89e44c7eb1ae23475d0bb5b"
+    },
+    "C_N_s99_50": {
+      "path": "artifacts/models/final_cpu/C_N50_s99_ipr/final",
+      "sha256": "d684d62f78a336835565e1dbb886a132eba3c799bbe94e05df287fa3c44d7157"
+    },
+    "C_A_s7_25": {
+      "path": "artifacts/models/final_cpu/C_A25_s7_ipr/final",
+      "sha256": "00621420b2ce299de574e3d98273bbcd54b4f6143dcea4a59754f1723e62d5b1"
+    },
+    "C_A_s7_50": {
+      "path": "artifacts/models/final_cpu/C_A50_s7_ipr/final",
+      "sha256": "6721bc7af42c8a79727451d6c0f6f08d272d59d3878cc68f3e0c1613a550f5c1"
+    },
+    "C_A_s42_25": {
+      "path": "artifacts/models/final_cpu/C_A25_s42_ipr/final",
+      "sha256": "7ea01006b70c5557d8932e081a36ca5c018e3ab21b93b09229a16b49c58f92ca"
+    },
+    "C_A_s42_50": {
+      "path": "artifacts/models/final_cpu/C_A50_s42_ipr/final",
+      "sha256": "a73c1fcd337a85bf29777e4ec033a5ae6c3baf19b430ccf81c6a9d5989a64536"
+    },
+    "C_A_s99_25": {
+      "path": "artifacts/models/final_cpu/C_A25_s99_ipr/final",
+      "sha256": "6b95c50a2a43974e024593f8f583b5e1f421e9027caa2f4aea996c00fb06b987"
+    },
+    "C_A_s99_50": {
+      "path": "artifacts/models/final_cpu/C_A50_s99_ipr/final",
+      "sha256": "632b5ce3aa286b2b15bb963454f7ee061f77fdd54e26cd6c1668cb574a258261"
+    },
+    "C_S_s7_25": {
+      "path": "artifacts/models/final_cpu/C_S25_s7_ipr/final",
+      "sha256": "049f811550ffe10f9a3d02f644d9e3de4c7e10253a4b9a97796e4f68ee4fef19"
+    },
+    "C_S_s7_50": {
+      "path": "artifacts/models/final_cpu/C_S50_s7_ipr/final",
+      "sha256": "265ccaee5c16df34ace16cbd0d076ffa41327c6784d56c97517202bc79eaad7f"
+    },
+    "C_S_s42_25": {
+      "path": "artifacts/models/final_cpu/C_S25_s42_ipr/final",
+      "sha256": "b78c5e6d289285bd82b8292c11dc31cd9189f8cea8499447b0a79156945a4042"
+    },
+    "C_S_s42_50": {
+      "path": "artifacts/models/final_cpu/C_S50_s42_ipr/final",
+      "sha256": "54e7bd5ab8491e7fd9bc580dd1214794678aab19af3612a6f0b9a11b1be9911c"
+    },
+    "C_S_s99_25": {
+      "path": "artifacts/models/final_cpu/C_S25_s99_ipr/final",
+      "sha256": "4039d3b20de95f2552c0cea9adcc595217b6a784ea35d43c157caf45b0c3edc8"
+    },
+    "C_S_s99_50": {
+      "path": "artifacts/models/final_cpu/C_S50_s99_ipr/final",
+      "sha256": "aa9c2e2d843501a72beca0fc5052230ab09310bddf8cecd261385cb7ccfd5200"
+    },
+    "C_M_s7_25": {
+      "path": "artifacts/models/final_cpu/C_M25_s7_ipr/final",
+      "sha256": "0f1e56cb8f72c972f4a7e913691b68fee254ba10d589fbc4a3d73ac3440f44b6"
+    },
+    "C_M_s7_50": {
+      "path": "artifacts/models/final_cpu/C_M50_s7_ipr/final",
+      "sha256": "bf9acefad559e46de8395b4cddf62436c771f8750812f6cefd7973afbab2dd28"
+    },
+    "C_M_s42_25": {
+      "path": "artifacts/models/final_cpu/C_M25_s42_ipr/final",
+      "sha256": "64b78f1fba8b5c918ae7db74e50f23cef2ae27058b9dc37a645e27fc49c32d79"
+    },
+    "C_M_s42_50": {
+      "path": "artifacts/models/final_cpu/C_M50_s42_ipr/final",
+      "sha256": "fb52d5c6fc53b5af3644ac94d9e98cfc00ba6f23b3bb6b3a7a824bc83d082933"
+    },
+    "C_M_s99_25": {
+      "path": "artifacts/models/final_cpu/C_M25_s99_ipr/final",
+      "sha256": "83e4dd1853951001e98d6aa11cf811e213e182ac3052244ed87cc607b24eecd6"
+    },
+    "C_M_s99_50": {
+      "path": "artifacts/models/final_cpu/C_M50_s99_ipr/final",
+      "sha256": "9f9a59a8d9a476cbd3cc3c90fdfecc8dee85ccfb77525c731acfc6258c397da4"
+    }
+  }
+}

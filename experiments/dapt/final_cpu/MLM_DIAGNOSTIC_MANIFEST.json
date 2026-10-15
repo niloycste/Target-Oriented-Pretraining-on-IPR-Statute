@@ -1,0 +1,744 @@
+{
+  "description": "Frozen validation-split MLM diagnostic (dapt.md sec. 24)",
+  "purpose": "secondary language-fit measure; never used for model selection",
+  "source_split": "val",
+  "excluded_because_in_a_dapt_corpus": 0,
+  "dapt_corpora_checked": [
+    "corpus_A",
+    "corpus_M",
+    "corpus_S",
+    "corpus_S_STYLE"
+  ],
+  "unique_validation_contexts": 104,
+  "diagnostic_contexts": 104,
+  "records": [
+    {
+      "context_id": "26fae36ac27cbac6",
+      "act": "copyright_act",
+      "section_no": "5",
+      "words": 96,
+      "sha256": "26fae36ac27cbac664ed0163cd64e65ed3daaa008b3dd13ae48983c32b815014"
+    },
+    {
+      "context_id": "8b656e5800f48bed",
+      "act": "copyright_act",
+      "section_no": "12",
+      "words": 287,
+      "sha256": "8b656e5800f48bed0e6b71673025bef62ba8f0ea0554a0a0a3b1989e421fe65b"
+    },
+    {
+      "context_id": "d0aed5b0515483fd",
+      "act": "copyright_act",
+      "section_no": "28",
+      "words": 40,
+      "sha256": "d0aed5b0515483fd23294c01973d05780ad2e6a8014b36b33c6bd22fb9be0de5"
+    },
+    {
+      "context_id": "cd692c17e8ce4a7f",
+      "act": "copyright_act",
+      "section_no": "29",
+      "words": 42,
+      "sha256": "cd692c17e8ce4a7f3371ed1e892b675892862387156b399b852c19cc4d69194b"
+    },
+    {
+      "context_id": "a25684b38a23d080",
+      "act": "copyright_act",
+      "section_no": "41",
+      "words": 239,
+      "sha256": "a25684b38a23d08009298bcd37e598a28deb6600603093cd6b753a2da8093c21"
+    },
+    {
+      "context_id": "8063384d3b019a17",
+      "act": "copyright_act",
+      "section_no": "50",
+      "words": 67,
+      "sha256": "8063384d3b019a17cd878100b9b9368c626b95e7bfff9e52de3b2e3968a6ecc2"
+    },
+    {
+      "context_id": "f7440940f92b2fb5",
+      "act": "copyright_act",
+      "section_no": "58",
+      "words": 140,
+      "sha256": "f7440940f92b2fb5e76c43b5b6df5642385a65531f71dd5ae3b19e133d5b918e"
+    },
+    {
+      "context_id": "7c0ba15311802648",
+      "act": "copyright_act",
+      "section_no": "60",
+      "words": 150,
+      "sha256": "7c0ba15311802648740662f5ab4fefb71f6bbecac6c64d63b6666ed065158bde"
+    },
+    {
+      "context_id": "6430817f92023347",
+      "act": "copyright_act",
+      "section_no": "68A",
+      "words": 39,
+      "sha256": "6430817f920233475f94a9e9ec4e3676a2794ee51e4ab395849b26845f8d1245"
+    },
+    {
+      "context_id": "f30c1263f046fdc1",
+      "act": "copyright_act",
+      "section_no": "77",
+      "words": 35,
+      "sha256": "f30c1263f046fdc11c4d911db6d1aab928abaad3d16032fd0162a98b093cb11a"
+    },
+    {
+      "context_id": "e8e52168572f4020",
+      "act": "patent_act",
+      "section_no": "10",
+      "words": 168,
+      "sha256": "e8e52168572f4020848f4d73a8d4713106bbee0536aee1bd9048777bcb8a60aa"
+    },
+    {
+      "context_id": "5469ef16a9e7d73b",
+      "act": "patent_act",
+      "section_no": "10",
+      "words": 78,
+      "sha256": "5469ef16a9e7d73beeb7de0872e0c383f7f3bf6b195e5038d41dd94fa0c6a3c0"
+    },
+    {
+      "context_id": "e1ec5be174b1589d",
+      "act": "patent_act",
+      "section_no": "10",
+      "words": 210,
+      "sha256": "e1ec5be174b1589dc82bc82848ef7dadcec577a5866d82e36daf190057ae8f34"
+    },
+    {
+      "context_id": "3df178dd4acdfc93",
+      "act": "patent_act",
+      "section_no": "10",
+      "words": 186,
+      "sha256": "3df178dd4acdfc9372c2706dd661384a5f8daa86a6197bb897891f21b333e520"
+    },
+    {
+      "context_id": "672afed182d42acb",
+      "act": "patent_act",
+      "section_no": "12",
+      "words": 124,
+      "sha256": "672afed182d42acbdc4dcbc88e92a6885fbcb210d2e67bb7ab6e3670b6ff209b"
+    },
+    {
+      "context_id": "34da5156efb5f675",
+      "act": "patent_act",
+      "section_no": "12",
+      "words": 43,
+      "sha256": "34da5156efb5f675337aec0252595691c2a57744ff603fb68fc293ff7f8ad898"
+    },
+    {
+      "context_id": "7baa9c035b049696",
+      "act": "patent_act",
+      "section_no": "14",
+      "words": 99,
+      "sha256": "7baa9c035b0496964df9f8a8661245974a32d9ed8ea3489a15e8d93f34dd9d91"
+    },
+    {
+      "context_id": "de8b1eb5afdc4322",
+      "act": "patent_act",
+      "section_no": "20",
+      "words": 210,
+      "sha256": "de8b1eb5afdc4322f5c83c1aae9ec31e5361eff224a21526ced7e07094c0cff5"
+    },
+    {
+      "context_id": "e668f23fabec6a96",
+      "act": "patent_act",
+      "section_no": "20",
+      "words": 149,
+      "sha256": "e668f23fabec6a9660fd164927f63c0772d40a501007f3ff3f8f526c7ba2f467"
+    },
+    {
+      "context_id": "719defc686dcea8d",
+      "act": "patent_act",
+      "section_no": "20",
+      "words": 97,
+      "sha256": "719defc686dcea8d501143fe92338b0083e1b83f7f07fc7d2a9603426e2518ce"
+    },
+    {
+      "context_id": "c04fdc40abd0b725",
+      "act": "patent_act",
+      "section_no": "21",
+      "words": 208,
+      "sha256": "c04fdc40abd0b725d61aa2f817b49f2cd41e76476a626dee4d64f5002593b02a"
+    },
+    {
+      "context_id": "53a327f515f8e84e",
+      "act": "patent_act",
+      "section_no": "21",
+      "words": 158,
+      "sha256": "53a327f515f8e84e217ef4c27fc7d64f1abf991d714cef0f7559dd2017e3051f"
+    },
+    {
+      "context_id": "ae4e3622706c4811",
+      "act": "patent_act",
+      "section_no": "29",
+      "words": 213,
+      "sha256": "ae4e3622706c4811936ba35cca882aa834d892f321b1696d87264e3e16be3472"
+    },
+    {
+      "context_id": "b02bd05a02445ae0",
+      "act": "patent_act",
+      "section_no": "29",
+      "words": 193,
+      "sha256": "b02bd05a02445ae05ffcb53a5af96845df11f00374b6de315587847777ebc2c0"
+    },
+    {
+      "context_id": "dc0bfcec3258387a",
+      "act": "patent_act",
+      "section_no": "58",
+      "words": 181,
+      "sha256": "dc0bfcec3258387ad5e78772059d1732090bde93a0a2aad89451401bede82377"
+    },
+    {
+      "context_id": "27100c1e6ad7e37d",
+      "act": "patent_act",
+      "section_no": "87",
+      "words": 181,
+      "sha256": "27100c1e6ad7e37da29aa3155d502b96ddfdef4c64e7ed4f254d942f468f534f"
+    },
+    {
+      "context_id": "9064c60b4050664c",
+      "act": "patent_act",
+      "section_no": "103",
+      "words": 190,
+      "sha256": "9064c60b4050664c67738c6bdfc1990531d6b4d375347371001068447b748258"
+    },
+    {
+      "context_id": "09b6b0203c58895a",
+      "act": "patent_act",
+      "section_no": "103",
+      "words": 221,
+      "sha256": "09b6b0203c58895a00c4afa6ada5d323217131d269bc7b84c0ebc78da35e46e5"
+    },
+    {
+      "context_id": "32c14a59842d45bf",
+      "act": "patent_act",
+      "section_no": "103",
+      "words": 40,
+      "sha256": "32c14a59842d45bf89346bae24212aa00bda4a56ad5a6c8bb8f10a8bd9a5f65a"
+    },
+    {
+      "context_id": "310017cd33c5d847",
+      "act": "patent_act",
+      "section_no": "126",
+      "words": 86,
+      "sha256": "310017cd33c5d847ce5ed5b1b432e8d5a2a81835440269a62fc0a1b07e5839f7"
+    },
+    {
+      "context_id": "34b51eb7fe37ab34",
+      "act": "patent_act",
+      "section_no": "126",
+      "words": 121,
+      "sha256": "34b51eb7fe37ab349edaeeeb58aa916a04a3f51a87b736291c2050f1a136ad98"
+    },
+    {
+      "context_id": "c5637dacdc98afe1",
+      "act": "patent_act",
+      "section_no": "142",
+      "words": 191,
+      "sha256": "c5637dacdc98afe136245f9f1836ad36d7a197dfd215068e592c82adc9cc61f6"
+    },
+    {
+      "context_id": "c4d4c6e9c123a768",
+      "act": "patent_act",
+      "section_no": "157A",
+      "words": 99,
+      "sha256": "c4d4c6e9c123a768803409877f56495ea14d55a4f684aad389ada4ccd6cf295a"
+    },
+    {
+      "context_id": "e6c25a3418bd7889",
+      "act": "patent_act",
+      "section_no": "157A",
+      "words": 64,
+      "sha256": "e6c25a3418bd78893b1dda9ad32da997b831cd6d8d2bf18b3b5def5ef0a79530"
+    },
+    {
+      "context_id": "ff21ba4c820f2bec",
+      "act": "patent_act",
+      "section_no": "159",
+      "words": 134,
+      "sha256": "ff21ba4c820f2becc89e878c2d14c4d6fa428c6b719e7919bc2cf8bd81b44362"
+    },
+    {
+      "context_id": "9c475f0d53dd4a85",
+      "act": "patent_act",
+      "section_no": "159",
+      "words": 156,
+      "sha256": "9c475f0d53dd4a85ab424769eef384777a503b95889cd79e133d749453d701c2"
+    },
+    {
+      "context_id": "b360416cf15d8159",
+      "act": "patent_act",
+      "section_no": "159",
+      "words": 94,
+      "sha256": "b360416cf15d8159776e89705f85381deaaed4e589c5bc230c0449b50cf34b88"
+    },
+    {
+      "context_id": "213371af0fb39b2c",
+      "act": "patent_act",
+      "section_no": "159",
+      "words": 98,
+      "sha256": "213371af0fb39b2ccb3dba9e60fb751ef3e90deb85b0185f5baacd5ba2546257"
+    },
+    {
+      "context_id": "bd1010edfa95f133",
+      "act": "patent_act",
+      "section_no": "159",
+      "words": 95,
+      "sha256": "bd1010edfa95f13352962ce413ae810d1bfc7105df36668ab8f235c8098c5c06"
+    },
+    {
+      "context_id": "43074bb49ad8202b",
+      "act": "patent_act",
+      "section_no": "159",
+      "words": 165,
+      "sha256": "43074bb49ad8202b05c208b9da81ae7c6fb9a0319e10b4dd66af3a3343c653ae"
+    },
+    {
+      "context_id": "0acd8d5e46ec5576",
+      "act": "patent_act",
+      "section_no": "159",
+      "words": 54,
+      "sha256": "0acd8d5e46ec55767fb69743f1fa5f0fd408b208038b10ef33d6f44751726742"
+    },
+    {
+      "context_id": "a795aa46a7e51353",
+      "act": "patent_act",
+      "section_no": "160",
+      "words": 161,
+      "sha256": "a795aa46a7e513538c82ee33d979e61bb5de3bc3fa7280494104db04c420acf2"
+    },
+    {
+      "context_id": "0826113c1dd34639",
+      "act": "trademark_act",
+      "section_no": "10",
+      "words": 72,
+      "sha256": "0826113c1dd346396d303e02edbcb58bd77dd36d59f11a50c73c36cbe1705e61"
+    },
+    {
+      "context_id": "82ae3fbc8f3a2743",
+      "act": "trademark_act",
+      "section_no": "19",
+      "words": 103,
+      "sha256": "82ae3fbc8f3a27437d0845e8d68c44ff234f4d3426e89ba7ade30cd629f18046"
+    },
+    {
+      "context_id": "a8f1dee1dfe9d650",
+      "act": "trademark_act",
+      "section_no": "25",
+      "words": 119,
+      "sha256": "a8f1dee1dfe9d650d962db05c3f0d9d33917097cf0749c9f2d239e68ee4fb7df"
+    },
+    {
+      "context_id": "4208099d7c408080",
+      "act": "trademark_act",
+      "section_no": "25",
+      "words": 146,
+      "sha256": "4208099d7c4080809651e9a0243898d33e0544dc327503b989c111d35e07afa6"
+    },
+    {
+      "context_id": "0f6ad35cd2f26bb1",
+      "act": "trademark_act",
+      "section_no": "25",
+      "words": 107,
+      "sha256": "0f6ad35cd2f26bb19469642aecd88705d51fc670042b3a9600af174109f75c77"
+    },
+    {
+      "context_id": "0deab206c8bd3a4e",
+      "act": "trademark_act",
+      "section_no": "36A",
+      "words": 17,
+      "sha256": "0deab206c8bd3a4e2fa0bda3e62fea626091066115973a786555ceec2e39c738"
+    },
+    {
+      "context_id": "dc7ab7857a573771",
+      "act": "trademark_act",
+      "section_no": "52",
+      "words": 89,
+      "sha256": "dc7ab7857a57377161fe7f0451b9ae01e0079b64831e5d7c653b1f2dad1f8bff"
+    },
+    {
+      "context_id": "6c4a2767b9c61b34",
+      "act": "trademark_act",
+      "section_no": "54",
+      "words": 335,
+      "sha256": "6c4a2767b9c61b34eb60e5060956f5baf443a7243af84dc83867a5fff00681fc"
+    },
+    {
+      "context_id": "9ef33b32f023845d",
+      "act": "trademark_act",
+      "section_no": "54",
+      "words": 301,
+      "sha256": "9ef33b32f023845d9ee2ed922c94b84f1c33da57124d5e792c9bdbaeb217b670"
+    },
+    {
+      "context_id": "f5621950cf346a21",
+      "act": "trademark_act",
+      "section_no": "54",
+      "words": 300,
+      "sha256": "f5621950cf346a216d69b062cd6f0d6e8fdd0d25ff3c1f3635b1cb3725d760a6"
+    },
+    {
+      "context_id": "efb4936ed78dee94",
+      "act": "trademark_act",
+      "section_no": "56",
+      "words": 197,
+      "sha256": "efb4936ed78dee949ef4f6c646cd51d5ff9c72078d7298488301eda883720540"
+    },
+    {
+      "context_id": "6e78677fa2db5da4",
+      "act": "trademark_act",
+      "section_no": "58",
+      "words": 170,
+      "sha256": "6e78677fa2db5da4d1b4036c21b5cfe847d1f59b90908788ed02bdf04892e69b"
+    },
+    {
+      "context_id": "3b5bc2e414cf315b",
+      "act": "trademark_act",
+      "section_no": "68",
+      "words": 138,
+      "sha256": "3b5bc2e414cf315bbe4cae625527d274cb31a364c6a96ccc0b28ff5f9c7f1b4b"
+    },
+    {
+      "context_id": "f1421775be55f731",
+      "act": "trademark_act",
+      "section_no": "132",
+      "words": 86,
+      "sha256": "f1421775be55f73134a9207ec50e340a19320932774f985e8a4a8e0eb0e603dc"
+    },
+    {
+      "context_id": "20e53c756802ff39",
+      "act": "trademark_act",
+      "section_no": "143",
+      "words": 79,
+      "sha256": "20e53c756802ff3959ad23cf931f09d2e5be2cf9b81c590981946439a1a830f9"
+    },
+    {
+      "context_id": "6eedd7fa36f4c0b9",
+      "act": "trademark_act",
+      "section_no": "144",
+      "words": 55,
+      "sha256": "6eedd7fa36f4c0b9646fcf3f8817b6a290e5752c5c3eb1b3bef2d49ef70c0b69"
+    },
+    {
+      "context_id": "f77594961d36903b",
+      "act": "trademark_act",
+      "section_no": "149",
+      "words": 33,
+      "sha256": "f77594961d36903b0f6e9f113f89998db0042fff5edd03a3551cba81c028471a"
+    },
+    {
+      "context_id": "4d5dfee0e687b00e",
+      "act": "design_act",
+      "section_no": "14",
+      "words": 95,
+      "sha256": "4d5dfee0e687b00ebac85c27e25dd27c2d66904a88970d48bb4e29337d9bef79"
+    },
+    {
+      "context_id": "004a5357d396f327",
+      "act": "design_act",
+      "section_no": "14",
+      "words": 49,
+      "sha256": "004a5357d396f327d20ceb1870d42700d96c3ff2b5ccde4a13860790418ee5ae"
+    },
+    {
+      "context_id": "a8fe095d9537dd0c",
+      "act": "design_act",
+      "section_no": "22",
+      "words": 157,
+      "sha256": "a8fe095d9537dd0c865146a272bc78d5106ae59fc464a7b6064117175ace82a4"
+    },
+    {
+      "context_id": "9a92ea83810f91dc",
+      "act": "design_act",
+      "section_no": "22",
+      "words": 111,
+      "sha256": "9a92ea83810f91dc2008098db532aee9390d4177290e95bed3f5ff5e1df275f5"
+    },
+    {
+      "context_id": "351db5ee231fad9f",
+      "act": "design_act",
+      "section_no": "22",
+      "words": 36,
+      "sha256": "351db5ee231fad9f3fd0979484e1db52e03361e470d877c599a5a5650f3ae903"
+    },
+    {
+      "context_id": "77b4964be4a3bf32",
+      "act": "design_act",
+      "section_no": "22",
+      "words": 79,
+      "sha256": "77b4964be4a3bf3236b4093db267d2d1ead533adf1f1b560325626573cd260ad"
+    },
+    {
+      "context_id": "a2bbb82d30068f76",
+      "act": "design_act",
+      "section_no": "22",
+      "words": 38,
+      "sha256": "a2bbb82d30068f7672cd866e519869f0c219804d6462b4e490ab6947279c34f6"
+    },
+    {
+      "context_id": "3c615ccb9fb86509",
+      "act": "design_act",
+      "section_no": "39",
+      "words": 95,
+      "sha256": "3c615ccb9fb86509af5294b8eb18085e10ee6fe3841b4e32aa48bca641a35b2f"
+    },
+    {
+      "context_id": "9be3b934edd6afdd",
+      "act": "design_act",
+      "section_no": "41",
+      "words": 97,
+      "sha256": "9be3b934edd6afdd2b02d408e0646307d34f28768f6c1eadfeb96127a0620a6b"
+    },
+    {
+      "context_id": "b767b58b5773efc8",
+      "act": "design_act",
+      "section_no": "41",
+      "words": 49,
+      "sha256": "b767b58b5773efc8376f372502d931befddf2f9a94599489f49d2ffa9bac570d"
+    },
+    {
+      "context_id": "746042d818d50cc2",
+      "act": "gi_act",
+      "section_no": "4",
+      "words": 95,
+      "sha256": "746042d818d50cc21891e96380fe7bde8f4b623c15e8666412b20f9a5beed9fd"
+    },
+    {
+      "context_id": "05c1b544e9f622a9",
+      "act": "gi_act",
+      "section_no": "22",
+      "words": 291,
+      "sha256": "05c1b544e9f622a9a2c8f0480ca99b8ad276c8e6673bae89694c5663384cc2eb"
+    },
+    {
+      "context_id": "e378c97f1c7bd209",
+      "act": "gi_act",
+      "section_no": "22",
+      "words": 177,
+      "sha256": "e378c97f1c7bd209c45dc0c866c5ecb1a1c294686c1f0f7512a653eac1003c2a"
+    },
+    {
+      "context_id": "bd54f21c9af28130",
+      "act": "gi_act",
+      "section_no": "22",
+      "words": 75,
+      "sha256": "bd54f21c9af281308d7d3932b6aa6249508cc54edcfc0f06dd9a5fa5350b98e0"
+    },
+    {
+      "context_id": "c8b0da01c197dcb0",
+      "act": "gi_act",
+      "section_no": "24",
+      "words": 68,
+      "sha256": "c8b0da01c197dcb0accf70ce91fc022c7b97c4b29d1ea0ac97939beebf5769f9"
+    },
+    {
+      "context_id": "241a1a1ad21de05b",
+      "act": "gi_act",
+      "section_no": "47",
+      "words": 120,
+      "sha256": "241a1a1ad21de05be454a7f3499363eb8d276205aa4a0b2019d557b6d07fcfd2"
+    },
+    {
+      "context_id": "f1ea46e0817b4f44",
+      "act": "gi_act",
+      "section_no": "47",
+      "words": 38,
+      "sha256": "f1ea46e0817b4f443c5ef984fda3597d22838fd7205f54f6bac6b0f760d02754"
+    },
+    {
+      "context_id": "468a47393e16e7d7",
+      "act": "gi_act",
+      "section_no": "47",
+      "words": 169,
+      "sha256": "468a47393e16e7d7329dabfc00dc37cd3f6643cde5301c7b48081fd6bd123a32"
+    },
+    {
+      "context_id": "13c008e8611ddf78",
+      "act": "gi_act",
+      "section_no": "77",
+      "words": 36,
+      "sha256": "13c008e8611ddf78c04d08ff13fe6b0005f6ec4b809e9b7a429afcdad12eb3a0"
+    },
+    {
+      "context_id": "a3212234dec87108",
+      "act": "gi_act",
+      "section_no": "77",
+      "words": 9,
+      "sha256": "a3212234dec87108cfa23759b2f7a9339b13a895056dacda13d603fce651f12b"
+    },
+    {
+      "context_id": "85c43250d270e909",
+      "act": "gi_act",
+      "section_no": "77",
+      "words": 57,
+      "sha256": "85c43250d270e909b4182a74ae9a5dbc683d9bab3b6e3c949f36a7da977b91ad"
+    },
+    {
+      "context_id": "a8be70138ba08cd9",
+      "act": "gi_act",
+      "section_no": "78",
+      "words": 176,
+      "sha256": "a8be70138ba08cd9ba1258baea181c7f4840985e926ddac0b3f1c12afc41f365"
+    },
+    {
+      "context_id": "3d3f4d75c4559ecf",
+      "act": "gi_act",
+      "section_no": "82",
+      "words": 40,
+      "sha256": "3d3f4d75c4559ecfa472b12b8d0f14f2eb985e776491c3c19e2e47fc3602b4cd"
+    },
+    {
+      "context_id": "6962d32376030095",
+      "act": "gi_act",
+      "section_no": "86",
+      "words": 95,
+      "sha256": "6962d32376030095a0b9dcdc6012b039f59468f4862c68f4a566e80945f29812"
+    },
+    {
+      "context_id": "32b009c96c167cfe",
+      "act": "semiconductor_layout_design_act",
+      "section_no": "32",
+      "words": 37,
+      "sha256": "32b009c96c167cfee51aeaa30e438772160428feee0ddb0df9a88e53a7c31bac"
+    },
+    {
+      "context_id": "0592940c6ffcd6c2",
+      "act": "semiconductor_layout_design_act",
+      "section_no": "34",
+      "words": 155,
+      "sha256": "0592940c6ffcd6c29802037f303e987785b7aad78a27b96aa0e6a3c032e7bf66"
+    },
+    {
+      "context_id": "f69c31f79ab08696",
+      "act": "semiconductor_layout_design_act",
+      "section_no": "34",
+      "words": 129,
+      "sha256": "f69c31f79ab0869685f7287b57b8b6f91951b4fe8a9be0bfaaae2f1592851b12"
+    },
+    {
+      "context_id": "a521dda0f8731b41",
+      "act": "semiconductor_layout_design_act",
+      "section_no": "53",
+      "words": 118,
+      "sha256": "a521dda0f8731b41fdfa84bd0601504c93556d02443f8470c49e6e597df7df26"
+    },
+    {
+      "context_id": "8dcb5f5c9503133e",
+      "act": "semiconductor_layout_design_act",
+      "section_no": "54",
+      "words": 24,
+      "sha256": "8dcb5f5c9503133e393a8c06753db00561d4a3bafd67c3d4ea464fe678a0c376"
+    },
+    {
+      "context_id": "2930d25b2b8ac8df",
+      "act": "semiconductor_layout_design_act",
+      "section_no": "59",
+      "words": 75,
+      "sha256": "2930d25b2b8ac8dffd6caf67f6b22fa173f53ffdf44f1f5a7db3e64e0c1cc3b9"
+    },
+    {
+      "context_id": "a245e9eb063fe18e",
+      "act": "semiconductor_layout_design_act",
+      "section_no": "78",
+      "words": 128,
+      "sha256": "a245e9eb063fe18e8125f4cf1716e38bc3aa1c3ecd74cf86d8340db179bb1323"
+    },
+    {
+      "context_id": "ff25fee25495d957",
+      "act": "semiconductor_layout_design_act",
+      "section_no": "86",
+      "words": 42,
+      "sha256": "ff25fee25495d9576c32a696400824b90de2e71a65e724486a312a66445dd4a2"
+    },
+    {
+      "context_id": "31d4ac9ce5318a82",
+      "act": "plant_varieties_farmers_rights_act",
+      "section_no": "41",
+      "words": 167,
+      "sha256": "31d4ac9ce5318a825b27fd7310fb739acf5425986ecf3235274e561b89f7bc3e"
+    },
+    {
+      "context_id": "b8da339b38bdfab5",
+      "act": "plant_varieties_farmers_rights_act",
+      "section_no": "41",
+      "words": 135,
+      "sha256": "b8da339b38bdfab54731dd287d0e064e4df8dd854b634187d27c8140a1f064c4"
+    },
+    {
+      "context_id": "5d0e0c1ecaa0dd4f",
+      "act": "plant_varieties_farmers_rights_act",
+      "section_no": "41",
+      "words": 25,
+      "sha256": "5d0e0c1ecaa0dd4f8c4076f716c38a3db86dfb3497b356bac6a43bc95a51fb82"
+    },
+    {
+      "context_id": "6b9e020351846149",
+      "act": "plant_varieties_farmers_rights_act",
+      "section_no": "57",
+      "words": 82,
+      "sha256": "6b9e020351846149e966c9ea6abb7022740f4b72d0a4b734802d4e25224489d8"
+    },
+    {
+      "context_id": "3a14083dcfa10b8f",
+      "act": "plant_varieties_farmers_rights_act",
+      "section_no": "57",
+      "words": 49,
+      "sha256": "3a14083dcfa10b8f34420b2d4ea9908db426192b6159fe3928d83accc59413c1"
+    },
+    {
+      "context_id": "fcc9c6251729ca43",
+      "act": "plant_varieties_farmers_rights_act",
+      "section_no": "61",
+      "words": 146,
+      "sha256": "fcc9c6251729ca4369395fba1831b4c0cecd860fc62fe66abe69c2b33a7b41b5"
+    },
+    {
+      "context_id": "a7bdd2695a95a416",
+      "act": "plant_varieties_farmers_rights_act",
+      "section_no": "69",
+      "words": 115,
+      "sha256": "a7bdd2695a95a416aedf64933881b86091b22c346127d7d1d3a6770ff3ea3174"
+    },
+    {
+      "context_id": "f0a8e54a6d569c32",
+      "act": "plant_varieties_farmers_rights_act",
+      "section_no": "72",
+      "words": 145,
+      "sha256": "f0a8e54a6d569c3223f24f49f82bcaa2f5238eae2c5c9cbfd019519ee70af05b"
+    },
+    {
+      "context_id": "3ea43cda4112c4c9",
+      "act": "plant_varieties_farmers_rights_act",
+      "section_no": "75",
+      "words": 101,
+      "sha256": "3ea43cda4112c4c935f0e0bcc80890f8de79b6af4fe8bd91cf5ddcc8aa7d5bca"
+    },
+    {
+      "context_id": "f9234f14c9c6879f",
+      "act": "plant_varieties_farmers_rights_act",
+      "section_no": "81",
+      "words": 79,
+      "sha256": "f9234f14c9c6879f894764924812d7a609f11cf0a13381ddc98120ebc98b56d8"
+    },
+    {
+      "context_id": "f9e04116c7175da8",
+      "act": "plant_varieties_farmers_rights_act",
+      "section_no": "92",
+      "words": 38,
+      "sha256": "f9e04116c7175da802854fa178197f8f561ef6e0f2301dc8fd7bafa963034114"
+    },
+    {
+      "context_id": "09c5127aa4941040",
+      "act": "plant_varieties_farmers_rights_act",
+      "section_no": "96",
+      "words": 21,
+      "sha256": "09c5127aa4941040da855efdf7ca93599e1ebf512de3da8b977c428c46157cf8"
+    },
+    {
+      "context_id": "bce9d1b1c0a10d25",
+      "act": "plant_varieties_farmers_rights_act",
+      "section_no": "96",
+      "words": 1433,
+      "sha256": "bce9d1b1c0a10d254ba83dfb315ee44f2c1888184d794b3530b0da2631539db3"
+    }
+  ]
+}

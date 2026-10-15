@@ -1,0 +1,22 @@
+[
+  {
+    "model": "InLegalBERT baseline",
+    "loss": 2.6518,
+    "ppl": 14.18
+  },
+  {
+    "model": "auth901  (901 authentic)",
+    "loss": 1.2097,
+    "ppl": 3.35
+  },
+  {
+    "model": "synth901 (901 synthetic)",
+    "loss": 1.2737,
+    "ppl": 3.57
+  },
+  {
+    "model": "mixed901 (450a + 451s)",
+    "loss": 1.2275,
+    "ppl": 3.41
+  }
+]

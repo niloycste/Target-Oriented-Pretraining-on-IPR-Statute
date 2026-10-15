@@ -1,0 +1,148 @@
+{
+  "description": "Resumable state for the serial final DAPT study",
+  "created_at": "2026-09-01T09:51:17+05:30",
+  "updated_at": "2026-09-05T23:05:17+05:30",
+  "stages": {
+    "01_provenance_audit": {
+      "status": "DONE",
+      "started_at": "2026-09-01T09:51:17+05:30",
+      "ended_at": "2026-09-01T09:51:32+05:30",
+      "command": [
+        "C:\\Program Files\\Python313\\python.exe",
+        "-u",
+        "E:\\Dataset on IPR\\scripts\\09_dapt_final\\audit_synthetic_provenance.py"
+      ],
+      "outputs": [
+        "experiments\\dapt\\final_cpu\\SYNTHETIC_PROVENANCE_AUDIT.json"
+      ],
+      "return_code": 0
+    },
+    "02_matched_corpora": {
+      "status": "DONE",
+      "started_at": "2026-09-01T09:51:32+05:30",
+      "ended_at": "2026-09-01T09:51:40+05:30",
+      "command": [
+        "C:\\Program Files\\Python313\\python.exe",
+        "-u",
+        "E:\\Dataset on IPR\\scripts\\09_dapt_final\\build_final_matched_corpora.py"
+      ],
+      "outputs": [
+        "experiments\\dapt\\final_cpu\\corpus_A.jsonl",
+        "experiments\\dapt\\final_cpu\\corpus_S.jsonl",
+        "experiments\\dapt\\final_cpu\\corpus_M.jsonl",
+        "experiments\\dapt\\final_cpu\\MATCHED_CORPORA_SUMMARY.json"
+      ],
+      "return_code": 0
+    },
+    "03_cpu_benchmark": {
+      "status": "DONE",
+      "started_at": "2026-09-01T09:51:40+05:30",
+      "ended_at": "2026-09-01T10:11:49+05:30",
+      "command": [
+        "C:\\Program Files\\Python313\\python.exe",
+        "-u",
+        "E:\\Dataset on IPR\\scripts\\09_dapt_final\\benchmark_cpu_config.py"
+      ],
+      "outputs": [
+        "experiments\\dapt\\final_cpu\\cpu_benchmark.json",
+        "experiments\\dapt\\final_cpu\\CPU_OPTIMIZATION_REPORT.md"
+      ],
+      "return_code": 0
+    },
+    "04_style_only_generation": {
+      "status": "DONE",
+      "started_at": "2026-09-01T10:11:49+05:30",
+      "ended_at": "2026-09-01T20:02:27+05:30",
+      "command": [
+        "C:\\Program Files\\Python313\\python.exe",
+        "-u",
+        "E:\\Dataset on IPR\\scripts\\09_dapt_final\\generate_style_only_corpus.py"
+      ],
+      "outputs": [
+        "experiments\\dapt\\final_cpu\\style_only_generated.jsonl"
+      ],
+      "return_code": 0
+    },
+    "05_corpus_characterisation": {
+      "status": "DONE",
+      "started_at": "2026-09-01T20:02:27+05:30",
+      "ended_at": "2026-09-01T20:03:06+05:30",
+      "command": [
+        "C:\\Program Files\\Python313\\python.exe",
+        "-u",
+        "E:\\Dataset on IPR\\scripts\\09_dapt_final\\characterise_corpora.py"
+      ],
+      "outputs": [
+        "experiments\\dapt\\final_cpu\\corpus_S_STYLE.jsonl",
+        "experiments\\dapt\\final_cpu\\S_STYLE_manifest.json",
+        "experiments\\dapt\\final_cpu\\CORPUS_CHARACTERISATION.json"
+      ],
+      "return_code": 0
+    },
+    "06_diagnostics_and_low_resource": {
+      "status": "DONE",
+      "started_at": "2026-09-01T20:03:06+05:30",
+      "ended_at": "2026-09-01T20:03:07+05:30",
+      "command": [
+        "C:\\Program Files\\Python313\\python.exe",
+        "-u",
+        "E:\\Dataset on IPR\\scripts\\09_dapt_final\\build_diagnostic_and_lowresource.py"
+      ],
+      "outputs": [
+        "experiments\\dapt\\final_cpu\\MLM_DIAGNOSTIC_MANIFEST.json",
+        "experiments\\dapt\\final_cpu\\mlm_diagnostic.jsonl",
+        "experiments\\dapt\\final_cpu\\LOW_RESOURCE_25_MANIFEST.json",
+        "experiments\\dapt\\final_cpu\\LOW_RESOURCE_50_MANIFEST.json",
+        "experiments\\dapt\\final_cpu\\train_squad_25.jsonl",
+        "experiments\\dapt\\final_cpu\\train_squad_50.jsonl"
+      ],
+      "return_code": 0
+    },
+    "07_dry_run_report": {
+      "status": "DONE",
+      "started_at": "2026-09-01T20:03:07+05:30",
+      "ended_at": "2026-09-01T20:03:07+05:30",
+      "command": [
+        "C:\\Program Files\\Python313\\python.exe",
+        "-u",
+        "E:\\Dataset on IPR\\scripts\\09_dapt_final\\write_dry_run_report.py"
+      ],
+      "outputs": [
+        "experiments\\dapt\\final_cpu\\DRY_RUN_REPORT.md"
+      ],
+      "return_code": 0
+    },
+    "08_analysis_lock": {
+      "status": "DONE",
+      "started_at": "2026-09-01T20:03:07+05:30",
+      "ended_at": "2026-09-01T20:03:07+05:30",
+      "command": [
+        "C:\\Program Files\\Python313\\python.exe",
+        "-u",
+        "E:\\Dataset on IPR\\scripts\\09_dapt_final\\prepare_final_analysis_lock.py"
+      ],
+      "outputs": [
+        "experiments\\dapt\\final_cpu\\FINAL_ANALYSIS_LOCK.json",
+        "experiments\\dapt\\final_cpu\\FINAL_ANALYSIS_LOCK.md"
+      ],
+      "return_code": 0
+    },
+    "09_experiments_A_B_C": {
+      "status": "FAILED",
+      "started_at": "2026-09-01T20:03:07+05:30",
+      "ended_at": "2026-09-05T23:05:17+05:30",
+      "command": [
+        "C:\\Program Files\\Python313\\python.exe",
+        "-u",
+        "E:\\Dataset on IPR\\scripts\\09_dapt_final\\run_final_experiments.py",
+        "--experiment",
+        "all"
+      ],
+      "outputs": [
+        "experiments\\dapt\\final_cpu\\RUN_LEDGER.csv",
+        "experiments\\dapt\\final_cpu\\validation_results.json"
+      ],
+      "return_code": 1
+    }
+  }
+}

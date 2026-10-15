@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-09-13T21:23:03+05:30",
+  "source": "experiments/dapt/final_cpu/mlm_diagnostic.jsonl",
+  "source_split": "val",
+  "contexts": 104,
+  "mask_seed": 20260829,
+  "mlm_probability": 0.15,
+  "max_length": 256,
+  "masking_protocol": "one frozen 80/10/10 mask shared by every checkpoint",
+  "results": {
+    "N_base": {
+      "checkpoint": "artifacts/models/final_cpu/base_encoder",
+      "loss": 2.72175638,
+      "perplexity": 15.20700802,
+      "masked_tokens": 2092
+    },
+    "A_A_s7": {
+      "checkpoint": "artifacts/models/final_cpu/A_A_s7_mlm/final",
+      "loss": 1.08921653,
+      "perplexity": 2.97194472,
+      "masked_tokens": 2092
+    },
+    "A_A_s42": {
+      "checkpoint": "artifacts/models/final_cpu/A_A_s42_mlm/final",
+      "loss": 1.08953504,
+      "perplexity": 2.97289149,
+      "masked_tokens": 2092
+    },
+    "A_A_s99": {
+      "checkpoint": "artifacts/models/final_cpu/A_A_s99_mlm/final",
+      "loss": 1.084534,
+      "perplexity": 2.95806103,
+      "masked_tokens": 2092
+    },
+    "A_A_s123": {
+      "checkpoint": "artifacts/models/final_cpu/A_A_s123_mlm/final",
+      "loss": 1.09542268,
+      "perplexity": 2.99044642,
+      "masked_tokens": 2092
+    }
+  }
+}
