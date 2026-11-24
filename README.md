@@ -213,8 +213,8 @@ evaluation framework, please cite the accompanying paper:
 ```bibtex
 @misc{islam_abulaish_2026_target_oriented_dapt,
   author = {Islam, M. Mohaiminul and Abulaish, Muhammad},
-  title = {Domain-Adaptive Pretraining for Statutory Question Answering:
-           Evidence from Authentic, Synthetic, and Mixed Legal Text},
+  title = {Testing Domain-Adaptive Pretraining for Statutory Question Answering:
+           A Controlled Comparison of Authentic, Synthetic, and Mixed Legal Corpora},
   year = {2026},
   note = {Manuscript and reproducibility artifacts},
   url = {https://github.com/niloycste/Target-Oriented-Pretraining-on-IPR-Statute}
