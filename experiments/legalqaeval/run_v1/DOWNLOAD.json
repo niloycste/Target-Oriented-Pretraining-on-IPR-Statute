@@ -1,0 +1,15 @@
+{
+  "dataset": "isaacus/LegalQAEval",
+  "revision": "f6c7aafcc176b25c32e1e052d02ad9bc06c96bcb",
+  "files": {
+    "val.jsonl": {
+      "sha256": "292044f884d6348cee93f3ae6ca5bbaaa6fe28feead71e86fc6eff1127475dc3"
+    },
+    "test.jsonl": {
+      "sha256": "cf296fa1d7fdb3c5080454ff986d6439c4e92e500f7abafcc50c3b7c10975269"
+    },
+    "README.md": {
+      "sha256": "fe3e9db6522eab471df3770f3dbeb9d966999e73e19d170a97b2780347224bd0"
+    }
+  }
+}

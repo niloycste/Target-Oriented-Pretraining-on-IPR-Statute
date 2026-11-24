@@ -15,6 +15,7 @@ __pycache__/
 /models/
 checkpoints/
 **/cache/
+artifacts/models/encoder_extension/
 *.arrow
 *.pt
 *.bin

@@ -1,0 +1,75 @@
+{
+  "val": {
+    "all": {
+      "microsoft--ms-marco": 516,
+      "stanford--squad-v2": 538,
+      "google--natural-questions": 84,
+      "yang--hotpotqa": 66
+    },
+    "answerable": {
+      "stanford--squad-v2": 269,
+      "google--natural-questions": 42,
+      "microsoft--ms-marco": 258,
+      "yang--hotpotqa": 33
+    },
+    "unanswerable": {
+      "microsoft--ms-marco": 258,
+      "stanford--squad-v2": 269,
+      "google--natural-questions": 42,
+      "yang--hotpotqa": 33
+    },
+    "primary": {
+      "google--natural-questions": 42,
+      "microsoft--ms-marco": 258,
+      "yang--hotpotqa": 33
+    },
+    "clean_answerable": {
+      "google--natural-questions": 42,
+      "microsoft--ms-marco": 258,
+      "yang--hotpotqa": 33
+    },
+    "overlap": {
+      "stanford--squad-v2": 538
+    },
+    "cross_split_overlap": {
+      "stanford--squad-v2": 112
+    }
+  },
+  "test": {
+    "all": {
+      "yang--hotpotqa": 108,
+      "stanford--squad-v2": 548,
+      "microsoft--ms-marco": 468,
+      "google--natural-questions": 82
+    },
+    "answerable": {
+      "microsoft--ms-marco": 234,
+      "stanford--squad-v2": 274,
+      "yang--hotpotqa": 54,
+      "google--natural-questions": 41
+    },
+    "unanswerable": {
+      "yang--hotpotqa": 54,
+      "stanford--squad-v2": 274,
+      "microsoft--ms-marco": 234,
+      "google--natural-questions": 41
+    },
+    "primary": {
+      "microsoft--ms-marco": 234,
+      "yang--hotpotqa": 54,
+      "google--natural-questions": 41
+    },
+    "clean_answerable": {
+      "microsoft--ms-marco": 234,
+      "yang--hotpotqa": 54,
+      "google--natural-questions": 41
+    },
+    "overlap": {
+      "stanford--squad-v2": 548
+    },
+    "cross_split_overlap": {
+      "stanford--squad-v2": 136
+    }
+  },
+  "pre_scoring_preparation_note": "Initial preparation stopped on normalized cross-split contexts. Before any external model evaluation or protocol freeze, the handling rule was specified as exclusion on both sides in primary/clean subsets, retaining all-answerable exploratory outputs."
+}

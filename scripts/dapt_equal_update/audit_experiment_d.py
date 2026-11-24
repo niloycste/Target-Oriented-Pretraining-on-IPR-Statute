@@ -69,6 +69,24 @@ def checkpoint_digest(folder: Path) -> str:
     return h.hexdigest()
 
 
+def resolve_checkpoint_path(recorded: str) -> Path:
+    """Resolve a frozen relative path without changing its recorded identity.
+
+    The original InLegalBERT reader checkpoints are retained at the parent
+    workspace level, while the repository keeps the experiment records.  Try
+    the repository-relative location first, then the matching workspace-relative
+    location.  Absolute paths remain unchanged.
+    """
+    path = Path(recorded)
+    if path.is_absolute():
+        return path
+    candidates = (ROOT / path, ROOT.parents[1] / path)
+    for candidate in candidates:
+        if candidate.exists():
+            return candidate
+    return candidates[0]
+
+
 def normalise(text: str) -> str:
     return " ".join(text.lower().translate(str.maketrans("", "", string.punctuation)).split())
 
@@ -188,9 +206,7 @@ def main() -> int:
     for key in sorted(expected):
         entry = reviewed[key]
         result = all_runs["test"][key]
-        path = Path(entry["path"])
-        if not path.is_absolute():
-            path = ROOT / path
+        path = resolve_checkpoint_path(entry["path"])
         actual = checkpoint_digest(path)
         okay = (
             actual == entry["sha256"]
@@ -340,13 +356,24 @@ def main() -> int:
         check(int(maximum.replace(",", "")) == summary["maximum"], f"Budget table {condition}: maximum tokens")
 
     required_claims = (
-        "All 62 readers have saved",
         "\\(F(3,12)=0.474\\), \\(p=0.706\\)",
-        "Mean test F1 is 85.86 without DAPT, 85.85 with authentic text, 85.91 with",
         "post hoc schedule sensitivity analysis",
     )
     for claim in required_claims:
         check(claim in tex, f"Missing or changed Experiment D claim: {claim}")
+    flat_tex = " ".join(tex.split())
+    check(
+        "Mean test F1 is 85.86 without DAPT, 85.85 with authentic text, 85.91 with" in flat_tex,
+        "Missing or changed Experiment D mean F1 claim",
+    )
+    check(
+        "The original study contains 62 independently trained readers" in flat_tex,
+        "Missing original-study reader count (62)",
+    )
+    check(
+        "for 102 in total" in flat_tex,
+        "Missing complete reader count (102)",
+    )
     abstract = tex.split("\\abstract{", 1)[1].split("}\n", 1)[0]
     abstract_plain = re.sub(r"\\[A-Za-z]+|[{}$]", " ", abstract)
     abstract_words = re.findall(r"\b[\w]+(?:[-–—][\w]+)*\b", abstract_plain)

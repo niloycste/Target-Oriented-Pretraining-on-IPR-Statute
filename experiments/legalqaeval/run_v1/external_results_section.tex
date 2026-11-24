@@ -1,0 +1,158 @@
+% LEGALQAEVAL_EXTERNAL_BEGIN
+\section{External Transfer Evaluation: LegalQAEval}
+\label{sec:external_legalqaeval}
+
+We evaluated all 60 fixed readers on LegalQAEval after SQuAD transfer
+and IndicIPR-QA fine-tuning, without external training or checkpoint
+selection. N/A/S/M are compared within each encoder across seeds 7, 42,
+99, 123, and 2026. Each reader was evaluated separately on the external
+validation and test splits; no best seed or condition was selected.
+
+LegalQAEval contains legal-related examples drawn from SQuAD~2.0,
+MS MARCO, HotpotQA, and Natural Questions. The downloaded revision is
+\texttt{f6c7aafcc176b25c32e1e052d02ad9bc06c96bcb}.
+It provides 1,204 validation and 1,206 test examples, including
+unanswerable questions. The dataset and source documentation are at
+\url{https://huggingface.co/datasets/isaacus/LegalQAEval}.
+
+The primary subsets retain 333 validation and 329 test examples.
+They contain answerable, non-SQuAD questions without normalized
+question or context matches against the IPR splits, adaptation
+corpora, full cached SQuAD training and validation pools, or the
+opposite external split. The primary test subset contains 234
+MS MARCO, 54 HotpotQA, and 41 Natural Questions examples. All
+SQuAD-derived examples matched the conservative reference pool.
+The audit also identified 25 normalized context texts shared across
+external splits; these occur only among SQuAD-derived examples and
+are excluded on both sides from clean scoring. Raw annotations
+were retained. These checks do not rule out semantic overlap or
+unknown encoder pretraining exposure.
+
+The fixed decoder uses the same 384-token windows, 128-token overlap,
+and maximum summed start/end logits. It always extracts a span.
+Unanswerable examples are counted in the audit but excluded from
+scoring. EM and F1 independently take the maximum over listed answers,
+treating them as accepted alternatives rather than jointly required
+spans. Normalization retains articles. The results therefore concern
+an audited answerable subset and the project scoring convention,
+rather than the complete official benchmark.
+
+\begin{table}[!htbp]
+\caption{External transfer: primary LegalQAEval test subset (329 questions).
+EM/F1 use the 0--100 scale. SD is across five seeds; intervals
+use paired seed differences. Validation is descriptive.}
+\label{tab:legalqaeval_test}
+\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}llrr>{\raggedright\arraybackslash}p{3.8cm}@{}}
+\toprule
+Encoder & Condition & EM & F1 $\pm$ SD & DAPT--N F1 (95\% interval) \\
+\midrule
+InLegalBERT & No DAPT & 14.47 & $50.04\pm1.65$ & --- \\
+InLegalBERT & Authentic & 11.79 & $48.95\pm1.53$ & $-1.10\;[-2.44,0.24]$ \\
+InLegalBERT & Synthetic & 11.55 & $49.23\pm1.39$ & $-0.82\;[-2.27,0.63]$ \\
+InLegalBERT & Mixed & 13.19 & $49.60\pm1.24$ & $-0.45\;[-2.36,1.46]$ \\
+\addlinespace
+BERT & No DAPT & 15.62 & $52.22\pm0.89$ & --- \\
+BERT & Authentic & 14.95 & $52.42\pm0.88$ & $+0.20\;[-0.88,1.28]$ \\
+BERT & Synthetic & 15.68 & $52.24\pm1.33$ & $+0.02\;[-1.20,1.24]$ \\
+BERT & Mixed & 15.32 & $52.27\pm0.79$ & $+0.05\;[-0.67,0.76]$ \\
+\addlinespace
+LEGAL-BERT & No DAPT & 13.92 & $51.11\pm1.80$ & --- \\
+LEGAL-BERT & Authentic & 13.43 & $50.79\pm1.73$ & $-0.32\;[-1.74,1.10]$ \\
+LEGAL-BERT & Synthetic & 14.83 & $51.53\pm2.19$ & $+0.42\;[-2.43,3.27]$ \\
+LEGAL-BERT & Mixed & 14.65 & $51.14\pm1.11$ & $+0.03\;[-2.27,2.33]$ \\
+\addlinespace
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]
+\caption{External transfer: primary LegalQAEval validation subset (333 questions).
+EM/F1 use the 0--100 scale. SD is across five seeds; intervals
+use paired seed differences. Validation is descriptive.}
+\label{tab:legalqaeval_val}
+\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}llrr>{\raggedright\arraybackslash}p{3.8cm}@{}}
+\toprule
+Encoder & Condition & EM & F1 $\pm$ SD & DAPT--N F1 (95\% interval) \\
+\midrule
+InLegalBERT & No DAPT & 18.74 & $54.05\pm1.42$ & --- \\
+InLegalBERT & Authentic & 17.24 & $53.50\pm2.22$ & $-0.55\;[-1.88,0.79]$ \\
+InLegalBERT & Synthetic & 17.78 & $54.20\pm1.87$ & $+0.15\;[-0.65,0.95]$ \\
+InLegalBERT & Mixed & 18.20 & $54.28\pm2.23$ & $+0.24\;[-1.29,1.77]$ \\
+\addlinespace
+BERT & No DAPT & 17.96 & $55.59\pm1.08$ & --- \\
+BERT & Authentic & 16.64 & $54.57\pm1.25$ & $-1.02\;[-2.16,0.11]$ \\
+BERT & Synthetic & 16.94 & $54.07\pm0.94$ & $-1.52\;[-3.07,0.03]$ \\
+BERT & Mixed & 17.24 & $55.02\pm1.36$ & $-0.57\;[-2.68,1.54]$ \\
+\addlinespace
+LEGAL-BERT & No DAPT & 19.58 & $56.14\pm1.26$ & --- \\
+LEGAL-BERT & Authentic & 18.98 & $55.19\pm1.29$ & $-0.94\;[-2.40,0.52]$ \\
+LEGAL-BERT & Synthetic & 19.58 & $56.29\pm0.86$ & $+0.15\;[-1.16,1.46]$ \\
+LEGAL-BERT & Mixed & 20.18 & $55.62\pm1.27$ & $-0.52\;[-1.62,0.58]$ \\
+\addlinespace
+\bottomrule
+\end{tabular}
+\end{table}
+
+The primary test comparisons use seed-blocked ANOVA and paired
+DAPT versus N tests with Holm correction within encoder and metric.
+This correction is not study-wide. The F1 condition tests are:
+InLegalBERT $F(3,12)=1.593$, $p=0.243$ (Holm-adjusted paired $p$: A: 0.257, S: 0.385, M: 0.551).
+BERT $F(3,12)=0.094$, $p=0.962$ (Holm-adjusted paired $p$: A: 1.000, S: 1.000, M: 1.000).
+LEGAL-BERT $F(3,12)=0.348$, $p=0.791$ (Holm-adjusted paired $p$: A: 1.000, S: 1.000, M: 1.000).
+
+None of the nine primary paired F1 comparisons rejects its null
+under the specified within-encoder corrections. This does not
+establish equivalence; the intervals show the range of effects
+compatible with the observed seed variation.
+
+\begin{table}[!htbp]
+\caption{Exploratory external test F1 means by source after overlap exclusions.
+Columns give N/A/S/M means across five seeds. These analyses are secondary.}
+\label{tab:legalqaeval_sources}
+\centering\scriptsize
+\begin{tabular}{@{}llrrrrr@{}}
+\toprule
+Encoder & Source & $n$ & N & A & S & M \\
+\midrule
+InLegalBERT & MS MARCO & 234 & 57.18 & 56.79 & 57.07 & 57.29 \\
+InLegalBERT & HotpotQA & 54 & 24.41 & 22.88 & 23.14 & 24.14 \\
+InLegalBERT & Natural Questions & 41 & 43.07 & 38.51 & 38.79 & 39.21 \\
+BERT & MS MARCO & 234 & 59.47 & 59.21 & 58.67 & 59.36 \\
+BERT & HotpotQA & 54 & 24.55 & 24.32 & 26.21 & 23.16 \\
+BERT & Natural Questions & 41 & 47.30 & 50.66 & 49.84 & 50.10 \\
+LEGAL-BERT & MS MARCO & 234 & 59.31 & 58.84 & 59.56 & 59.31 \\
+LEGAL-BERT & HotpotQA & 54 & 22.10 & 21.03 & 22.30 & 21.33 \\
+LEGAL-BERT & Natural Questions & 41 & 42.50 & 44.05 & 44.17 & 43.80 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]
+\caption{Exploratory F1 on all 603 answerable external test examples,
+including potentially exposed SQuAD examples. These are not primary transfer estimates.}
+\label{tab:legalqaeval_all_answerable}
+\centering\small
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Encoder & N & A & S & M \\
+\midrule
+InLegalBERT & 54.42 & 53.35 & 53.79 & 53.54 \\
+BERT & 56.39 & 56.77 & 56.84 & 56.65 \\
+LEGAL-BERT & 52.83 & 52.62 & 52.97 & 52.58 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+These results assess transfer of the final Indian-IPR readers to other
+legal-related reading examples. They do not replicate DAPT training
+on a second statutory corpus, evaluate abstention, establish legal
+correctness, or isolate causal effects of encoder pretraining history.
+The five-seed intervals condition on fixed external questions and
+corpus samples; they do not include question-sampling uncertainty.
+All per-item outputs and secondary analyses are retained.
+\FloatBarrier
+% LEGALQAEVAL_EXTERNAL_END

@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "encoder": "bert",
+  "predictions_rescored": 15040,
+  "readers_fingerprinted": 20,
+  "completed_training_stages": 55,
+  "training_inputs_and_generated_code_match": true,
+  "generated_script_hash_convention": "UTF-8 source with universal-newline reading; runner hashes pre-write strings",
+  "test_and_validation_statistics_reproduced": true,
+  "mlm_telemetry": [
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_A_s7_mlm\\training_telemetry.json",
+      "sha256": "4648e006712cd5aa6817bdb63f9a3ae9f500ee40e9ac87cdbd26d030ea4c3bff",
+      "nonpadding_tokens": 451692
+    },
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_A_s42_mlm\\training_telemetry.json",
+      "sha256": "10190993d6623db39de27c4165d0eaf2a1b6519cd2e52ad58633dd13a39182f8",
+      "nonpadding_tokens": 449648
+    },
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_A_s99_mlm\\training_telemetry.json",
+      "sha256": "90131e1c96cd97a9c856bc46be2095dee4853c05624616fb372eeae8545203b4",
+      "nonpadding_tokens": 448065
+    },
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_A_s123_mlm\\training_telemetry.json",
+      "sha256": "e0d33d76ea993abfeabf45d4aaa1c0cae4103d494a8ee8d71346a557b7f13d38",
+      "nonpadding_tokens": 448326
+    },
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_A_s2026_mlm\\training_telemetry.json",
+      "sha256": "a3429b85ae433743ada177505e01e0157214a3b227ed05578117462ffc80f71c",
+      "nonpadding_tokens": 449941
+    },
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_S_s7_mlm\\training_telemetry.json",
+      "sha256": "fcf85b633dccf4140f4beea024f50bbe403b48013c8d3fe8689619b99c7b0adf",
+      "nonpadding_tokens": 490895
+    },
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_S_s42_mlm\\training_telemetry.json",
+      "sha256": "61e5bc03bd7b176bf99614f2dcfb56a03551a091beff8491b01d3ef3ae21930e",
+      "nonpadding_tokens": 490768
+    },
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_S_s99_mlm\\training_telemetry.json",
+      "sha256": "76ba534c12b86fcc6af325151383466b873eacca5f3d704f5ba6cc6c7252e72a",
+      "nonpadding_tokens": 491168
+    },
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_S_s123_mlm\\training_telemetry.json",
+      "sha256": "43d2c30b2f1b4653a495861b07c7a28ec85f6909698bc21d3310d17fbddb11ff",
+      "nonpadding_tokens": 490649
+    },
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_S_s2026_mlm\\training_telemetry.json",
+      "sha256": "a13bb5708ccb679510030a3789eaf94716919049fd7da914b969b4829603f442",
+      "nonpadding_tokens": 490957
+    },
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_M_s7_mlm\\training_telemetry.json",
+      "sha256": "a5f2f576a5f8ec37dffebe80651357888e3f5717c36efa0892539ed6764d421d",
+      "nonpadding_tokens": 470151
+    },
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_M_s42_mlm\\training_telemetry.json",
+      "sha256": "45fce6ae1b3374575e6a659b1bbdcedb801be4dc665a93fb5d4399c9ffa2d5d1",
+      "nonpadding_tokens": 469508
+    },
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_M_s99_mlm\\training_telemetry.json",
+      "sha256": "3433e86c97d91cd5a0471ff3021d6ecac7ee535d844a5626b58eba649877642d",
+      "nonpadding_tokens": 469937
+    },
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_M_s123_mlm\\training_telemetry.json",
+      "sha256": "3e8c34fa0931f5a1ac3e4cb76f2318383dc2d53f965856f5d5c662ed4fb5c79d",
+      "nonpadding_tokens": 470168
+    },
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_M_s2026_mlm\\training_telemetry.json",
+      "sha256": "6e1d8c5fd656505d01aad55a8ad6b5b3fa34223f87e4c4dc71f50ffa2cd9e6e2",
+      "nonpadding_tokens": 470691
+    }
+  ],
+  "checkpoint_fingerprints": {
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_N_s7_ipr\\final": "df58fe5f51c01d018f775dec842ced0a36ab007c80a607cc6e01d110f5d47fc5",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_A_s7_ipr\\final": "a02bf90472ad6945a1f291c71d24d755d193fdb0bda930625d4dbd2dfc179ae6",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_S_s7_ipr\\final": "1c79df26ad6c22a27d3b35bee95475e49db120ec475bbf2e87d9a4be9abfa24e",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_M_s7_ipr\\final": "f9f17661adec159b7af1743cba03dafa8604cee98a4ed4e6932fa2328b887ab5",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_N_s42_ipr\\final": "4d285022e8d3a89d07d1c7be886110695921128e65f855d02f8007031e4ad997",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_A_s42_ipr\\final": "f05b44f8bf25bfc6d85409953d4cd3501dffec94ee52e1f9849cf77cf8cc0fd0",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_S_s42_ipr\\final": "0004ed733e07f8aecafeea708ef27f26ad874254e895649abdfad598525a23b6",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_M_s42_ipr\\final": "33ab575ff37960dd3d840a650368366a9fee51a874c69b26b47577f0c284cfaa",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_N_s99_ipr\\final": "27736af05aa788ccbd93fdd06ed15a380eeabd3e53a861b41fe4134dd151fd5a",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_A_s99_ipr\\final": "9a9256545b8ed332c5f8854a7fb0840cf6ad5f01da73e78a4b931c1ddfd65e4c",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_S_s99_ipr\\final": "2bbcf34978d1b1da57df6636e4f6eaf2af15eb2a74a504cc61525893ea381ca5",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_M_s99_ipr\\final": "6336980fc1807b35123c9b57bd1708f21b53a69c08b5a8ef400f160a8a2290af",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_N_s123_ipr\\final": "956c5c72b6b186a51b3bf080d4f7a0c1e9f29ef863df65d15f04fe3365870c3e",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_A_s123_ipr\\final": "0ab7a30533de8f9d5be39d5be1aaa93c405eca7921f1d9d385ad62c8195c095a",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_S_s123_ipr\\final": "01890a3b1769c943d8d032fed0e295f49235d0857fa8aa4cfb9ab27943d226ec",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_M_s123_ipr\\final": "b70d7d89a30a0e9a57228a4aa9cd425375c9e22811c2755d1fda27fd33e480b1",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_N_s2026_ipr\\final": "ebc58c4d3fd52af06902f954715e180fb2957adc287b14f7aaa7be6dd7acd89f",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_A_s2026_ipr\\final": "17e910eefdb2136b042ab0984b1ead4b624e8e39b17e45a72814676902bd5a92",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_S_s2026_ipr\\final": "0fbe437d88fa2a6ca384deeff123cd0fc4c72689786b7dc1c5cc739dfd3cf040",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_M_s2026_ipr\\final": "414a4aa27a768b4eee6a8bd026a1cdb0b4a1f4748c24196e4c464eb4f0f5dc54"
+  },
+  "scope": "Artifact consistency verification, not independent retraining or legal assessment"
+}

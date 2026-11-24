@@ -1,0 +1,4 @@
+__pycache__/
+run_v*/raw/
+run_v*/prepared/
+run_v*/outputs/

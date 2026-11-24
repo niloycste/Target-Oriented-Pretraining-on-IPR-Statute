@@ -1,0 +1,7 @@
+{
+  "status": "TEX_AND_PDF_UPDATED",
+  "updated_at": "2026-11-24T13:33:42.208834+05:30",
+  "manuscript": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\papers\\target_pretraining\\target-pretraining.tex",
+  "section_sha256": "25bc5bedce4e71a2a9c33c4913ce72b160b77f5f014e208b8e8631c15426e692",
+  "note": "All 120 external evaluations verified before table insertion; independent audit subsequently reproduced 72,300 predictions and statistics; PDF rebuilt successfully on 24 November 2026."
+}

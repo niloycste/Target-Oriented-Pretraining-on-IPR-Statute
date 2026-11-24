@@ -32,11 +32,11 @@ may improve language-model fit without improving the final answer span.
 > of better downstream statutory question answering.
 
 This repository accompanies a controlled study of that question on IndicIPR-QA.
-It compares an InLegalBERT reader with no additional DAPT against readers
-adapted on authentic statutes, task-informed synthetic legal text, and a mixed
-corpus. The main comparison holds the optimization schedule fixed, uses five
-training seeds, and reports both masked-language-model diagnostics and
-downstream answer quality.
+The main study compares an InLegalBERT reader with no additional DAPT against
+readers adapted on authentic statutes, task-informed synthetic legal text, and
+a mixed corpus. The equal-update comparison uses five seeds. Post hoc extensions
+repeat it with BERT and LEGAL-BERT. A separate external evaluation applies all
+60 full-data readers to an audited LegalQAEval subset without further training.
 
 ```text
 Legal encoder → optional statutory DAPT → SQuAD transfer → IndicIPR-QA fine-tuning
@@ -44,9 +44,10 @@ Legal encoder → optional statutory DAPT → SQuAD transfer → IndicIPR-QA fin
               MLM fit diagnostics                       EM / token F1
 ```
 
-The goal is not to claim that DAPT never helps. It is to test, under a fixed
-benchmark, encoder, corpus construction, and short adaptation budget, whether
-these additional text sources reliably improve statutory answer extraction.
+The goal is not to claim that DAPT never helps. It is to test, under fixed
+benchmarks, three encoders, fixed corpus construction, and short adaptation
+budgets, whether these additional text sources reliably improve answer
+extraction.
 
 ## 📊 Research at a glance
 
@@ -68,6 +69,12 @@ reliable DAPT benefit on the 344-question test set. An earlier three-epoch
 sensitivity comparison, despite unequal update counts, shows the same general
 pattern. MLM fit can improve without a matching extractive-QA gain.
 
+The post hoc BERT and LEGAL-BERT comparisons also detect no condition effect
+(F1 p = 0.509 and p = 0.862). On the primary 329-question LegalQAEval test
+subset, none of the nine within-encoder DAPT-versus-baseline F1 comparisons
+rejects after the specified Holm corrections. These are failures to detect an
+effect, not evidence that the conditions are equivalent.
+
 <p align="center">
   <img src="papers/target_pretraining/plots/09_equal_update_full_data.png" width="900" alt="Equal-update DAPT comparison across five seeds" />
 </p>
@@ -76,11 +83,12 @@ pattern. MLM fit can improve without a matching extractive-QA gain.
 
 ## 🎯 Research question
 
-The project addresses three related questions:
+The project addresses four related questions:
 
 1. Does additional statutory DAPT improve extractive QA over a legal-domain encoder?
 2. With equal optimizer updates, do authentic, synthetic, and mixed corpora differ from no additional DAPT?
 3. Do masked-language-model improvements or reduced labelled supervision reveal an extraction benefit that average QA scores conceal?
+4. Does the same DAPT pattern appear with two other encoders and on an external legal-related QA subset?
 
 The reported answer is limited to the tested setting. The study does not claim
 equivalence between conditions, generalize to all legal tasks, or establish that
@@ -131,12 +139,18 @@ Choose the smallest path that answers your question.
 | Full evidence audit | Audit scripts | Yes | Checkpoint fingerprints and telemetry |
 | Full training rerun | `run_full_study.py` | Yes | DAPT, transfer, fine-tuning, and evaluation |
 
+The complete commands, frozen model revisions, LegalQAEval commit, output
+locations, and checkpoint requirements are listed in
+[`REPRODUCIBILITY.md`](REPRODUCIBILITY.md).
+
 ### 1. Verify the release
 
 ```powershell
 python verify_release.py
 python scripts/09_dapt_final/analyse_final_experiments.py
 python scripts/dapt_equal_update/analyse_experiment_d.py
+python -X utf8 -m unittest discover -s experiments/legalqaeval -p "test_*.py" -v
+python -X utf8 experiments/legalqaeval/independent_audit.py
 ```
 
 These scripts reanalyse the saved results. They do not retrain models.

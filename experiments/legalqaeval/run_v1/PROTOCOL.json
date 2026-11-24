@@ -1,0 +1,102 @@
+{
+  "schema": 1,
+  "dataset": {
+    "dataset": "isaacus/LegalQAEval",
+    "revision": "f6c7aafcc176b25c32e1e052d02ad9bc06c96bcb",
+    "files": {
+      "val.jsonl": {
+        "sha256": "292044f884d6348cee93f3ae6ca5bbaaa6fe28feead71e86fc6eff1127475dc3"
+      },
+      "test.jsonl": {
+        "sha256": "cf296fa1d7fdb3c5080454ff986d6439c4e92e500f7abafcc50c3b7c10975269"
+      },
+      "README.md": {
+        "sha256": "fe3e9db6522eab471df3770f3dbeb9d966999e73e19d170a97b2780347224bd0"
+      }
+    }
+  },
+  "design": "post-hoc external transfer; no training",
+  "seeds": [
+    7,
+    42,
+    99,
+    123,
+    2026
+  ],
+  "conditions": [
+    "N",
+    "A",
+    "S",
+    "M"
+  ],
+  "encoders": [
+    "inlegalbert",
+    "bert",
+    "legalbert"
+  ],
+  "primary": "answerable; non-SQuAD source; no normalized question OR context overlap with study resources or opposite evaluation split; cross-split matches excluded on both sides",
+  "secondary": [
+    "clean_answerable_including_squad",
+    "all_answerable_exploratory"
+  ],
+  "unanswerable": "counted in audit; excluded from forced-span evaluation",
+  "metrics": "max independently over annotated answers; project EM/F1; articles retained",
+  "inference": {
+    "max_seq_length": 384,
+    "doc_stride": 128,
+    "batch_size": 16,
+    "max_answer_tokens": null,
+    "query_batch_size": 8
+  },
+  "references": {
+    "ipr_train": {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\data\\splits\\train_squad.jsonl",
+      "sha256": "ba0d79c66e6bd3378136d816c3a1eba8e83ded73fca3c7b1787e51b569e5bce4"
+    },
+    "ipr_val": {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\data\\splits\\val.jsonl",
+      "sha256": "30e1e05c383864a928822092b1091e27424642c339819465bc891c2e6e4036d5"
+    },
+    "ipr_test": {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\data\\splits\\test.jsonl",
+      "sha256": "851b3c0130fd21bd3da2c961a4d06e1f84f69ced3fa5487e780884b811734082"
+    },
+    "corpus_A": {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\experiments\\dapt\\final_cpu\\corpus_A.jsonl",
+      "sha256": "d1104445014bdafc4f9d64dc69934574a760db9937ad0832a87f26749170e945"
+    },
+    "corpus_S": {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\experiments\\dapt\\final_cpu\\corpus_S.jsonl",
+      "sha256": "8ed2308222d47954f7e2a73068319a7b2e384c89cd626f06725486f16f59217a"
+    },
+    "corpus_M": {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\experiments\\dapt\\final_cpu\\corpus_M.jsonl",
+      "sha256": "1c74adcf8574ffd40e70447e11dd30d079d5dcb083e695be47ca7d415e85c6e6"
+    },
+    "squad_train_all": {
+      "path": "C:\\Users\\USER\\.cache\\huggingface\\datasets\\rajpurkar___squad\\plain_text\\0.0.0\\7b6d24c440a36b6815f21b70d25016731768db1f\\squad-train.arrow",
+      "sha256": "c1a065b0dcedb5578bb69b6f2febb0b47a87d4c95d5139beaf5fe2eb867c944b"
+    },
+    "squad_val_all": {
+      "path": "C:\\Users\\USER\\.cache\\huggingface\\datasets\\rajpurkar___squad\\plain_text\\0.0.0\\7b6d24c440a36b6815f21b70d25016731768db1f\\squad-validation.arrow",
+      "sha256": "f9533e6e987e1d3adab4de0feb4ee2b2bdce8e2fd408c3899c8f106e7285daef"
+    }
+  },
+  "code": {
+    "experiments\\legalqaeval\\run.py": "7e81548e19538570cd759de991f50ccf0bbff3fb7f8bbe2375e0d1d122c5f271",
+    "scripts\\qa_evaluation.py": "1bf07286ea9c8d57fe575c68cd758128f84a99e0285911fa8975b474b3856dcc",
+    "scripts\\09_dapt_final\\analyse_final_experiments.py": "19466bf4cb7338839d2018d33fb9bb369944e84985f653c4b3785a67499b1f35"
+  },
+  "limitations": [
+    "same already-studied IPR checkpoints",
+    "exact normalized overlap audit is not a semantic contamination audit",
+    "unknown original model pretraining exposure",
+    "multiple listed spans treated as accepted alternatives, not jointly required spans",
+    "seed intervals conditional on fixed evaluation examples",
+    "no causal comparison of encoder pretraining histories"
+  ],
+  "prepared": {
+    "val": "6d1589b53a42554515ba7fecd20ed25c7bc1b2416de8c4e8956deed9276ba1f4",
+    "test": "563222e11e3ce94dd775630c29bc95b61c30ddfef03c5c00c1ab34e8ac23207c"
+  }
+}

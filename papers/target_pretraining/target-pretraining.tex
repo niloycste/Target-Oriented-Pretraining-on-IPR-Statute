@@ -44,25 +44,28 @@ Legal Text}
 
 
 
-\abstract{Statutory question answering requires models to extract precise spans
-from structured legal text. Domain-adaptive pretraining (DAPT) adds statutory
-exposure, but better masked language model fit may not improve extraction. We test this with InLegalBERT and
-IndicIPR-QA, an English benchmark covering seven Indian intellectual property
-Acts. The main comparison fixes DAPT at 100 optimiser updates with 10 warmup
-updates. Across five seeds, we compare authentic statutory text, synthetic text
-generated from task questions and contexts, a mixture of the two, and no
-additional DAPT. Mean test F1 is 85.86 without DAPT, 85.85 with authentic text,
-85.91 with synthetic text, and 85.58 with mixed text. A condition test with
-seed as a block detects no difference (\(p=0.706\)), and all paired
-95\% intervals include zero. An earlier comparison trained for three epochs
-gives the same general result despite unequal update counts. Masked language
-model diagnostics improve without a matching extraction gain. Comparisons
-using 25\% and 50\% of the answer labels do not establish that adaptation
-becomes more beneficial as labelled data decrease. Under the tested
-benchmark, encoder, corpus construction, and short adaptation budget, DAPT does
-not reliably improve extraction. Legal DAPT evaluations should report language
-model fit and task performance separately, alongside update counts, corpus
-provenance, and seed uncertainty.}
+\abstract{Statutory question answering asks models to extract exact spans from
+legal text. Domain-adaptive pretraining (DAPT) may improve masked language
+model fit, but this may not improve extraction. We test this on IndicIPR-QA,
+which covers seven Indian intellectual property Acts. The main experiment
+compares authentic statutory text, synthetic text, a mixture, and no additional
+DAPT. It uses InLegalBERT, five seeds, 100 optimiser updates, and 10 warmup
+updates for each adapted condition. Mean test F1 is 85.86 without DAPT, 85.85
+with authentic text, 85.91 with synthetic text, and 85.58 with mixed text. A
+seed-blocked test detects no condition effect (\(p=0.706\)), and all paired
+95\% intervals include zero. Post hoc extensions repeat the recipe with BERT
+and LEGAL-BERT. Neither detects a condition effect (\(p=0.509\) and
+\(p=0.862\)). We also evaluate all 60 full-data readers without further
+training on an audited set of 329 answerable, non-SQuAD LegalQAEval test
+examples. None of the nine within-encoder DAPT-versus-baseline F1 tests rejects
+after Holm correction. Earlier three-epoch experiments, controls with fewer
+answer labels, and masked language model diagnostics support the same main
+interpretation: better language model fit does not produce a statistically
+established extraction gain here. These findings apply to the tested corpora,
+models, and short adaptation budgets. They do not show equivalence or that DAPT
+cannot work in other settings. Legal DAPT studies should report downstream
+scores separately from language model fit and should document update counts,
+corpus provenance, and seed uncertainty.}
 
 \keywords{Legal NLP, Domain-adaptive pretraining, Extractive question answering,
 Synthetic text, Statutory language, Indian intellectual property law}
@@ -89,9 +92,12 @@ The synthetic and mixed routes use continued pretraining informed by the task.
 They are not adaptation based on domain text alone because their corpora use
 benchmark questions and contexts, although they exclude answer strings and
 offsets.
-The question here is narrower than whether legal pretraining helps a generic
+The main question is narrower than whether legal pretraining helps a generic
 encoder: does additional statutory adaptation targeted to the benchmark improve
 an InLegalBERT reader after the same supervised transfer and fine-tuning stages?
+Post hoc extensions ask whether the result also appears with BERT and
+LEGAL-BERT and when the final readers are evaluated on an external legal-related
+QA set.
 
 The choice of adaptation text complicates this comparison. Authentic
 provisions retain statutory wording, whereas generated passages can extend
@@ -105,7 +111,8 @@ pairs over seven Indian intellectual property Acts. Its construction and
 validation are described in a separate accepted resource paper
 \citep{anonymous2026indiciprbenchmark}. The present study holds the annotated
 source paragraph available and studies reader adaptation; provision retrieval
-is outside its scope. The evidence contains 62 independently trained readers.
+is outside its scope. The original study contains 62 independently trained readers;
+post hoc BERT and LEGAL-BERT extensions add 20 readers each, for 102 in total.
 It includes a comparison with equal update counts on the full dataset, an
 earlier comparison trained for three epochs, a control written in statutory
 style, and controls for the fraction of answer labels.
@@ -123,16 +130,15 @@ outperform an untargeted synthetic control written in statutory style?
 IndicIPR-QA fine-tuning uses answer labels from fewer training sections?
 \end{description}
 
-The contribution is an empirical audit rather than a new encoder architecture.
-First, a post hoc sensitivity comparison across five seeds matches MLM update counts,
+The contribution is a controlled empirical audit rather than a new encoder
+architecture. First, the main five-seed comparison matches MLM update counts,
 warmup, and the learning rate schedule across authentic, synthetic, and mixed
-DAPT. Second, a completed study with three training epochs, provenance checks,
-and token budget
-audits show which conclusions survive under a different exposure rule. Third,
-paired controls for writing style and the fraction of answer labels test narrower explanations for
-any apparent gain. Corpus, answer difficulty, and masked language model (MLM)
-diagnostics support interpretation without substituting for downstream QA
-evaluation.
+DAPT. Second, post hoc extensions repeat this comparison with two other
+encoders and test all full-data readers on an external legal-related QA set.
+Third, an earlier three-epoch study and paired controls for writing style and
+the fraction of answer labels test narrower explanations for any apparent
+gain. Corpus, answer difficulty, and masked language model (MLM) diagnostics
+support interpretation without replacing downstream QA evaluation.
 
 This distinction is the main reason the absence of a detected effect is informative.
 Validation MLM scores are often used to show that an encoder has adapted to a
@@ -410,6 +416,7 @@ A: three epochs & N/A/S/M; seeds 7, 42, 99, 123, 2026 & 20 \\
 B: alignment & Style; seeds 7, 42, 99; paired with matching S runs from A & 3 additional \\
 C: answer labels & N/A/S/M at 25\% and 50\%; seeds 7, 42, 99 & 24 additional \\
 Evaluation & 408 validation and 344 test questions for every reader & 62 unique readers \\
+Encoder extensions & BERT and LEGAL-BERT; N/A/S/M, five seeds per encoder & 40 additional readers \\
 MLM diagnostic & Base encoder and the 18 A/B adapted checkpoints & 19 encoders; validation only \\
 \bottomrule
 \end{tabular}
@@ -726,8 +733,9 @@ reported separately in Section~\ref{sec:low_results}.
 \section{Results of the Completed Study}\label{sec:results}
 
 Validation summaries are reported separately in Appendix~\ref{app:validation};
-they are not substituted for test results. All 62 readers have saved
-checkpoints and completed evaluations.
+they are not substituted for test results. All 62 readers in the original
+study have saved checkpoints and completed evaluations. The two encoder
+extensions add 40 newly trained readers, 20 for each additional encoder.
 
 \subsection{Efficacy and Corpus Composition with Equal Update Counts}
 \label{sec:equal_update_results}
@@ -780,6 +788,93 @@ the full dataset or a difference among authentic, synthetic, and mixed adaptatio
 The absence of a detected effect is not evidence that the routes are equivalent. The result
 applies to the tested 100-update schedule, fixed corpora, encoder, and
 downstream route.
+
+\subsection{Additional Encoder: BERT}
+\label{sec:bert_extension}
+
+A post hoc extension repeats the full-data comparison with
+\texttt{bert-base-uncased}. All 20 readers are newly trained: N, A, S, and M
+each use seeds 7, 42, 99, 123, and 2026. N starts from BERT without an MLM
+adaptation stage; A, S, and M receive 100 MLM updates with 10 warmup updates.
+Every route then uses the same SQuAD transfer and IndicIPR-QA fine-tuning
+recipe, validation-loss checkpoint selection, and gold-context decoder as the
+main study. The extension uses the same fixed corpus records and question
+splits. It controls update counts, but does not equate token exposure across
+encoders with different tokenizers. The model revision, input hashes, and
+generated training scripts were recorded before training.
+
+\begin{table}[!htbp]
+\caption{Post hoc BERT extension: test results on 344 questions, with five
+seeds per condition. Scores use the 0--100 scale; SD is the sample standard
+deviation across seeds. Intervals use paired seed differences.}
+\label{tab:bert_extension_test}
+\centering\scriptsize
+\begin{tabular}{@{}lrr>{\raggedright\arraybackslash}p{4.4cm}@{}}
+\toprule
+Condition & Mean EM & Mean F1 $\pm$ SD & \shortstack[l]{DAPT--N F1 difference\\(95\% interval)} \\
+\midrule
+No DAPT & 62.97 & $84.17\pm0.51$ & --- \\
+Authentic & 63.08 & $84.71\pm0.82$ & $+0.54\;[-0.66,1.75]$ \\
+Synthetic & 63.31 & $84.76\pm1.11$ & $+0.60\;[-0.93,2.13]$ \\
+Mixed & 62.67 & $84.32\pm0.92$ & $+0.16\;[-1.01,1.32]$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The seed-blocked condition test gives \(F(3,12)=0.817\), \(p=0.509\) for
+F1 and \(F(3,12)=0.390\), \(p=0.762\) for EM. All three paired F1
+intervals include zero; the Holm-adjusted DAPT versus N \(p\)-values are
+0.843 for F1 and 1.00 for EM. Thus, the extension does not detect an
+extraction benefit under this BERT recipe. Its positive mean F1 differences
+do not establish superiority, and the intervals still allow modest gains or
+losses. Validation results are reported separately in
+Appendix~\ref{app:validation}.
+
+This comparison broadens the tested encoder choices but reuses the same
+benchmark and adaptation corpora. It is not independent validation on new
+questions or another legal domain. Differences between BERT and InLegalBERT
+also cannot be attributed solely to prior legal pretraining, because their
+pretraining histories and tokenizers differ. No formal interaction test
+between encoder and DAPT condition is reported.
+
+\subsection{Additional Encoder: LEGAL-BERT}
+\label{sec:legalbert_extension}
+
+The same post hoc full-data protocol was also run with LEGAL-BERT. The exact
+checkpoint is \texttt{nlpaueb/legal-bert-base-uncased}. All 20 readers are
+newly trained, including the five no-DAPT baselines. Conditions, seeds, adaptation corpora,
+100-update MLM budget, 10 warmup updates, SQuAD transfer, IPR fine-tuning,
+checkpoint selection, and decoding follow the additional-encoder protocol in
+Section~\ref{sec:bert_extension}. This is a separate encoder comparison on
+the same IndicIPR-QA questions, rather than a new benchmark replication.
+
+\begin{table}[!htbp]
+\caption{Post hoc LEGAL-BERT extension: test results on 344 questions, with
+five seeds per condition. Scores use the 0--100 scale; SD is across seeds.
+Differences and intervals pair each DAPT reader with its same-seed N reader.}
+\label{tab:legalbert_extension_test}
+\centering\scriptsize
+\begin{tabular}{@{}lrr>{\raggedright\arraybackslash}p{4.4cm}@{}}
+\toprule
+Condition & Mean EM & Mean F1 $\pm$ SD & \shortstack[l]{DAPT--N F1 difference\\(95\% interval)} \\
+\midrule
+No DAPT & 66.86 & $86.29\pm0.74$ & --- \\
+Authentic & 66.69 & $86.31\pm1.20$ & $+0.02\;[-1.93,1.97]$ \\
+Synthetic & 67.15 & $86.66\pm0.86$ & $+0.37\;[-0.99,1.73]$ \\
+Mixed & 66.74 & $86.25\pm0.45$ & $-0.04\;[-1.16,1.08]$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The seed-blocked condition test gives \(F(3,12)=0.247\), \(p=0.862\) for
+F1 and \(F(3,12)=0.169\), \(p=0.916\) for EM. All three paired F1
+intervals include zero, and all Holm-adjusted DAPT versus N tests equal 1.00
+for both metrics. Synthetic DAPT has the highest observed mean F1, but its
+$+0.37$-point difference does not establish superiority. The authentic-text
+interval permits effects from approximately $-1.93$ to $+1.97$ points.
+As with BERT, these results do not establish equivalence or isolate the
+effect of the encoder's pretraining history. Validation results are reported
+separately in Appendix~\ref{app:validation}.
 
 \subsection{Earlier Three-Epoch Experiments}
 
@@ -905,6 +1000,165 @@ the fraction of answer labels decreases. The design does not estimate total data
 savings.
 
 \FloatBarrier
+% LEGALQAEVAL_EXTERNAL_BEGIN
+\section{External Transfer Evaluation: LegalQAEval}
+\label{sec:external_legalqaeval}
+
+We evaluated all 60 fixed readers on LegalQAEval after SQuAD transfer
+and IndicIPR-QA fine-tuning, without external training or checkpoint
+selection. N/A/S/M are compared within each encoder across seeds 7, 42,
+99, 123, and 2026. Each reader was evaluated separately on the external
+validation and test splits; no best seed or condition was selected.
+
+LegalQAEval contains legal-related examples drawn from SQuAD~2.0,
+MS MARCO, HotpotQA, and Natural Questions. The downloaded revision is
+\texttt{f6c7aafcc176b25c32e1e052d02ad9bc06c96bcb}.
+It provides 1,204 validation and 1,206 test examples, including
+unanswerable questions. The dataset and source documentation are at
+\url{https://huggingface.co/datasets/isaacus/LegalQAEval}.
+
+The primary subsets retain 333 validation and 329 test examples.
+They contain answerable, non-SQuAD questions without normalized
+question or context matches against the IPR splits, adaptation
+corpora, full cached SQuAD training and validation pools, or the
+opposite external split. The primary test subset contains 234
+MS MARCO, 54 HotpotQA, and 41 Natural Questions examples. All
+SQuAD-derived examples matched the conservative reference pool.
+The audit also identified 25 normalized context texts shared across
+external splits; these occur only among SQuAD-derived examples and
+are excluded on both sides from clean scoring. Raw annotations
+were retained. These checks do not rule out semantic overlap or
+unknown encoder pretraining exposure.
+
+The fixed decoder uses the same 384-token windows, 128-token overlap,
+and maximum summed start/end logits. It always extracts a span.
+Unanswerable examples are counted in the audit but excluded from
+scoring. EM and F1 independently take the maximum over listed answers,
+treating them as accepted alternatives rather than jointly required
+spans. Normalization retains articles. The results therefore concern
+an audited answerable subset and the project scoring convention,
+rather than the complete official benchmark.
+
+\begin{table}[!htbp]
+\caption{External transfer: primary LegalQAEval test subset (329 questions).
+EM/F1 use the 0--100 scale. SD is across five seeds; intervals
+use paired seed differences.}
+\label{tab:legalqaeval_test}
+\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}llrr>{\raggedright\arraybackslash}p{3.8cm}@{}}
+\toprule
+Encoder & Condition & EM & F1 $\pm$ SD & DAPT--N F1 (95\% interval) \\
+\midrule
+InLegalBERT & No DAPT & 14.47 & $50.04\pm1.65$ & --- \\
+InLegalBERT & Authentic & 11.79 & $48.95\pm1.53$ & $-1.10\;[-2.44,0.24]$ \\
+InLegalBERT & Synthetic & 11.55 & $49.23\pm1.39$ & $-0.82\;[-2.27,0.63]$ \\
+InLegalBERT & Mixed & 13.19 & $49.60\pm1.24$ & $-0.45\;[-2.36,1.46]$ \\
+\addlinespace
+BERT & No DAPT & 15.62 & $52.22\pm0.89$ & --- \\
+BERT & Authentic & 14.95 & $52.42\pm0.88$ & $+0.20\;[-0.88,1.28]$ \\
+BERT & Synthetic & 15.68 & $52.24\pm1.33$ & $+0.02\;[-1.20,1.24]$ \\
+BERT & Mixed & 15.32 & $52.27\pm0.79$ & $+0.05\;[-0.67,0.76]$ \\
+\addlinespace
+LEGAL-BERT & No DAPT & 13.92 & $51.11\pm1.80$ & --- \\
+LEGAL-BERT & Authentic & 13.43 & $50.79\pm1.73$ & $-0.32\;[-1.74,1.10]$ \\
+LEGAL-BERT & Synthetic & 14.83 & $51.53\pm2.19$ & $+0.42\;[-2.43,3.27]$ \\
+LEGAL-BERT & Mixed & 14.65 & $51.14\pm1.11$ & $+0.03\;[-2.27,2.33]$ \\
+\addlinespace
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]
+\caption{External transfer: primary LegalQAEval validation subset (333 questions).
+EM/F1 use the 0--100 scale. SD is across five seeds; intervals
+use paired seed differences. Validation is descriptive.}
+\label{tab:legalqaeval_val}
+\centering\scriptsize
+\setlength{\tabcolsep}{3pt}
+\begin{tabular}{@{}llrr>{\raggedright\arraybackslash}p{3.8cm}@{}}
+\toprule
+Encoder & Condition & EM & F1 $\pm$ SD & DAPT--N F1 (95\% interval) \\
+\midrule
+InLegalBERT & No DAPT & 18.74 & $54.05\pm1.42$ & --- \\
+InLegalBERT & Authentic & 17.24 & $53.50\pm2.22$ & $-0.55\;[-1.88,0.79]$ \\
+InLegalBERT & Synthetic & 17.78 & $54.20\pm1.87$ & $+0.15\;[-0.65,0.95]$ \\
+InLegalBERT & Mixed & 18.20 & $54.28\pm2.23$ & $+0.24\;[-1.29,1.77]$ \\
+\addlinespace
+BERT & No DAPT & 17.96 & $55.59\pm1.08$ & --- \\
+BERT & Authentic & 16.64 & $54.57\pm1.25$ & $-1.02\;[-2.16,0.11]$ \\
+BERT & Synthetic & 16.94 & $54.07\pm0.94$ & $-1.52\;[-3.07,0.03]$ \\
+BERT & Mixed & 17.24 & $55.02\pm1.36$ & $-0.57\;[-2.68,1.54]$ \\
+\addlinespace
+LEGAL-BERT & No DAPT & 19.58 & $56.14\pm1.26$ & --- \\
+LEGAL-BERT & Authentic & 18.98 & $55.19\pm1.29$ & $-0.94\;[-2.40,0.52]$ \\
+LEGAL-BERT & Synthetic & 19.58 & $56.29\pm0.86$ & $+0.15\;[-1.16,1.46]$ \\
+LEGAL-BERT & Mixed & 20.18 & $55.62\pm1.27$ & $-0.52\;[-1.62,0.58]$ \\
+\addlinespace
+\bottomrule
+\end{tabular}
+\end{table}
+
+The primary test comparisons use seed-blocked ANOVA and paired
+DAPT versus N tests with Holm correction within encoder and metric.
+This correction is not study-wide. The F1 condition tests are:
+InLegalBERT $F(3,12)=1.593$, $p=0.243$ (Holm-adjusted paired $p$: A: 0.257, S: 0.385, M: 0.551).
+BERT $F(3,12)=0.094$, $p=0.962$ (Holm-adjusted paired $p$: A: 1.000, S: 1.000, M: 1.000).
+LEGAL-BERT $F(3,12)=0.348$, $p=0.791$ (Holm-adjusted paired $p$: A: 1.000, S: 1.000, M: 1.000).
+
+None of the nine primary paired F1 comparisons rejects its null
+under the specified within-encoder corrections. This does not
+establish equivalence; the intervals show the range of effects
+compatible with the observed seed variation.
+
+\begin{table}[!htbp]
+\caption{Exploratory external test F1 means by source after overlap exclusions.
+Columns give N/A/S/M means across five seeds. These analyses are secondary.}
+\label{tab:legalqaeval_sources}
+\centering\scriptsize
+\begin{tabular}{@{}llrrrrr@{}}
+\toprule
+Encoder & Source & $n$ & N & A & S & M \\
+\midrule
+InLegalBERT & MS MARCO & 234 & 57.18 & 56.79 & 57.07 & 57.29 \\
+InLegalBERT & HotpotQA & 54 & 24.41 & 22.88 & 23.14 & 24.14 \\
+InLegalBERT & Natural Questions & 41 & 43.07 & 38.51 & 38.79 & 39.21 \\
+BERT & MS MARCO & 234 & 59.47 & 59.21 & 58.67 & 59.36 \\
+BERT & HotpotQA & 54 & 24.55 & 24.32 & 26.21 & 23.16 \\
+BERT & Natural Questions & 41 & 47.30 & 50.66 & 49.84 & 50.10 \\
+LEGAL-BERT & MS MARCO & 234 & 59.31 & 58.84 & 59.56 & 59.31 \\
+LEGAL-BERT & HotpotQA & 54 & 22.10 & 21.03 & 22.30 & 21.33 \\
+LEGAL-BERT & Natural Questions & 41 & 42.50 & 44.05 & 44.17 & 43.80 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[!htbp]
+\caption{Exploratory F1 on all 603 answerable external test examples,
+including potentially exposed SQuAD examples. These are not primary transfer estimates.}
+\label{tab:legalqaeval_all_answerable}
+\centering\small
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Encoder & N & A & S & M \\
+\midrule
+InLegalBERT & 54.42 & 53.35 & 53.79 & 53.54 \\
+BERT & 56.39 & 56.77 & 56.84 & 56.65 \\
+LEGAL-BERT & 52.83 & 52.62 & 52.97 & 52.58 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+These results assess transfer of the final Indian-IPR readers to other
+legal-related reading examples. They do not replicate DAPT training
+on a second statutory corpus, evaluate abstention, establish legal
+correctness, or isolate causal effects of encoder pretraining history.
+The five-seed intervals condition on fixed external questions and
+corpus samples; they do not include question-sampling uncertainty.
+All per-item outputs and secondary analyses are retained.
+\FloatBarrier
+% LEGALQAEVAL_EXTERNAL_END
+
 \section{Supporting Diagnostics}\label{sec:diagnostics}
 
 \subsection{Corpus Properties}\label{sec:corpus_characterisation}
@@ -1047,13 +1301,13 @@ extraction additionally requires selecting boundaries in response to a question.
 The observed mismatch does not explain the mechanism of every error, but it
 shows why MLM perplexity cannot stand in for downstream reader performance.
 
-The benchmark is already approached through an Indian legal encoder and
-supervised SQuAD transfer. The two analyses on the full dataset that did not detect
-an effect therefore concern the marginal value of a small additional statutory
-corpus within that route.
-It does not compare legal pretraining with no legal pretraining, nor does it
-establish that DAPT would fail with other encoders, larger corpora, longer
-training or different optimisation schedules.
+The main study starts from an Indian legal encoder and includes supervised
+SQuAD transfer. Its two full-data analyses therefore measure the marginal value
+of a small additional statutory corpus within that route. The BERT and
+LEGAL-BERT extensions show the same lack of a detected condition effect, so the
+result is not limited to one starting encoder. However, three encoders and one
+short recipe do not establish that DAPT would fail with other models, larger
+corpora, longer training, or different optimisation schedules.
 
 Three explanations remain consistent with the evidence: InLegalBERT may
 already encode much of the useful legal language signal; the MLM objective may
@@ -1064,6 +1318,13 @@ The persistent descriptive difficulty of enumerated and qualification bearing
 answers across conditions suggests that better statutory token prediction
 alone did not resolve those boundary patterns, but this is not a causal error
 analysis.
+
+The external evaluation broadens the evidence to legal-related questions from
+three other source datasets. It again detects no DAPT-versus-baseline F1 effect
+within any encoder. The lower external scores also show that strong in-domain
+performance does not guarantee transfer. This evaluation uses the same fixed
+readers, so it is not a second DAPT training experiment and cannot identify why
+transfer is harder.
 
 \subsection{Implications for Legal Information Access}
 
@@ -1122,7 +1383,7 @@ confirmatory replication. Its test plan was locked after validation review and
 before test evaluation. The narrow interval for the 50\% synthetic
 contrast depends on a paired-\(t\) analysis with two degrees of freedom.
 The study on the full dataset did not predefine a smallest effect size or an equivalence
-margin. Its paired intervals, which extend as far as about $\pm1.3$ F1 points,
+margin. Experiment D's paired intervals, which extend as far as about $\pm1.3$ F1 points,
 cannot exclude modest effects that may matter in practice.
 Multiplicity correction is within specified families, not across every
 analysis. The test set, corpus selection and answer label subsets
@@ -1131,7 +1392,7 @@ and training uncertainty. Fine-tuning with fewer answer labels also retains broa
 access to text informed by the task and to SQuAD labels.
 
 A prospective confirmation would need more seeds, longer adaptation budgets,
-at least one additional encoder, and independently resampled adaptation
+further encoder comparisons, and independently resampled adaptation
 corpora. It should define the smallest practically relevant F1 change before
 test evaluation. Those additions are needed to distinguish a genuinely small
 marginal effect from insufficient precision or adaptation exposure.
@@ -1145,8 +1406,19 @@ pretest amendment was approved after validation results had been observed.
 The MLM loader correction occurred after test evaluation. These events are
 documented rather than described as an untouched preregistered experiment.
 
-The study covers answerable, English, gold context extraction in seven Indian
-IPR Acts with one encoder family. Questions were machine generated and curated;
+The study covers answerable, English, gold-context extraction in seven Indian
+IPR Acts, with InLegalBERT in the main study and BERT and LEGAL-BERT in post hoc
+extensions. Both extensions reuse the same questions and corpora. Across their
+paired F1 contrasts, the BERT intervals extend from $-1.01$ to $+2.13$, while
+the LEGAL-BERT intervals extend from $-1.93$ to $+1.97$. They therefore do not
+establish equivalence or provide independent validation on new training data.
+The separate LegalQAEval analysis evaluates transfer of these fixed readers,
+but its primary test subset has only 329 answerable examples and mixes several
+source datasets. It is not a replication of adaptation training on another
+statutory corpus, and it does not evaluate the full benchmark or abstention.
+Differences from IndicIPR-QA may reflect question, source, annotation, or answer
+length differences; the analysis does not identify their separate causes.
+Questions were machine generated and curated;
 generator specific patterns may remain. Dataset construction and validation
 belong to the companion resource paper
 \citep{anonymous2026indiciprbenchmark}, not to a new human evaluation in this
@@ -1154,8 +1426,8 @@ study. No practitioner assessment of reader errors or generated law like text
 was conducted. The archived statutory snapshots are not verified as current
 consolidated law.
 
-Generality across jurisdictions, languages, encoders and independently written
-questions remains untested. EQUALS concerns Chinese law extraction
+Generality across jurisdictions, languages, other encoders, and independently
+written questions remains untested. EQUALS concerns Chinese law extraction
 \citep{chen2023equals}; AILQA and DiscoLQA study related legal QA settings
 \citep{nigam2026ailqa,sovrano2025discolqa}, but are not direct replications
 of this English IPR reader protocol. Retrieval, unanswerable questions,
@@ -1163,24 +1435,27 @@ multiple provision synthesis and interactive legal research are outside scope.
 
 \section{Conclusion}\label{sec:conclusion}
 
-Across five training seeds, the comparison with equal update counts does not detect an
-extraction gain on the full dataset from authentic, synthetic, or mixed statutory DAPT.
-Mean test F1 is 85.86 without DAPT, 85.85 with authentic text, 85.91 with
-synthetic text, and 85.58 with mixed text. The earlier three-epoch comparison
-reaches the same general result and also does not detect an effect, despite using a different exposure
-rule. A style control across three seeds does not establish a target alignment
-advantage. A preliminary 0.43-point synthetic versus no DAPT contrast appears
-at fine-tuning with 50\% of the answer labels under the paired-\(t\) analysis, but the exact
-sign flip check does not support it and the interaction with the fraction of answer labels
-is not established.
+Across five seeds, the equal-update comparison detects no extraction gain from
+authentic, synthetic, or mixed DAPT. Mean test F1 is 85.86 without DAPT, 85.85
+with authentic text, 85.91 with synthetic text, and 85.58 with mixed text. The
+BERT and LEGAL-BERT extensions also detect no condition effect, and every
+paired DAPT-versus-baseline interval includes zero. The earlier three-epoch
+study and the controls for writing style and answer-label fraction do not
+establish a broader DAPT advantage.
 
-The three-epoch MLM diagnostics improve after adaptation, but this language fit
-gain does not transfer to detected extraction gains on the full dataset. The findings are
-bounded by one benchmark, fixed corpus samples, one encoder, and short
-adaptation schedules. The study supports explicit reporting of source
-provenance, token and update budgets, checkpoint selection, training seed
-uncertainty, and answer quality relative to the annotations when evaluating statutory
-adaptation.
+The external result is consistent with the in-domain result. On the audited
+329-question LegalQAEval test subset, the no-DAPT mean F1 scores are 50.04 for
+InLegalBERT, 52.22 for BERT, and 51.11 for LEGAL-BERT. None of the nine paired
+F1 comparisons rejects after the specified within-encoder Holm correction.
+This adds evidence about the transfer of the fixed readers, but it does not
+establish equivalence or a general limit on DAPT.
+
+The MLM diagnostics improve after adaptation without a statistically
+established extraction gain. The findings are limited to the tested corpora,
+three encoders, fixed corpus samples, and short schedules. The study therefore
+supports reporting downstream task scores separately from language-model fit,
+together with corpus provenance, update and token budgets, checkpoint selection,
+and seed uncertainty.
 
 \FloatBarrier
 \appendix
@@ -1231,13 +1506,51 @@ contrasts. The five no DAPT cells reuse the matching Experiment A readers.
 This sequence prevents the Experiment D test results from being presented as
 preregistered or independent confirmation.
 
+The BERT extension has a separate frozen protocol and generated scripts under
+\texttt{experiments/dapt/encoder\_extension/bert/}. Its records include
+the checkpoint revision and input hashes, a completed stage ledger, MLM
+telemetry, and per-question validation and test predictions for all 20 readers.
+A reporting check rescored 6,880 test and 8,160 validation predictions,
+reproduced the condition means and sample standard deviations, and verified
+100 completed updates and 10 configured warmup steps for all 15 MLM stages.
+The extension was designed after the original study and reuses an already
+studied test set; it is reported as a post hoc encoder comparison.
+
+The completed LEGAL-BERT extension has a parallel protocol and outputs under
+\texttt{experiments/dapt/encoder\_extension/legalbert/}. A subsequent
+verification rescored all 6,880 test and 8,160 validation predictions, matched
+all 20 saved reader fingerprints, verified the 55 completed training stages,
+and reproduced the descriptive statistics, blocked ANOVA, paired intervals,
+and Holm corrections. All 15 MLM telemetry records confirm 100 completed
+updates and 10 configured warmup steps. Generated-source hashes are checked
+after universal-newline reading because the runner hashes source strings
+before Windows newline translation. Verification reports are retained with
+the external-evaluation scripts. These checks establish consistency of the
+saved artifacts rather than independent retraining or legal validity.
+
+For LegalQAEval, all 60 reader fingerprints matched their original evaluation
+records before scoring. The original InLegalBERT readers were resolved to
+their retained parent-workspace location; a pre-scoring execution amendment
+records this location change. An implementation check used four external
+validation examples per encoder to verify strict QA-model loading, source-span
+extraction, and independent answer scoring. All 120 split evaluations were
+completed before external tables were inserted into this manuscript. A separate
+audit then rescored 72,300 predictions, reconstructed the inclusion rules from
+the raw dataset and reference resources, and independently reproduced means,
+sample standard deviations, paired tests and intervals, Holm corrections, and
+seed-blocked ANOVA using a least-squares calculation. The saved audit records
+the Python and package versions. This is a calculation and artifact audit,
+not independent replication of training or legal assessment.
+
 \paragraph*{AI assisted manuscript preparation.}
 An AI assistant (OpenAI Codex) was used to help check consistency between
 saved evidence and manuscript statements, revise the manuscript, and prepare
 result driven plotting and verification code. It also executed the documented,
 frozen Experiment D evaluation and analysis workflow after training had
-finished. It did not train models, change checkpoints, or alter prediction
-outputs. Responsibility for the scientific interpretation, verification and
+finished. For the subsequent encoder extension, the assistant also launched
+the documented training scripts and checked their saved outputs. The reporting
+edits did not change checkpoints or prediction outputs.
+Responsibility for the scientific interpretation, verification and
 final submitted text rests with the authors.
 
 \section{Validation Results and Interaction Contrasts}\label{app:validation}
@@ -1267,6 +1580,48 @@ Mixed & 5 & 72.70 & $88.50\pm0.80$ \\
 The validation blocked condition test gives \(F(3,12)=1.520\),
 \(p=0.260\) for F1. These values were inspected before the Experiment D test
 plan was locked and are reported only as validation summaries.
+
+\begin{table}[!htbp]
+\caption{Post hoc BERT extension: validation results on 408 questions.
+Scores use the 0--100 scale; SD is across five seeds.}
+\label{tab:bert_extension_validation}
+\centering\small
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Condition & Seeds & Mean EM & Mean F1 $\pm$ SD \\
+\midrule
+No DAPT & 5 & 66.86 & $85.75\pm1.57$ \\
+Authentic & 5 & 66.32 & $84.92\pm1.01$ \\
+Synthetic & 5 & 66.32 & $84.97\pm1.03$ \\
+Mixed & 5 & 65.54 & $84.77\pm1.27$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The BERT validation condition test gives \(F(3,12)=1.838\), \(p=0.194\)
+for F1 and \(F(3,12)=0.941\), \(p=0.451\) for EM. These scores describe
+the split used for supervised checkpoint selection.
+
+\begin{table}[!htbp]
+\caption{Post hoc LEGAL-BERT extension: validation results on 408 questions.
+Scores use the 0--100 scale; SD is across five seeds.}
+\label{tab:legalbert_extension_validation}
+\centering\small
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Condition & Seeds & Mean EM & Mean F1 $\pm$ SD \\
+\midrule
+No DAPT & 5 & 72.89 & $89.31\pm0.97$ \\
+Authentic & 5 & 73.82 & $89.84\pm0.88$ \\
+Synthetic & 5 & 73.68 & $89.35\pm0.86$ \\
+Mixed & 5 & 72.99 & $89.48\pm0.70$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The LEGAL-BERT validation condition test gives \(F(3,12)=0.522\),
+\(p=0.675\) for F1 and \(F(3,12)=0.551\), \(p=0.657\) for EM.
+These are descriptive scores on the supervised checkpoint-selection split.
 
 \begin{table}[!htbp]
 \caption{Earlier three-epoch A--C studies: validation results on 408 questions.

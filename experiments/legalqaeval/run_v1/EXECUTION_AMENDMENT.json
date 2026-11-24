@@ -1,0 +1,379 @@
+{
+  "reason": "Original InLegalBERT readers are retained in the parent workspace, not the Git repository.",
+  "timing": "Recorded before any formal external evaluation; no training or selection changes.",
+  "unchanged": "dataset, subsets, scoring, seeds, conditions, decoder and inference settings",
+  "protocol_sha256": "60a9a3af06bc4ddb5cfa30be4059d53b66744238268df6d5e53d853a711888cc",
+  "inventory": {
+    "inlegalbert": [
+      {
+        "condition": "N",
+        "seed": 7,
+        "checkpoint": "E:\\Dataset on IPR\\artifacts\\models\\final_cpu\\A_N_s7_ipr\\final",
+        "original_reader_sha256": "24e2a722bae7dd8d3cfa07928744465159d23701a23a855d87c7dc81d17e7866"
+      },
+      {
+        "condition": "N",
+        "seed": 42,
+        "checkpoint": "E:\\Dataset on IPR\\artifacts\\models\\final_cpu\\A_N_s42_ipr\\final",
+        "original_reader_sha256": "983785cc5c168743540eec02488849e2da00652d1331c25259252e26391e6ffe"
+      },
+      {
+        "condition": "N",
+        "seed": 99,
+        "checkpoint": "E:\\Dataset on IPR\\artifacts\\models\\final_cpu\\A_N_s99_ipr\\final",
+        "original_reader_sha256": "f91a40205b378547426f95364dd101c977bb6bb31a44efdbf23cddfb7fcaf3e3"
+      },
+      {
+        "condition": "N",
+        "seed": 123,
+        "checkpoint": "E:\\Dataset on IPR\\artifacts\\models\\final_cpu\\A_N_s123_ipr\\final",
+        "original_reader_sha256": "8f149ca8a55a8a7445c008702cf3c6709bcdc00ea2835d0899c56979c294c4ad"
+      },
+      {
+        "condition": "N",
+        "seed": 2026,
+        "checkpoint": "E:\\Dataset on IPR\\artifacts\\models\\final_cpu\\A_N_s2026_ipr\\final",
+        "original_reader_sha256": "ca5d9f26abb5fe329d6c100887fa13c148e3fb42187ea6ec59fdba94ba972735"
+      },
+      {
+        "condition": "A",
+        "seed": 7,
+        "checkpoint": "E:\\Dataset on IPR\\artifacts\\models\\equal_update\\D_A_s7_ipr\\final",
+        "original_reader_sha256": "634a4d32c461919e6de80b645d26b52e73df47f63d2478138fca846f75756876"
+      },
+      {
+        "condition": "A",
+        "seed": 42,
+        "checkpoint": "E:\\Dataset on IPR\\artifacts\\models\\equal_update\\D_A_s42_ipr\\final",
+        "original_reader_sha256": "44ce308f21ea237b5d34236f31a1590cd87ea231754f77002ba8893f85c17d9f"
+      },
+      {
+        "condition": "A",
+        "seed": 99,
+        "checkpoint": "E:\\Dataset on IPR\\artifacts\\models\\equal_update\\D_A_s99_ipr\\final",
+        "original_reader_sha256": "2fb0d65076a54e5986f70776a18f701387bebe0774bfc04d71af4e0a30f3626f"
+      },
+      {
+        "condition": "A",
+        "seed": 123,
+        "checkpoint": "E:\\Dataset on IPR\\artifacts\\models\\equal_update\\D_A_s123_ipr\\final",
+        "original_reader_sha256": "138bdbae536394264260ffc5d70438dbca23bf9cea40ab450b3919f1e50aead8"
+      },
+      {
+        "condition": "A",
+        "seed": 2026,
+        "checkpoint": "E:\\Dataset on IPR\\artifacts\\models\\equal_update\\D_A_s2026_ipr\\final",
+        "original_reader_sha256": "6e33c989f8a43388dd071bce8452084297c637d59653ab6cac4ce58eb2f3311c"
+      },
+      {
+        "condition": "S",
+        "seed": 7,
+        "checkpoint": "E:\\Dataset on IPR\\artifacts\\models\\equal_update\\D_S_s7_ipr\\final",
+        "original_reader_sha256": "fc8022458ac0cf5d889fc5d135f8f393876156a51d011ae0795ccc880001fbb9"
+      },
+      {
+        "condition": "S",
+        "seed": 42,
+        "checkpoint": "E:\\Dataset on IPR\\artifacts\\models\\equal_update\\D_S_s42_ipr\\final",
+        "original_reader_sha256": "c05f1147d3e45aeb2686d5cec7cc475e99c3122d3b2e11d07a6450aea1cb8243"
+      },
+      {
+        "condition": "S",
+        "seed": 99,
+        "checkpoint": "E:\\Dataset on IPR\\artifacts\\models\\equal_update\\D_S_s99_ipr\\final",
+        "original_reader_sha256": "d5547ffeda4d15715263095f5b7f74c70a1227f8681fbb33e7799acbd0df7196"
+      },
+      {
+        "condition": "S",
+        "seed": 123,
+        "checkpoint": "E:\\Dataset on IPR\\artifacts\\models\\equal_update\\D_S_s123_ipr\\final",
+        "original_reader_sha256": "3affbafc2967ec9157614ffe428604ccaa653412c0ce4f384c4501deb437c87d"
+      },
+      {
+        "condition": "S",
+        "seed": 2026,
+        "checkpoint": "E:\\Dataset on IPR\\artifacts\\models\\equal_update\\D_S_s2026_ipr\\final",
+        "original_reader_sha256": "ea7793f666f2bb3caf8b8be0d9aba0bab487bd58d2f3d823807c61c2743c05c9"
+      },
+      {
+        "condition": "M",
+        "seed": 7,
+        "checkpoint": "E:\\Dataset on IPR\\artifacts\\models\\equal_update\\D_M_s7_ipr\\final",
+        "original_reader_sha256": "0160e1cfc14d6106965c2bd446cf9e229ba9ddebe2278d268e95029baa6e8a29"
+      },
+      {
+        "condition": "M",
+        "seed": 42,
+        "checkpoint": "E:\\Dataset on IPR\\artifacts\\models\\equal_update\\D_M_s42_ipr\\final",
+        "original_reader_sha256": "7db564ba415bd9d02406e017e7f4fc31c08ea2a456cac15a0a4ecf358916e05d"
+      },
+      {
+        "condition": "M",
+        "seed": 99,
+        "checkpoint": "E:\\Dataset on IPR\\artifacts\\models\\equal_update\\D_M_s99_ipr\\final",
+        "original_reader_sha256": "56d7726d4292c195bb4d54e3f8ae48f923fe5bdda645d4b1d47fe3d700c199c8"
+      },
+      {
+        "condition": "M",
+        "seed": 123,
+        "checkpoint": "E:\\Dataset on IPR\\artifacts\\models\\equal_update\\D_M_s123_ipr\\final",
+        "original_reader_sha256": "4890ab214cdf5346961555c98c0439b78ff330845a7f79a13bc0b1d282d7cfd4"
+      },
+      {
+        "condition": "M",
+        "seed": 2026,
+        "checkpoint": "E:\\Dataset on IPR\\artifacts\\models\\equal_update\\D_M_s2026_ipr\\final",
+        "original_reader_sha256": "f3d173f6672625c31ffd1bdcaa2e55b09779df5106d4d8188db68dfa2f525eb8"
+      }
+    ],
+    "bert": [
+      {
+        "condition": "N",
+        "seed": 7,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_N_s7_ipr\\final",
+        "original_reader_sha256": "df58fe5f51c01d018f775dec842ced0a36ab007c80a607cc6e01d110f5d47fc5"
+      },
+      {
+        "condition": "N",
+        "seed": 42,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_N_s42_ipr\\final",
+        "original_reader_sha256": "4d285022e8d3a89d07d1c7be886110695921128e65f855d02f8007031e4ad997"
+      },
+      {
+        "condition": "N",
+        "seed": 99,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_N_s99_ipr\\final",
+        "original_reader_sha256": "27736af05aa788ccbd93fdd06ed15a380eeabd3e53a861b41fe4134dd151fd5a"
+      },
+      {
+        "condition": "N",
+        "seed": 123,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_N_s123_ipr\\final",
+        "original_reader_sha256": "956c5c72b6b186a51b3bf080d4f7a0c1e9f29ef863df65d15f04fe3365870c3e"
+      },
+      {
+        "condition": "N",
+        "seed": 2026,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_N_s2026_ipr\\final",
+        "original_reader_sha256": "ebc58c4d3fd52af06902f954715e180fb2957adc287b14f7aaa7be6dd7acd89f"
+      },
+      {
+        "condition": "A",
+        "seed": 7,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_A_s7_ipr\\final",
+        "original_reader_sha256": "a02bf90472ad6945a1f291c71d24d755d193fdb0bda930625d4dbd2dfc179ae6"
+      },
+      {
+        "condition": "A",
+        "seed": 42,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_A_s42_ipr\\final",
+        "original_reader_sha256": "f05b44f8bf25bfc6d85409953d4cd3501dffec94ee52e1f9849cf77cf8cc0fd0"
+      },
+      {
+        "condition": "A",
+        "seed": 99,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_A_s99_ipr\\final",
+        "original_reader_sha256": "9a9256545b8ed332c5f8854a7fb0840cf6ad5f01da73e78a4b931c1ddfd65e4c"
+      },
+      {
+        "condition": "A",
+        "seed": 123,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_A_s123_ipr\\final",
+        "original_reader_sha256": "0ab7a30533de8f9d5be39d5be1aaa93c405eca7921f1d9d385ad62c8195c095a"
+      },
+      {
+        "condition": "A",
+        "seed": 2026,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_A_s2026_ipr\\final",
+        "original_reader_sha256": "17e910eefdb2136b042ab0984b1ead4b624e8e39b17e45a72814676902bd5a92"
+      },
+      {
+        "condition": "S",
+        "seed": 7,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_S_s7_ipr\\final",
+        "original_reader_sha256": "1c79df26ad6c22a27d3b35bee95475e49db120ec475bbf2e87d9a4be9abfa24e"
+      },
+      {
+        "condition": "S",
+        "seed": 42,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_S_s42_ipr\\final",
+        "original_reader_sha256": "0004ed733e07f8aecafeea708ef27f26ad874254e895649abdfad598525a23b6"
+      },
+      {
+        "condition": "S",
+        "seed": 99,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_S_s99_ipr\\final",
+        "original_reader_sha256": "2bbcf34978d1b1da57df6636e4f6eaf2af15eb2a74a504cc61525893ea381ca5"
+      },
+      {
+        "condition": "S",
+        "seed": 123,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_S_s123_ipr\\final",
+        "original_reader_sha256": "01890a3b1769c943d8d032fed0e295f49235d0857fa8aa4cfb9ab27943d226ec"
+      },
+      {
+        "condition": "S",
+        "seed": 2026,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_S_s2026_ipr\\final",
+        "original_reader_sha256": "0fbe437d88fa2a6ca384deeff123cd0fc4c72689786b7dc1c5cc739dfd3cf040"
+      },
+      {
+        "condition": "M",
+        "seed": 7,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_M_s7_ipr\\final",
+        "original_reader_sha256": "f9f17661adec159b7af1743cba03dafa8604cee98a4ed4e6932fa2328b887ab5"
+      },
+      {
+        "condition": "M",
+        "seed": 42,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_M_s42_ipr\\final",
+        "original_reader_sha256": "33ab575ff37960dd3d840a650368366a9fee51a874c69b26b47577f0c284cfaa"
+      },
+      {
+        "condition": "M",
+        "seed": 99,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_M_s99_ipr\\final",
+        "original_reader_sha256": "6336980fc1807b35123c9b57bd1708f21b53a69c08b5a8ef400f160a8a2290af"
+      },
+      {
+        "condition": "M",
+        "seed": 123,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_M_s123_ipr\\final",
+        "original_reader_sha256": "b70d7d89a30a0e9a57228a4aa9cd425375c9e22811c2755d1fda27fd33e480b1"
+      },
+      {
+        "condition": "M",
+        "seed": 2026,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_M_s2026_ipr\\final",
+        "original_reader_sha256": "414a4aa27a768b4eee6a8bd026a1cdb0b4a1f4748c24196e4c464eb4f0f5dc54"
+      }
+    ],
+    "legalbert": [
+      {
+        "condition": "N",
+        "seed": 7,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_N_s7_ipr\\final",
+        "original_reader_sha256": "b0d4d6917af3ac4a71d4f758db8c03da9c05389ac21c217b9994b5728ac1e16e"
+      },
+      {
+        "condition": "N",
+        "seed": 42,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_N_s42_ipr\\final",
+        "original_reader_sha256": "e6bcb591068c304faa927ac787be65cba863c4c63b111986e7e42c217fd1cb40"
+      },
+      {
+        "condition": "N",
+        "seed": 99,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_N_s99_ipr\\final",
+        "original_reader_sha256": "19900178a440c60f03e1bd681f46a0ca49c200653cf47e5525dfd0eb87fd567a"
+      },
+      {
+        "condition": "N",
+        "seed": 123,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_N_s123_ipr\\final",
+        "original_reader_sha256": "75c550d0e55ceed08a6f25455c839ce80712f05631407d9bd3bcc48d48e63b40"
+      },
+      {
+        "condition": "N",
+        "seed": 2026,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_N_s2026_ipr\\final",
+        "original_reader_sha256": "63be0c74c5bfc0898a626512f068958b7f7aff553b190d6980fe49259436faf2"
+      },
+      {
+        "condition": "A",
+        "seed": 7,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_A_s7_ipr\\final",
+        "original_reader_sha256": "b6c2e435bab4821a8d47d8ef87cb64413fe6cde7269f88a63118cd6920d38343"
+      },
+      {
+        "condition": "A",
+        "seed": 42,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_A_s42_ipr\\final",
+        "original_reader_sha256": "30bb011f99b66bad42488be890cf0767551f996ff4990ef5e0b2378789deca4f"
+      },
+      {
+        "condition": "A",
+        "seed": 99,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_A_s99_ipr\\final",
+        "original_reader_sha256": "a46a2f899831849cbc1dea498f0bad110a9f325bff9819d92ba0f14213c91251"
+      },
+      {
+        "condition": "A",
+        "seed": 123,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_A_s123_ipr\\final",
+        "original_reader_sha256": "33ffcef227f9df3cf46e7fc96cf02fbe580ffb7e2c8a3fa8f9abe65242820fa1"
+      },
+      {
+        "condition": "A",
+        "seed": 2026,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_A_s2026_ipr\\final",
+        "original_reader_sha256": "fbeff70ed4f88afaffc3f9b0e21b1adca047a1913262595eec7c15224203aa03"
+      },
+      {
+        "condition": "S",
+        "seed": 7,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_S_s7_ipr\\final",
+        "original_reader_sha256": "86042c7f5204d21f49883023be248aaf065a9436371289012c429ca46d44b1c4"
+      },
+      {
+        "condition": "S",
+        "seed": 42,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_S_s42_ipr\\final",
+        "original_reader_sha256": "ebb723409964d9f9d84f0b6eb4780a9f4334ef75340254c38256e07bf83480bb"
+      },
+      {
+        "condition": "S",
+        "seed": 99,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_S_s99_ipr\\final",
+        "original_reader_sha256": "d4aeb310567836d1a9f16b01fdf640d6bc5701376c1a746c3213cd8e108ad09a"
+      },
+      {
+        "condition": "S",
+        "seed": 123,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_S_s123_ipr\\final",
+        "original_reader_sha256": "5f5028b41170afd89c6d2b07c8c2de987bc88a5d273c91f12684b84ca7eeebe5"
+      },
+      {
+        "condition": "S",
+        "seed": 2026,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_S_s2026_ipr\\final",
+        "original_reader_sha256": "57d0d00baa0e9d7e1111f855232444fd90c515d11378fb3d272e8c2fa5ef6f26"
+      },
+      {
+        "condition": "M",
+        "seed": 7,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_M_s7_ipr\\final",
+        "original_reader_sha256": "2ee2653a42c841add384bbdc37d02ab792040ebd2d9b1d767d98d438a147680e"
+      },
+      {
+        "condition": "M",
+        "seed": 42,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_M_s42_ipr\\final",
+        "original_reader_sha256": "fc571b249a87c32de379b4a813f0af4f5c340fca3dbab8c54854092a34c030fd"
+      },
+      {
+        "condition": "M",
+        "seed": 99,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_M_s99_ipr\\final",
+        "original_reader_sha256": "7174992362ec0add7ac76562f84e322de983e4105edb782760781d78c38afe82"
+      },
+      {
+        "condition": "M",
+        "seed": 123,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_M_s123_ipr\\final",
+        "original_reader_sha256": "5c24c379babd193f742e601fb343b4157cc271602e89f51b938cb81a858dcbf1"
+      },
+      {
+        "condition": "M",
+        "seed": 2026,
+        "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_M_s2026_ipr\\final",
+        "original_reader_sha256": "8238e634653bd374abd9f8f1c2f7803818abf876214b736ae1c48ffca0516716"
+      }
+    ]
+  },
+  "additional_code": {
+    "run_all.py": "bab431653216e80cd85f0c2ef0bb1c9a15e5221a903f8b9143455ff9c49bb6bc",
+    "integration_check.py": "5a9e96b1934dd7dcf25918e174c6661d9d4eed7a5a3d44b03d237bb058009863",
+    "verify_readers.py": "31312c820282d721c4424d0b2525c4495b3367c7d70b5c31601205ab0c133a75"
+  }
+}

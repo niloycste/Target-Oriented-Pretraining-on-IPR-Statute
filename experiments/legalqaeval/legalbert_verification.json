@@ -1,0 +1,110 @@
+{
+  "status": "PASS",
+  "encoder": "legalbert",
+  "predictions_rescored": 15040,
+  "readers_fingerprinted": 20,
+  "completed_training_stages": 55,
+  "training_inputs_and_generated_code_match": true,
+  "generated_script_hash_convention": "UTF-8 source with universal-newline reading; runner hashes pre-write strings",
+  "test_and_validation_statistics_reproduced": true,
+  "mlm_telemetry": [
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_A_s7_mlm\\training_telemetry.json",
+      "sha256": "4e73028cfd5591eba02b3c95d4d20588cdb0c94f7393225dd3bd46267d6d268a",
+      "nonpadding_tokens": 447947
+    },
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_A_s42_mlm\\training_telemetry.json",
+      "sha256": "69b583ce1d01e7985809c4da5db8a9c1419498d41a0a3544954766b502af3461",
+      "nonpadding_tokens": 445956
+    },
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_A_s99_mlm\\training_telemetry.json",
+      "sha256": "bc6f914c25ca1bab85464ccfe15f599d4381903b479f7fb2f303bbec1151025f",
+      "nonpadding_tokens": 444219
+    },
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_A_s123_mlm\\training_telemetry.json",
+      "sha256": "98e4c957b8e1262ea1f582a65a24ce5f5440cbd3607f0213fe745c256e50d6c6",
+      "nonpadding_tokens": 444528
+    },
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_A_s2026_mlm\\training_telemetry.json",
+      "sha256": "f9682fcab8e75107969bb26371083815a9fe6b7a8cc32451d94fec481eb73561",
+      "nonpadding_tokens": 446134
+    },
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_S_s7_mlm\\training_telemetry.json",
+      "sha256": "45c123bc4dca712d16a91d1ed3529582b7ff5e0b3b218b89b78567ab3db356be",
+      "nonpadding_tokens": 477080
+    },
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_S_s42_mlm\\training_telemetry.json",
+      "sha256": "bf71eaf3968fca2664df373221cfa464716f904da06a95601006a4b29db6becc",
+      "nonpadding_tokens": 477001
+    },
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_S_s99_mlm\\training_telemetry.json",
+      "sha256": "a12901cf28cd0faaf3d0188578e8d22c55fea9d0a353118f0e871f42d060c6d4",
+      "nonpadding_tokens": 477394
+    },
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_S_s123_mlm\\training_telemetry.json",
+      "sha256": "f355e60aa20a7447ed35b0e936b55659fea757dad57be055ea2c985a92845c51",
+      "nonpadding_tokens": 476715
+    },
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_S_s2026_mlm\\training_telemetry.json",
+      "sha256": "504a7a3945b9e1c1094ce32313e205de0fbdcb6c55abd8f05011b1d8ec509ae4",
+      "nonpadding_tokens": 477172
+    },
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_M_s7_mlm\\training_telemetry.json",
+      "sha256": "cd6862bcba593de27e5a2d6f10cd3488d56f7acf88808bfa6069362e7acaf5f7",
+      "nonpadding_tokens": 460887
+    },
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_M_s42_mlm\\training_telemetry.json",
+      "sha256": "f0bff16158dafc55ddcc97c638cfb0f670252b27f5df7d53bcc32b079c47bce2",
+      "nonpadding_tokens": 460181
+    },
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_M_s99_mlm\\training_telemetry.json",
+      "sha256": "342883f97a9f8b30b78851d60e1dadb353901cf3325a3a29ad986627ca3251f1",
+      "nonpadding_tokens": 460723
+    },
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_M_s123_mlm\\training_telemetry.json",
+      "sha256": "8c702c2fbdba83abbed3f0748a153a27a4bfaea2c35c5c593f217c254dd141aa",
+      "nonpadding_tokens": 460859
+    },
+    {
+      "path": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_M_s2026_mlm\\training_telemetry.json",
+      "sha256": "14f95d45363bdc9fa08e54b7304a8a3d262b43e2fa4dd5193ad859dce1f842b9",
+      "nonpadding_tokens": 461490
+    }
+  ],
+  "checkpoint_fingerprints": {
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_N_s7_ipr\\final": "b0d4d6917af3ac4a71d4f758db8c03da9c05389ac21c217b9994b5728ac1e16e",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_A_s7_ipr\\final": "b6c2e435bab4821a8d47d8ef87cb64413fe6cde7269f88a63118cd6920d38343",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_S_s7_ipr\\final": "86042c7f5204d21f49883023be248aaf065a9436371289012c429ca46d44b1c4",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_M_s7_ipr\\final": "2ee2653a42c841add384bbdc37d02ab792040ebd2d9b1d767d98d438a147680e",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_N_s42_ipr\\final": "e6bcb591068c304faa927ac787be65cba863c4c63b111986e7e42c217fd1cb40",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_A_s42_ipr\\final": "30bb011f99b66bad42488be890cf0767551f996ff4990ef5e0b2378789deca4f",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_S_s42_ipr\\final": "ebb723409964d9f9d84f0b6eb4780a9f4334ef75340254c38256e07bf83480bb",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_M_s42_ipr\\final": "fc571b249a87c32de379b4a813f0af4f5c340fca3dbab8c54854092a34c030fd",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_N_s99_ipr\\final": "19900178a440c60f03e1bd681f46a0ca49c200653cf47e5525dfd0eb87fd567a",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_A_s99_ipr\\final": "a46a2f899831849cbc1dea498f0bad110a9f325bff9819d92ba0f14213c91251",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_S_s99_ipr\\final": "d4aeb310567836d1a9f16b01fdf640d6bc5701376c1a746c3213cd8e108ad09a",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_M_s99_ipr\\final": "7174992362ec0add7ac76562f84e322de983e4105edb782760781d78c38afe82",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_N_s123_ipr\\final": "75c550d0e55ceed08a6f25455c839ce80712f05631407d9bd3bcc48d48e63b40",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_A_s123_ipr\\final": "33ffcef227f9df3cf46e7fc96cf02fbe580ffb7e2c8a3fa8f9abe65242820fa1",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_S_s123_ipr\\final": "5f5028b41170afd89c6d2b07c8c2de987bc88a5d273c91f12684b84ca7eeebe5",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_M_s123_ipr\\final": "5c24c379babd193f742e601fb343b4157cc271602e89f51b938cb81a858dcbf1",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_N_s2026_ipr\\final": "63be0c74c5bfc0898a626512f068958b7f7aff553b190d6980fe49259436faf2",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_A_s2026_ipr\\final": "fbeff70ed4f88afaffc3f9b0e21b1adca047a1913262595eec7c15224203aa03",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_S_s2026_ipr\\final": "57d0d00baa0e9d7e1111f855232444fd90c515d11378fb3d272e8c2fa5ef6f26",
+    "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_M_s2026_ipr\\final": "8238e634653bd374abd9f8f1c2f7803818abf876214b736ae1c48ffca0516716"
+  },
+  "scope": "Artifact consistency verification, not independent retraining or legal assessment"
+}

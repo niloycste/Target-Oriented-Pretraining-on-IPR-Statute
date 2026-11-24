@@ -1,0 +1,202 @@
+{
+  "status": "PASS",
+  "selection": "validation only; source coverage plus longest context",
+  "purpose": "implementation check, not an external performance estimate",
+  "readers": {
+    "inlegalbert": {
+      "checkpoint": "E:\\Dataset on IPR\\artifacts\\models\\final_cpu\\A_N_s7_ipr\\final",
+      "strict_loading": "PASS",
+      "source_spans": "PASS",
+      "independent_scores": "PASS",
+      "seconds": 1.4323591999709606,
+      "predictions": [
+        {
+          "id": "isaacus--legalqaeval/microsoft--ms-marco/validation/00000/18340/1099514/7",
+          "question": "how did the roosevelt corollary subvert the monroe doctrine?",
+          "prediction": "During The Hoover Administration, policies were put into place to improve relations, such as the Clark Memorandum of 1930 in which the State Department retracted Theodore Roosevelt's Corollary to the 1823 Monroe Doctrine, which declared that only the United States could collect debts owed to foreigners by countries in the Western Hemisphere",
+          "answers": [
+            {
+              "text": "During The Hoover Administration, policies were put into place to improve relations, such as the Clark Memorandum of 1930 in which the State Department retracted Theodore Roosevelt's Corollary to the 1823 Monroe Doctrine, which declared that only the United States could collect debts owed to foreigners by countries in the Western Hemisphere.",
+              "start": 0,
+              "end": 343
+            }
+          ],
+          "em": 1.0,
+          "f1": 1.0
+        },
+        {
+          "id": "isaacus--legalqaeval/yang--hotpotqa/hotpot_dev_distractor_v1/7272/5ae2fffe55429928c423959c",
+          "question": "What political party was the 6th governor of Hawaii that passed bills to help with global warming in Hawaii?",
+          "prediction": "Linda Lingle",
+          "answers": [
+            {
+              "text": "Republican Party.",
+              "start": 1795,
+              "end": 1812
+            }
+          ],
+          "em": 0.0,
+          "f1": 0.0
+        },
+        {
+          "id": "isaacus--legalqaeval/google--natural-questions/nq.test/3328/3228081808286540919",
+          "question": "who does the civil rights act of 1964 protect",
+          "prediction": "President John F. Kennedy",
+          "answers": [
+            {
+              "text": "all Americans",
+              "start": 148,
+              "end": 161
+            }
+          ],
+          "em": 0.0,
+          "f1": 0.0
+        },
+        {
+          "id": "isaacus--legalqaeval/yang--hotpotqa/hotpot_dev_distractor_v1/6620/5a74994a55429974ef308c2e",
+          "question": "Who was the American congressman whose actions led to a CIA program to arm Jihadi warriors in Afghanistan in the 1980's?",
+          "prediction": "Charlie Wilson",
+          "answers": [
+            {
+              "text": "Charlie Wilson",
+              "start": 1090,
+              "end": 1104
+            }
+          ],
+          "em": 1.0,
+          "f1": 1.0
+        }
+      ]
+    },
+    "bert": {
+      "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\bert\\E_N_s7_ipr\\final",
+      "strict_loading": "PASS",
+      "source_spans": "PASS",
+      "independent_scores": "PASS",
+      "seconds": 0.7112036000471562,
+      "predictions": [
+        {
+          "id": "isaacus--legalqaeval/microsoft--ms-marco/validation/00000/18340/1099514/7",
+          "question": "how did the roosevelt corollary subvert the monroe doctrine?",
+          "prediction": "declared that only the United States could collect debts owed to foreigners by countries in the Western Hemisphere",
+          "answers": [
+            {
+              "text": "During The Hoover Administration, policies were put into place to improve relations, such as the Clark Memorandum of 1930 in which the State Department retracted Theodore Roosevelt's Corollary to the 1823 Monroe Doctrine, which declared that only the United States could collect debts owed to foreigners by countries in the Western Hemisphere.",
+              "start": 0,
+              "end": 343
+            }
+          ],
+          "em": 0.0,
+          "f1": 0.5142857142857142
+        },
+        {
+          "id": "isaacus--legalqaeval/yang--hotpotqa/hotpot_dev_distractor_v1/7272/5ae2fffe55429928c423959c",
+          "question": "What political party was the 6th governor of Hawaii that passed bills to help with global warming in Hawaii?",
+          "prediction": "Linda Lingle",
+          "answers": [
+            {
+              "text": "Republican Party.",
+              "start": 1795,
+              "end": 1812
+            }
+          ],
+          "em": 0.0,
+          "f1": 0.0
+        },
+        {
+          "id": "isaacus--legalqaeval/google--natural-questions/nq.test/3328/3228081808286540919",
+          "question": "who does the civil rights act of 1964 protect",
+          "prediction": "President John F. Kennedy",
+          "answers": [
+            {
+              "text": "all Americans",
+              "start": 148,
+              "end": 161
+            }
+          ],
+          "em": 0.0,
+          "f1": 0.0
+        },
+        {
+          "id": "isaacus--legalqaeval/yang--hotpotqa/hotpot_dev_distractor_v1/6620/5a74994a55429974ef308c2e",
+          "question": "Who was the American congressman whose actions led to a CIA program to arm Jihadi warriors in Afghanistan in the 1980's?",
+          "prediction": "Charlie Wilson and CIA operative Gust Avrakotos",
+          "answers": [
+            {
+              "text": "Charlie Wilson",
+              "start": 1090,
+              "end": 1104
+            }
+          ],
+          "em": 0.0,
+          "f1": 0.4444444444444445
+        }
+      ]
+    },
+    "legalbert": {
+      "checkpoint": "E:\\Dataset on IPR\\github_repositories\\statutory-dapt\\artifacts\\models\\encoder_extension\\legalbert\\E_N_s7_ipr\\final",
+      "strict_loading": "PASS",
+      "source_spans": "PASS",
+      "independent_scores": "PASS",
+      "seconds": 0.8782104999991134,
+      "predictions": [
+        {
+          "id": "isaacus--legalqaeval/microsoft--ms-marco/validation/00000/18340/1099514/7",
+          "question": "how did the roosevelt corollary subvert the monroe doctrine?",
+          "prediction": "During The Hoover Administration, policies were put into place to improve relations, such as the Clark Memorandum of 1930 in which the State Department retracted Theodore Roosevelt's Corollary to the 1823 Monroe Doctrine, which declared that only the United States could collect debts owed to foreigners by countries in the Western Hemisphere",
+          "answers": [
+            {
+              "text": "During The Hoover Administration, policies were put into place to improve relations, such as the Clark Memorandum of 1930 in which the State Department retracted Theodore Roosevelt's Corollary to the 1823 Monroe Doctrine, which declared that only the United States could collect debts owed to foreigners by countries in the Western Hemisphere.",
+              "start": 0,
+              "end": 343
+            }
+          ],
+          "em": 1.0,
+          "f1": 1.0
+        },
+        {
+          "id": "isaacus--legalqaeval/yang--hotpotqa/hotpot_dev_distractor_v1/7272/5ae2fffe55429928c423959c",
+          "question": "What political party was the 6th governor of Hawaii that passed bills to help with global warming in Hawaii?",
+          "prediction": "Linda Lingle (\"née\" Cutter; June 4, 1953) is an American politician, who was the sixth Governor of Hawaii from 2002 until 2010. She was the first Republican elected governor of Hawaii since the departure of William F. Quinn in 1962. Lingle was also the first female governor of Hawaii; first Jewish governor of Hawaii; first county mayor elected governor of Hawaii; and the first governor of Hawaii not to have any children. Prior to her gubernatorial administration, Lingle served as Maui County mayor, council member, and chair of the Hawaii Republican Party",
+          "answers": [
+            {
+              "text": "Republican Party.",
+              "start": 1795,
+              "end": 1812
+            }
+          ],
+          "em": 0.0,
+          "f1": 0.042553191489361694
+        },
+        {
+          "id": "isaacus--legalqaeval/google--natural-questions/nq.test/3328/3228081808286540919",
+          "question": "who does the civil rights act of 1964 protect",
+          "prediction": "President John F. Kennedy",
+          "answers": [
+            {
+              "text": "all Americans",
+              "start": 148,
+              "end": 161
+            }
+          ],
+          "em": 0.0,
+          "f1": 0.0
+        },
+        {
+          "id": "isaacus--legalqaeval/yang--hotpotqa/hotpot_dev_distractor_v1/6620/5a74994a55429974ef308c2e",
+          "question": "Who was the American congressman whose actions led to a CIA program to arm Jihadi warriors in Afghanistan in the 1980's?",
+          "prediction": "Charlie Wilson",
+          "answers": [
+            {
+              "text": "Charlie Wilson",
+              "start": 1090,
+              "end": 1104
+            }
+          ],
+          "em": 1.0,
+          "f1": 1.0
+        }
+      ]
+    }
+  }
+}
