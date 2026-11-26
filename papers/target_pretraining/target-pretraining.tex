@@ -801,6 +801,8 @@ main study. The extension uses the same fixed corpus records and question
 splits. It controls update counts, but does not equate token exposure across
 encoders with different tokenizers. The model revision, input hashes, and
 generated training scripts were recorded before training.
+Table~\ref{tab:bert_extension_test} reports the resulting test scores and
+paired comparisons.
 
 \begin{table}[!htbp]
 \caption{Post hoc BERT extension: test results on 344 questions, with five
@@ -846,6 +848,7 @@ newly trained, including the five no-DAPT baselines. Conditions, seeds, adaptati
 checkpoint selection, and decoding follow the additional-encoder protocol in
 Section~\ref{sec:bert_extension}. This is a separate encoder comparison on
 the same IndicIPR-QA questions, rather than a new benchmark replication.
+Table~\ref{tab:legalbert_extension_test} reports its test results.
 
 \begin{table}[!htbp]
 \caption{Post hoc LEGAL-BERT extension: test results on 344 questions, with
@@ -1038,6 +1041,9 @@ spans. Normalization retains articles. The results therefore concern
 an audited answerable subset and the project scoring convention,
 rather than the complete official benchmark.
 
+Tables~\ref{tab:legalqaeval_test} and~\ref{tab:legalqaeval_val} report the
+primary test and descriptive validation results, respectively.
+
 \begin{table}[!htbp]
 \caption{External transfer: primary LegalQAEval test subset (329 questions).
 EM/F1 use the 0--100 scale. SD is across five seeds; intervals
@@ -1109,6 +1115,10 @@ None of the nine primary paired F1 comparisons rejects its null
 under the specified within-encoder corrections. This does not
 establish equivalence; the intervals show the range of effects
 compatible with the observed seed variation.
+
+Table~\ref{tab:legalqaeval_sources} gives the exploratory test breakdown by
+source dataset. Table~\ref{tab:legalqaeval_all_answerable} reports the broader
+answerable set that also contains potentially exposed SQuAD examples.
 
 \begin{table}[!htbp]
 \caption{Exploratory external test F1 means by source after overlap exclusions.
@@ -1554,10 +1564,12 @@ final submitted text rests with the authors.
 
 \section{Validation Results and Interaction Contrasts}\label{app:validation}
 
-Tables~\ref{tab:equal_update_validation} and~\ref{tab:final_validation} give
-descriptive validation scores. The same validation set supports supervised
-checkpoint selection; these are not unseen test estimates or additional
-evidence of statistical superiority.
+Tables~\ref{tab:equal_update_validation},
+\ref{tab:bert_extension_validation},
+\ref{tab:legalbert_extension_validation}, and
+\ref{tab:final_validation} give descriptive validation scores. The same
+validation set supports supervised checkpoint selection; these are not unseen
+test estimates or additional evidence of statistical superiority.
 
 \begin{table}[!htbp]
 \caption{Experiment D with equal update counts: validation results on 408 questions. EM
@@ -1821,17 +1833,26 @@ Synthetic DAPT (I') & 1.0273 & 2.79 & 75.1\% \\
 \end{table}
 
 \FloatBarrier
+\begin{samepage}
 \section*{Data and Code Availability}
 
-The reported analyses use the fixed IndicIPR-QA splits, adaptation corpus
-manifests, saved predictions for each question, and experiment and evaluation code.
-The retained evidence includes the original analysis lock, its dated amendment,
-checkpoint fingerprints and the MLM loading correction record.
-Repository and reviewer access information is supplied through the journal
-submission system. Editors and reviewers can receive the benchmark splits,
-corpus manifests, frozen predictions, hashes, and analysis code through that
-system. Subject to dataset and model licences, the final published version will
-provide a permanent repository link.
+An anonymous repository for peer review is available at
+\url{https://anonymous.4open.science/r/Target-Oriented-Pretraining-on-IPR-Statute-6435/}.
+It contains the fixed IndicIPR-QA splits, adaptation corpora and manifests,
+experiment and evaluation code, saved item-level predictions, statistical
+outputs, audit records, environment requirements, and commands for reproducing
+the reported tables and figures. It also records the pinned model revisions,
+the LegalQAEval dataset revision and filtering protocol, input hashes, the
+analysis lock and amendment, and the MLM loading correction.
+
+The release excludes credentials, trained model weights, optimizer states, and
+tokenization caches. It therefore supports integrity checks, re-scoring of the
+saved predictions, and verification of the reported numerical analyses, but it
+does not support fresh inference or checkpoint-fingerprint verification without
+separately retained or recreated checkpoints. Access to the datasets and base
+models remains subject to their original licences. After peer review, the
+anonymous link will be replaced by the permanent public repository record.
+\end{samepage}
 
 % AUTHOR ACTION: confirm funding, competing interests, author contributions,
 % and applicable ethics statements in the journal submission interface.

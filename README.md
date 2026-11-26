@@ -10,10 +10,9 @@
 [![Domain: Indian IPR law](https://img.shields.io/badge/Domain-Indian%20IPR%20law-059669)](#dataset-and-scope)
 [![Status: Reproducible artifacts](https://img.shields.io/badge/Status-Reproducible%20artifacts-EA580C)](#repository-guide)
 [![Paper](https://img.shields.io/badge/Read-the%20paper-DC2626?logo=readthedocs&logoColor=white)](papers/target_pretraining/target-pretraining.pdf)
-[![Dataset](https://img.shields.io/badge/Dataset-Hugging%20Face-FFD21E?logo=huggingface&logoColor=black)](https://huggingface.co/datasets/niloycste68/IndicIPRExtractiveQA)
+[![Data](https://img.shields.io/badge/Data-Included%20release-FFD21E)](data/)
 
-**M. Mohaiminul Islam** · **Muhammad Abulaish**<br>
-Department of Computer Science and Engineering, South Asian University, New Delhi, India
+**Anonymous authors**
 
 [Quick start](#quick-start) · [Results](#research-at-a-glance) · [Reproduce](#reproduce-the-reported-results) · [Paper](papers/target_pretraining/target-pretraining.pdf) · [Citation](#citation)
 
@@ -106,7 +105,9 @@ DAPT cannot help other models, domains, data budgets, or training schedules.
 | Training seeds per main condition | **5** |
 
 > [!NOTE]
-> **Dataset:** [IndicIPRExtractiveQA on Hugging Face](https://huggingface.co/datasets/niloycste68/IndicIPRExtractiveQA) · [`niloycste68/IndicIPRExtractiveQA`](https://huggingface.co/datasets/niloycste68/IndicIPRExtractiveQA)
+> **Dataset:** The fixed IndicIPR-QA data used in the study are included under
+> [`data/processed/indic_ipr_qa/`](data/processed/indic_ipr_qa/), subject to the
+> original dataset terms.
 
 IndicIPR-QA contains generated and curated English extractive questions. The
 experiments study gold-context reading, rather than open retrieval. The separate
@@ -116,8 +117,10 @@ retrieval and source-selection diagnosis is released in its own repository.
 
 Run the commands from the repository root.
 
+During peer review, download the repository from the
+[anonymous reviewer archive](https://anonymous.4open.science/r/Target-Oriented-Pretraining-on-IPR-Statute-6435/).
+
 ```powershell
-git clone https://github.com/niloycste/Target-Oriented-Pretraining-on-IPR-Statute.git
 Set-Location Target-Oriented-Pretraining-on-IPR-Statute
 py -3.12 -m venv .venv
 .\.venv\Scripts\Activate.ps1
@@ -211,13 +214,13 @@ If you use this repository, its experiments, or the target-oriented DAPT
 evaluation framework, please cite the accompanying paper:
 
 ```bibtex
-@misc{islam_abulaish_2026_target_oriented_dapt,
-  author = {Islam, M. Mohaiminul and Abulaish, Muhammad},
+@unpublished{anonymous_2026_statutory_dapt,
+  author = {{Anonymous}},
   title = {Authentic, Synthetic, or Mixed? Evaluating Domain-Adaptive
            Pretraining for Statutory Question Answering},
   year = {2026},
-  note = {Manuscript and reproducibility artifacts},
-  url = {https://github.com/niloycste/Target-Oriented-Pretraining-on-IPR-Statute}
+  note = {Anonymous manuscript and reproducibility artifacts},
+  url = {https://anonymous.4open.science/r/Target-Oriented-Pretraining-on-IPR-Statute-6435/}
 }
 ```
 
